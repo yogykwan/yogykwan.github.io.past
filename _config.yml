@@ -1,0 +1,45 @@
+permalink: /:year/:month/:day/:title.html
+paginate: 10
+markdown: redcarpet
+
+# 作者信息
+author: 
+  name: Yogy
+  email: jingg.cxy@gmail.com
+  link: http://yogy.cc
+  weibo: http://weibo.com/u/1795905757
+  github: http://github.com/yogykwan
+
+# 站点信息
+title: "NULL"
+description: Yogy's Blog
+url: http://yogy.cc
+rss_url: /pages/atom.xml
+
+# gavatar头像及Favicon
+gavatar: /public/upload/gavatar/gavatar.jpg
+favicon: /public/upload/gavatar/favicon.ico
+
+# google analytics 设置
+ga:
+  id: UA-43667383-1
+  url: yogy.cc
+
+# disqus 设置
+disqus:
+  shortname: yogykwan
+
+# 主题设置，自动激活某个标签
+active: 技术
+
+# 首页除了最新文章外显示分类
+cates: 
+  - Python
+  - OpenStack
+
+# 中文本地化
+locals:
+  tags: 标签
+  about: 关于
+  newest: 最新文章
+  archive: 归档
