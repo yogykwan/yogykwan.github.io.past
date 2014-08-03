@@ -1,6 +1,6 @@
 ---
 layout: book
-title: 2014下半年阅读书单
+title: 2014下半年技术书单
 category: 读书
 keywords: 技术,书单,2014下
 books: 
