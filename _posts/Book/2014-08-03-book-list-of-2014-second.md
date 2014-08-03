@@ -37,7 +37,7 @@ books:
       publisher: 西安电子科技大学出版社
       language: 中文
       link: http://product.dangdang.com/22484219.html
-      cover: http://img39.ddimg.cn/32/22/22484219-1_w_1.jpg
+      cover: /public/upload/book/operation-system.jpg
       description: 
     
     - title: 操作系统
