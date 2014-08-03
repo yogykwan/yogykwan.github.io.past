@@ -2,7 +2,7 @@
 layout: book
 title: 2014下半年阅读书单
 category: 读书
-keywords: 阅读,书单,2014下
+keywords: 技术,书单,2014下
 books: 
     - title: Web前端黑客技术揭秘
       status: 在读
