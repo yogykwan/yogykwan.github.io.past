@@ -28,7 +28,7 @@ books:
       publisher: 电子工业出版社
       language: 中文
       link: http://book.douban.com/subject/10433737/
-      cover: http://img5.douban.com/mpic/s7042137.jpg
+      cover: http://img5.douban.com/lpic/s7042137.jpg
       description: Metasploit平台的渗透测试入门
 
     - title: Metasploit渗透测试魔鬼训练营
@@ -37,7 +37,7 @@ books:
       publisher: 机械工业出版社
       language: 中文
       link: http://book.douban.com/subject/25723796/
-      cover: http://img3.douban.com/mpic/s27278394.jpg
+      cover: http://img3.douban.com/lpic/s27278394.jpg
       description: 搭建环境演练Metasploit渗透测试
 
     - title: XSS跨站脚本攻击剖析与防御
@@ -46,6 +46,6 @@ books:
       publisher: 人民邮电出版社
       language: 中文
       link: http://book.douban.com/subject/25711796/
-      cover: http://img5.douban.com/mpic/s27026806.jpg
+      cover: http://img5.douban.com/lpic/s27026806.jpg
       description: XSS入门书籍
 ---
