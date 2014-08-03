@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
   <channel>
-    <title>闫肃的博客</title>
-    <link>http://yansu.org</link>
-    <description>闫肃的博客</description>
+    <title>NULL</title>
+    <link>http://yogy.cc</link>
+    <description>Yogy's Blog</description>
     
       <item>
         <title>MySQL常用资源</title>
-        <link>http://yansu.org/2014/05/11/general-mysql-resources.html</link>
-        <guid isPermaLink="true">http://yansu.org/2014/05/11/general-mysql-resources.html</guid>
+        <link>http://yogy.cc/2014/05/11/general-mysql-resources.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/05/11/general-mysql-resources.html</guid>
         <pubDate>Sun, 11 May 2014 00:00:00 +0800</pubDate>
         <description>&lt;h2&gt;常用命令&lt;/h2&gt;
 
@@ -43,8 +43,8 @@ flush privileges;
     
       <item>
         <title>为PHP设置服务器(Apache/Nginx)环境变量</title>
-        <link>http://yansu.org/2014/05/04/set-environment-variables-of-server-for-php.html</link>
-        <guid isPermaLink="true">http://yansu.org/2014/05/04/set-environment-variables-of-server-for-php.html</guid>
+        <link>http://yogy.cc/2014/05/04/set-environment-variables-of-server-for-php.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/05/04/set-environment-variables-of-server-for-php.html</guid>
         <pubDate>Sun, 04 May 2014 00:00:00 +0800</pubDate>
         <description>&lt;blockquote&gt;
 &lt;p&gt;设置环境变量常见的地方为区分开发环境/生产环境，或者定义一些数据库的帐号密码&lt;/p&gt;
@@ -127,8 +127,8 @@ fastcgi_param MYSQL_PASSWORD &amp;#39;root&amp;#39;;
     
       <item>
         <title>PHP中的魔术方法和魔术常量简介和使用</title>
-        <link>http://yansu.org/2014/04/27/magic-methods-and-magic-constants-in-php.html</link>
-        <guid isPermaLink="true">http://yansu.org/2014/04/27/magic-methods-and-magic-constants-in-php.html</guid>
+        <link>http://yogy.cc/2014/04/27/magic-methods-and-magic-constants-in-php.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/04/27/magic-methods-and-magic-constants-in-php.html</guid>
         <pubDate>Sun, 27 Apr 2014 00:00:00 +0800</pubDate>
         <description>&lt;blockquote&gt;
 &lt;p&gt;有些东西如果不是经常使用，很容易忘记，比如魔术方法和魔术常量。&lt;/p&gt;
@@ -371,8 +371,8 @@ fastcgi_param MYSQL_PASSWORD &amp;#39;root&amp;#39;;
     
       <item>
         <title>ROC曲线</title>
-        <link>http://yansu.org/2014/04/23/roc-curve.html</link>
-        <guid isPermaLink="true">http://yansu.org/2014/04/23/roc-curve.html</guid>
+        <link>http://yogy.cc/2014/04/23/roc-curve.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/04/23/roc-curve.html</guid>
         <pubDate>Wed, 23 Apr 2014 00:00:00 +0800</pubDate>
         <description>&lt;blockquote&gt;
 &lt;p&gt;最近在读的几篇论文中都使用ROC曲线来分析算法的好坏，这里总结一下这个曲线的一些名词和用法。我这里只列举一些很简单的内容，想要掌握详细的用法请移步参考中维基百科链接，那里讲解非常详细。&lt;/p&gt;
@@ -412,8 +412,8 @@ fastcgi_param MYSQL_PASSWORD &amp;#39;root&amp;#39;;
     
       <item>
         <title>设计模式详解及PHP实现：访问者模式</title>
-        <link>http://yansu.org/2014/04/21/visitor-design-pattern.html</link>
-        <guid isPermaLink="true">http://yansu.org/2014/04/21/visitor-design-pattern.html</guid>
+        <link>http://yogy.cc/2014/04/21/visitor-design-pattern.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/04/21/visitor-design-pattern.html</guid>
         <pubDate>Mon, 21 Apr 2014 00:00:00 +0800</pubDate>
         <description>&lt;h2&gt;访问者模式（Visitor pattern）&lt;/h2&gt;
 
@@ -547,8 +547,8 @@ fastcgi_param MYSQL_PASSWORD &amp;#39;root&amp;#39;;
     
       <item>
         <title>设计模式详解及PHP实现：状态模式</title>
-        <link>http://yansu.org/2014/04/21/state-design-pattern.html</link>
-        <guid isPermaLink="true">http://yansu.org/2014/04/21/state-design-pattern.html</guid>
+        <link>http://yogy.cc/2014/04/21/state-design-pattern.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/04/21/state-design-pattern.html</guid>
         <pubDate>Mon, 21 Apr 2014 00:00:00 +0800</pubDate>
         <description>&lt;h2&gt;策略模式（Strategy pattern）&lt;/h2&gt;
 
@@ -652,8 +652,8 @@ fastcgi_param MYSQL_PASSWORD &amp;#39;root&amp;#39;;
     
       <item>
         <title>设计模式详解及PHP实现：备忘录模式</title>
-        <link>http://yansu.org/2014/04/21/memento-design-pattern.html</link>
-        <guid isPermaLink="true">http://yansu.org/2014/04/21/memento-design-pattern.html</guid>
+        <link>http://yogy.cc/2014/04/21/memento-design-pattern.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/04/21/memento-design-pattern.html</guid>
         <pubDate>Mon, 21 Apr 2014 00:00:00 +0800</pubDate>
         <description>&lt;h2&gt;备忘录模式（Memento pattern）&lt;/h2&gt;
 
@@ -763,8 +763,8 @@ fastcgi_param MYSQL_PASSWORD &amp;#39;root&amp;#39;;
     
       <item>
         <title>设计模式详解及PHP实现：中介者模式</title>
-        <link>http://yansu.org/2014/04/21/mediator-design-pattern.html</link>
-        <guid isPermaLink="true">http://yansu.org/2014/04/21/mediator-design-pattern.html</guid>
+        <link>http://yogy.cc/2014/04/21/mediator-design-pattern.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/04/21/mediator-design-pattern.html</guid>
         <pubDate>Mon, 21 Apr 2014 00:00:00 +0800</pubDate>
         <description>&lt;h2&gt;中介者模式（Mediator pattern）&lt;/h2&gt;
 
@@ -838,8 +838,8 @@ fastcgi_param MYSQL_PASSWORD &amp;#39;root&amp;#39;;
     
       <item>
         <title>设计模式详解及PHP实现：迭代器模式</title>
-        <link>http://yansu.org/2014/04/21/iterator-design-pattern.html</link>
-        <guid isPermaLink="true">http://yansu.org/2014/04/21/iterator-design-pattern.html</guid>
+        <link>http://yogy.cc/2014/04/21/iterator-design-pattern.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/04/21/iterator-design-pattern.html</guid>
         <pubDate>Mon, 21 Apr 2014 00:00:00 +0800</pubDate>
         <description>&lt;h2&gt;迭代器模式（Iterator pattern）&lt;/h2&gt;
 
@@ -899,8 +899,8 @@ fastcgi_param MYSQL_PASSWORD &amp;#39;root&amp;#39;;
     
       <item>
         <title>设计模式详解及PHP实现：解释器模式</title>
-        <link>http://yansu.org/2014/04/21/interpreter-design-pattern.html</link>
-        <guid isPermaLink="true">http://yansu.org/2014/04/21/interpreter-design-pattern.html</guid>
+        <link>http://yogy.cc/2014/04/21/interpreter-design-pattern.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/04/21/interpreter-design-pattern.html</guid>
         <pubDate>Mon, 21 Apr 2014 00:00:00 +0800</pubDate>
         <description>&lt;h2&gt;解释器模式（Interpreter pattern）&lt;/h2&gt;
 
@@ -971,8 +971,8 @@ fastcgi_param MYSQL_PASSWORD &amp;#39;root&amp;#39;;
     
       <item>
         <title>设计模式详解及PHP实现：命令模式</title>
-        <link>http://yansu.org/2014/04/21/command-design-pattern.html</link>
-        <guid isPermaLink="true">http://yansu.org/2014/04/21/command-design-pattern.html</guid>
+        <link>http://yogy.cc/2014/04/21/command-design-pattern.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/04/21/command-design-pattern.html</guid>
         <pubDate>Mon, 21 Apr 2014 00:00:00 +0800</pubDate>
         <description>&lt;h2&gt;命令模式（Command pattern）&lt;/h2&gt;
 
@@ -1073,8 +1073,8 @@ fastcgi_param MYSQL_PASSWORD &amp;#39;root&amp;#39;;
     
       <item>
         <title>设计模式详解及PHP实现：责任链模式</title>
-        <link>http://yansu.org/2014/04/21/chain-of-responsibility-design-pattern.html</link>
-        <guid isPermaLink="true">http://yansu.org/2014/04/21/chain-of-responsibility-design-pattern.html</guid>
+        <link>http://yogy.cc/2014/04/21/chain-of-responsibility-design-pattern.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/04/21/chain-of-responsibility-design-pattern.html</guid>
         <pubDate>Mon, 21 Apr 2014 00:00:00 +0800</pubDate>
         <description>&lt;h2&gt;责任链模式（Chain of responsibility pattern）&lt;/h2&gt;
 
@@ -1134,8 +1134,8 @@ fastcgi_param MYSQL_PASSWORD &amp;#39;root&amp;#39;;
     
       <item>
         <title>设计模式详解及PHP实现：模板方法模式</title>
-        <link>http://yansu.org/2014/04/20/template-method-design-pattern.html</link>
-        <guid isPermaLink="true">http://yansu.org/2014/04/20/template-method-design-pattern.html</guid>
+        <link>http://yogy.cc/2014/04/20/template-method-design-pattern.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/04/20/template-method-design-pattern.html</guid>
         <pubDate>Sun, 20 Apr 2014 00:00:00 +0800</pubDate>
         <description>&lt;h2&gt;模板方法模式（Template method pattern）&lt;/h2&gt;
 
@@ -1200,8 +1200,8 @@ fastcgi_param MYSQL_PASSWORD &amp;#39;root&amp;#39;;
     
       <item>
         <title>设计模式详解及PHP实现：策略模式</title>
-        <link>http://yansu.org/2014/04/20/strategy-design-pattern.html</link>
-        <guid isPermaLink="true">http://yansu.org/2014/04/20/strategy-design-pattern.html</guid>
+        <link>http://yogy.cc/2014/04/20/strategy-design-pattern.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/04/20/strategy-design-pattern.html</guid>
         <pubDate>Sun, 20 Apr 2014 00:00:00 +0800</pubDate>
         <description>&lt;h2&gt;策略模式（Strategy pattern）&lt;/h2&gt;
 
@@ -1300,8 +1300,8 @@ fastcgi_param MYSQL_PASSWORD &amp;#39;root&amp;#39;;
     
       <item>
         <title>设计模式详解及PHP实现：代理模式</title>
-        <link>http://yansu.org/2014/04/20/proxy-design-pattern.html</link>
-        <guid isPermaLink="true">http://yansu.org/2014/04/20/proxy-design-pattern.html</guid>
+        <link>http://yogy.cc/2014/04/20/proxy-design-pattern.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/04/20/proxy-design-pattern.html</guid>
         <pubDate>Sun, 20 Apr 2014 00:00:00 +0800</pubDate>
         <description>&lt;h2&gt;代理模式（Proxy pattern）&lt;/h2&gt;
 
@@ -1371,8 +1371,8 @@ fastcgi_param MYSQL_PASSWORD &amp;#39;root&amp;#39;;
     
       <item>
         <title>设计模式详解及PHP实现：原型模式</title>
-        <link>http://yansu.org/2014/04/20/prototype-design-pattern.html</link>
-        <guid isPermaLink="true">http://yansu.org/2014/04/20/prototype-design-pattern.html</guid>
+        <link>http://yogy.cc/2014/04/20/prototype-design-pattern.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/04/20/prototype-design-pattern.html</guid>
         <pubDate>Sun, 20 Apr 2014 00:00:00 +0800</pubDate>
         <description>&lt;h2&gt;原型模式（Prototype pattern）&lt;/h2&gt;
 
@@ -1446,8 +1446,8 @@ fastcgi_param MYSQL_PASSWORD &amp;#39;root&amp;#39;;
     
       <item>
         <title>设计模式详解及PHP实现：观察着模式</title>
-        <link>http://yansu.org/2014/04/20/observer-design-pattern.html</link>
-        <guid isPermaLink="true">http://yansu.org/2014/04/20/observer-design-pattern.html</guid>
+        <link>http://yogy.cc/2014/04/20/observer-design-pattern.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/04/20/observer-design-pattern.html</guid>
         <pubDate>Sun, 20 Apr 2014 00:00:00 +0800</pubDate>
         <description>&lt;h2&gt;观察者模式（Observer pattern）&lt;/h2&gt;
 
@@ -1561,8 +1561,8 @@ fastcgi_param MYSQL_PASSWORD &amp;#39;root&amp;#39;;
     
       <item>
         <title>设计模式详解及PHP实现：享元模式</title>
-        <link>http://yansu.org/2014/04/20/flyweight-design-pattern.html</link>
-        <guid isPermaLink="true">http://yansu.org/2014/04/20/flyweight-design-pattern.html</guid>
+        <link>http://yogy.cc/2014/04/20/flyweight-design-pattern.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/04/20/flyweight-design-pattern.html</guid>
         <pubDate>Sun, 20 Apr 2014 00:00:00 +0800</pubDate>
         <description>&lt;h2&gt;享元模式（Flyweight Pattern）&lt;/h2&gt;
 
@@ -1668,8 +1668,8 @@ fastcgi_param MYSQL_PASSWORD &amp;#39;root&amp;#39;;
     
       <item>
         <title>设计模式详解及PHP实现：门面模式</title>
-        <link>http://yansu.org/2014/04/20/facade-design-pattern.html</link>
-        <guid isPermaLink="true">http://yansu.org/2014/04/20/facade-design-pattern.html</guid>
+        <link>http://yogy.cc/2014/04/20/facade-design-pattern.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/04/20/facade-design-pattern.html</guid>
         <pubDate>Sun, 20 Apr 2014 00:00:00 +0800</pubDate>
         <description>&lt;h2&gt;门面模式（Facade pattern）&lt;/h2&gt;
 
@@ -1804,8 +1804,8 @@ fastcgi_param MYSQL_PASSWORD &amp;#39;root&amp;#39;;
     
       <item>
         <title>设计模式详解及PHP实现：装饰器模式</title>
-        <link>http://yansu.org/2014/04/20/decorator-design-pattern.html</link>
-        <guid isPermaLink="true">http://yansu.org/2014/04/20/decorator-design-pattern.html</guid>
+        <link>http://yogy.cc/2014/04/20/decorator-design-pattern.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/04/20/decorator-design-pattern.html</guid>
         <pubDate>Sun, 20 Apr 2014 00:00:00 +0800</pubDate>
         <description>&lt;h2&gt;装饰器模式（Decorator pattern）&lt;/h2&gt;
 
