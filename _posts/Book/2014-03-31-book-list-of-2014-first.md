@@ -28,7 +28,7 @@ books:
       publisher: 电子工业出版社
       language: 中文
       link: http://book.douban.com/subject/10433737/
-      cover: http:http://img5.douban.com/mpic/s7042137.jpg
+      cover: http://img5.douban.com/mpic/s7042137.jpg
       description: Metasploit平台的渗透测试入门
 
     - title: Metasploit渗透测试魔鬼训练营
