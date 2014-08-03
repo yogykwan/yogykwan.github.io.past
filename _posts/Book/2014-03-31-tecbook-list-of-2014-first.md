@@ -1,8 +1,8 @@
 ---
 layout: book
-title: 2014上半年阅读书单
+title: 2014上半年技术书单
 category: 读书
-keywords: 阅读,书单,2014上半年
+keywords: 技术,书单,2014上
 books: 
     - title: 数学之美
       status: 已读
