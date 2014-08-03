@@ -28,7 +28,7 @@ books:
       publisher: 三联书店
       language: 中文
       link: http://www.99csw.com/book/2619/index.htm
-      cover: http://img3.douban.com/mpic/s1068075.jpg
+      cover: http://img3.douban.com/lpic/s1068075.jpg
       description:
       
     - title: Fifty Great Short Stories
