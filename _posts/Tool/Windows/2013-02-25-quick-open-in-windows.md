@@ -1,12 +1,12 @@
 ---
 layout: post
-title: win7快速打开应用程序或文件
+title: Windows快速打开应用程序或文件
 category: 工具
 tags: Windows
-description: windows下打开文件或应用程序经常需要手点，作为键盘控肯定是不能忍受的。之前试过一些软件，设置各个程序的快捷键，但是快捷键可能会有冲突，而且记性不好实在不好用，所以选择使用Win自带的“运行”来加快打开速度
+description: Windows下打开文件或应用程序经常需要手点，作为键盘控肯定是不能忍受的。之前试过一些软件，设置各个程序的快捷键，但是快捷键可能会有冲突，而且记性不好实在不好用，所以选择使用Windows自带的“运行”来加快打开速度
 ---
 
-Win7下打开“运行”的快捷键是 Win+R
+Windows下打开“运行”的快捷键是 Win+R
 
 ## 打开系统命令
 windows的“运行”功能本来就是帮助用户快速打开程序的，不过其支持的主要是系统的一些程序，大致如下(来自网络，有一部分失效或无法打开)：
@@ -87,7 +87,7 @@ windows的“运行”功能本来就是帮助用户快速打开程序的，不�
 
     notepad %systemroot%\system32\drivers\etc\hosts
 
-%systemroot%是window内自带的变量，即指向了C:\Windows,其他一些常用变量如：
+%systemroot%是windows内自带的变量，即指向了C:\Windows,其他一些常用变量如：
 
     %HOMEDRIVE% = C:\          当前启动的系统的所在分区 
     %SystemRoot% = C:\WINDOWS          当前启动的系统的所在目录 
