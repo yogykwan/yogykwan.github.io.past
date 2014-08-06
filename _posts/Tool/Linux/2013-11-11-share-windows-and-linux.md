@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Windows和Linux切换最终解决方案
+title: 配置Windows和Linux双系统
 category: 工具
 tags: [Windows , Linux]
 description: Windows和Linux共存
