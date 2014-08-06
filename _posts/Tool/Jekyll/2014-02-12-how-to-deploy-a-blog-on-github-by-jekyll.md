@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 在Github上搭建Jekyll博客和创建主题
+title: 在GitHub上搭建Jekyll博客和创建主题
 category: 工具
 tags: [Jekyll,Git]
 keywords: Jekyll,Github Pages
@@ -167,7 +167,7 @@ layout: base
       {\{ content }}
     </div>
     <hr>
-    {\% include disqus.html %}
+    {% include disqus.html %}
   </div>
 </div>
 ```
@@ -268,7 +268,7 @@ git push
 
 另外一些特别的功能，比如三栏、评论、谷歌分析，这些都不难，相信你稍微打开Github读一下这个主题的代码就很快明白了。
 
-代码地址戳[这里][6]
+代码地址戳[这里][6]。
 
 [2]: http://jekyllrb.com/docs/structure/
 [3]: http://jekyllrb.com/docs/templates/
