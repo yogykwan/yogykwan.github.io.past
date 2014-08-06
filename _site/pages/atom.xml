@@ -6,6 +6,14 @@
     <description>Yogy's Blog</description>
     
       <item>
+        <title>2014下半年技术书单</title>
+        <link>http://yogy.cc/2014/08/03/tecbook-list-of-2014-second.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/08/03/tecbook-list-of-2014-second.html</guid>
+        <pubDate>Sun, 03 Aug 2014 00:00:00 +0800</pubDate>
+        <description></description>
+      </item>
+    
+      <item>
         <title>2014上半年个人总结</title>
         <link>http://yogy.cc/2014/08/03/my-2014-first.html</link>
         <guid isPermaLink="true">http://yogy.cc/2014/08/03/my-2014-first.html</guid>
@@ -37,9 +45,9 @@
       </item>
     
       <item>
-        <title>2014下半年阅读书单</title>
-        <link>http://yogy.cc/2014/08/03/book-list-of-2014-second.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/08/03/book-list-of-2014-second.html</guid>
+        <title>2014下半年文学书单</title>
+        <link>http://yogy.cc/2014/08/03/litbook-list-of-2014-second.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/08/03/litbook-list-of-2014-second.html</guid>
         <pubDate>Sun, 03 Aug 2014 00:00:00 +0800</pubDate>
         <description></description>
       </item>
@@ -565,9 +573,17 @@ fastcgi_param MYSQL_PASSWORD &amp;#39;root&amp;#39;;
       </item>
     
       <item>
-        <title>2014上半年阅读书单</title>
-        <link>http://yogy.cc/2014/03/31/book-list-of-2014-first.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/03/31/book-list-of-2014-first.html</guid>
+        <title>2014上半年技术书单</title>
+        <link>http://yogy.cc/2014/03/31/tecbook-list-of-2014-first.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/03/31/tecbook-list-of-2014-first.html</guid>
+        <pubDate>Mon, 31 Mar 2014 00:00:00 +0800</pubDate>
+        <description></description>
+      </item>
+    
+      <item>
+        <title>2014上半年文学书单</title>
+        <link>http://yogy.cc/2014/03/31/litbook-list-of-2014-first.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/03/31/litbook-list-of-2014-first.html</guid>
         <pubDate>Mon, 31 Mar 2014 00:00:00 +0800</pubDate>
         <description></description>
       </item>
@@ -577,12 +593,29 @@ fastcgi_param MYSQL_PASSWORD &amp;#39;root&amp;#39;;
         <link>http://yogy.cc/2014/02/12/how-to-deploy-a-blog-on-github-by-jekyll.html</link>
         <guid isPermaLink="true">http://yogy.cc/2014/02/12/how-to-deploy-a-blog-on-github-by-jekyll.html</guid>
         <pubDate>Wed, 12 Feb 2014 00:00:00 +0800</pubDate>
-        <description>&lt;blockquote&gt;
-&lt;p&gt;之前本来想展开写的，后来发现Jekyll官网的教程已经非常完善了就没有多写，所以只有&lt;a href=&quot;/2013/04/23/step-by-step-of-jeklly-blog(1).html&quot;&gt;这篇&lt;/a&gt;。
-但是过了这么久，发现很多人还是不清楚怎么搭建，所以这里打算详细写一下，并且把自己对图片的解决方案以及主题的创建步骤也一并写下。&lt;/p&gt;
+        <description>&lt;h2&gt;简单介绍&lt;/h2&gt;
 
-&lt;p&gt;本篇主要谈如何搭建，不再讲为什么用它们。&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;h3&gt;GitHub&lt;/h3&gt;
+
+&lt;p&gt;GitHub不用多说，应该大家都知道，托管库的，上&lt;a href=&quot;www.github.com&quot;&gt;GitHub官网&lt;/a&gt;一看就知道。&lt;/p&gt;
+
+&lt;h3&gt;Jekyll&lt;/h3&gt;
+
+&lt;p&gt;Jekyll是一个简单的用来生成静态页面的工具，不光能生成博客。&lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;项目位置&lt;/a&gt;，&lt;a href=&quot;https://github.com/mojombo/jekyll/wiki&quot;&gt;项目Wiki&lt;/a&gt;。&lt;/p&gt;
+
+&lt;h3&gt;组合原因&lt;/h3&gt;
+
+&lt;p&gt;GitHub托管项目是不提供服务端语言和数据库的，但是它支持静态页面的访问的，所以需要用Jekyll来将博客弄成静态的。&lt;/p&gt;
+
+&lt;h3&gt;步骤概述&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;写&lt;a href=&quot;http://wowubuntu.com/markdown/&quot;&gt;Markdown&lt;/a&gt;或html页面&lt;/li&gt;
+&lt;li&gt;按照一定的目录整理&lt;/li&gt;
+&lt;li&gt;用&lt;code&gt;git push&lt;/code&gt;提交到GitHub上，生成博客。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;整个过程几乎没有多余的步骤，对于经常用键盘的人来说，再好不过了&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;说明：本篇用到的代码中，为了防止解析冲突，一律多了&lt;code&gt;\&lt;/code&gt;这个来防止被误解析&lt;/strong&gt;&lt;/p&gt;
 
@@ -638,10 +671,10 @@ fastcgi_param MYSQL_PASSWORD &amp;#39;root&amp;#39;;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;permalink: /:year/:month/:day/:title.html   #博文的固定链接
 paginate: 10                                #分页时每页博文数量
 author:                                     #自定义常亮
-  name: 闫肃
-  email: yansu0711@gmail.com
-  link: http://yansu.org
-title: 闫肃的博客                             #自定义常量
+  name: Yogy
+  email: jingg.cxy@gmail.com
+  link: http://yogy.cc
+title: &amp;quot;NULL&amp;quot;                            #自定义常量
 locals:                                     #自定义常量
   tags: 标签
   about: 关于
@@ -654,7 +687,7 @@ markdown: redcarpet                         #markdown解释器
 &lt;h3&gt;域名配置&lt;/h3&gt;
 
 &lt;p&gt;&lt;code&gt;CNAME&lt;/code&gt;这个文件写明了这个站点的域名，如果不喜欢&lt;code&gt;username.github.io&lt;/code&gt;的话，可以像我一样改掉&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;yansu.org
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;yogy.cc
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;改法只要在这个文件中写入域名就可以了。不过你需要去域名服务商那里设定域名解析规则。&lt;/p&gt;
 
@@ -673,9 +706,9 @@ _drafts/
 
 &lt;p&gt;在上述这些文件中，必须先定义一些配置项，例如这篇博客的md文件中，开头是这样的：&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;layout: post                                   #这个博客的布局文件
-title: 在Github上搭建自己的Jekyll博客             #博客标题
-category: 工具                                  #博客分类
-tags: Jekyll                                   #博客标签
+title: 在Github上搭建Jekyll博客和创建主题             #博客标题
+category: 工具                                          #博客分类
+tags: [Jekyll，Git]                            #博客标签
 keywords: Jekyll,Github                        #自定义常量
 description:                                   #自定义常量
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
@@ -763,7 +796,7 @@ title: 首页
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;{\{ page.title }} | {\{ site.title }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;author&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Yogy&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
 {\% if page.keywords %}
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;keywords&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Jekyll,Github&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+  &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;keywords&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Jekyll,Github Pages&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
 {\% endif %}
 {\% if page.description  %}
   &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;description &amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
@@ -785,18 +818,6 @@ title: 首页
 
 &lt;p&gt;图片我都放在了&lt;code&gt;/public/upload&lt;/code&gt;下，所以我在插入图片的时候只要用&lt;code&gt;![xxx](/public/upload/xxx)&lt;/code&gt;就可以了。&lt;/p&gt;
 
-&lt;h3&gt;方便的图片导入&lt;/h3&gt;
-
-&lt;p&gt;导入图片的方式是我将&lt;code&gt;upload&lt;/code&gt;文件夹做了个软连接，放到mac的dock上就行了，有图片要用的时候直接往里面一拖。&lt;/p&gt;
-
-&lt;h3&gt;方便的截图&lt;/h3&gt;
-
-&lt;p&gt;很多时候图片都是现截取的，比如用QQ的截图工具，或者系统的截图工具，但是他们截取完都存放在了&lt;code&gt;user/Pictures&lt;/code&gt;里面，来回移动太累了。我这里介绍一个Mac下的一个工具——Trickster，看图&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/public/upload/trickster-move-picture.png&quot; alt=&quot;移动图片&quot;&gt;&lt;/p&gt;
-
-&lt;p&gt;这个工具可以看到刚刚修改过的图片，而且还有一个收藏的文件夹，我每次截取完图以后，从左边往右边一拖，然后在markdown中就可以继续书写了。一点都不耗时。&lt;/p&gt;
-
 &lt;h2&gt;本地预览及提交&lt;/h2&gt;
 
 &lt;p&gt;本地预览自己的修改很容易，只要进入&lt;code&gt;username.github.io&lt;/code&gt;目录，执行&lt;/p&gt;
@@ -815,7 +836,7 @@ git push
 
 &lt;p&gt;另外一些特别的功能，比如三栏、评论、谷歌分析，这些都不难，相信你稍微打开Github读一下这个主题的代码就很快明白了。&lt;/p&gt;
 
-&lt;p&gt;代码地址戳&lt;a href=&quot;https://github.com/suyan/suyan.github.io&quot;&gt;这里&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;代码地址戳&lt;a href=&quot;https://github.com/yogykwan/yogykwan.github.io&quot;&gt;这里&lt;/a&gt;&lt;/p&gt;
 </description>
       </item>
     
@@ -1626,89 +1647,6 @@ a = decodeURI(en);    //解码
 function htmlDecode(value){
   return $(&amp;#39;&amp;lt;div/&amp;gt;&amp;#39;).html(value).text();
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-      </item>
-    
-      <item>
-        <title>HTML 常用资源</title>
-        <link>http://yogy.cc/2014/01/15/general-html-resources.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/01/15/general-html-resources.html</guid>
-        <pubDate>Wed, 15 Jan 2014 00:00:00 +0800</pubDate>
-        <description>&lt;h2&gt;常用属性&lt;/h2&gt;
-
-&lt;h3&gt;在link中可能会出现media=screen的情况&lt;/h3&gt;
-
-&lt;p&gt;这个属性是确定在哪种情况下使用这个link的css文件，screen是指输出到屏幕，而print用于打印&lt;/p&gt;
-
-&lt;h3&gt;在meta中增加viewport选项&lt;/h3&gt;
-
-&lt;p&gt;viewport的作用是告诉浏览器，目前的装置情况。&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width;initial-scale=1.0&amp;quot;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;ul&gt;
-&lt;li&gt;width:数字或device-width   设置宽度&lt;/li&gt;
-&lt;li&gt;height:数字或device-width    设置高度&lt;/li&gt;
-&lt;li&gt;initial-scale:最小0.25，最大5   初始缩放&lt;/li&gt;
-&lt;li&gt;minimum-scale:最小0.25，最大5   最小缩放&lt;/li&gt;
-&lt;li&gt;maximum-scale:最小0.25，最大5   最大缩放&lt;/li&gt;
-&lt;li&gt;user-scalable:1或0(yes or no)  是否允许用户缩放&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      </item>
-    
-      <item>
-        <title>Git 常用资源</title>
-        <link>http://yogy.cc/2014/01/15/general-git-resources.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/01/15/general-git-resources.html</guid>
-        <pubDate>Wed, 15 Jan 2014 00:00:00 +0800</pubDate>
-        <description>&lt;h2&gt;Git常用操作&lt;/h2&gt;
-
-&lt;h3&gt;查看历史&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git log --pretty=oneline filename // 一行显示
-git show xxxx // 查看某次修改
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;创建分支&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git branch develop // 只创建分支
-git checkout -b master develop // 创建并切换到 develop 分支
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;合并分支&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git checkout master // 切换到主分支
-git merge --no-ff develop // 把 develop 合并到 master 分支，no-ff 选项的作用是保留原分支记录
-git rebase develop // 合并分支
-git branch -d develop // 删除 develop 分支
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;标签功能&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git tag // 显示所有标签
-git tag -l &amp;#39;v1.4.2.*&amp;#39; // 显示 1.4.2 开头标签
-git tag v1.3 // 简单打标签   
-git tag -a v1.2 9fceb02 // 后期加注标签
-git tag -a v1.4 -m &amp;#39;my version 1.4&amp;#39; // 增加标签并注释， -a 为 annotated 缩写
-git show v1.4 // 查看某一标签详情
-git push origin v1.5 // 分享某个标签
-git push origin --tags // 分享所有标签
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;回滚操作&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;reset --hard v0.1
-reflog
-reset --hard v0.2
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;取消某个文件的修改&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git checkout -- &amp;lt;filename&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;删除文件&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git rm &amp;lt;filename&amp;gt;   直接删除文件
-git rm --cached &amp;lt;filename&amp;gt;    删除文件暂存状态
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;移动文件&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git mv &amp;lt;sourcefile&amp;gt; &amp;lt;destfile&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;查看文件更新&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git diff              查看未暂存的文件更新 
-git diff --cached     查看已暂存文件的更新 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;克隆远程分支&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git branch -r
-git checkout origin/android
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
       </item>
     

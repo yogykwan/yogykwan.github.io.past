@@ -2,15 +2,29 @@
 layout: post
 title: 在Github上搭建Jekyll博客和创建主题
 category: 工具
-tags: Jekyll
-keywords: Jekyll,Github
+tags: [Jekyll,Git]
+keywords: Jekyll,Github Pages
 description: 
 ---
 
-> 之前本来想展开写的，后来发现Jekyll官网的教程已经非常完善了就没有多写，所以只有[这篇][1]。
-> 但是过了这么久，发现很多人还是不清楚怎么搭建，所以这里打算详细写一下，并且把自己对图片的解决方案以及主题的创建步骤也一并写下。
-> 
-> 本篇主要谈如何搭建，不再讲为什么用它们。
+## 简单介绍
+
+### GitHub
+GitHub不用多说，应该大家都知道，托管库的，上[GitHub官网](www.github.com)一看就知道。
+
+### Jekyll
+Jekyll是一个简单的用来生成静态页面的工具，不光能生成博客。[项目位置](https://github.com/mojombo/jekyll)，[项目Wiki](https://github.com/mojombo/jekyll/wiki)。
+
+### 组合原因
+GitHub托管项目是不提供服务端语言和数据库的，但是它支持静态页面的访问的，所以需要用Jekyll来将博客弄成静态的。
+
+### 步骤概述
+
+- 写[Markdown](http://wowubuntu.com/markdown/)或html页面
+- 按照一定的目录整理
+- 用`git push`提交到GitHub上，生成博客。
+
+整个过程几乎没有多余的步骤，对于经常用键盘的人来说，再好不过了
 
 __说明：本篇用到的代码中，为了防止解析冲突，一律多了`\`这个来防止被误解析__
 
@@ -69,10 +83,10 @@ __说明：本篇用到的代码中，为了防止解析冲突，一律多了`\`
 permalink: /:year/:month/:day/:title.html   #博文的固定链接
 paginate: 10                                #分页时每页博文数量
 author:                                     #自定义常亮
-  name: 闫肃
-  email: yansu0711@gmail.com
-  link: http://yansu.org
-title: 闫肃的博客                             #自定义常量
+  name: Yogy
+  email: jingg.cxy@gmail.com
+  link: http://yogy.cc
+title: "NULL"                            #自定义常量
 locals:                                     #自定义常量
   tags: 标签
   about: 关于
@@ -87,7 +101,7 @@ markdown: redcarpet                         #markdown解释器
 `CNAME`这个文件写明了这个站点的域名，如果不喜欢`username.github.io`的话，可以像我一样改掉
 
 ```
-yansu.org
+yogy.cc
 ```
 
 改法只要在这个文件中写入域名就可以了。不过你需要去域名服务商那里设定域名解析规则。
@@ -112,9 +126,9 @@ _drafts/
 ```
 
 layout: post                                   #这个博客的布局文件
-title: 在Github上搭建自己的Jekyll博客             #博客标题
-category: 工具                                  #博客分类
-tags: Jekyll                                   #博客标签
+title: 在Github上搭建Jekyll博客和创建主题             #博客标题
+category: 工具                                          #博客分类
+tags: [Jekyll，Git]                            #博客标签
 keywords: Jekyll,Github                        #自定义常量
 description:                                   #自定义常量
 
@@ -132,7 +146,7 @@ description:                                   #自定义常量
 - `index.html` 站点的首页，整个站的入口文件
 - `sitemap.txt` 给搜索引擎看的，如何爬取这个站
 
-## 创建自己的主题
+## 创建主题
 上面讲了如何布局好站内文件结构，接下来主要就是如何创建一个自己的主题了。
 
 布局文件是整个主题最重要的文件，这些文件告诉Jekyll如何去形成一个html页面。
@@ -232,16 +246,6 @@ title: 首页
 ### 图片统一存放
 图片我都放在了`/public/upload`下，所以我在插入图片的时候只要用`![xxx](/public/upload/xxx)`就可以了。
 
-### 方便的图片导入
-导入图片的方式是我将`upload`文件夹做了个软连接，放到mac的dock上就行了，有图片要用的时候直接往里面一拖。
-
-### 方便的截图
-很多时候图片都是现截取的，比如用QQ的截图工具，或者系统的截图工具，但是他们截取完都存放在了`user/Pictures`里面，来回移动太累了。我这里介绍一个Mac下的一个工具——Trickster，看图
-
-![移动图片](/public/upload/trickster-move-picture.png)
-
-这个工具可以看到刚刚修改过的图片，而且还有一个收藏的文件夹，我每次截取完图以后，从左边往右边一拖，然后在markdown中就可以继续书写了。一点都不耗时。
-
 ## 本地预览及提交
 本地预览自己的修改很容易，只要进入`username.github.io`目录，执行
 
@@ -266,9 +270,8 @@ git push
 
 代码地址戳[这里][6]
 
-[1]: /2013/04/23/step-by-step-of-jeklly-blog(1).html
 [2]: http://jekyllrb.com/docs/structure/
 [3]: http://jekyllrb.com/docs/templates/
 [4]: http://docs.shopify.com/themes/liquid-basics
 [5]: http://jekyllrb.com/docs/variables/
-[6]: https://github.com/suyan/suyan.github.io
+[6]: https://github.com/yogykwan/yogykwan.github.io

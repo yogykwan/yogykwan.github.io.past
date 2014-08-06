@@ -2,10 +2,10 @@
 <html>
 <head>
   <meta charset="utf-8">
-<title>Shell 常用资源 | NULL</title>
+<title>2014下半年技术书单 | NULL</title>
 <meta name="author" content="Yogy">
 
-  <meta name="keywords" content="Shell">
+  <meta name="keywords" content="技术,书单,2014下">
 
 
 <link rel="shortcut icon" href="/public/upload/gavatar/favicon.ico" />
@@ -863,109 +863,260 @@ var duoshuoQuery = {short_name:"yogy"};
             <div class="row">
   <div class="col-md-12 aside3-title">
     <br>
-    <h2 id="#identifier">Shell 常用资源</h2>
-    2014年01月15日
+    <h2 id="#identifier">2014下半年技术书单</h2>
   </div>
   <div class="col-md-12 aside3-content">
-    <hr>
+    <br />
     <div id="content">
-      <h2>常用指令</h2>
-
-<h3>文本内容搜索</h3>
-<div class="highlight"><pre><code class="language-text" data-lang="text">grep aaa * 
-</code></pre></div>
-<h3>文件夹操作</h3>
-<div class="highlight"><pre><code class="language-text" data-lang="text">查看文件夹大小   du -h --max-depth=1 /home/ys
-查看驱动器空间   df -h 
-</code></pre></div>
-<h3>压缩命令</h3>
-<div class="highlight"><pre><code class="language-text" data-lang="text">tar zxvf aaa.tar.gz
-tar zcvf aaa.tar.gz aaa
-</code></pre></div>
-<h3>登陆到其他用户</h3>
-<div class="highlight"><pre><code class="language-text" data-lang="text">login
-</code></pre></div>
-<h3>查看端口的占用</h3>
-<div class="highlight"><pre><code class="language-text" data-lang="text">lsof -i:8087  查看8087端口的使用
-</code></pre></div>
-<h3>批量杀死进程</h3>
-<div class="highlight"><pre><code class="language-text" data-lang="text">ps -aux|grep name|grep -v grep|cut -c 9-15|xargs kill -9
-</code></pre></div>
-<h3>查看当前时间</h3>
-<div class="highlight"><pre><code class="language-text" data-lang="text">date       时间
-date +%s   时间戳
-date -d &quot;2010-07-20 10:25:30&quot; +%s  指定时间时间戳
-date -d &quot;@1279592730&quot;    时间戳转时间
-date -d &quot;1970-01-01 14781 days&quot; &quot;+%Y/%m/%d %H:%M:%S&quot; 
-</code></pre></div>
-<h3>查看进程内存使用情况</h3>
-<div class="highlight"><pre><code class="language-text" data-lang="text">top -d 1 -p pid [,pid ...]
-pmap pid 
-ps aux|grep process_name
-查看/proc/process_id/文件夹下的status文件
-</code></pre></div>
-<h3>查看Linux内核版本或发布版本</h3>
-<div class="highlight"><pre><code class="language-text" data-lang="text">lsb_release -a
-uname -a
-</code></pre></div>
-<h3>一句话实现一个HTTP服务，把当前文件夹作为根目录</h3>
-<div class="highlight"><pre><code class="language-text" data-lang="text">python -m SimpleHTTPServer
-</code></pre></div>
-<h3>查看本地网络服务活动状态</h3>
-<div class="highlight"><pre><code class="language-text" data-lang="text">lsof -i
-</code></pre></div>
-<h3>查看自己的外网ip</h3>
-<div class="highlight"><pre><code class="language-text" data-lang="text">curl ifconfig.me
-</code></pre></div>
-<h3>下载整个网站</h3>
-<div class="highlight"><pre><code class="language-text" data-lang="text">wget --random-wait -r -p -e robots=off -U mozilla http://www.example.com
-</code></pre></div>
-<h3>后台运行一段不中止的程序，并可随时查看它的状态</h3>
-<div class="highlight"><pre><code class="language-text" data-lang="text">screen -d -m -S some_ name ping my_router
-</code></pre></div>
-<h3>查看进程执行的时间</h3>
-<div class="highlight"><pre><code class="language-text" data-lang="text">ps -A -opid,stime,etime,args | grep python
-</code></pre></div>
-<h3>创建守护进程</h3>
-<div class="highlight"><pre><code class="language-text" data-lang="text">nohup python /var/www/a.py &amp;
-</code></pre></div>
-<h3>查看当前文件夹下文件（文件夹）大小</h3>
-<div class="highlight"><pre><code class="language-text" data-lang="text">du -h --max-depth=1 .
-</code></pre></div>
-<h3>查看所有磁盘大小</h3>
-<div class="highlight"><pre><code class="language-text" data-lang="text">df -h
-</code></pre></div>
-<h3>诊断网络</h3>
-<div class="highlight"><pre><code class="language-text" data-lang="text">mtr 
-ping
-traceroute
-dig
-</code></pre></div>
-<h3>列出本机监听的端口号</h3>
-<div class="highlight"><pre><code class="language-text" data-lang="text">netstat –tlnp
-netstat -anop
-</code></pre></div>
-<h3>在远程机器上运行一段脚本</h3>
-<div class="highlight"><pre><code class="language-text" data-lang="text">ssh user@server bash &lt; /path/to/local/script.sh
-</code></pre></div>
-<h3>端口扫描</h3>
-<div class="highlight"><pre><code class="language-text" data-lang="text">nc -z -v -n 127.0.0.1 20-100
-</code></pre></div>
-<h3>负载测试，30秒内向Google发起20个并发连接</h3>
-<div class="highlight"><pre><code class="language-text" data-lang="text">siege -c20 www.google.co.uk -b -t30s
-</code></pre></div>
+      
+    </div>
+    <br />
+    <div class="row">
+      
+        <div class="col-md-12">
+          <div class="panel panel-primary">
+            <div class="panel-heading">Web前端黑客技术揭秘</div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-4 col-xs-12 center">
+                  <img src="http://img3.douban.com/lpic/s24562945.jpg" alt="cover" class="img-thumbnail">
+                </div>
+                <div class="col-md-8 col-xs-12">
+                  <table class="table table-bordered">
+                    <tbody>
+                      <tr><td style="width:80px;">作者</td><td>钟晨鸣/徐少培</td></tr>
+                      <tr><td>出版商</td><td>电子工业出版社</td></tr>
+                      <tr><td>语言</td><td>中文</td></tr>
+                      <tr>
+                        <td>链接</td><td>
+                        <a href="http://book.douban.com/subject/20451827/" title="http://book.douban.com/subject/20451827/">图书链接</a>
+                      </td></tr>
+                      <tr>
+                        <td>状态</td>
+                        <td>
+                          
+                            <span class="label label-info">在读</span>
+                          
+                        </td></tr>
+                      <tr><td>评论</td><td></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>  
+            </div>
+          </div>      
+        </div>
+      
+        <div class="col-md-12">
+          <div class="panel panel-primary">
+            <div class="panel-heading">计算机组成原理</div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-4 col-xs-12 center">
+                  <img src="http://img3.douban.com/lpic/s4411273.jpg" alt="cover" class="img-thumbnail">
+                </div>
+                <div class="col-md-8 col-xs-12">
+                  <table class="table table-bordered">
+                    <tbody>
+                      <tr><td style="width:80px;">作者</td><td>唐朔飞</td></tr>
+                      <tr><td>出版商</td><td>高等教育出版社</td></tr>
+                      <tr><td>语言</td><td>中文</td></tr>
+                      <tr>
+                        <td>链接</td><td>
+                        <a href="http://book.douban.com/subject/2994636/" title="http://book.douban.com/subject/2994636/">图书链接</a>
+                      </td></tr>
+                      <tr>
+                        <td>状态</td>
+                        <td>
+                          
+                            <span class="label label-info">在读</span>
+                          
+                        </td></tr>
+                      <tr><td>评论</td><td></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>  
+            </div>
+          </div>      
+        </div>
+      
+        <div class="col-md-12">
+          <div class="panel panel-primary">
+            <div class="panel-heading">计算机网络</div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-4 col-xs-12 center">
+                  <img src="http://img3.douban.com/lpic/s3296854.jpg" alt="cover" class="img-thumbnail">
+                </div>
+                <div class="col-md-8 col-xs-12">
+                  <table class="table table-bordered">
+                    <tbody>
+                      <tr><td style="width:80px;">作者</td><td>谢希仁</td></tr>
+                      <tr><td>出版商</td><td>高等教育出版社</td></tr>
+                      <tr><td>语言</td><td>中文</td></tr>
+                      <tr>
+                        <td>链接</td><td>
+                        <a href="http://book.douban.com/subject/2970300/" title="http://book.douban.com/subject/2970300/">图书链接</a>
+                      </td></tr>
+                      <tr>
+                        <td>状态</td>
+                        <td>
+                          
+                            <span class="label label-info">在读</span>
+                          
+                        </td></tr>
+                      <tr><td>评论</td><td></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>  
+            </div>
+          </div>      
+        </div>
+      
+        <div class="col-md-12">
+          <div class="panel panel-primary">
+            <div class="panel-heading">计算机操作系统</div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-4 col-xs-12 center">
+                  <img src="/public/upload/book/operation-system.jpg" alt="cover" class="img-thumbnail">
+                </div>
+                <div class="col-md-8 col-xs-12">
+                  <table class="table table-bordered">
+                    <tbody>
+                      <tr><td style="width:80px;">作者</td><td>汤小丹</td></tr>
+                      <tr><td>出版商</td><td>西安电子科技大学出版社</td></tr>
+                      <tr><td>语言</td><td>中文</td></tr>
+                      <tr>
+                        <td>链接</td><td>
+                        <a href="http://product.dangdang.com/22484219.html" title="http://product.dangdang.com/22484219.html">图书链接</a>
+                      </td></tr>
+                      <tr>
+                        <td>状态</td>
+                        <td>
+                          
+                            <span class="label label-default">未读</span>
+                          
+                        </td></tr>
+                      <tr><td>评论</td><td></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>  
+            </div>
+          </div>      
+        </div>
+      
+        <div class="col-md-12">
+          <div class="panel panel-primary">
+            <div class="panel-heading">操作系统：精髓与设计原理</div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-4 col-xs-12 center">
+                  <img src="http://img3.douban.com/lpic/s24409884.jpg" alt="cover" class="img-thumbnail">
+                </div>
+                <div class="col-md-8 col-xs-12">
+                  <table class="table table-bordered">
+                    <tbody>
+                      <tr><td style="width:80px;">作者</td><td>William Stallings</td></tr>
+                      <tr><td>出版商</td><td>电子工业出版社</td></tr>
+                      <tr><td>语言</td><td>中文</td></tr>
+                      <tr>
+                        <td>链接</td><td>
+                        <a href="http://book.douban.com/subject/20152598/" title="http://book.douban.com/subject/20152598/">图书链接</a>
+                      </td></tr>
+                      <tr>
+                        <td>状态</td>
+                        <td>
+                          
+                            <span class="label label-default">未读</span>
+                          
+                        </td></tr>
+                      <tr><td>评论</td><td></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>  
+            </div>
+          </div>      
+        </div>
+      
+        <div class="col-md-12">
+          <div class="panel panel-primary">
+            <div class="panel-heading">密码编码学与网络安全</div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-4 col-xs-12 center">
+                  <img src="http://img5.douban.com/lpic/s5796878.jpg" alt="cover" class="img-thumbnail">
+                </div>
+                <div class="col-md-8 col-xs-12">
+                  <table class="table table-bordered">
+                    <tbody>
+                      <tr><td style="width:80px;">作者</td><td>William Stallings</td></tr>
+                      <tr><td>出版商</td><td>电子工业出版社</td></tr>
+                      <tr><td>语言</td><td>中文</td></tr>
+                      <tr>
+                        <td>链接</td><td>
+                        <a href="http://book.douban.com/subject/1952089/" title="http://book.douban.com/subject/1952089/">图书链接</a>
+                      </td></tr>
+                      <tr>
+                        <td>状态</td>
+                        <td>
+                          
+                            <span class="label label-default">未读</span>
+                          
+                        </td></tr>
+                      <tr><td>评论</td><td></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>  
+            </div>
+          </div>      
+        </div>
+      
+        <div class="col-md-12">
+          <div class="panel panel-primary">
+            <div class="panel-heading">白帽子讲Web安全</div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-4 col-xs-12 center">
+                  <img src="/public/upload/book/the-safety-of-web-by-white-hat.jpg" alt="cover" class="img-thumbnail">
+                </div>
+                <div class="col-md-8 col-xs-12">
+                  <table class="table table-bordered">
+                    <tbody>
+                      <tr><td style="width:80px;">作者</td><td>吴翰清</td></tr>
+                      <tr><td>出版商</td><td>电子工业出版社</td></tr>
+                      <tr><td>语言</td><td>中文</td></tr>
+                      <tr>
+                        <td>链接</td><td>
+                        <a href="http://book.douban.com/subject/10546925/" title="http://book.douban.com/subject/10546925/">图书链接</a>
+                      </td></tr>
+                      <tr>
+                        <td>状态</td>
+                        <td>
+                          
+                            <span class="label label-default">未读</span>
+                          
+                        </td></tr>
+                      <tr><td>评论</td><td></td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>  
+            </div>
+          </div>      
+        </div>
+      
     </div>
     <hr>
     <div id="disqus_thread">
   <button type="button" name="yogykwan" class="btn btn-default show-commend">显示评论</button>
 </div>
 
-  </div>
-  <!-- 目录 -->
-  <div id="content_table" style="position:fixed;right:20px;top:120px;display:none;">
-    <div class="panel panel-success">
-      <div class="panel-body" id="nav"></div>
-    </div>
   </div>
 </div>
 
