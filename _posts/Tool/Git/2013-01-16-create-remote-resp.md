@@ -1,14 +1,14 @@
 ---
 layout: post
-title: git创建远程库
+title: Git创建远程库
 category: 工具
 tags: Git
-description: git创建远程库
+description: Git创建远程库
 ---
 
-# git创建远程库
+# Git创建远程库
 
->git中一般使用 git init 创建的库不允许同一分支多个work tree直接提交，如果这么做有可能会出现以下问题：
+>Git中一般使用 git init 创建的库不允许同一分支多个work tree直接提交，如果这么做有可能会出现以下问题：
 
 >remote: error: refusing to update checked out branch: refs/heads/master
 
