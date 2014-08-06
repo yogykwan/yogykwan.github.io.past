@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 了解GitHub工作流【译】
+title: GitHub工作流
 category: 技术
 tags: Git
 keywords: Git,Workflow,工作流,GitHub 
