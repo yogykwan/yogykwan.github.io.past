@@ -3,7 +3,7 @@ layout: post
 title: 在GitHub上搭建Jekyll博客和创建主题
 category: 工具
 tags: [Jekyll,Git]
-keywords: Jekyll,Github Pages
+keywords: Jekyll,GitHub Pages
 description: 
 ---
 
@@ -126,10 +126,10 @@ _drafts/
 ```
 
 layout: post                                   #这个博客的布局文件
-title: 在Github上搭建Jekyll博客和创建主题             #博客标题
-category: 工具                                          #博客分类
+title: 在Github上搭建Jekyll博客和创建主题      #博客标题
+category: 工具                                 #博客分类
 tags: [Jekyll，Git]                            #博客标签
-keywords: Jekyll,Github                        #自定义常量
+keywords: Jekyll,GiHub Pages                   #自定义常量
 description:                                   #自定义常量
 
 ```
@@ -167,7 +167,7 @@ layout: base
       {\{ content }}
     </div>
     <hr>
-    {% include disqus.html %}
+    {\% include disqus.html %}
   </div>
 </div>
 ```
