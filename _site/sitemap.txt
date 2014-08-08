@@ -5,6 +5,8 @@
 
   /pages/atom.xml
 
+  /pages/edb.html
+
   /index.html
 
   /sitemap.txt
@@ -30,8 +32,6 @@
   /2014/05/04/set-environment-variables-of-server-for-php.html
 
   /2014/04/27/magic-methods-and-magic-constants-in-php.html
-
-  /2014/04/16/insert-large-number-of-data-in-mysql.html
 
   /2014/03/31/tecbook-list-of-2014-first.html
 
@@ -66,6 +66,8 @@
   /2013/12/08/linux-command-continue.html
 
   /2013/12/08/implemention-of-breadcrumbs-by-css3.html
+
+  /2013/11/11/share-windows-and-linux.html
 
   /2013/06/09/learn-python-stevedore-module-in-detail.html
 
@@ -102,8 +104,6 @@
   /2013/01/16/create-remote-resp.html
 
   /2012/12/31/python-development-of-sae.html
-
-  /2012/12/30/share-windows-and-linux.html
 
   /2012/09/27/php-variable-variables.html
 

@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <title>welcome to edb</title>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="{{ site.favicon}}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/public/css/bootstrap.css">
+  <link rel="stylesheet" href="/public/css/font-awesome.css">
+  <link rel="stylesheet" href="/public/js/prettify/prettify.css">
+  <link rel="stylesheet" href="/public/css/base.css">
+</head>
+<body>
+<center>
+<img src="/public/upload/edb/yixiu.jpg"><br>
+<font color="gold">
+<p>从前有座山，山上有座庙，庙里有个老和尚在给小和尚讲故事，讲的什么呢？从前有座山，山上有……<!--asterisk--></p>
+</font>
+<input id="key" type="text" value="请输入通关密码" size="29" 
+onmouseover="this.style.borderColor='black';this.style.backgroundColor='tan'" style="width: 106; height: 21" 
+onmouseout="this.style.borderColor='black';this.style.backgroundColor='#ffffff'" style="border-width:1px;border-color=black"
+onfocus="javascript:this.style.color='#000000';if(this.value=='请输入通关密码')this.value='';" 
+onblur="javascript:if(this.value==''){this.value='请输入通关密码';this.style.color='#CCCCCC';}"
+/>
+<input type="button" onclick="pass()" value="闯关"/>
+<script>
+function pass(){
+var text=document.getElementById("key").value;
+location='/edb/1.'+text+'.html';}
+</script>
+</body>
+</html>

@@ -13,7 +13,8 @@ author:
 # 站点信息
 title: "NULL"
 description: Yogy's Blog
-url: http://yogy.cc
+url: http://localhost:4000
+debug: http://yogy.cc
 rss_url: /pages/atom.xml
 
 # gavatar头像及Favicon
