@@ -2,21 +2,21 @@
 <rss version="2.0">
   <channel>
     <title>NULL</title>
-    <link>http://localhost:4000</link>
+    <link>http://yogy.cc</link>
     <description>Yogy's Blog</description>
     
       <item>
         <title>2014下半年技术书单</title>
-        <link>http://localhost:4000/2014/08/03/tecbook-list-of-2014-second.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/08/03/tecbook-list-of-2014-second.html</guid>
+        <link>http://yogy.cc/2014/08/03/tecbook-list-of-2014-second.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/08/03/tecbook-list-of-2014-second.html</guid>
         <pubDate>Sun, 03 Aug 2014 00:00:00 +0800</pubDate>
         <description></description>
       </item>
     
       <item>
         <title>2014上半年个人总结</title>
-        <link>http://localhost:4000/2014/08/03/my-2014-first.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/08/03/my-2014-first.html</guid>
+        <link>http://yogy.cc/2014/08/03/my-2014-first.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/08/03/my-2014-first.html</guid>
         <pubDate>Sun, 03 Aug 2014 00:00:00 +0800</pubDate>
         <description>&lt;h3&gt;动机&lt;/h3&gt;
 
@@ -46,16 +46,16 @@
     
       <item>
         <title>2014下半年文学书单</title>
-        <link>http://localhost:4000/2014/08/03/litbook-list-of-2014-second.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/08/03/litbook-list-of-2014-second.html</guid>
+        <link>http://yogy.cc/2014/08/03/litbook-list-of-2014-second.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/08/03/litbook-list-of-2014-second.html</guid>
         <pubDate>Sun, 03 Aug 2014 00:00:00 +0800</pubDate>
         <description></description>
       </item>
     
       <item>
         <title>MySQL常用资源</title>
-        <link>http://localhost:4000/2014/05/11/general-mysql-resources.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/05/11/general-mysql-resources.html</guid>
+        <link>http://yogy.cc/2014/05/11/general-mysql-resources.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/05/11/general-mysql-resources.html</guid>
         <pubDate>Sun, 11 May 2014 00:00:00 +0800</pubDate>
         <description>&lt;h2&gt;常用命令&lt;/h2&gt;
 
@@ -90,8 +90,8 @@ flush privileges;
     
       <item>
         <title>为PHP设置服务器(Apache/Nginx)环境变量</title>
-        <link>http://localhost:4000/2014/05/04/set-environment-variables-of-server-for-php.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/05/04/set-environment-variables-of-server-for-php.html</guid>
+        <link>http://yogy.cc/2014/05/04/set-environment-variables-of-server-for-php.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/05/04/set-environment-variables-of-server-for-php.html</guid>
         <pubDate>Sun, 04 May 2014 00:00:00 +0800</pubDate>
         <description>&lt;blockquote&gt;
 &lt;p&gt;设置环境变量常见的地方为区分开发环境/生产环境，或者定义一些数据库的帐号密码&lt;/p&gt;
@@ -174,8 +174,8 @@ fastcgi_param MYSQL_PASSWORD &amp;#39;root&amp;#39;;
     
       <item>
         <title>PHP中的魔术方法和魔术常量简介和使用</title>
-        <link>http://localhost:4000/2014/04/27/magic-methods-and-magic-constants-in-php.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/04/27/magic-methods-and-magic-constants-in-php.html</guid>
+        <link>http://yogy.cc/2014/04/27/magic-methods-and-magic-constants-in-php.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/04/27/magic-methods-and-magic-constants-in-php.html</guid>
         <pubDate>Sun, 27 Apr 2014 00:00:00 +0800</pubDate>
         <description>&lt;blockquote&gt;
 &lt;p&gt;有些东西如果不是经常使用，很容易忘记，比如魔术方法和魔术常量。&lt;/p&gt;
@@ -418,24 +418,24 @@ fastcgi_param MYSQL_PASSWORD &amp;#39;root&amp;#39;;
     
       <item>
         <title>2014上半年技术书单</title>
-        <link>http://localhost:4000/2014/03/31/tecbook-list-of-2014-first.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/03/31/tecbook-list-of-2014-first.html</guid>
+        <link>http://yogy.cc/2014/03/31/tecbook-list-of-2014-first.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/03/31/tecbook-list-of-2014-first.html</guid>
         <pubDate>Mon, 31 Mar 2014 00:00:00 +0800</pubDate>
         <description></description>
       </item>
     
       <item>
         <title>2014上半年文学书单</title>
-        <link>http://localhost:4000/2014/03/31/litbook-list-of-2014-first.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/03/31/litbook-list-of-2014-first.html</guid>
+        <link>http://yogy.cc/2014/03/31/litbook-list-of-2014-first.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/03/31/litbook-list-of-2014-first.html</guid>
         <pubDate>Mon, 31 Mar 2014 00:00:00 +0800</pubDate>
         <description></description>
       </item>
     
       <item>
         <title>在GitHub上搭建Jekyll博客和创建主题</title>
-        <link>http://localhost:4000/2014/02/12/how-to-deploy-a-blog-on-github-by-jekyll.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/02/12/how-to-deploy-a-blog-on-github-by-jekyll.html</guid>
+        <link>http://yogy.cc/2014/02/12/how-to-deploy-a-blog-on-github-by-jekyll.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/02/12/how-to-deploy-a-blog-on-github-by-jekyll.html</guid>
         <pubDate>Wed, 12 Feb 2014 00:00:00 +0800</pubDate>
         <description>&lt;h2&gt;简单介绍&lt;/h2&gt;
 
@@ -686,8 +686,8 @@ git push
     
       <item>
         <title>GitHub工作流</title>
-        <link>http://localhost:4000/2014/01/30/understanding-the-github-workflow.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/01/30/understanding-the-github-workflow.html</guid>
+        <link>http://yogy.cc/2014/01/30/understanding-the-github-workflow.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/01/30/understanding-the-github-workflow.html</guid>
         <pubDate>Thu, 30 Jan 2014 00:00:00 +0800</pubDate>
         <description>&lt;blockquote&gt;
 &lt;p&gt;GitHub流是一个轻量级，基于分支的工作流，它使得小组和项目的部署变得标准化。这个向导解释了GitHub流是如何&amp;amp;为什么工作的。&lt;/p&gt;
@@ -743,8 +743,8 @@ git push
     
       <item>
         <title>PHP Socket的使用</title>
-        <link>http://localhost:4000/2014/01/25/how-to-use-php-socket.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/01/25/how-to-use-php-socket.html</guid>
+        <link>http://yogy.cc/2014/01/25/how-to-use-php-socket.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/01/25/how-to-use-php-socket.html</guid>
         <pubDate>Sat, 25 Jan 2014 00:00:00 +0800</pubDate>
         <description>&lt;blockquote&gt;
 &lt;p&gt;最近在做的项目有一项需要耗时任务在后台运行的功能，虽然PHP并不是非常适合做常驻后台的守护进程，但是由于项目主要代码都是基于PHP实现，如果运行在后台的守护进程改换别的语言会非常不方便。所以不可避免会涉及到Web端和Daemon部分的通信，Socket是一个不错的方式。&lt;/p&gt;
@@ -858,8 +858,8 @@ git push
     
       <item>
         <title>Python脚本--下载合并SAE日志</title>
-        <link>http://localhost:4000/2014/01/17/python-script-of-sae-log-download.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/01/17/python-script-of-sae-log-download.html</guid>
+        <link>http://yogy.cc/2014/01/17/python-script-of-sae-log-download.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/01/17/python-script-of-sae-log-download.html</guid>
         <pubDate>Fri, 17 Jan 2014 00:00:00 +0800</pubDate>
         <description>&lt;h1&gt;Python脚本--下载合并SAE日志&lt;/h1&gt;
 
@@ -965,8 +965,8 @@ print &amp;#39;[#] all file has writen to access_log&amp;#39;
     
       <item>
         <title>PHP命名空间及自动加载</title>
-        <link>http://localhost:4000/2014/01/16/php-namespace-and-autoload.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/01/16/php-namespace-and-autoload.html</guid>
+        <link>http://yogy.cc/2014/01/16/php-namespace-and-autoload.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/01/16/php-namespace-and-autoload.html</guid>
         <pubDate>Thu, 16 Jan 2014 00:00:00 +0800</pubDate>
         <description>&lt;h2&gt;命名空间&lt;/h2&gt;
 
@@ -1063,8 +1063,8 @@ echo namespace/test;
     
       <item>
         <title>SVN 常用资源</title>
-        <link>http://localhost:4000/2014/01/15/general-svn-resources.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/01/15/general-svn-resources.html</guid>
+        <link>http://yogy.cc/2014/01/15/general-svn-resources.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/01/15/general-svn-resources.html</guid>
         <pubDate>Wed, 15 Jan 2014 00:00:00 +0800</pubDate>
         <description>&lt;h2&gt;常用指令&lt;/h2&gt;
 
@@ -1179,8 +1179,8 @@ svn cat -r PREV filename &amp;gt; filename (PREV 是上一版本,也可以写具
     
       <item>
         <title>Shell 常用资源</title>
-        <link>http://localhost:4000/2014/01/15/general-shell-resources.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/01/15/general-shell-resources.html</guid>
+        <link>http://yogy.cc/2014/01/15/general-shell-resources.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/01/15/general-shell-resources.html</guid>
         <pubDate>Wed, 15 Jan 2014 00:00:00 +0800</pubDate>
         <description>&lt;h2&gt;常用指令&lt;/h2&gt;
 
@@ -1271,8 +1271,8 @@ netstat -anop
     
       <item>
         <title>Python 常用资源</title>
-        <link>http://localhost:4000/2014/01/15/general-python-resources.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/01/15/general-python-resources.html</guid>
+        <link>http://yogy.cc/2014/01/15/general-python-resources.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/01/15/general-python-resources.html</guid>
         <pubDate>Wed, 15 Jan 2014 00:00:00 +0800</pubDate>
         <description>&lt;h2&gt;常用代码&lt;/h2&gt;
 
@@ -1310,8 +1310,8 @@ timeStr=time.strftime(&amp;quot;%Y-%m-%d %H:%M:%S&amp;quot;, ltime)
     
       <item>
         <title>PHP 常用资源</title>
-        <link>http://localhost:4000/2014/01/15/general-php-resources.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/01/15/general-php-resources.html</guid>
+        <link>http://yogy.cc/2014/01/15/general-php-resources.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/01/15/general-php-resources.html</guid>
         <pubDate>Wed, 15 Jan 2014 00:00:00 +0800</pubDate>
         <description>&lt;h2&gt;常用资源&lt;/h2&gt;
 
@@ -1362,8 +1362,8 @@ timeStr=time.strftime(&amp;quot;%Y-%m-%d %H:%M:%S&amp;quot;, ltime)
     
       <item>
         <title>jQuery 常用资源</title>
-        <link>http://localhost:4000/2014/01/15/general-jquery-resources.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/01/15/general-jquery-resources.html</guid>
+        <link>http://yogy.cc/2014/01/15/general-jquery-resources.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/01/15/general-jquery-resources.html</guid>
         <pubDate>Wed, 15 Jan 2014 00:00:00 +0800</pubDate>
         <description>&lt;h2&gt;官方资源&lt;/h2&gt;
 
@@ -1423,8 +1423,8 @@ $(this).parents(&amp;#39;tr&amp;#39;);
     
       <item>
         <title>JavaScript 常用资源</title>
-        <link>http://localhost:4000/2014/01/15/general-javascript-resources.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/01/15/general-javascript-resources.html</guid>
+        <link>http://yogy.cc/2014/01/15/general-javascript-resources.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/01/15/general-javascript-resources.html</guid>
         <pubDate>Wed, 15 Jan 2014 00:00:00 +0800</pubDate>
         <description>&lt;h2&gt;常用代码&lt;/h2&gt;
 
@@ -1496,8 +1496,8 @@ function htmlDecode(value){
     
       <item>
         <title>HTML 常用资源</title>
-        <link>http://localhost:4000/2014/01/15/general-html-resources.html</link>
-        <guid isPermaLink="true">http://localhost:4000/2014/01/15/general-html-resources.html</guid>
+        <link>http://yogy.cc/2014/01/15/general-html-resources.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/01/15/general-html-resources.html</guid>
         <pubDate>Wed, 15 Jan 2014 00:00:00 +0800</pubDate>
         <description>&lt;h2&gt;常用属性&lt;/h2&gt;
 
