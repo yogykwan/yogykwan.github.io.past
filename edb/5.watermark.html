@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>traverse list</title>
+  <title>text in image</title>
   <meta charset="utf-8">
   <link rel="shortcut icon" href="{{ site.favicon}}" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,21 +12,21 @@
 </head>
 <body>
 <center>
-<img src="/public/upload/edb/3.necklace.jpg" width=640><br>
+<img src="/public/upload/edb/4.sudagreen.jpg" width=640><br>
 <font color="gold">
-<p>亲，辛苦了，来个不费脑的？！</p>
+<p>建设中……敬请期待！</p>
 </font>
-<input id="key" type="text" value="请输入21913" size="29" 
+<input id="key" type="text" value="请输入通关密码" size="29" 
 onmouseover="this.style.borderColor='black';this.style.backgroundColor='tan'" style="width: 106; height: 21" 
 onmouseout="this.style.borderColor='black';this.style.backgroundColor='#ffffff'" style="border-width:1px;border-color=black"
-onfocus="javascript:this.style.color='#000000';if(this.value=='请输入21913')this.value='';" 
-onblur="javascript:if(this.value==''){this.value='请输入21913';this.style.color='#CCCCCC';}"
+onfocus="javascript:this.style.color='#000000';if(this.value=='请输入通关密码')this.value='';" 
+onblur="javascript:if(this.value==''){this.value='请输入通关密码';this.style.color='#CCCCCC';}"
 />
 <input type="button" onclick="pass()" value="闯关"/>
 <script>
 function pass(){
 var text=document.getElementById("key").value;
-location='/edb/3.list/3.list.'+text+'.html';}
+location='/edb/6.'+text+'.html';}
 </script>
 </body>
 </html>
