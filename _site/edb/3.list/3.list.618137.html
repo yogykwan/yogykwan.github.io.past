@@ -4,15 +4,10 @@
   <title>traverse list</title>
   <meta charset="utf-8">
   <link rel="shortcut icon" href="/public/upload/gavatar/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/public/css/bootstrap.css">
-  <link rel="stylesheet" href="/public/css/font-awesome.css">
-  <link rel="stylesheet" href="/public/js/prettify/prettify.css">
-  <link rel="stylesheet" href="/public/css/base.css">
 </head>
 <body background="/public/upload/edb/3.conan.jpg">
 <center><br>
-<TABLE style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#f6ae56,direction:145,strength:15)" height=400 cellSpacing=3 cellPadding=15 width=400 border=2>
+<TABLE style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#f6ae56,direction:145,strength:15)" height=400 cellSpacing=3 cellPadding=5 width=400 border=2>
 <TBODY><TR>
 <TD vAlign=center align=middle bgColor=#ffffff>
 <IMG src="/public/upload/edb/3.necklace.jpg">
@@ -32,6 +27,18 @@ onblur="javascript:if(this.value==''){this.value='请输入94949';this.style.col
 function pass(){
 var text=document.getElementById("key").value;
 location='/edb/3.list/3.list.'+text+'.html';}
+</script>
+<div style="width:800px;" class="ds-thread" data-thread-key="{{page.id}}" data-title="{{page.title}}" data-url="{{site.url}}{{page.url}}"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"yogy"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
 </script>
 </body>
 </html>
