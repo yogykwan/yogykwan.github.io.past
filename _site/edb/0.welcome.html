@@ -4,31 +4,79 @@
   <title>welcome to edb</title>
   <meta charset="utf-8">
   <link rel="shortcut icon" href="/public/upload/gavatar/favicon.ico" />
+<style type="text/css">
+div.container
+{
+width:720px;
+margin:0px;
+border:1px solid gray;
+line-height:150%;
+}
+div.header,div.footer
+{
+padding:0.5em;
+color:white;
+background-color:gray;
+clear:left;
+}
+h1.header
+{
+padding:0.2em;
+margin:0;
+}
+div.left
+{
+float:left;
+width:140px;
+height:400px;
+margin:0;
+padding:10px;
+background-color:tan;
+}
+div.content
+{
+margin-left:150px;
+border-left:0px solid gray;
+padding:0px;
+height:420px;
+}
+</style>
 </head>
 <body background="/public/upload/edb/0.conan.jpg">
 <center><br>
-<TABLE style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#f6ae56,direction:145,strength:15)" height=400 cellSpacing=3 cellPadding=5 width=400 border=2>
-<TBODY><TR>
-<TD vAlign=center align=middle bgColor=#ffffff>
-<IMG src="/public/upload/edb/0.yixiu.jpg">
-</TD></TR></TBODY></TABLE><br>
-<table><textarea rows="2" cols="64" resize="none" style="background-color:#CCCCCC">
-从前有座山，山上有座庙，庙里有个老和尚在给小和尚讲故事，讲的什么呢？从前有座山，山上有……
-</textarea></table><br>
-<!--山上有asterisk-->
-<input id="key" type="text" value="请输入通关密码" size="29" 
-onmouseover="this.style.borderColor='black';this.style.backgroundColor='tan'" style="width: 106; height: 21" 
-onmouseout="this.style.borderColor='black';this.style.backgroundColor='#ffffff'" style="border-width:1px;border-color=black"
+<div class="container">
+<div class="header"><h1 class="header">LEVEL 1</h1></div>
+<div class="left" align="left"><p>
+从前有座山，山上有座庙，庙里有个老和尚在给小和尚讲故事，讲的什么呢？从前有座山，山上有<!--asterisk-->……
+<br><br><b>提示：</b><br>
+<ul style="list-style-type:circle;padding=0;margin=0">
+<li>山上</li>
+<li>隐形</li>
+<li>英文</li>
+</ul>
+</p></div>
+<div class="content">
+<img src="/public/upload/edb/0.yixiu.jpg">
+</div>
+<div class="footer">
+<input id="key" type="text" value="请输入通关密码"
+onmouseover="this.style.borderColor='white';this.style.backgroundColor='tan'" 
+onmouseout="this.style.borderColor='white';this.style.backgroundColor='#ffffff'" style="border-width:3px;border-color=blue"
 onfocus="javascript:this.style.color='#000000';if(this.value=='请输入通关密码')this.value='';" 
 onblur="javascript:if(this.value==''){this.value='请输入通关密码';this.style.color='#CCCCCC';}"
+onkeydown="if (event.keyCode==13) {document.getElementById('enter').click();}"
 />
-<input type="button" onclick="pass()" value="闯关"/>
+<input id="enter" type="button" onclick="pass()" value="闯关"/>
 <script>
 function pass(){
 var text=document.getElementById("key").value;
 location='/edb/1.'+text+'.html';}
 </script>
-<br><br><div style="border-width:2px; border-style:solid; border-color:grey;width:850px;background:#fffced;" class="ds-thread" data-thread-key="0" data-title="list" data-url="http://yogy.cc/edb/3.list/3.list.0.html"></div>
+</div>
+</div>
+<br>
+<div style="padding:10px;border-width:1px;border-style:solid; border-color:grey;width:700px;background:#fffced;" 
+class="ds-thread" data-thread-key="edb0" data-title="welcome" data-url="http://yogy.cc/edb/0.welcome.html"></div>
 <script type="text/javascript">
 var duoshuoQuery = {short_name:"yogy"};
 	(function() {
@@ -40,5 +88,6 @@ var duoshuoQuery = {short_name:"yogy"};
 		 || document.getElementsByTagName('body')[0]).appendChild(ds);
 	})();
 </script>
+
 </body>
 </html>
