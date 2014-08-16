@@ -32,7 +32,7 @@ height:420px;
 font-size: 0px !important; 
 padding: 0; 
 }
-ul.tips{
+ul li{
 list-style-type:circle;
 padding:0;
 margin:0;
