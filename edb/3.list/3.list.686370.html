@@ -4,43 +4,7 @@
   <title>traverse list</title>
   <meta charset="utf-8">
   <link rel="shortcut icon" href="/public/upload/gavatar/favicon.ico" />
-<style type="text/css">
-div.container
-{
-width:720px;
-margin:0px;
-border:1px solid gray;
-line-height:150%;
-}
-div.header,div.footer
-{
-padding:0.5em;
-color:white;
-background-color:gray;
-clear:left;
-}
-h1.header
-{
-padding:0.2em;
-margin:0;
-}
-div.left
-{
-float:left;
-width:140px;
-height:400px;
-margin:0;
-padding:10px;
-background-color:tan;
-}
-div.content
-{
-margin-left:150px;
-border-left:0px solid gray;
-padding:0px;
-height:420px;
-}
-</style>
+  <link rel="stylesheet" type="text/css" href="/public/css/edb.css">
 </head>
 <body background="/public/upload/edb/3.conan.jpg">
 <center><br>
@@ -49,7 +13,7 @@ height:420px;
 <div class="left" align="left"><p>
 恭喜你闯到这了！想让大脑小憩会么？确定？好，就听你的！别后悔～哈～
 <br><br><b>提示：</b><br>
-<ul style="list-style-type:circle;padding=0;margin=0">
+<ul class="tips">
 <li>手动</li>
 <li>自动</li>
 <li>瞎蒙</li>
@@ -61,7 +25,7 @@ height:420px;
 <div class="footer">
 <input id="key" type="text" value="请输入40427"
 onmouseover="this.style.borderColor='white';this.style.backgroundColor='tan'" 
-onmouseout="this.style.borderColor='white';this.style.backgroundColor='#ffffff'" style="border-width:3px;border-color=blue"
+onmouseout="this.style.borderColor='white';this.style.backgroundColor='#ffffff'" 
 onfocus="javascript:this.style.color='#6863700';if(this.value=='请输入40427')this.value='';" 
 onblur="javascript:if(this.value==''){this.value='请输入40427';this.style.color='#CCCCCC';}"
 onkeydown="if (event.keyCode==13) {document.getElementById('enter').click();}"
@@ -75,8 +39,7 @@ location='/edb/3.list/3.list.'+text+'.html';}
 </div>
 </div>
 <br>
-<div style="padding:10px;border-width:1px;border-style:solid; border-color:grey;width:700px;background:#fffced;" 
-class="ds-thread" data-thread-key="3" data-title="list" data-url="http://yogy.cc/edb/3.list/3.list.686370.html"></div>
+<div class="ds-thread" data-thread-key="3" data-title="list" data-url="http://yogy.cc/edb/3.list/3.list.686370.html"></div>
 <script type="text/javascript">
 var duoshuoQuery = {short_name:"yogy"};
 	(function() {

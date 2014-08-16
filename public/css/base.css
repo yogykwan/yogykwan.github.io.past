@@ -84,6 +84,11 @@ blockquote p {
   color: #2a6496;
   background-color: #fafaf6;
 }
+/*多说*/
+#ds-thread .ds-powered-by a { 
+font-size: 0px !important; 
+padding: 0; 
+}
 /* 显示评论按钮 */
 .show-commend {
   width: 100%;
