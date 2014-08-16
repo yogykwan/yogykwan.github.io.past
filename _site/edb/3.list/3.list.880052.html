@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+  <title>traverse list</title>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="/public/upload/gavatar/favicon.ico" />
+  <link rel="stylesheet" type="text/css" href="/public/css/edb.css">
+</head>
+<body background="/public/upload/edb/3.conan.jpg">
+<center><br>
+<div class="container">
+<div class="header"><h1 class="header">LEVEL 4</h1></div>
+<div class="left" align="left"><p>
+恭喜你闯到这了！想让大脑小憩会么？确定？好，就听你的！别后悔～哈～
+<br><br><b>提示：</b><br>
+<ul class="tips">
+<li>手动</li>
+<li>自动</li>
+<li>瞎蒙</li>
+</ul>
+</p></div>
+<div class="content">
+<img src="/public/upload/edb/3.necklace.jpg">
+</div>
+<div class="footer">
+<input id="key" type="text" value="请输入799101"
+onmouseover="this.style.borderColor='white';this.style.backgroundColor='tan'" 
+onmouseout="this.style.borderColor='white';this.style.backgroundColor='#ffffff'" 
+onfocus="javascript:this.style.color='#8800520';if(this.value=='请输入799101')this.value='';" 
+onblur="javascript:if(this.value==''){this.value='请输入799101';this.style.color='#CCCCCC';}"
+onkeydown="if (event.keyCode==13) {document.getElementById('enter').click();}"
+/>
+<input id="enter" type="button" onclick="pass()" value="闯关"/>
+<script>
+function pass(){
+var text=document.getElementById("key").value;
+location='/edb/3.list/3.list.'+text+'.html';}
+</script>
+</div>
+</div>
+<br>
+<div class="ds-thread" data-thread-key="3" data-title="list" data-url="http://yogy.cc/edb/3.list/3.list.880052.html"></div>
+<script type="text/javascript">
+var duoshuoQuery = {short_name:"yogy"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+</script>
+
+</body>
+</html>
