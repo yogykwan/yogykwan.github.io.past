@@ -49,3 +49,10 @@ border-color:grey;
 width:700px;
 background:#fffced;
 }
+a{
+color: #D1E9E9;
+text-decoration: none;
+} 
+a:hover{
+color: #4F9D9D
+}
