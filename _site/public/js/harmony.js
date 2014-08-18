@@ -130,7 +130,7 @@ window.harmony = function init()
 	//document.body.style.backgroundColor = 'rgb(' + BACKGROUND_COLOR[0] + ', ' + BACKGROUND_COLOR[1] + ', ' + BACKGROUND_COLOR[2] + ')';
 
 	container = document.createElement('div');
-	container.setAttribute("style","display: block; z-index: -50; top: 0px; left: 0px; position: fixed; height: 100%; width: 100%; opacity: 0.8; background-color: #BAD0D5;");
+	container.setAttribute("style","display: block; z-index: -50; top: 0px; left: 0px; position: fixed; height: 100%; width: 100%; opacity: 0.8; background-color: #BAD0D5;background:  url('http://unkeltao.qiniudn.com/bg/IMG_background.png');no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover; ");
 	document.body.appendChild(container);
 	
 	canvas = document.createElement("canvas");
