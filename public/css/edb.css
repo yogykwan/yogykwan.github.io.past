@@ -1,8 +1,15 @@
+body{
+position:relative;
+max-width:720px;
+margin:0 auto;
+}
 div.container{
 width:720px;
 margin:0px;
 border:1px solid gray;
 line-height:150%;
+align:center;
+text-align:center;
 }
 div.header,div.footer{
 padding:0.5em;
@@ -54,5 +61,9 @@ color: #E8E8D0;
 text-decoration: none;
 } 
 a:hover{
-color: #4F9D9D
+color: tan;
+}
+div.copyright{
+align:center;
+text-align:center;
 }

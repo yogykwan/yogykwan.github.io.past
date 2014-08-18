@@ -6,10 +6,14 @@
   <link rel="shortcut icon" href="{{ site.favicon }}" />
   <link rel="stylesheet" type="text/css" href="/public/css/edb.css">  <script src="/public/js/dollar.js"></script>
   <script src="/public/js/harmony.js"></script>
+  <style type="text/css">
+    
+      canvas { opacity: .8; position:relative; z-index: -3;}
+  </style>
 </head>
-<body>
+<body background="{{page.backimg}}">
 <script>harmony()</script>
-  <center><br>
+  <br>
   <div class="container">
     <div class="header"><h1 class="header">{{ page.level }}</h1></div>
     <div class="left" align="left">
@@ -38,7 +42,7 @@
   <div class="ds-thread" data-thread-key="{{ page.dsid }}" data-title="{{page.level}}" 
   data-url="{{site.url}}{{page.url}}"></div>
   <br>    
-  <div>
+  <div class="copyright">
   <a href="{{site.url}}" target="_blank">NULL首页</a>   |   
   <a href="{{site.url}}/pages/edb.html" target="_blank">关于EDB</a>  |
   <a href="{{site.url}}/pages/about.html" target="_blank">联系Yogy</a>  |
