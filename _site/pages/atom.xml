@@ -6,1519 +6,1385 @@
     <description>Yogy's Blog</description>
     
       <item>
-        <title>2014下半年技术书单</title>
-        <link>http://yogy.cc/2014/08/03/tecbook-list-of-2014-second.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/08/03/tecbook-list-of-2014-second.html</guid>
-        <pubDate>Sun, 03 Aug 2014 00:00:00 +0800</pubDate>
-        <description></description>
-      </item>
-    
-      <item>
-        <title>2014上半年个人总结</title>
-        <link>http://yogy.cc/2014/08/03/my-2014-first.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/08/03/my-2014-first.html</guid>
-        <pubDate>Sun, 03 Aug 2014 00:00:00 +0800</pubDate>
-        <description>&lt;h3&gt;动机&lt;/h3&gt;
-
-&lt;p&gt;2014年已经悄然逝去一半，写一篇总结，回顾半年的历程。&lt;/p&gt;
-
-&lt;h3&gt;学习&lt;/h3&gt;
-
-&lt;p&gt;自己学了很多东西：Python，Latex，Metasploit，Matlab，HTML。
-这种感觉很美！也因此，我从考研大军中撤退，只想干自己喜欢的事情。&lt;/p&gt;
-
-&lt;h3&gt;读研&lt;/h3&gt;
-
-&lt;p&gt;已经执着保研，不再考虑考研的事情了。
-赶紧提高技术，巩固基础。&lt;/p&gt;
-
-&lt;h3&gt;信心&lt;/h3&gt;
-
-&lt;p&gt;信心基本崩溃，在专业领域只有200%的投入才有20%的收获。所以还差得很远呢！&lt;/p&gt;
-
-&lt;h3&gt;寄语&lt;/h3&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;但行好事，莫问前程！&lt;/p&gt;
+        <title>PAT1020. Tree Traversals (25)</title>
+        <link>http://yogy.cc/2014/09/04/pat-1020.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/04/pat-1020.html</guid>
+        <pubDate>Thu, 04 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;DFS，BFS&lt;/p&gt;
 &lt;/blockquote&gt;
-</description>
-      </item>
-    
-      <item>
-        <title>2014下半年文学书单</title>
-        <link>http://yogy.cc/2014/08/03/litbook-list-of-2014-second.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/08/03/litbook-list-of-2014-second.html</guid>
-        <pubDate>Sun, 03 Aug 2014 00:00:00 +0800</pubDate>
-        <description></description>
-      </item>
-    
-      <item>
-        <title>MySQL常用资源</title>
-        <link>http://yogy.cc/2014/05/11/general-mysql-resources.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/05/11/general-mysql-resources.html</guid>
-        <pubDate>Sun, 11 May 2014 00:00:00 +0800</pubDate>
-        <description>&lt;h2&gt;常用命令&lt;/h2&gt;
 
-&lt;h3&gt;登录数据库&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;mysql -h localhost -uroot -p
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;导出数据库&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;mysqldump -uroot -p db &amp;gt; db.sql
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;导入数据库&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;mysql -uroot -p db &amp;lt; db.sql
-// or
-mysql -uroot -p db -e &amp;quot;source /path/to/db.sql&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;开启远程登录&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;grant all privileges on &amp;#39;ss&amp;#39;.* to root@&amp;#39;%&amp;#39; indentified by &amp;#39;passoword&amp;#39; with grant option;
-// or 
-update user set Host=&amp;quot;%&amp;quot; and User=&amp;quot;root&amp;quot;
-// 注意%是不包含localhost的
-flush privileges;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;创建用户&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;CREATE USER &amp;#39;test&amp;#39;@&amp;#39;localhost&amp;#39; IDENTIFIED BY &amp;#39;password&amp;#39;;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;创建表&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;CREATE SCHEMA testdb DEFAULT CHARACTER SET utf8 COLLATE utf8_unicode_ci;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;赋予数据库权限&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;GRANT ALL ON testdb.* TO &amp;#39;test&amp;#39;@&amp;#39;localhost&amp;#39;;
+&lt;h3&gt;题意&lt;/h3&gt;
+
+&lt;p&gt;给出二叉树的后序遍历、中序遍历，求分层遍历&lt;/p&gt;
+
+&lt;h3&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;DSF重构二叉树&lt;/li&gt;
+&lt;li&gt;BFS输出分层遍历&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+#include&amp;lt;queue&amp;gt;
+#include&amp;lt;algorithm&amp;gt;
+#include&amp;lt;cmath&amp;gt;
+#include&amp;lt;string&amp;gt;
+using namespace std;
+int n,p;
+int post[50],in[50];
+int l[50],r[50];
+int ans[50];
+int gao(int ll,int rr){
+    if(ll&amp;gt;rr) return -1;
+    int i;
+    for(i=ll;i&amp;lt;=rr;++i) if(in[i]==post[p]) break;
+    --p;
+    r[i]=gao(i+1,rr);
+    l[i]=gao(ll,i-1);
+    return i;
+}
+int main(){
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    scanf(&amp;quot;%d&amp;quot;,&amp;amp;n);
+    int i,rt,fr,rear;
+    for(i=0;i&amp;lt;n;++i) scanf(&amp;quot;%d&amp;quot;,&amp;amp;post[i]);
+    for(i=0;i&amp;lt;n;++i) scanf(&amp;quot;%d&amp;quot;,&amp;amp;in[i]);
+    p=n-1;
+    ans[0]=gao(0,n-1);
+    fr=0,rear=1;
+    while(rear&amp;lt;n){
+        rt=ans[fr++];
+        if(l[rt]!=-1) ans[rear++]=l[rt];
+        if(r[rt]!=-1) ans[rear++]=r[rt];
+    }
+    for(i=0;i&amp;lt;n-1;++i) printf(&amp;quot;%d &amp;quot;,in[ans[i]]);
+    printf(&amp;quot;%d\n&amp;quot;,in[ans[i]]);
+    return 0;
+}
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
       </item>
     
       <item>
-        <title>为PHP设置服务器(Apache/Nginx)环境变量</title>
-        <link>http://yogy.cc/2014/05/04/set-environment-variables-of-server-for-php.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/05/04/set-environment-variables-of-server-for-php.html</guid>
-        <pubDate>Sun, 04 May 2014 00:00:00 +0800</pubDate>
+        <title>PAT1019. General Palindromic Number (20)</title>
+        <link>http://yogy.cc/2014/09/04/pat-1019.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/04/pat-1019.html</guid>
+        <pubDate>Thu, 04 Sep 2014 00:00:00 +0800</pubDate>
         <description>&lt;blockquote&gt;
-&lt;p&gt;设置环境变量常见的地方为区分开发环境/生产环境，或者定义一些数据库的帐号密码&lt;/p&gt;
+&lt;p&gt;模拟&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2&gt;设置Apache环境变量&lt;/h2&gt;
+&lt;h3&gt;题意&lt;/h3&gt;
 
-&lt;h3&gt;指令&lt;/h3&gt;
+&lt;p&gt;求某数某进制表达式是否是回文并输出&lt;/p&gt;
 
-&lt;p&gt;设置当前环境变量为&lt;code&gt;DEV&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;SetEnv RUNTIME_ENVIROMENT DEV
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;数据库帐号密码&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;SetEnv MYSQL_USERNAME root
-SetEnv MYSQL_PASSWORD root
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;配置文件格式&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;VirtualHost *:80&amp;gt;
-    ServerAdmin admin@admin.com
-    DocumentRoot &amp;quot;/var/www/&amp;quot;
-    ServerName localhost
-    SetEnv RUNTIME_ENVIROMENT DEV
-    SetEnv MYSQL_USERNAME root
-    SetEnv MYSQL_PASSWORD root
-    ErrorLog &amp;quot;logs/error.log&amp;quot;
-    CustomLog &amp;quot;logs/access.log&amp;quot; common
-&amp;lt;/VirtualHost&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;设置Nginx环境变量&lt;/h2&gt;
+&lt;h3&gt;细节&lt;/h3&gt;
 
-&lt;h3&gt;指令&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;注意0&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;设置当前环境变量为&lt;code&gt;DEV&lt;/code&gt;&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;fastcgi_param RUNTIME_ENVIROMENT &amp;#39;DEV&amp;#39;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;数据库帐号密码&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;fastcgi_param MYSQL_USERNAME &amp;#39;root&amp;#39;
-fastcgi_param MYSQL_PASSWORD &amp;#39;root&amp;#39;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;配置文件格式&lt;/h3&gt;
-
-&lt;p&gt;在fastcgi_params文件中配置&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;fastcgi_param RUNTIME_ENVIROMENT &amp;#39;DEV&amp;#39;;
-fastcgi_param MYSQL_USERNAME &amp;#39;root&amp;#39;;
-fastcgi_param MYSQL_PASSWORD &amp;#39;root&amp;#39;;   
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;在nginx.conf中配置&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;server {
-    listen   80; 
-    root /var/www;
-    index index.php;
-    server_name localhost;
-    location /
-    {   
-         index index.php;
-    }   
-
-    location ~ .*\.(php|php5)?$ {
-        fastcgi_pass 127.0.0.1:9000;
-        fastcgi_index index.php;
-        include fastcgi_params;
-    }   
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+#include&amp;lt;queue&amp;gt;
+#include&amp;lt;algorithm&amp;gt;
+#include&amp;lt;cmath&amp;gt;
+#include&amp;lt;string&amp;gt;
+using namespace std;
+int c[50],cnt;
+int main(){
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    int a,b,i,ok;
+    scanf(&amp;quot;%d%d&amp;quot;,&amp;amp;a,&amp;amp;b);
+    do{
+        c[cnt++]=a%b;
+        a/=b;
+    }while(a);
+    for(i=0;i&amp;lt;cnt/2+1;++i){
+        if(c[i]!=c[cnt-1-i]) break;
+    }
+    printf(&amp;quot;%s\n&amp;quot;,i==cnt/2+1?&amp;quot;Yes&amp;quot;:&amp;quot;No&amp;quot;);
+    for(i=cnt-1;i;--i) printf(&amp;quot;%d &amp;quot;,c[i]);
+    printf(&amp;quot;%d\n&amp;quot;,c[0]);
+    return 0;
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;在PHP中调用服务器环境变量&lt;/h2&gt;
-
-&lt;p&gt;在PHP中有两个调用方式：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$env = getenv(&amp;#39;RUNTIME_ENVIROMENT&amp;#39;);
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;还有超全局变量方式：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$env = $_SERVER[&amp;#39;RUNTIME_ENVIROMENT&amp;#39;];
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;参考&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;http://hi.baidu.com/epplera/item/9e41798601f6da7f850fab71&quot;&gt;apache和nginx设置环境变量的方法&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
       </item>
     
       <item>
-        <title>PHP中的魔术方法和魔术常量简介和使用</title>
-        <link>http://yogy.cc/2014/04/27/magic-methods-and-magic-constants-in-php.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/04/27/magic-methods-and-magic-constants-in-php.html</guid>
-        <pubDate>Sun, 27 Apr 2014 00:00:00 +0800</pubDate>
+        <title>PAT1018. Public Bike Management (30)</title>
+        <link>http://yogy.cc/2014/09/04/pat-1018.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/04/pat-1018.html</guid>
+        <pubDate>Thu, 04 Sep 2014 00:00:00 +0800</pubDate>
         <description>&lt;blockquote&gt;
-&lt;p&gt;有些东西如果不是经常使用，很容易忘记，比如魔术方法和魔术常量。&lt;/p&gt;
+&lt;p&gt;图论&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h2&gt;魔术方法(Magic methods)&lt;/h2&gt;
+&lt;h3&gt;题意&lt;/h3&gt;
 
-&lt;p&gt;PHP中把以两个下划线&lt;code&gt;__&lt;/code&gt;开头的方法称为魔术方法，这些方法在PHP中充当了举足轻重的作用。 魔术方法包括：&lt;/p&gt;
+&lt;p&gt;求最短路径、送车数、收车数&lt;/p&gt;
 
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;__construct()&lt;/code&gt;，类的构造函数&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;__destruct()&lt;/code&gt;，类的析构函数&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;__call()&lt;/code&gt;，在对象中调用一个不可访问方法时调用&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;__callStatic()&lt;/code&gt;，用静态方式中调用一个不可访问方法时调用&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;__get()&lt;/code&gt;，获得一个类的成员变量时调用&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;__set()&lt;/code&gt;，设置一个类的成员变量时调用&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;__isset()&lt;/code&gt;，当对不可访问属性调用&lt;code&gt;isset()&lt;/code&gt;或&lt;code&gt;empty()&lt;/code&gt;时调用&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;__unset()&lt;/code&gt;，当对不可访问属性调用&lt;code&gt;unset()&lt;/code&gt;时被调用。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;__sleep()&lt;/code&gt;，执行&lt;code&gt;serialize()&lt;/code&gt;时，先会调用这个函数&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;__wakeup()&lt;/code&gt;，执行&lt;code&gt;unserialize()&lt;/code&gt;时，先会调用这个函数&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;__toString()&lt;/code&gt;，类被当成字符串时的回应方法&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;__invoke()&lt;/code&gt;，调用函数的方式调用一个对象时的回应方法&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;__set_state()&lt;/code&gt;，调用&lt;code&gt;var_export()&lt;/code&gt;导出类时，此静态方法会被调用。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;__clone()&lt;/code&gt;，当对象复制完成时调用&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;&lt;code&gt;__construct()&lt;/code&gt;和&lt;code&gt;__destruct()&lt;/code&gt;&lt;/h3&gt;
-
-&lt;p&gt;构造函数和析构函数应该不陌生，他们在对象创建和消亡时被调用。例如我们需要打开一个文件，在对象创建时打开，对象消亡时关闭&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; 
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;FileRead&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$handle&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__construct&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
-        &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;handle&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;fopen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__destruct&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
-        &lt;span class=&quot;nb&quot;&gt;fclose&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;handle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;这两个方法在继承时可以扩展，例如：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; 
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;TmpFileRead&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;FileRead&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__construct&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;parent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;__construct&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__destruct&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;parent&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;__destruct&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;&lt;code&gt;__call()&lt;/code&gt;和&lt;code&gt;__callStatic()&lt;/code&gt;&lt;/h3&gt;
-
-&lt;p&gt;在对象中调用一个不可访问方法时会调用这两个方法，后者为静态方法。这两个方法我们在可变方法（Variable functions）调用中可能会用到。&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MethodTest&lt;/span&gt; 
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__call&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$arguments&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Calling object method &amp;#39;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$name&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;#39; &amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;implode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;, &amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$arguments&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__callStatic&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$arguments&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Calling static method &amp;#39;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$name&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;#39; &amp;quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;implode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;, &amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$arguments&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;nv&quot;&gt;$obj&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;MethodTest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$obj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;runTest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;in object context&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;nx&quot;&gt;MethodTest&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;runTest&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;in static context&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;&lt;code&gt;__get()&lt;/code&gt;，&lt;code&gt;__set()&lt;/code&gt;，&lt;code&gt;__isset()&lt;/code&gt;和&lt;code&gt;__unset()&lt;/code&gt;&lt;/h3&gt;
-
-&lt;p&gt;当get/set一个类的成员变量时调用这两个函数。例如我们将对象变量保存在另外一个数组中，而不是对象本身的成员变量&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; 
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;MethodTest&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__set&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-        &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;array_key_exists&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__isset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;isset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;unset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;){&lt;/span&gt;
-        &lt;span class=&quot;nb&quot;&gt;unset&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;&lt;code&gt;__sleep()&lt;/code&gt;和&lt;code&gt;__wakeup()&lt;/code&gt;&lt;/h3&gt;
-
-&lt;p&gt;当我们在执行&lt;code&gt;serialize()&lt;/code&gt;和&lt;code&gt;unserialize()&lt;/code&gt;时，会先调用这两个函数。例如我们在序列化一个对象时，这个对象有一个数据库链接，想要在反序列化中恢复链接状态，则可以通过重构这两个函数来实现链接的恢复。例子如下：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Connection&lt;/span&gt; 
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;protected&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$link&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$server&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$username&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$password&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$db&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__construct&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$server&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$username&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$password&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$db&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;server&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$server&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;username&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$username&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;password&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$password&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;db&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$db&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;connect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;connect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;link&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;mysql_connect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;server&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;username&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;password&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-        &lt;span class=&quot;nb&quot;&gt;mysql_select_db&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;db&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;link&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__sleep&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;server&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;username&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;password&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;db&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__wakeup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nv&quot;&gt;$this&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;connect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;&lt;code&gt;__toString()&lt;/code&gt;&lt;/h3&gt;
-
-&lt;p&gt;对象当成字符串时的回应方法。例如使用&lt;code&gt;echo $obj;&lt;/code&gt;来输出一个对象&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// Declare a simple class&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;TestClass&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__toString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;this is a object&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;nv&quot;&gt;$class&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;TestClass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$class&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;这个方法只能返回字符串，而且不可以在这个方法中抛出异常，否则会出现致命错误。&lt;/p&gt;
-
-&lt;h3&gt;&lt;code&gt;__invoke()&lt;/code&gt;&lt;/h3&gt;
-
-&lt;p&gt;调用函数的方式调用一个对象时的回应方法。如下&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;CallableClass&lt;/span&gt; 
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__invoke&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;this is a object&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$obj&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;CallableClass&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;var_dump&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;is_callable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$obj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;&lt;code&gt;__set_state()&lt;/code&gt;&lt;/h3&gt;
-
-&lt;p&gt;调用&lt;code&gt;var_export()&lt;/code&gt;导出类时，此静态方法会被调用。&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;A&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$var1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$var2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__set_state&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$an_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nv&quot;&gt;$obj&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;nv&quot;&gt;$obj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;var1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$an_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;var1&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-        &lt;span class=&quot;nv&quot;&gt;$obj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;var2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$an_array&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;var2&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$obj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;nv&quot;&gt;$a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;A&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;var1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$a&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&amp;gt;&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;var2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;foo&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;var_dump&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;var_export&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;&lt;code&gt;__clone()&lt;/code&gt;&lt;/h3&gt;
-
-&lt;p&gt;当对象复制完成时调用。例如在&lt;a href=&quot;http://yansu.org/2014/04/19/sigleton-design-pattern.html&quot;&gt;设计模式详解及PHP实现：单例模式&lt;/a&gt;一文中提到的单例模式实现方式，利用这个函数来防止对象被克隆。&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; 
-&lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Singleton&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$_instance&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;NULL&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-    &lt;span class=&quot;c1&quot;&gt;// 私有构造方法 &lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;private&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__construct&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{}&lt;/span&gt;
-
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;static&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;getInstance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;is_null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$_instance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;nx&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$_instance&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Singleton&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;::&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$_instance&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-    &lt;span class=&quot;c1&quot;&gt;// 防止克隆实例&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;__clone&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;die&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Clone is not allowed.&amp;#39;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;E_USER_ERROR&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;魔术常量(Magic constants)&lt;/h2&gt;
-
-&lt;p&gt;PHP中的常量大部分都是不变的，但是有8个常量会随着他们所在代码位置的变化而变化，这8个常量被称为魔术常量。&lt;/p&gt;
+&lt;h3&gt;细节&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;code&gt;__LINE__&lt;/code&gt;，文件中的当前行号&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;__FILE__&lt;/code&gt;，文件的完整路径和文件名&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;__DIR__&lt;/code&gt;，文件所在的目录&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;__FUNCTION__&lt;/code&gt;，函数名称&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;__CLASS__&lt;/code&gt;，类的名称&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;__TRAIT__&lt;/code&gt;，Trait的名字&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;__METHOD__&lt;/code&gt;，类的方法名&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;__NAMESPACE__&lt;/code&gt;，当前命名空间的名称&lt;/li&gt;
+&lt;li&gt;只有去程可以调整车数&lt;/li&gt;
+&lt;li&gt;所选路径上所有点都需调整&lt;/li&gt;
+&lt;li&gt;求出所有最短路后，递归更新，同一节点可能递归多次&lt;/li&gt;
+&lt;li&gt;在送车数相同时，选收车数少的方案&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;这些魔术常量常常被用于获得当前环境信息或者记录日志。&lt;/p&gt;
-</description>
-      </item>
-    
-      <item>
-        <title>2014上半年技术书单</title>
-        <link>http://yogy.cc/2014/03/31/tecbook-list-of-2014-first.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/03/31/tecbook-list-of-2014-first.html</guid>
-        <pubDate>Mon, 31 Mar 2014 00:00:00 +0800</pubDate>
-        <description></description>
-      </item>
-    
-      <item>
-        <title>2014上半年文学书单</title>
-        <link>http://yogy.cc/2014/03/31/litbook-list-of-2014-first.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/03/31/litbook-list-of-2014-first.html</guid>
-        <pubDate>Mon, 31 Mar 2014 00:00:00 +0800</pubDate>
-        <description></description>
-      </item>
-    
-      <item>
-        <title>在GitHub上搭建Jekyll博客和创建主题</title>
-        <link>http://yogy.cc/2014/02/12/how-to-deploy-a-blog-on-github-by-jekyll.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/02/12/how-to-deploy-a-blog-on-github-by-jekyll.html</guid>
-        <pubDate>Wed, 12 Feb 2014 00:00:00 +0800</pubDate>
-        <description>&lt;h2&gt;简单介绍&lt;/h2&gt;
-
-&lt;h3&gt;GitHub&lt;/h3&gt;
-
-&lt;p&gt;GitHub不用多说，应该大家都知道，托管库的，上&lt;a href=&quot;www.github.com&quot;&gt;GitHub官网&lt;/a&gt;一看就知道。&lt;/p&gt;
-
-&lt;h3&gt;Jekyll&lt;/h3&gt;
-
-&lt;p&gt;Jekyll是一个简单的用来生成静态页面的工具，不光能生成博客。&lt;a href=&quot;https://github.com/mojombo/jekyll&quot;&gt;项目位置&lt;/a&gt;，&lt;a href=&quot;https://github.com/mojombo/jekyll/wiki&quot;&gt;项目Wiki&lt;/a&gt;。&lt;/p&gt;
-
-&lt;h3&gt;组合原因&lt;/h3&gt;
-
-&lt;p&gt;GitHub托管项目是不提供服务端语言和数据库的，但是它支持静态页面的访问的，所以需要用Jekyll来将博客弄成静态的。&lt;/p&gt;
-
-&lt;h3&gt;步骤概述&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;写&lt;a href=&quot;http://wowubuntu.com/markdown/&quot;&gt;Markdown&lt;/a&gt;或html页面&lt;/li&gt;
-&lt;li&gt;按照一定的目录整理&lt;/li&gt;
-&lt;li&gt;用&lt;code&gt;git push&lt;/code&gt;提交到GitHub上，生成博客。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;整个过程几乎没有多余的步骤，对于经常用键盘的人来说，再好不过了&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;说明：本篇用到的代码中，为了防止解析冲突，一律多了&lt;code&gt;\&lt;/code&gt;这个来防止被误解析&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h2&gt;创建一个库&lt;/h2&gt;
-
-&lt;p&gt;在Github上新开一个库，名字叫做&lt;code&gt;username.github.io&lt;/code&gt;，然后当别人在地址栏输入相应url的时候就可以访问进来了。&lt;/p&gt;
-
-&lt;p&gt;在这个库中完全可以只上传一个&lt;code&gt;index.html&lt;/code&gt;，来讲自己要写的东西写进去，但是这样会丧失很多灵活性，所以需要Jekyll的帮助来创建自己的博客。&lt;/p&gt;
-
-&lt;h2&gt;设定目录结构&lt;/h2&gt;
-
-&lt;p&gt;把自己的库clone到本地来，建立如下目录结构：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;├── CNAME
-├── README.md
-├── _config.yml
-├── _includes
-│   ├── disqus.html
-│   ├── footer.html
-│   ├── googleanalytics.html
-│   ├── header.html
-│   └── navside.html
-├── _layouts
-│   ├── base.html
-│   ├── book.html
-│   ├── page.html
-│   └── post.html
-├── _posts
-│   ├── Book
-│   ├── Life
-│   ├── Resource
-│   ├── Technology
-│   └── Tool
-├── index.html
-├── pages
-│   ├── about.html
-│   ├── archive.html
-│   └── atom.xml
-├── public
-│   ├── css
-│   ├── fonts
-│   ├── img
-│   ├── js
-│   └── upload
-└── sitemap.txt
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;这个目录结构是我自己设定的，也可以有不同的目录结构，看&lt;a href=&quot;http://jekyllrb.com/docs/structure/&quot;&gt;官网&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;接下来我主要解释这里面每一个目录的功能。&lt;/p&gt;
-
-&lt;h3&gt;配置文件&lt;/h3&gt;
-
-&lt;p&gt;&lt;code&gt;_config.yml&lt;/code&gt;里写有整个站点的主要配置项，我的如下：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;permalink: /:year/:month/:day/:title.html   #博文的固定链接
-paginate: 10                                #分页时每页博文数量
-author:                                     #自定义常亮
-  name: Yogy
-  email: jingg.cxy@gmail.com
-  link: http://yogy.cc
-title: &amp;quot;NULL&amp;quot;                            #自定义常量
-locals:                                     #自定义常量
-  tags: 标签
-  about: 关于
-active: 技术                                 #自定义常量
-subscribe_rss: /pages/atom.xml              #订阅地址
-markdown: redcarpet                         #markdown解释器
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;这里的自定义常量可以在模板中使用，以后有修改的时候就不需要跑去改代码了。尤其是对一些私人的选项，可以在这里定义。现在我的博客中出了disqus和googleanalytics外都直接在这里设定就好了。&lt;/p&gt;
-
-&lt;h3&gt;域名配置&lt;/h3&gt;
-
-&lt;p&gt;&lt;code&gt;CNAME&lt;/code&gt;这个文件写明了这个站点的域名，如果不喜欢&lt;code&gt;username.github.io&lt;/code&gt;的话，可以像我一样改掉&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;yogy.cc
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;改法只要在这个文件中写入域名就可以了。不过你需要去域名服务商那里设定域名解析规则。&lt;/p&gt;
-
-&lt;p&gt;只要把&lt;code&gt;主机记录&lt;/code&gt;为&lt;code&gt;@&lt;/code&gt;,&lt;code&gt;www&lt;/code&gt;的记录值写成&lt;code&gt;username.github.io&lt;/code&gt;就好了。&lt;/p&gt;
-
-&lt;h3&gt;博客存放&lt;/h3&gt;
-
-&lt;p&gt;&lt;code&gt;_posts&lt;/code&gt;下的所有目录中的所有博客，都会被Jekyll处理成为静态的html文件，然后放在&lt;code&gt;_site&lt;/code&gt;下。我这里没有&lt;code&gt;_site&lt;/code&gt;目录，是因为我在&lt;code&gt;.gitignore&lt;/code&gt;文件中把这个目录屏蔽掉了，它不会上传到Github上。&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;_site/
-_drafts/
-.DS_Store
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;以上是我的&lt;code&gt;.gitignore&lt;/code&gt;文件内容。&lt;/p&gt;
-
-&lt;p&gt;在&lt;code&gt;_posts&lt;/code&gt;下的符合&lt;code&gt;YYYY-MM-DD-xxxxxx.md&lt;/code&gt;的文件，都会被Jekyll认定为博客内容。我在&lt;code&gt;_posts&lt;/code&gt;下又新建了一些文件夹，主要是方便自己本地管理博客。&lt;/p&gt;
-
-&lt;p&gt;在上述这些文件中，必须先定义一些配置项，例如这篇博客的md文件中，开头是这样的：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;layout: post                                   #这个博客的布局文件
-title: 在Github上搭建Jekyll博客和创建主题      #博客标题
-category: 工具                                 #博客分类
-tags: [Jekyll，Git]                            #博客标签
-keywords: Jekyll,GiHub Pages                   #自定义常量
-description:                                   #自定义常量
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;除了自定义常量外的必须包含进去，自定义变量在这个布局中可以访问。&lt;/p&gt;
-
-&lt;h3&gt;模版文件&lt;/h3&gt;
-
-&lt;p&gt;剩余的目录，基本都属于模板文件了，我解释一下各自的作用：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;_includes&lt;/code&gt; 可以在模板中随时包含的文件&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;_layouts&lt;/code&gt; 布局文件，在博客头配置中可以选择&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;pages&lt;/code&gt; 站内固定的页面&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;public&lt;/code&gt; 公共资源，包括&lt;code&gt;js&lt;/code&gt;,&lt;code&gt;css&lt;/code&gt;,&lt;code&gt;img&lt;/code&gt;等，还有我博客中调用的图片，我都放这里&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;index.html&lt;/code&gt; 站点的首页，整个站的入口文件&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;sitemap.txt&lt;/code&gt; 给搜索引擎看的，如何爬取这个站&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt;创建主题&lt;/h2&gt;
-
-&lt;p&gt;上面讲了如何布局好站内文件结构，接下来主要就是如何创建一个自己的主题了。&lt;/p&gt;
-
-&lt;p&gt;布局文件是整个主题最重要的文件，这些文件告诉Jekyll如何去形成一个html页面。&lt;/p&gt;
-
-&lt;p&gt;首先我说一下我最基础的&lt;code&gt;page.html&lt;/code&gt;文件，因为它决定了入口文件&lt;code&gt;index.html&lt;/code&gt;的布局。&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;layout: base
-
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;row&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;col-md-12 aside3-title&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;br&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;h2&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;#identifier&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;{\{ page.title }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/h2&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;col-md-12 aside3-content&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;page-content&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-      {\{ content }}
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;hr&amp;gt;&lt;/span&gt;
-    {\% include disqus.html %}
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;从这里可以看到这个文件写起来一点都不复杂，但是为什么开头还有个&lt;code&gt;layout&lt;/code&gt;呢？因为它也不是最基本的布局文件，最基本的是&lt;code&gt;base.html&lt;/code&gt;，我们看一下它的内容。&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;!doctype html&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;html&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;head&amp;gt;&lt;/span&gt;
-  {\% include header.html %}
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/head&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;body&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;container&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;row&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-      {\% include navside.html %}
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;class=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;col-md-8 col-lg-8 col-sm-12 col-xs-12 aside3&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;container&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-          &lt;span class=&quot;nt&quot;&gt;&amp;lt;div&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;id=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;pjax&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-            {\{ content }}
-          &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-        &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-      &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-    &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;/div&amp;gt;&lt;/span&gt;
-  {\% include footer.html %}
-  {\% include googleanalytics.html %}
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/body&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;/html&amp;gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;这个文件就更像一个HTML文件了，用PHP或者Python写过web应用的人看到&lt;code&gt;{\% %}&lt;/code&gt;这样的标签应该不陌生，这不就是模板标签嘛。其实Jekyll也是借用了一下模板系统的，官网说明在&lt;a href=&quot;http://jekyllrb.com/docs/templates/&quot;&gt;这里&lt;/a&gt;，看到开头第一句讲的它用了&lt;a href=&quot;http://docs.shopify.com/themes/liquid-basics&quot;&gt;Liquid&lt;/a&gt;了吧。如果Jekyll的文档不能满足你的话，可以去Liquid那里查查。&lt;/p&gt;
-
-&lt;p&gt;我解释一下&lt;code&gt;base.html&lt;/code&gt;中几个标签的功能。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;{\% include header.html %}&lt;/code&gt; 从&lt;code&gt;_includes&lt;/code&gt;中把&lt;code&gt;header.html&lt;/code&gt;包含进来放在这里&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;{\% include navside.html %}&lt;/code&gt; 同上&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;{\{ content }}&lt;/code&gt; 这句的作用是将继承这个Layout的文件中的代码，放在这里&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;所以再看&lt;code&gt;page.html&lt;/code&gt;文件就很容易了，它就是把配置项下面的内容，填补到&lt;code&gt;base.html&lt;/code&gt;中的&lt;code&gt;{\{ content }}&lt;/code&gt;处形成了一个文件。那么&lt;code&gt;page.html&lt;/code&gt;中的&lt;code&gt;{\{ content }}&lt;/code&gt;做什么用呢？因为别人也可以以&lt;code&gt;page.html&lt;/code&gt;来作为自己的布局文件。&lt;/p&gt;
-
-&lt;p&gt;入口文件&lt;code&gt;index.html&lt;/code&gt;就是这么干的：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;layout: page
-title: 首页
-...
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;这里看到选择了page作为布局文件，那么title干嘛用的呢？其实它是在被包含的&lt;code&gt;header.html&lt;/code&gt;中被用到了。来看看&lt;code&gt;header.html&lt;/code&gt;怎么写的：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;charset=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;utf-8&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;title&amp;gt;&lt;/span&gt;{\{ page.title }} | {\{ site.title }}&lt;span class=&quot;nt&quot;&gt;&amp;lt;/title&amp;gt;&lt;/span&gt;
-&lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;author&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Yogy&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-{\% if page.keywords %}
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;keywords&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;Jekyll,GitHub Pages&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-{\% endif %}
-{\% if page.description  %}
-  &lt;span class=&quot;nt&quot;&gt;&amp;lt;meta&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;name=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;description &amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;content=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
-{\% endif %}
-
-...
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;这里又使用了一些新标签——&lt;code&gt;{\{ }\}&lt;/code&gt;，这个标签就是用来书写变量的，通过在配置处配置变量，或者使用系统的自定义变量，可以轻松改变页面内的一些元素或者内容。&lt;/p&gt;
-
-&lt;p&gt;系统变量查询可以去&lt;a href=&quot;http://jekyllrb.com/docs/variables/&quot;&gt;这里&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;其实整个主题书写就是这么简单，如果有不清楚的可以再看看官网的文档。动一动手就非常明白了。&lt;/p&gt;
-
-&lt;h2&gt;插入图片&lt;/h2&gt;
-
-&lt;p&gt;很多人感觉用Jekyll最不方便的就是插入图片了，其实我也是这么觉得的。所以只能自己去想些办法。&lt;/p&gt;
-
-&lt;h3&gt;图片统一存放&lt;/h3&gt;
-
-&lt;p&gt;图片我都放在了&lt;code&gt;/public/upload&lt;/code&gt;下，所以我在插入图片的时候只要用&lt;code&gt;![xxx](/public/upload/xxx)&lt;/code&gt;就可以了。&lt;/p&gt;
-
-&lt;h2&gt;本地预览及提交&lt;/h2&gt;
-
-&lt;p&gt;本地预览自己的修改很容易，只要进入&lt;code&gt;username.github.io&lt;/code&gt;目录，执行&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;jekyll serve
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;然后访问&lt;code&gt;http://localhost:4000&lt;/code&gt;就OK了，安装Jekyll的方式自行谷歌吧...&lt;/p&gt;
-
-&lt;p&gt;自己预览过没有问题以后，就提交到服务端吧，Git三步走&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;git add xxx
-git commit -m &amp;quot;xxx&amp;quot;
-git push
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;其他&lt;/h2&gt;
-
-&lt;p&gt;我觉得自己的这个主题设定的算是比较好修改和移植的了，如果大家有什么问题，可以尽管问。&lt;/p&gt;
-
-&lt;p&gt;另外一些特别的功能，比如三栏、评论、谷歌分析，这些都不难，相信你稍微打开Github读一下这个主题的代码就很快明白了。&lt;/p&gt;
-
-&lt;p&gt;代码地址戳&lt;a href=&quot;https://github.com/yogykwan/yogykwan.github.io&quot;&gt;这里&lt;/a&gt;。&lt;/p&gt;
-</description>
-      </item>
-    
-      <item>
-        <title>GitHub工作流</title>
-        <link>http://yogy.cc/2014/01/30/understanding-the-github-workflow.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/01/30/understanding-the-github-workflow.html</guid>
-        <pubDate>Thu, 30 Jan 2014 00:00:00 +0800</pubDate>
-        <description>&lt;blockquote&gt;
-&lt;p&gt;GitHub流是一个轻量级，基于分支的工作流，它使得小组和项目的部署变得标准化。这个向导解释了GitHub流是如何&amp;amp;为什么工作的。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;&lt;img src=&quot;/public/upload/github-flow.png&quot; alt=&quot;github-flow&quot;&gt;&lt;/p&gt;
-
-&lt;h2&gt;创建一个分支&lt;/h2&gt;
-
-&lt;p&gt;当你工作在一个项目中，你可能会在任何时间产生不同的想法和特性计划--这些都是准备完成的，或者其他不准备完成的。分支的存在可以帮助你管理工作流。&lt;/p&gt;
-
-&lt;p&gt;当你在自己的项目中创建一个分支的时候，也就等于创建了一个尝试自己想法的环境。你在这个分支修改的东西不会影响到主分支，所以你可以尽情的测试和提交改变。这些改变直到你的合作伙伴审查过，确保安全才会被合并到主分支中。&lt;/p&gt;
-
-&lt;p&gt;分支是Git的一个核心概念，并且GitHub流完全基于这个概念。只有一个规则，&lt;strong&gt;那就是&lt;code&gt;master&lt;/code&gt;分支必须是可部署的。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;因此，当你在修复bug或者创建新功能时，你的新分支必须创建在master之外。你的分支名称应该是自描述的（如：&lt;code&gt;refactor-authentication&lt;/code&gt;，&lt;code&gt;user-content-cache-key&lt;/code&gt;，&lt;code&gt;make-retina-avatars&lt;/code&gt;），所以其他人可以了解什么正在进行。&lt;/p&gt;
-
-&lt;h2&gt;增加提交&lt;/h2&gt;
-
-&lt;p&gt;一但你的分支创建完成，就可以进行修改了。不管你进行了增加、修改或者删除一个文件，你都可以进行提交代码，将他们增加到分支中去。这个过程可以保持跟踪你对一个特性分支工作的发展。&lt;/p&gt;
-
-&lt;p&gt;提交同样为你的项目创建了一个清晰的历史，这样别人就可以了解你做这些的原因以及内容。每一个提交有一个相关的描述，这个描述可以解释你具体做了什么修改。另外，每一个提交都应该是分开的修改单元。这个使得你可以在发现bug的时候回滚修改，或者你决定朝向不同的方向。&lt;/p&gt;
-
-&lt;p&gt;提交描述是非常重要的，尤其因为Git跟踪你的改变并且在他们被推送到服务器上的时候显示他们。通过写出清楚的提交描述，你可以使得别人容易遵从和提供反馈。&lt;/p&gt;
-
-&lt;h2&gt;开启一个Pull Request&lt;/h2&gt;
-
-&lt;p&gt;Pull Request最初开始于对你的提交的讨论。因为他们紧密集成在Git库下，如果你的请求被接受，所有人可以看到被合并的改变具体包含什么。&lt;/p&gt;
-
-&lt;p&gt;你可以开启一个Pull Request在开发过程工任何部分：当你有少量代码，或者你希望分享一些截图或平常的想法，或者当你被卡住希望获得帮助及建议，又或者当你准备好让别人来审查你的工作。通过在请求描述中使用GitHub的 @方式 ，你可以向某一个人或者团队要求反馈，不论他们不在线或者在别的时区。&lt;/p&gt;
-
-&lt;p&gt;Pull Request对于开元项目的管理和分享都非常有用。如果你使用一个Fork&amp;amp;Pull模型，Pull Request提供了一个方式来告知项目管理者他们希望关注的改变。如果你使用Shared repository Model，Pull Request有助于开始审查和讨论即将合并到master分支的改变。&lt;/p&gt;
-
-&lt;h2&gt;讨论并审核你的代码&lt;/h2&gt;
-
-&lt;p&gt;一但一个Pull Request被开启，负责审核代码改变的人们或团队可能会有一些问题或者评论。可能代码风格不符合项目指导，修改缺少单元测试，或者所有修改都做的非常好。Pull Request被设计来促进和不活这种类型的会话。&lt;/p&gt;
-
-&lt;p&gt;在对你提交进行讨论和反馈的过程中，你可以继续推送你的分支。如果有人评论你忘了做一些事情，或者有一些bug在你的代码中，你可以在自己分支中修复并且推送这些修改。GitHub将在统一的Pull Request视图中给你显示新的提交和其他额外的反馈。&lt;/p&gt;
-
-&lt;p&gt;Pull Request评论用Markdown写成，所以你可以嵌入图片和表情符号，使用pre-formatted的文字块，和高亮的格式。&lt;/p&gt;
-
-&lt;h2&gt;合并和部署&lt;/h2&gt;
-
-&lt;p&gt;一但你的Pull Request审核通过并且分支通过测试，这些代码就可以被合并到master分支以便部署。如果你需要在合并到GitHub库前进行测试，你可以在本地先进行合并。这些在你推送到库中前都是非常容易控制的。&lt;/p&gt;
-
-&lt;p&gt;一但被合并，Pull Request会对你的代码保存一个历史修改记录。因为它们是可搜索的，所以所有人都可以回顾到历史纪录去了解一个决定是为什么或者怎么完成的。&lt;/p&gt;
-
-&lt;p&gt;通过在Pull Request的文字中包含某些关键字，你可以关联代码和issues。当你的Pull Request被合并，相关的issues同样会被关闭。比如，输入&lt;code&gt;Closes #32&lt;/code&gt;将会关闭库中的32号issue。想要获得更多信息，点&lt;a href=&quot;https://help.github.com/articles/closing-issues-via-commit-messages&quot;&gt;这里&lt;/a&gt;。&lt;/p&gt;
-
-&lt;p&gt;原文链接：&lt;a href=&quot;http://guides.github.com/overviews/flow/&quot;&gt;http://guides.github.com/overviews/flow/&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-    
-      <item>
-        <title>PHP Socket的使用</title>
-        <link>http://yogy.cc/2014/01/25/how-to-use-php-socket.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/01/25/how-to-use-php-socket.html</guid>
-        <pubDate>Sat, 25 Jan 2014 00:00:00 +0800</pubDate>
-        <description>&lt;blockquote&gt;
-&lt;p&gt;最近在做的项目有一项需要耗时任务在后台运行的功能，虽然PHP并不是非常适合做常驻后台的守护进程，但是由于项目主要代码都是基于PHP实现，如果运行在后台的守护进程改换别的语言会非常不方便。所以不可避免会涉及到Web端和Daemon部分的通信，Socket是一个不错的方式。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2&gt;Socket是什么&lt;/h2&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;socket的英文原义是“孔”或“插座”。作为BSD UNIX的进程通信机制，取后一种意思。通常也称作&amp;quot;套接字&amp;quot;，用于描述IP地址和端口，是一个通信链的句柄。在Internet上的主机一般运行了多个服务软件，同时提供几种服务。每种服务都打开一个Socket，并绑定到一个端口上，不同的端口对应于不同的服务。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;以上内容来自&lt;a href=&quot;http://baike.baidu.com/link?url=Hnush4cjfuWUCEOUwCNaQbQCiwIhY-oL-wDv0VQEpxIkAiY9gf2kjoDfpH6BjUNH&quot;&gt;百度百科&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;简单说来，socket可以帮助不同的服务在不同的端口进行通信。&lt;/p&gt;
-
-&lt;h2&gt;PHP中的实现&lt;/h2&gt;
-
-&lt;h3&gt;服务端&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; 
-&lt;span class=&quot;nb&quot;&gt;set_time_limit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// 设置主机和端口&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$host&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;127.0.0.1&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$port&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;12387&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;// 创建一个tcp流&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$socket&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;socket_create&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;AF_INET&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;SOCK_STREAM&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;SOL_TCP&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
-    &lt;span class=&quot;k&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;die&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;socket_create() failed:&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;socket_strerror&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;socket_last_error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()));&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// 设置阻塞模式&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;socket_set_block&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
-    &lt;span class=&quot;k&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;die&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;socket_set_block() failed:&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;socket_strerror&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;socket_last_error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()));&lt;/span&gt;  
-
-&lt;span class=&quot;c1&quot;&gt;// 绑定到端口&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;socket_bind&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$host&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$port&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
-    &lt;span class=&quot;k&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;die&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;socket_bind() failed:&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;socket_strerror&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;socket_last_error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()));&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// 开始监听&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;socket_listen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
-    &lt;span class=&quot;k&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;die&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;socket_listen() failed:&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;socket_strerror&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;socket_last_error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()));&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Binding the socket on &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$host&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$port&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; ... &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-
-    &lt;span class=&quot;c1&quot;&gt;// 接收连接请求并调用一个子连接Socket来处理客户端和服务器间的信息&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;((&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$msgsock&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;socket_accept&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;socket_accept() failed:&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;socket_strerror&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;socket_last_error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;());&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;c1&quot;&gt;// 读数据&lt;/span&gt;
-        &lt;span class=&quot;nv&quot;&gt;$out&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$buf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;socket_read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$msgsock&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;8192&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)){&lt;/span&gt;
-            &lt;span class=&quot;nv&quot;&gt;$out&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$buf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-        &lt;span class=&quot;c1&quot;&gt;// 写数据&lt;/span&gt;
-        &lt;span class=&quot;nv&quot;&gt;$in&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;数据是 &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$out&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;nb&quot;&gt;socket_write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$msgsock&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$in&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;strlen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$in&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;));&lt;/span&gt;
-    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;c1&quot;&gt;// 结束通信&lt;/span&gt;
-    &lt;span class=&quot;nb&quot;&gt;socket_close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$msgsock&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;socket_close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;服务端主要进行了以下步骤：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;创建Socket的监听，等待连接&lt;/li&gt;
-&lt;li&gt;当链接到来时，开启一个子连接处理IO&lt;/li&gt;
-&lt;li&gt;接收来自客户端的传输数据&lt;/li&gt;
-&lt;li&gt;将结果写回给客户端&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;客户端&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-php&quot; data-lang=&quot;php&quot;&gt;&lt;span class=&quot;cp&quot;&gt;&amp;lt;?php&lt;/span&gt; 
-&lt;span class=&quot;nb&quot;&gt;set_time_limit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$host&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;127.0.0.1&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;  
-&lt;span class=&quot;nv&quot;&gt;$port&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;12387&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-
-&lt;span class=&quot;c1&quot;&gt;// 创建一个tcp流&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$socket&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;socket_create&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;AF_INET&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;SOCK_STREAM&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;SOL_TCP&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
-    &lt;span class=&quot;k&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;die&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;socket_create() failed:&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;socket_strerror&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;socket_last_error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()));&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;try to connect to &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$host&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$port&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;...&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;nv&quot;&gt;$result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;socket_connect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$host&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$port&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;die&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;socket_connect() failed:&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;socket_strerror&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;socket_last_error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()));&lt;/span&gt;
-
-&lt;span class=&quot;nv&quot;&gt;$in&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;hello &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;!&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;socket_write&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$in&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;strlen&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$in&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;socket_write() failed:&amp;quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;socket_strerror&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;发送成功！&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;span class=&quot;nv&quot;&gt;$out&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$buf&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;socket_read&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8192&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;nv&quot;&gt;$out&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.=&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$buf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;接受内容为：&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;$out&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;span class=&quot;nb&quot;&gt;socket_close&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$socket&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;span class=&quot;cp&quot;&gt;?&amp;gt;&lt;/span&gt;&lt;span class=&quot;x&quot;&gt;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;客户端主要有以下步骤：&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;连接到服务端Socket&lt;/li&gt;
-&lt;li&gt;向服务端写数据&lt;/li&gt;
-&lt;li&gt;接收来自服务端的数据&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-      </item>
-    
-      <item>
-        <title>Python脚本--下载合并SAE日志</title>
-        <link>http://yogy.cc/2014/01/17/python-script-of-sae-log-download.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/01/17/python-script-of-sae-log-download.html</guid>
-        <pubDate>Fri, 17 Jan 2014 00:00:00 +0800</pubDate>
-        <description>&lt;h1&gt;Python脚本--下载合并SAE日志&lt;/h1&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;由于一些原因，需要SAE上站点的日志文件，从SAE上只能按天下载，下载下来手动处理比较蛋疼，尤其是数量很大的时候。还好SAE提供了API可以批量获得日志文件下载地址，刚刚写了python脚本自动下载和合并这些文件&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h2&gt;调用API获得下载地址&lt;/h2&gt;
-
-&lt;p&gt;文档位置在&lt;a href=&quot;http://sae.sina.com.cn/?m=devcenter&amp;amp;catId=281&quot;&gt;这里&lt;/a&gt;&lt;/p&gt;
-
-&lt;h3&gt;设置自己的应用和下载参数&lt;/h3&gt;
-
-&lt;p&gt;请求中需要设置的变量如下&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;api_url = &amp;#39;http://dloadcenter.sae.sina.com.cn/interapi.php?&amp;#39;
-appname = &amp;#39;xxxxx&amp;#39;
-from_date = &amp;#39;20140101&amp;#39;
-to_date = &amp;#39;20140116&amp;#39;
-url_type = &amp;#39;http&amp;#39; # http|taskqueue|cron|mail|rdc
-url_type2 = &amp;#39;access&amp;#39; # only when type=http  access|debug|error|warning|notice|resources
-secret_key = &amp;#39;xxxxx&amp;#39;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;生成请求地址&lt;/h3&gt;
-
-&lt;p&gt;请求地址生成方式可以看一下官网的要求：&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;将参数排序&lt;/li&gt;
-&lt;li&gt;生成请求字符串，去掉&lt;code&gt;&amp;amp;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;附加access_key&lt;/li&gt;
-&lt;li&gt;请求字符串求md5，形成sign&lt;/li&gt;
-&lt;li&gt;把sign增加到请求字符串中&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;具体实现代码如下&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;params = dict()
-params[&amp;#39;act&amp;#39;] = &amp;#39;log&amp;#39;
-params[&amp;#39;appname&amp;#39;] = appname
-params[&amp;#39;from&amp;#39;] = from_date
-params[&amp;#39;to&amp;#39;] = to_date
-params[&amp;#39;type&amp;#39;] = url_type
-
-if url_type == &amp;#39;http&amp;#39;:
-    params[&amp;#39;type2&amp;#39;] = url_type2
-
-params = collections.OrderedDict(sorted(params.items()))
-
-request = &amp;#39;&amp;#39;
-for k,v in params.iteritems():
-    request += k+&amp;#39;=&amp;#39;+v+&amp;#39;&amp;amp;&amp;#39;
-
-sign = request.replace(&amp;#39;&amp;amp;&amp;#39;,&amp;#39;&amp;#39;)
-sign += secret_key
-
-md5 = hashlib.md5()
-md5.update(sign)
-sign = md5.hexdigest()
-
-request = api_url + request + &amp;#39;sign=&amp;#39; + sign
-
-if response[&amp;#39;errno&amp;#39;] != 0:
-    print &amp;#39;[!] &amp;#39;+response[&amp;#39;errmsg&amp;#39;]
-    exit()
-
-print &amp;#39;[#] request success&amp;#39;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;下载日志文件&lt;/h2&gt;
-
-&lt;p&gt;SAE将每天的日志文件都打包成tar.gz的格式，下载保存下来即可，文件名以&lt;code&gt;日期.tar.gz&lt;/code&gt;命名&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;log_files = list()
-
-for down_url in response[&amp;#39;data&amp;#39;]:    
-    file_name = re.compile(r&amp;#39;\d{4}-\d{2}-\d{2}&amp;#39;).findall(down_url)[0] + &amp;#39;.tar.gz&amp;#39;
-    log_files.append(file_name)
-    data = urllib2.urlopen(down_url).read()
-    with open(file_name, &amp;quot;wb&amp;quot;) as file:
-        file.write(data)
-
-print &amp;#39;[#] you got %d log files&amp;#39; % len(log_files)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;合并文件&lt;/h2&gt;
-
-&lt;p&gt;合并文件方式用trafile库解压缩每个文件，然后把文件内容附加到access_log下就可以了&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;# compress these files to access_log
-access_log = open(&amp;#39;access_log&amp;#39;,&amp;#39;w&amp;#39;);
-
-for log_file in log_files:
-    tar = tarfile.open(log_file)
-    log_name = tar.getnames()[0]
-    tar.extract(log_name)
-    # save to access_log
-    data = open(log_name).read()
-    access_log.write(data)
-    os.remove(log_name)
-
-print &amp;#39;[#] all file has writen to access_log&amp;#39;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;代码下载地址&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://github.com/suyan/Scripts/blob/master/Python/sae-log-download.py&quot;&gt;github&lt;/a&gt;&lt;/p&gt;
-</description>
-      </item>
-    
-      <item>
-        <title>PHP命名空间及自动加载</title>
-        <link>http://yogy.cc/2014/01/16/php-namespace-and-autoload.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/01/16/php-namespace-and-autoload.html</guid>
-        <pubDate>Thu, 16 Jan 2014 00:00:00 +0800</pubDate>
-        <description>&lt;h2&gt;命名空间&lt;/h2&gt;
-
-&lt;p&gt;什么是&lt;a href=&quot;http://zh.wikipedia.org/wiki/%E5%91%BD%E5%90%8D%E7%A9%BA%E9%97%B4&quot;&gt;命名空间&lt;/a&gt;呢？&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;命名空间（英语：Namespace）表示标识符（identifier）的可见范围。一个标识符可在多个命名空间中定义，它在不同命名空间中的含义是互不相干的。这样，在一个新的命名空间中可定义任何标识符，它们不会与任何已有的标识符发生冲突，因为已有的定义都处于其它命名空间中。&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;简单说来命名空间是为了解决不同库在同一个环境下使用时出现的命名冲突。例如我自己有一个函数名叫A，但是系统已经有一个A函数了，那就会出现冲突。&lt;/p&gt;
-
-&lt;h2&gt;PHP中的命名空间&lt;/h2&gt;
-
-&lt;p&gt;PHP从5.3版本开始引入了命名空间，之后许多现有PHP类库以及框架都开始支持它。那么PHP的命名空间怎么用呢？&lt;/p&gt;
-
-&lt;h3&gt;定义命名空间&lt;/h3&gt;
-
-&lt;p&gt;下面是一个定义命名空间的例子&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;?php    
-//file a.php
-namespace A;
-
-const test = &amp;#39;Atest&amp;#39;; 
-
-function test() { 
-    return __FUNCTION__; 
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+#include&amp;lt;queue&amp;gt;
+#include&amp;lt;algorithm&amp;gt;
+#include&amp;lt;cmath&amp;gt;
+#include&amp;lt;string&amp;gt;
+using namespace std;
+
+const int inf=0x7fffffff;
+int d[510],h[510],head[510],vis[510];
+int s=inf,b,tot,l;
+int q[510][510];
+int son[510];
+int path[510],ans[510];
+struct E{
+    int v,w,next;
+}e[300000];
+int cnt;
+void add(int u,int v,int w){
+    e[cnt].next=head[u];
+    e[cnt].v=v;
+    e[cnt].w=w;
+    head[u]=cnt++;
 }
-
-class Test{
-    public function __construct(){
-        return __METHOD__;
+typedef pair&amp;lt;int,int&amp;gt; pii;
+priority_queue&amp;lt;pii,vector&amp;lt;pii&amp;gt;,greater&amp;lt;pii&amp;gt; &amp;gt; pq;
+void gao(int n){
+    int i,ts=0,tb=0,u;
+    //printf(&amp;quot;0&amp;quot;);for(i=n-2;i&amp;gt;=0;--i) printf(&amp;quot;-&amp;gt;%d&amp;quot;,path[i]);printf(&amp;quot;\n&amp;quot;);
+    for(i=n-2;i&amp;gt;=0;--i){
+        u=h[path[i]]-l;
+        if(u&amp;gt;0) tb+=u;
+        else if(u&amp;lt;0){
+            if(u+tb&amp;gt;=0) tb+=u;
+            else{
+                ts-=u+tb;
+                tb=0;
+            }
+        }
+    }
+    if(ts&amp;lt;s || ts==s &amp;amp;&amp;amp; tb&amp;lt;b){
+        s=ts;b=tb;tot=n-1;
+        for(i=0;i&amp;lt;n;++i) ans[i]=path[i];
     }
 }
-?&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;上面例子中就是一个典型的命名空间定义方法，只有&lt;code&gt;const&lt;/code&gt;, &lt;code&gt;function&lt;/code&gt;, &lt;code&gt;class&lt;/code&gt;受命名空间的约束。&lt;/p&gt;
-
-&lt;h3&gt;使用命名空间&lt;/h3&gt;
-
-&lt;p&gt;使用命名空间的方式如下：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;?php 
-namespace B;
-use A;
-
-const test = &amp;#39;Btest&amp;#39;;
-function test() { 
-    return __FUNCTION__; 
-}
-
-class Test{
-    public function __construct(){
-        return __METHOD__;
+void dfs(int v,int deep){
+    if(v==0){
+        gao(deep);
+        return;
+    }
+    int i,u;
+    for(i=0;i&amp;lt;son[v];++i){
+        u=q[v][i];
+        path[deep]=u;
+        dfs(u,deep+1);
     }
 }
 
-include &amp;quot;a.php&amp;quot;;//必须包含A命名空间的文件
-
-// 完全限定
-// `\B\test`从绝对位置查找输出，如果是全局函数则`\test`
-echo \B\test;   //输出Btest
-
-// 限定名称  
-// 这里已经通过`use A`申明了在这个文件可以通过`\A\...`使用A命名空间的函数
-echo A\test;    //输出Atest
-
-// 非限定名称
-// 非限定名称的函数`test`会从当前命名控件查找，即B
-echo test;      //输出Btest
-
-// namespace关键字代表当前命名空间
-echo namespace/test;
-?&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;首先要注意的是命名空间只起申明作用，也就是在使用了命名空间的时候依然得把这个命名空间申明的那个文件包含进来。在使用中可以通过&lt;code&gt;__NAMESPACE__&lt;/code&gt;来查看当前命名空间。&lt;/p&gt;
-
-&lt;p&gt;更多内容可以查看&lt;a href=&quot;http://www.php.net/manual/zh/language.namespaces.basics.php&quot;&gt;PHP官方文档&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2&gt;自动加载&lt;/h2&gt;
-
-&lt;p&gt;每个文件既要申明命名控件又要手动&lt;code&gt;include&lt;/code&gt;是非常不智能的事情，所以在自己的PHP系统或者框架中可以使用自动加载技术，让系统自己去找&lt;/p&gt;
-
-&lt;p&gt;最简单的方式是利用函数&lt;code&gt;__autoload&lt;/code&gt;函数，但是这个函数只能在非命名控件下定义，也就是全局情况下：&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;function __autoload($class) {
-  $dir = &amp;#39;./&amp;#39;;
-  set_include_path(get_include_path().PATH_SEPARATOR.$ids_dir);
-  $class = str_replace(&amp;#39;\\&amp;#39;, &amp;#39;/&amp;#39;, $class) . &amp;#39;.php&amp;#39;; 
-  require_once($class);
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;}&lt;/p&gt;
-
-&lt;p&gt;如果在已经有了命名空间的类中，可以使用函数&lt;code&gt;spl_autoload_register&lt;/code&gt;来注册一个类中的方法来代替&lt;code&gt;__autoload&lt;/code&gt;&lt;/p&gt;
-</description>
-      </item>
-    
-      <item>
-        <title>SVN 常用资源</title>
-        <link>http://yogy.cc/2014/01/15/general-svn-resources.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/01/15/general-svn-resources.html</guid>
-        <pubDate>Wed, 15 Jan 2014 00:00:00 +0800</pubDate>
-        <description>&lt;h2&gt;常用指令&lt;/h2&gt;
-
-&lt;h3&gt;将文件checkout到本地目录&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;svn checkout path（path是服务器上的目录）
-svn checkout svn://192.168.1.1/pro/domain
-svn co
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;往版本库中添加新的文件&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;svn add file
-svn add test.php(添加test.php)
-svn add *.php(添加当前目录下所有的php文件)
-svn add *.php --force(增加所有文件)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;将改动的文件提交到版本库&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;svn commit -m “LogMessage“ [-N] [--no-unlock] PATH(如果选择了保持锁，就使用–no-unlock开关)
-svn commit -m “add test file for my test“ test.php
-svn ci
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;加锁/解锁&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;svn lock -m “LockMessage“ [--force] PATH
-svn lock -m “lock test file“ test.php
-svn unlock PATH
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;更新到某个版本&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;svn update -r m path
-svn update 如果后面没有目录，默认将当前目录以及子目录下的所有文件都更新到最新版本。
-svn update -r 200 test.php(将版本库中的文件test.php还原到版本200)
-
-svn update test.php(更新，于版本库同步。如果在提交的时候提示过期的话，是因为冲突，需要先update，修改文件，然后清除svn resolved，最后再提交commit)
-
-svn up
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;查看文件或者目录状态&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;svn status path（目录下的文件和子目录的状态，正常状态不显示）
-【?：不在svn的控制中；M：内容被修改；C：发生冲突；A：预定加入到版本库；K：被锁定】
-
-svn status -v path(显示文件和子目录状态)
-第一列保持相同，第二列显示工作版本号，第三和第四列显示最后一次修改的版本号和修改人。
-
-注：svn status、svn diff和 svn revert这三条命令在没有网络的情况下也可以执行的，原因是svn在本地的.svn中保留了本地版本的原始拷贝。
-
-svn st
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;删除文件&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;svn delete path -m “delete test fle“
-svn delete svn://192.168.1.1/pro/domain/test.php -m “delete test file”
-或者直接svn delete test.php 然后再svn ci -m ‘delete test file‘，推荐使用这种
-svn (del, remove, rm)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;查看日志&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;svn log path 
-svn log test.php 显示这个文件的所有修改记录，及其版本号的变化
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;查看文件详细信息&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;svn info path
-svn info test.php
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;比较差异&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;svn diff path(将修改的文件与基础版本比较)
-svn diff test.php
-svn diff -r m:n path(对版本m和版本n比较差异)
-svn diff -r 200:201 test.php
-svn di
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;将两个版本之间的差异合并到当前文件&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;svn merge -r m:n path
-svn merge -r 200:205 test.php（将版本200与205之间的差异合并到当前文件，但是一般都会产生冲突，需要处理一下）
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;SVN 帮助&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;svn help
-svn help ci
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;版本库下的文件和目录列表&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;svn list path 
-svn ls
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;创建纳入版本控制下的新目录&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;svn mkdir: 创建纳入版本控制下的新目录。
-mkdir PATH…
-mkdir URL…
-
-创建版本控制的目录。
-
-1、每一个以工作副本 PATH 指定的目录，都会创建在本地端，并且加入新增调度，以待下一次的提交。
-2、每个以URL指定的目录，都会透过立即提交于仓库中创建.在这两个情况下，所有的中间目录都必须事先存在。
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;恢复本地修改&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;svn revert: 恢复原始未改变的工作副本文件 (恢复大部份的本地修改)。revert:
-用法: revert PATH…
-注意: 本子命令不会存取网络，并且会解除冲突的状况。但是它不会恢复被删除的目录
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;代码库URL变更&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;svn switch (sw): 更新工作副本至不同的URL。 
-
-1、switch URL [PATH]
-2、switch –relocate FROM TO [PATH...]
-1、更新你的工作副本，映射到一个新的URL，其行为跟“svn update”很像，也会将服务器上文件与本地文件合并。这是将工作副本对应到同一仓库中某个分支或者标记的方法。
-
-2、改写工作副本的URL元数据，以反映单纯的URL上的改变。当仓库的根URL变动(比如方案名或是主机名称变动)，但是工作副本仍旧对映到同一仓库的同一目录时使用这个命令更新工作副本与仓库的对应关系。
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;解决冲突&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;svn resolved: 移除工作副本的目录或文件的“冲突”状态。 java设计模式之——策略模式
-用法: resolved PATH…
-注意: 本子命令不会依语法来解决冲突或是移除冲突标记；它只是移除冲突的相关文件，然后让 PATH 可以再次提交。
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;输出指定文件或URL的内容。&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;svn cat 目标[@版本]…如果指定了版本，将从指定的版本开始查找。
-svn cat -r PREV filename &amp;gt; filename (PREV 是上一版本,也可以写具体版本号,这样输出结果是可以提交的)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-      </item>
-    
-      <item>
-        <title>Shell 常用资源</title>
-        <link>http://yogy.cc/2014/01/15/general-shell-resources.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/01/15/general-shell-resources.html</guid>
-        <pubDate>Wed, 15 Jan 2014 00:00:00 +0800</pubDate>
-        <description>&lt;h2&gt;常用指令&lt;/h2&gt;
-
-&lt;h3&gt;文本内容搜索&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;grep aaa * 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;文件夹操作&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;查看文件夹大小   du -h --max-depth=1 /home/ys
-查看驱动器空间   df -h 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;压缩命令&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;tar zxvf aaa.tar.gz
-tar zcvf aaa.tar.gz aaa
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;登陆到其他用户&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;login
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;查看端口的占用&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;lsof -i:8087  查看8087端口的使用
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;批量杀死进程&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;ps -aux|grep name|grep -v grep|cut -c 9-15|xargs kill -9
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;查看当前时间&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;date       时间
-date +%s   时间戳
-date -d &amp;quot;2010-07-20 10:25:30&amp;quot; +%s  指定时间时间戳
-date -d &amp;quot;@1279592730&amp;quot;    时间戳转时间
-date -d &amp;quot;1970-01-01 14781 days&amp;quot; &amp;quot;+%Y/%m/%d %H:%M:%S&amp;quot; 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;查看进程内存使用情况&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;top -d 1 -p pid [,pid ...]
-pmap pid 
-ps aux|grep process_name
-查看/proc/process_id/文件夹下的status文件
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;查看Linux内核版本或发布版本&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;lsb_release -a
-uname -a
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;一句话实现一个HTTP服务，把当前文件夹作为根目录&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;python -m SimpleHTTPServer
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;查看本地网络服务活动状态&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;lsof -i
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;查看自己的外网ip&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;curl ifconfig.me
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;下载整个网站&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;wget --random-wait -r -p -e robots=off -U mozilla http://www.example.com
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;后台运行一段不中止的程序，并可随时查看它的状态&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;screen -d -m -S some_ name ping my_router
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;查看进程执行的时间&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;ps -A -opid,stime,etime,args | grep python
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;创建守护进程&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;nohup python /var/www/a.py &amp;amp;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;查看当前文件夹下文件（文件夹）大小&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;du -h --max-depth=1 .
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;查看所有磁盘大小&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;df -h
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;诊断网络&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;mtr 
-ping
-traceroute
-dig
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;列出本机监听的端口号&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;netstat –tlnp
-netstat -anop
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;在远程机器上运行一段脚本&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;ssh user@server bash &amp;lt; /path/to/local/script.sh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;端口扫描&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;nc -z -v -n 127.0.0.1 20-100
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;负载测试，30秒内向Google发起20个并发连接&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;siege -c20 www.google.co.uk -b -t30s
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-      </item>
-    
-      <item>
-        <title>Python 常用资源</title>
-        <link>http://yogy.cc/2014/01/15/general-python-resources.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/01/15/general-python-resources.html</guid>
-        <pubDate>Wed, 15 Jan 2014 00:00:00 +0800</pubDate>
-        <description>&lt;h2&gt;常用代码&lt;/h2&gt;
-
-&lt;h3&gt;遍历对象&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;for key in a.__dict__:
-    print key,&amp;#39;:&amp;#39;,a.__dict__[key]
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;调试方法&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;assert False   //引发异常，观察错误界面
-import logging
-logging.info(&amp;#39;&amp;#39;)  //写日志
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;获得当前时间&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#时间戳
-time.time()
-#日期时间
-time.ctime()
-#iso时间
-datetime.fromtimestamp(time.time()).isoformat()
-#固定格式
-time.strftime(&amp;#39;%Y-%m-%d&amp;#39;,time.localtime(time.time()))
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;日期到时间戳&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;dateC=datetime.datetime(2010,6,6,8,14,59)
-timestamp=time.mktime(dateC.timetuple())
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;时间戳到日期&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;ltime=time.localtime(1237515355.0)
-timeStr=time.strftime(&amp;quot;%Y-%m-%d %H:%M:%S&amp;quot;, ltime)
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;之后的包从绝对位置导入&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;from __future__ import absolute_import
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-      </item>
-    
-      <item>
-        <title>PHP 常用资源</title>
-        <link>http://yogy.cc/2014/01/15/general-php-resources.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/01/15/general-php-resources.html</guid>
-        <pubDate>Wed, 15 Jan 2014 00:00:00 +0800</pubDate>
-        <description>&lt;h2&gt;常用资源&lt;/h2&gt;
-
-&lt;h3&gt;好文&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;http://wulijun.github.io/php-the-right-way/&quot;&gt;PHP之道&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://blog.csdn.net/fangaoxin/article/details/6952954&quot;&gt;Cookie/Session机制详解&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3&gt;优秀的类库&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&quot;http://jingwentian.com/t-145&quot;&gt;PHP中文分词: 自动打标签功能&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3&gt;判断是否为空&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;+--------------+-----------+---------+-----------+---------+--------+
-| 真值表        | gettype() | empty() | is_null() | isset() | (bool) |
-+--------------+-----------+---------+-----------+---------+--------+
-| $x = &amp;quot;&amp;quot;      | string    | true    | false     | true    | false  |
-| $x=null      | NULL      | true    | true      | false   | false  |
-| var $x       | NULL      | true    | true      | false   | false  |
-| $x = array() | array     | true    | false     | true    | false  |
-| $x = false   | boolean   | true    | false     | true    | false  |
-| $x = 15      | integer   | false   | false     | true    | true   |
-| $x = 1       | integer   | false   | false     | true    | true   |
-| $x = 0       | integer   | true    | false     | true    | false  |
-| $x = -1      | integer   | false   | false     | true    | true   |
-| $x = &amp;#39;15&amp;#39;    | string    | false   | false     | true    | true   |
-| $x = &amp;#39;1&amp;#39;     | string    | false   | false     | true    | true   |
-| $x = &amp;#39;0&amp;#39;     | string    | true    | false     | true    | false  |
-| $x = &amp;#39;-1&amp;#39;    | string    | false   | false     | true    | true   |
-| $x = &amp;#39;foo&amp;#39;   | string    | false   | false     | true    | true   |
-| $x = &amp;#39;true&amp;#39;  | string    | false   | false     | true    | true   |
-| $x = &amp;#39;false&amp;#39; | string    | false   | false     | true    | true   |
-+--------------+-----------+---------+-----------+---------+--------+
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h2&gt;常用代码&lt;/h2&gt;
-
-&lt;h3&gt;页面编码&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;header(&amp;quot;Content-type: text/html; charset=utf-8&amp;quot;);
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;去除数组中的键名，保留值&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$array = array_values($array);
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-      </item>
-    
-      <item>
-        <title>jQuery 常用资源</title>
-        <link>http://yogy.cc/2014/01/15/general-jquery-resources.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/01/15/general-jquery-resources.html</guid>
-        <pubDate>Wed, 15 Jan 2014 00:00:00 +0800</pubDate>
-        <description>&lt;h2&gt;官方资源&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://jquery.com/&quot;&gt;官方首页&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://plugins.jquery.com/&quot;&gt;官方插件&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2&gt;下拉框扩展&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://ivaynberg.github.io/select2/&quot;&gt;Select 2&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;功能强大的下拉列表插件，基本包含了所有可能的需求……&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http://kotowicz.net/jquery-option-tree/demo/demo.html&quot;&gt;OptionTree&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;联动下拉列表插件，可以动态生成下拉列表，而且支持ajax获取数据&lt;/p&gt;
-
-&lt;h2&gt;常用代码&lt;/h2&gt;
-
-&lt;h3&gt;禁用a的链接&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;href=&amp;quot;return false;&amp;quot;或href=&amp;quot;javascript;&amp;quot;
-$().live(&amp;#39;click&amp;#39;,function(e){
-  e.preventDefault();
-  });
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;清空file的内容&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;var cfile = $(&amp;#39;#id&amp;#39;).clone();
-$(&amp;#39;#id&amp;#39;).replaceWith(cfile);
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;jquery.form.js 和 jquery.validate.js配合使用&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;这两个脚本搭配在表单验证和提交是非常的好用,顺便增加了对bootstrap表单的支持
-$(&amp;quot;#page_form&amp;quot;).validate({
-  highlight: function(element) {
-    $(element).closest(&amp;#39;.control-group&amp;#39;).removeClass(&amp;#39;success&amp;#39;).addClass(&amp;#39;error&amp;#39;);
-  },
-  success: function(element) {
-    element.text(&amp;#39;OK!&amp;#39;).addClass(&amp;#39;valid&amp;#39;).closest(&amp;#39;.control-group&amp;#39;).removeClass(&amp;#39;error&amp;#39;).addClass(&amp;#39;success&amp;#39;);
-  },
-  submitHandler:function(form) {
-    $(form).ajaxSubmit(options);
-}});
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;选择父节点&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;使用$(this)来将dom对象转为jquery对象
-$(this).parents(&amp;#39;tr&amp;#39;);
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;多重操作&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;$(this).parents(&amp;#39;tr&amp;#39;).remove();
-因为jquery函数返回jquery节点
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-      </item>
-    
-      <item>
-        <title>JavaScript 常用资源</title>
-        <link>http://yogy.cc/2014/01/15/general-javascript-resources.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/01/15/general-javascript-resources.html</guid>
-        <pubDate>Wed, 15 Jan 2014 00:00:00 +0800</pubDate>
-        <description>&lt;h2&gt;常用代码&lt;/h2&gt;
-
-&lt;h3&gt;字符串截取&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;substr(start [, length ])
-返回一个从指定位置开始的指定长度的子字符串
-substring(start, end)
-返回位于 String 对象中指定位置的子字符串。
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;页面跳转&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;window.navigate(&amp;quot;top.jsp&amp;quot;);
-window.history.back(-1);
-window.location.href=&amp;quot;login.jsp?backurl=&amp;quot;+window.location.href; 
-self.location=&amp;#39;top.htm&amp;#39;;
-top.location=&amp;#39;xx.jsp&amp;#39;;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;加载完成&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;window.onload 
-必须等页面内包括图片的所有元素加载完成后才能执行。
-不能同时编写多个，只执行一个
-$(document).ready()
-是DOM结构绘制完毕后就可以执行
-可以编写多个
-简写$(function(){});
-$(window).load()等同与window.onload
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;刷新页面&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;history.go(0) 
-location.reload() 
-location=location 
-location.assign(location) 
-document.execCommand(&amp;#39;Refresh&amp;#39;) 
-window.navigate(location) 
-location.replace(location) 
-document.URL=location.href 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;json转化和解析&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;JSON.parse(&amp;quot;{a:&amp;#39;111&amp;#39;,b:&amp;#39;ccc&amp;#39;}&amp;quot;);  //解析
-eval(&amp;quot;(&amp;quot;+&amp;quot;&amp;quot;+&amp;quot;)&amp;quot;); //解析
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;时间转换&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;var day1 = parseInt(new Date().valueOf()/1000); //获得当前时间时间戳
-day2 = new Date(day1*1000);
-alert(day2.getFullYear()+&amp;quot;-&amp;quot;+(day2.getMonth()+1)+&amp;quot;-&amp;quot;+day2.getDate()+&amp;quot; &amp;quot;+day2.getHours()+&amp;quot;:&amp;quot;+day2.getMinutes()+&amp;quot;:&amp;quot;+day2.getSeconds())
-d = new Date();
-s = d.getFullYear() + &amp;quot;-&amp;quot;;
-s += (&amp;quot;0&amp;quot;+(d.getMonth()+1)).slice(-2) + &amp;quot;-&amp;quot;;
-s += (&amp;quot;0&amp;quot;+d.getDate()).slice(-2) + &amp;quot; &amp;quot;;
-s += (&amp;quot;0&amp;quot;+d.getHours()).slice(-2) + &amp;quot;:&amp;quot;;
-s += (&amp;quot;0&amp;quot;+d.getMinutes()).slice(-2) + &amp;quot;:&amp;quot;;
-s += (&amp;quot;0&amp;quot;+d.getSeconds()).slice(-2) + &amp;quot;.&amp;quot;;
-s += (&amp;quot;00&amp;quot;+d.getMilliseconds()).slice(-3);
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;URI编码转换&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;var a=&amp;quot;&amp;#39;:&amp;#39;&amp;quot;;
-en = encodeURI(a);    //编码
-a = decodeURI(en);    //解码
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;h3&gt;HTML编码转换&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;function htmlEncode(value){
-  return $(&amp;#39;&amp;lt;div/&amp;gt;&amp;#39;).text(value).html();
-}
-
-function htmlDecode(value){
-  return $(&amp;#39;&amp;lt;div/&amp;gt;&amp;#39;).html(value).text();
+int main(){
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    int i,j,t,n,m,u,v,w,ed,now,temp;
+    memset(head,-1,sizeof(head));
+    scanf(&amp;quot;%d%d%d%d&amp;quot;,&amp;amp;l,&amp;amp;n,&amp;amp;t,&amp;amp;m);
+    l&amp;gt;&amp;gt;=1;
+    for(i=1;i&amp;lt;=n;++i) scanf(&amp;quot;%d&amp;quot;,&amp;amp;h[i]);
+    for(i=0;i&amp;lt;m;++i){
+        scanf(&amp;quot;%d%d%d&amp;quot;,&amp;amp;u,&amp;amp;v,&amp;amp;w);
+        add(u,v,w);
+        add(v,u,w);
+    }
+    for(i=0;i&amp;lt;=n;++i) d[i]=inf;
+    d[0]=0;
+    pq.push(make_pair(0,0));
+    while(!pq.empty()){
+        u=pq.top().second;
+        pq.pop();
+        if(vis[u]) continue;
+        vis[u]=1;
+        if(u==t) break;
+        for(ed=head[u];ed!=-1;ed=e[ed].next){
+            v=e[ed].v;
+            if(vis[v]) continue;
+            w=e[ed].w;
+            if(d[u]+w&amp;lt;d[v]){
+                son[v]=1;
+                q[v][0]=u;
+                d[v]=d[u]+w;
+                pq.push(make_pair(d[v],v));
+            }else if(d[u]+w==d[v]){
+                q[v][son[v]++]=u;
+            }
+        }
+    }
+    path[0]=t;
+    dfs(t,1);
+    printf(&amp;quot;%d 0&amp;quot;,s);
+    for(--tot;tot&amp;gt;=0;--tot) printf(&amp;quot;-&amp;gt;%d&amp;quot;,ans[tot]);
+    printf(&amp;quot; %d\n&amp;quot;,b);
+    return 0;
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
       </item>
     
       <item>
-        <title>HTML 常用资源</title>
-        <link>http://yogy.cc/2014/01/15/general-html-resources.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/01/15/general-html-resources.html</guid>
-        <pubDate>Wed, 15 Jan 2014 00:00:00 +0800</pubDate>
-        <description>&lt;h2&gt;常用属性&lt;/h2&gt;
+        <title>PAT1017. Queueing at Bank (25)</title>
+        <link>http://yogy.cc/2014/09/04/pat-1017.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/04/pat-1017.html</guid>
+        <pubDate>Thu, 04 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;数据结构&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;h3&gt;在link中可能会出现media=screen的情况&lt;/h3&gt;
+&lt;h3&gt;题意&lt;/h3&gt;
 
-&lt;p&gt;这个属性是确定在哪种情况下使用这个link的css文件，screen是指输出到屏幕，而print用于打印&lt;/p&gt;
+&lt;p&gt;求平均等待时间&lt;/p&gt;
 
-&lt;h3&gt;在meta中增加viewport选项&lt;/h3&gt;
+&lt;h3&gt;细节&lt;/h3&gt;
 
-&lt;p&gt;viewport的作用是告诉浏览器，目前的装置情况。&lt;/p&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;&amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width;initial-scale=1.0&amp;quot;&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;ul&gt;
-&lt;li&gt;width:数字或device-width   设置宽度&lt;/li&gt;
-&lt;li&gt;height:数字或device-width    设置高度&lt;/li&gt;
-&lt;li&gt;initial-scale:最小0.25，最大5   初始缩放&lt;/li&gt;
-&lt;li&gt;minimum-scale:最小0.25，最大5   最小缩放&lt;/li&gt;
-&lt;li&gt;maximum-scale:最小0.25，最大5   最大缩放&lt;/li&gt;
-&lt;li&gt;user-scalable:1或0(yes or no)  是否允许用户缩放&lt;/li&gt;
+&lt;li&gt;业务完成时间放入优先队列&lt;/li&gt;
+&lt;li&gt;17：00前到达则必须办理&lt;/li&gt;
 &lt;/ul&gt;
-</description>
+
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+#include&amp;lt;queue&amp;gt;
+#include&amp;lt;algorithm&amp;gt;
+#include&amp;lt;cmath&amp;gt;
+#include&amp;lt;string&amp;gt;
+using namespace std;
+struct P{
+    int a,l;
+}p[10010];
+bool cmp(P a,P b){
+    return a.a&amp;lt;b.a;
+}
+priority_queue&amp;lt;int,vector&amp;lt;int&amp;gt;,greater&amp;lt;int&amp;gt; &amp;gt; pq;
+
+int main(){
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    int n,m,i,j,hh,mm,ss,now=3600*8,ans=0;
+    scanf(&amp;quot;%d%d&amp;quot;,&amp;amp;n,&amp;amp;m);
+    for(i=0;i&amp;lt;n;++i){
+        scanf(&amp;quot;%d:%d:%d%d&amp;quot;,&amp;amp;hh,&amp;amp;mm,&amp;amp;ss,&amp;amp;p[i].l);
+        p[i].l*=60;
+        if(hh&amp;gt;=17){
+            --i;--n;
+            continue;
+        }
+        p[i].a=hh*3600+mm*60+ss;
+    }
+    sort(p,p+n,cmp);
+    for(i=j=0;i&amp;lt;n &amp;amp;&amp;amp; j&amp;lt;m;++i,++j){
+        if(p[i].a&amp;gt;now) now=p[i].a;
+        pq.push(now+p[i].l);
+        ans+=now-p[i].a;
+    }
+    for(;i&amp;lt;n;++i){
+        now=pq.top();
+        pq.pop();
+        if(p[i].a&amp;gt;now) now=p[i].a;
+        pq.push(now+p[i].l);
+        ans+=now-p[i].a;
+    }
+    printf(&amp;quot;%.1f\n&amp;quot;,ans*0.1/6/n);
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
+    
+      <item>
+        <title>PAT1016. Phone Bills (25)</title>
+        <link>http://yogy.cc/2014/09/04/pat-1016.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/04/pat-1016.html</guid>
+        <pubDate>Thu, 04 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;模拟&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;题意&lt;/h3&gt;
+
+&lt;p&gt;求每个人的账单&lt;/p&gt;
+
+&lt;h3&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;时间字符串直接排序&lt;/li&gt;
+&lt;li&gt;取模输出时必须注意前导零&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+#include&amp;lt;queue&amp;gt;
+#include&amp;lt;algorithm&amp;gt;
+#include&amp;lt;cmath&amp;gt;
+#include&amp;lt;string&amp;gt;
+using namespace std;
+struct P{
+    string name,time;
+    int type;
+}p[1010];
+bool cmp(P a,P b){
+    if(a.name!=b.name) return a.name&amp;lt;b.name;
+    return a.time&amp;lt;b.time;
+}
+int r[24];
+int temp[2],last[2];
+
+void gao(string time,int t){
+    int d,h,m;
+    d=(time[3]-&amp;#39;0&amp;#39;)*10+time[4]-&amp;#39;0&amp;#39;;
+    h=(time[6]-&amp;#39;0&amp;#39;)*10+time[7]-&amp;#39;0&amp;#39;;
+    m=(time[9]-&amp;#39;0&amp;#39;)*10+time[10]-&amp;#39;0&amp;#39;;
+    int ans=0,i;
+    if(h&amp;lt;24) ans=m*r[h];
+    for(i=0;i&amp;lt;=23;++i) ans+=60*(d-1)*r[i];
+    for(i=0;i&amp;lt;=h-1;++i) ans+=60*r[i];
+    temp[t]=ans;
+    last[t]=60*24*(d-1)+60*h+m;
+}
+string s,name;
+int main(){
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    int ans,n,i,ok,m,t,l;
+    for(i=0;i&amp;lt;24;++i) cin&amp;gt;&amp;gt;r[i];
+    cin&amp;gt;&amp;gt;n;
+    for(i=0;i&amp;lt;n;++i){
+        cin&amp;gt;&amp;gt;p[i].name&amp;gt;&amp;gt;p[i].time&amp;gt;&amp;gt;s;
+        if(s[1]==&amp;#39;n&amp;#39;) p[i].type=1;
+        else p[i].type=0;
+    }
+    sort(p,p+n,cmp);
+    //for(i=0;i&amp;lt;n;++i) cout&amp;lt;&amp;lt;p[i].name&amp;lt;&amp;lt;&amp;quot; &amp;quot;&amp;lt;&amp;lt;p[i].time&amp;lt;&amp;lt;&amp;quot; &amp;quot;&amp;lt;&amp;lt;p[i].type&amp;lt;&amp;lt;endl;
+    ok=0;
+    ans=0;
+    name=p[0].name;
+    m=(p[0].time[0]-&amp;#39;0&amp;#39;)*10+p[0].time[1]-&amp;#39;0&amp;#39;;
+    for(i=1;i&amp;lt;n;++i){
+        if(p[i].name!=name){
+            if(ok){
+                cout&amp;lt;&amp;lt;&amp;quot;Total amount: $&amp;quot;&amp;lt;&amp;lt;ans/100&amp;lt;&amp;lt;&amp;quot;.&amp;quot;;
+                ans=ans%100;
+                if(ans&amp;lt;10) cout&amp;lt;&amp;lt;&amp;quot;0&amp;quot;;
+                cout&amp;lt;&amp;lt;ans%100&amp;lt;&amp;lt;endl;
+            }
+            ok=0;
+            ans=0;
+            name=p[i].name;
+        }else{
+            if(!p[i].type &amp;amp;&amp;amp; p[i-1].type){
+                if(!ok){
+                    ok=1;
+                    cout&amp;lt;&amp;lt;name&amp;lt;&amp;lt;&amp;quot; &amp;quot;&amp;lt;&amp;lt;m/10&amp;lt;&amp;lt;m%10&amp;lt;&amp;lt;endl;
+                }
+                gao(p[i].time,0);
+                gao(p[i-1].time,1);
+                t=temp[0]-temp[1];
+                l=last[0]-last[1];
+                ans+=t;
+                cout&amp;lt;&amp;lt;p[i-1].time.substr(3)&amp;lt;&amp;lt;&amp;quot; &amp;quot;&amp;lt;&amp;lt;p[i].time.substr(3)&amp;lt;&amp;lt;&amp;quot; &amp;quot;&amp;lt;&amp;lt;l&amp;lt;&amp;lt;&amp;quot; $&amp;quot;&amp;lt;&amp;lt;t/100&amp;lt;&amp;lt;&amp;quot;.&amp;quot;;
+                t=t%100;
+                if(t&amp;lt;10) cout&amp;lt;&amp;lt;&amp;quot;0&amp;quot;;
+                cout&amp;lt;&amp;lt;t%100&amp;lt;&amp;lt;endl;
+            }
+        }
+    }
+    if(ok){
+        cout&amp;lt;&amp;lt;&amp;quot;Total amount: $&amp;quot;&amp;lt;&amp;lt;ans/100&amp;lt;&amp;lt;&amp;quot;.&amp;quot;;
+        ans=ans%100;
+        if(ans&amp;lt;10) cout&amp;lt;&amp;lt;&amp;quot;0&amp;quot;;
+        cout&amp;lt;&amp;lt;ans%100&amp;lt;&amp;lt;endl;
+    }
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
+    
+      <item>
+        <title>PAT1015. Reversible Primes (20)</title>
+        <link>http://yogy.cc/2014/09/03/pat-1015.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/03/pat-1015.html</guid>
+        <pubDate>Wed, 03 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;模拟&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;题意&lt;/h3&gt;
+
+&lt;p&gt;求某数某进制表达下的正反序是否都为素数&lt;/p&gt;
+
+&lt;h3&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;输入为十进制&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+#include&amp;lt;queue&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+#include&amp;lt;cmath&amp;gt;
+using namespace std;
+int b[100];
+int is(int a){
+    if(a&amp;lt;2) return 0;
+    for(int i=2;i*i&amp;lt;=a;++i) if(a%i==0) return 0;
+    return 1;
+}
+int main(){
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    int n,d,i,x,y,m;
+    while(scanf(&amp;quot;%d&amp;quot;,&amp;amp;n)!=EOF &amp;amp;&amp;amp; n&amp;gt;=0){
+        scanf(&amp;quot;%d&amp;quot;,&amp;amp;d);
+        int m=0;
+        x=n;
+        while(n){
+            b[m++]=n%d;
+            n/=d;
+        }
+        y=0;
+        for(i=0;i&amp;lt;m;++i){
+            y=y*d+b[i];
+        }
+        if(is(x) &amp;amp;&amp;amp; is(y)) printf(&amp;quot;Yes\n&amp;quot;);
+        else printf(&amp;quot;No\n&amp;quot;);
+    }
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
+    
+      <item>
+        <title>PAT1014. Waiting in Line (30)</title>
+        <link>http://yogy.cc/2014/09/03/pat-1014.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/03/pat-1014.html</guid>
+        <pubDate>Wed, 03 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;数据结构&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;题意&lt;/h3&gt;
+
+&lt;p&gt;求每人办完业务的时刻&lt;/p&gt;
+
+&lt;h3&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;17点前开始办理的必须办完&lt;/li&gt;
+&lt;li&gt;每分钟模拟正在办理业务的人剩余时间&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+#include&amp;lt;queue&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+using namespace std;
+
+int n,m,tot,k;
+queue&amp;lt;int&amp;gt; q[25];
+int t[25];
+int ans[1010];
+int nd[1010];
+
+int main(){
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    int i,j,now=0,cnt=0,ok=0;
+    scanf(&amp;quot;%d%d%d%d&amp;quot;,&amp;amp;n,&amp;amp;m,&amp;amp;tot,&amp;amp;k);
+    for(i=0;i&amp;lt;tot;++i) scanf(&amp;quot;%d&amp;quot;,&amp;amp;nd[i]);
+    for(i=0;i&amp;lt;m;++i){
+        for(j=0;j&amp;lt;n;++j){
+            if(cnt&amp;lt;tot) q[j].push(cnt++);
+            else goto L;
+        }
+    }
+    L:;
+    for(i=0;i&amp;lt;n;++i) if(!q[i].empty()) t[i]=nd[q[i].front()];
+    for(now=1;now&amp;lt;540;++now){
+        for(i=0;i&amp;lt;n;++i){
+            if(--t[i]==0){
+                ans[q[i].front()]=now;
+                q[i].pop();
+                if(cnt&amp;lt;tot) q[i].push(cnt++);
+                if(!q[i].empty()) t[i]=nd[q[i].front()];
+                if(++ok==tot) goto LL;
+            }
+        }
+    }
+    for(i=0;i&amp;lt;n;++i){
+        if(!q[i].empty()){
+            ans[q[i].front()]=now=539+t[i];
+        }
+    }
+    LL:;
+    while(k--){
+        scanf(&amp;quot;%d&amp;quot;,&amp;amp;i);
+        --i;
+        if(ans[i]==0) printf(&amp;quot;Sorry\n&amp;quot;);
+        else printf(&amp;quot;%02d:%02d\n&amp;quot;,8+ans[i]/60,ans[i]%60);
+    }
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
+    
+      <item>
+        <title>PAT1013. Battle Over Cities (25)</title>
+        <link>http://yogy.cc/2014/09/03/pat-1013.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/03/pat-1013.html</guid>
+        <pubDate>Wed, 03 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;图论&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;题意&lt;/h3&gt;
+
+&lt;p&gt;求某城市被攻占后，使全局连通的修路数目&lt;/p&gt;
+
+&lt;h3&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;每次求新的最小生成树&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+using namespace std;
+struct E{
+    int u,v;
+}e[1000010];
+int fa[1010];
+int ff(int x){
+    if(fa[x]!=x) fa[x]=ff(fa[x]);
+    return fa[x];
+}
+int main(){
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    int n,m,k,cnt,i,j,u,v,x;
+    scanf(&amp;quot;%d%d%d&amp;quot;,&amp;amp;n,&amp;amp;m,&amp;amp;k);
+    for(i=0;i&amp;lt;m;++i) scanf(&amp;quot;%d%d&amp;quot;,&amp;amp;e[i].u,&amp;amp;e[i].v);
+    while(k--){
+        scanf(&amp;quot;%d&amp;quot;,&amp;amp;x);
+        cnt=0;
+        for(i=1;i&amp;lt;=n;++i) fa[i]=i;
+        for(j=0;j&amp;lt;m;++j){
+            if(e[j].u==x || e[j].v==x) continue;
+            u=ff(e[j].u);
+            v=ff(e[j].v);
+            if(u!=v){
+                fa[u]=v;
+                ++cnt;
+                if(cnt==n-2) break;
+            }
+        }
+        printf(&amp;quot;%d\n&amp;quot;,n-2-cnt);
+    }
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
+    
+      <item>
+        <title>PAT1012. The Best Rank (25)</title>
+        <link>http://yogy.cc/2014/09/03/pat-1012.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/03/pat-1012.html</guid>
+        <pubDate>Wed, 03 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;排序&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;题意&lt;/h3&gt;
+
+&lt;p&gt;求每个人最优排名及科目&lt;/p&gt;
+
+&lt;h3&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;写4个不同的快排函数&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+#include&amp;lt;algorithm&amp;gt;
+#include&amp;lt;cstdlib&amp;gt;
+using namespace std;
+
+int a[1000000],c[1000000],m[1000000],e[1000000];
+
+struct P{
+    int id,c,m,e,a;
+}p[2010];
+bool cmpa(P a,P b){ return a.a&amp;gt;b.a; }
+bool cmpc(P a,P b){ return a.c&amp;gt;b.c; }
+bool cmpm(P a,P b){ return a.m&amp;gt;b.m; }
+bool cmpe(P a,P b){ return a.e&amp;gt;b.e; }
+
+int main(){
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    int n,t,r,i;
+    char o;
+    scanf(&amp;quot;%d%d&amp;quot;,&amp;amp;n,&amp;amp;t);
+    for(i=0;i&amp;lt;n;++i){
+        scanf(&amp;quot;%d%d%d%d&amp;quot;,&amp;amp;p[i].id,&amp;amp;p[i].c,&amp;amp;p[i].m,&amp;amp;p[i].e);
+        p[i].a=p[i].c+p[i].m+p[i].e;
+    }
+    sort(p,p+n,cmpa);
+    a[p[0].id]=1;
+    for(i=1;i&amp;lt;n;++i){
+        if(p[i].a==p[i-1].a) a[p[i].id]=a[p[i-1].id];
+        else a[p[i].id]=i+1;
+    }
+    sort(p,p+n,cmpc);
+    c[p[0].id]=1;
+    for(i=1;i&amp;lt;n;++i){
+        if(p[i].c==p[i-1].c) c[p[i].id]=c[p[i-1].id];
+        else c[p[i].id]=i+1;
+    }
+    sort(p,p+n,cmpm);
+    m[p[0].id]=1;
+    for(i=1;i&amp;lt;n;++i){
+        if(p[i].m==p[i-1].m) m[p[i].id]=m[p[i-1].id];
+        else m[p[i].id]=i+1;
+    }
+    sort(p,p+n,cmpe);
+    e[p[0].id]=1;
+    for(i=1;i&amp;lt;n;++i){
+        if(p[i].e==p[i-1].e) e[p[i].id]=e[p[i-1].id];
+        else e[p[i].id]=i+1;
+    }
+    while(t--){
+        scanf(&amp;quot;%d&amp;quot;,&amp;amp;i);
+        if(a[i]==0){
+            printf(&amp;quot;N/A\n&amp;quot;);
+            continue ;
+        }
+        r=a[i];o=&amp;#39;A&amp;#39;;
+        if(c[i]&amp;lt;r){
+            r=c[i];o=&amp;#39;C&amp;#39;;
+        }
+        if(m[i]&amp;lt;r){
+            r=m[i];o=&amp;#39;M&amp;#39;;
+        }
+        if(e[i]&amp;lt;r){
+            r=e[i];o=&amp;#39;E&amp;#39;;
+        }
+        printf(&amp;quot;%d %c\n&amp;quot;,r,o);
+    }
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
+    
+      <item>
+        <title>PAT1011. World Cup Betting (20)</title>
+        <link>http://yogy.cc/2014/09/03/pat-1011.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/03/pat-1011.html</guid>
+        <pubDate>Wed, 03 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;模拟&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;题意&lt;/h3&gt;
+
+&lt;p&gt;最大获利及状态&lt;/p&gt;
+
+&lt;h3&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;答案可为负数&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+#include&amp;lt;map&amp;gt;
+#include&amp;lt;cstdlib&amp;gt;
+using namespace std;
+
+double mat[3][3];
+char m[5]=&amp;quot;WTL&amp;quot;;
+int main(){
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    int i,j,k,id;
+    double ans=-2;
+    double temp;
+    for(i=0;i&amp;lt;3;++i) for(j=0;j&amp;lt;3;++j) scanf(&amp;quot;%lf&amp;quot;,&amp;amp;mat[i][j]);
+    for(i=0;i&amp;lt;3;++i){
+        for(j=0;j&amp;lt;3;++j){
+            for(k=0;k&amp;lt;3;++k){
+                temp=mat[0][i]*mat[1][j]*mat[2][k]*0.65-1;
+                if(temp&amp;gt;ans){
+                    ans=temp;
+                    id=i*100+j*10+k;
+                }
+            }
+        }
+    }
+    printf(&amp;quot;%c %c %c %.2f\n&amp;quot;,m[id/100],m[id/10%10],m[id%10],ans*2);
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
+    
+      <item>
+        <title>PAT1010. Radix (25)</title>
+        <link>http://yogy.cc/2014/09/03/pat-1010.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/03/pat-1010.html</guid>
+        <pubDate>Wed, 03 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;二分&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;题意&lt;/h3&gt;
+
+&lt;p&gt;求使数值相等的进制&lt;/p&gt;
+
+&lt;h3&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;进制转换用long long&lt;/li&gt;
+&lt;li&gt;二分下届为待测串中最大字符值、上届为已知串的数值&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+using namespace std;
+
+typedef long long ll;
+const ll inf=0x7fffffffffffffff;
+char a[15],b[15],c[15];
+ll da,db;
+
+ll gao(char *a,ll r){
+    ll ans=0;
+    for(int i=0;a[i];++i){
+        if(a[i]&amp;lt;=&amp;#39;9&amp;#39;){
+            ans=ans*r+a[i]-48;
+        }else{
+            ans=ans*r+a[i]-87;
+        }
+        if(ans&amp;lt;0 || ans&amp;gt;da) return inf;
+    }
+    return ans;
+}
+
+int cnta,cntb,n;
+int main(){
+    int i,type;
+    ll l,r,m;
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    scanf(&amp;quot;%s%s%d%lld&amp;quot;,a,b,&amp;amp;type,&amp;amp;r);
+    if(type==2){
+        strcpy(c,a);
+        strcpy(a,b);
+        strcpy(b,c);
+    }
+    da=inf;
+    da=gao(a,r);
+    r=0;
+    for(i=0;b[i];++i) if(b[i]&amp;gt;r) r=b[i];
+    if(r&amp;lt;=&amp;#39;9&amp;#39;) r-=47;
+    else r-=86;
+    l=r;r=da;
+    while(l&amp;lt;r){
+        m=(l+r)&amp;gt;&amp;gt;1;
+        db=gao(b,m);
+        if(db&amp;lt;da) l=m+1;
+        else if(db&amp;gt;da) r=m-1;
+        else r=m;
+    }
+    if(gao(b,l)==da) printf(&amp;quot;%lld\n&amp;quot;,l);
+    else if(gao(b,r)==da) printf(&amp;quot;%lld\n&amp;quot;,r);
+    else printf(&amp;quot;Impossible\n&amp;quot;);
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
+    
+      <item>
+        <title>PAT1009. Product of Polynomials (25)</title>
+        <link>http://yogy.cc/2014/09/03/pat-1009.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/03/pat-1009.html</guid>
+        <pubDate>Wed, 03 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;模拟&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;题意&lt;/h3&gt;
+
+&lt;p&gt;多项式求积&lt;/p&gt;
+
+&lt;h3&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;系数“0.0”或“-0.0”不输出&lt;/li&gt;
+&lt;li&gt;积的指数范围为输入多项式两倍&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+using namespace std;
+int ae[15],be[15];
+double ac[15],bc[15];
+double cc[2222];
+
+int cnta,cntb,n;
+int main(){
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    int i,j;
+    for(i=0;i&amp;lt;=2000;++i) cc[i]=0;
+    scanf(&amp;quot;%d&amp;quot;,&amp;amp;cnta);
+    for(i=0;i&amp;lt;cnta;++i){
+        scanf(&amp;quot;%d%lf&amp;quot;,&amp;amp;ae[i],&amp;amp;ac[i]);
+    }
+    scanf(&amp;quot;%d&amp;quot;,&amp;amp;cntb);
+    for(i=0;i&amp;lt;cntb;++i){
+        scanf(&amp;quot;%d%lf&amp;quot;,&amp;amp;be[i],&amp;amp;bc[i]);
+    }
+    for(i=0;i&amp;lt;cnta;++i){
+        for(j=0;j&amp;lt;cntb;++j){
+            cc[ae[i]+be[j]]+=ac[i]*bc[j];
+        }
+    }
+    char s[20];
+    for(i=0;i&amp;lt;=2000;++i){
+        sprintf(s,&amp;quot;%.1f&amp;quot;,cc[i]);
+        if(strcmp(s,&amp;quot;0.0&amp;quot;) &amp;amp;&amp;amp; strcmp(s,&amp;quot;-0.0&amp;quot;)) ++n;
+    }
+    printf(&amp;quot;%d&amp;quot;,n);
+    for(i=2000;i&amp;gt;=0;--i){
+        sprintf(s,&amp;quot;%.1f&amp;quot;,cc[i]);
+        if(strcmp(s,&amp;quot;0.0&amp;quot;) &amp;amp;&amp;amp; strcmp(s,&amp;quot;-0.0&amp;quot;))
+            printf(&amp;quot; %d %.1f&amp;quot;,i,cc[i]);
+    }
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
+    
+      <item>
+        <title>PAT1008. Elevator (20)</title>
+        <link>http://yogy.cc/2014/09/03/pat-1008.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/03/pat-1008.html</guid>
+        <pubDate>Wed, 03 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;模拟&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;题意&lt;/h3&gt;
+
+&lt;p&gt;求总时间&lt;/p&gt;
+
+&lt;h3&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;同楼多次停留算多次&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+using namespace std;
+
+int main(){
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    int n,i,ans,j=0;
+    scanf(&amp;quot;%d&amp;quot;,&amp;amp;n);
+    ans=n*5;
+    while(n--){
+        scanf(&amp;quot;%d&amp;quot;,&amp;amp;i);
+        if(i&amp;gt;j) ans+=6*(i-j);
+        else if(i&amp;lt;j) ans+=4*(j-i);
+        j=i;
+    }
+    printf(&amp;quot;%d\n&amp;quot;,ans);
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
+    
+      <item>
+        <title>PAT1007. Maximum Subsequence Sum (25)</title>
+        <link>http://yogy.cc/2014/09/03/pat-1007.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/03/pat-1007.html</guid>
+        <pubDate>Wed, 03 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;动态规划&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;题意&lt;/h3&gt;
+
+&lt;p&gt;求最大子串和及首尾元素&lt;/p&gt;
+
+&lt;h3&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;用数列第一个数初始化最大和&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+using namespace std;
+int s[10010],h[10010],a[10010];
+int main(){
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    int n,i;
+    scanf(&amp;quot;%d&amp;quot;,&amp;amp;n);
+    for(i=0;i&amp;lt;n;++i) scanf(&amp;quot;%d&amp;quot;,a+i);
+    s[0]=a[0];
+    int mm=s[0];
+    int id=0;
+    for(i=1;i&amp;lt;n;++i){
+        if(s[i-1]&amp;gt;=0){
+            h[i]=h[i-1];
+            s[i]=s[i-1]+a[i];
+        }else{
+            h[i]=i;
+            s[i]=a[i];
+        }
+        if(s[i]&amp;gt;mm || s[i]==mm &amp;amp;&amp;amp; h[i]&amp;lt;h[id]){
+            mm=s[i];
+            id=i;
+        }
+    }
+    if(mm&amp;lt;0) printf(&amp;quot;0 %d %d\n&amp;quot;,a[0],a[n-1]);
+    else printf(&amp;quot;%d %d %d\n&amp;quot;,mm,a[h[id]],a[id]);
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
+    
+      <item>
+        <title>PAT1006. Sign In and Sign Out (25)</title>
+        <link>http://yogy.cc/2014/09/03/pat-1006.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/03/pat-1006.html</guid>
+        <pubDate>Wed, 03 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;排序&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;题意&lt;/h3&gt;
+
+&lt;p&gt;求最早来和最晚走的人&lt;/p&gt;
+
+&lt;h3&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;时间字符串可直接比较&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+using namespace std;
+
+char open[20],close[20];
+char id[20],in[20],out[20];
+char a[20],b[20];
+int main(){
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    int n,i;
+    scanf(&amp;quot;%d&amp;quot;,&amp;amp;n);
+    a[0]=&amp;#39;9&amp;#39;;
+    b[0]=&amp;#39;/&amp;#39;;
+    for(i=0;i&amp;lt;n;++i){
+        scanf(&amp;quot;%s%s%s&amp;quot;,id,in,out);
+        if(strcmp(in,a)&amp;lt;0){
+            strcpy(a,in);
+            strcpy(open,id);
+        }
+        if(strcmp(out,b)&amp;gt;0){
+            strcpy(b,out);
+            strcpy(close,id);
+        }
+    }
+
+    printf(&amp;quot;%s %s\n&amp;quot;,open,close);
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
+    
+      <item>
+        <title>PAT1005. Spell It Right (20)</title>
+        <link>http://yogy.cc/2014/09/03/pat-1005.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/03/pat-1005.html</guid>
+        <pubDate>Wed, 03 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;模拟&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;题意&lt;/h3&gt;
+
+&lt;p&gt;各位求和，输出和的各位&lt;/p&gt;
+
+&lt;h3&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;按和的位数分类&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;queue&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+using namespace std;
+
+char p[10][10]={&amp;quot;zero&amp;quot;,&amp;quot;one&amp;quot;,&amp;quot;two&amp;quot;,&amp;quot;three&amp;quot;,&amp;quot;four&amp;quot;,&amp;quot;five&amp;quot;,&amp;quot;six&amp;quot;,&amp;quot;seven&amp;quot;,&amp;quot;eight&amp;quot;,&amp;quot;nine&amp;quot;};
+char s[110];
+
+int main(){
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    int ans=0,i;
+    scanf(&amp;quot;%s&amp;quot;,s);
+    for(i=0;s[i];++i){
+        ans+=s[i]-&amp;#39;0&amp;#39;;
+    }
+    if(ans&amp;gt;99){
+        printf(&amp;quot;%s %s %s\n&amp;quot;,p[ans/100],p[ans/10%10],p[ans%10]);
+    }else if(ans&amp;gt;9){
+        printf(&amp;quot;%s %s\n&amp;quot;,p[ans/10],p[ans%10]);
+    }else{
+        printf(&amp;quot;%s\n&amp;quot;,p[ans]);
+    }
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
+    
+      <item>
+        <title>PAT1004. Counting Leaves (30)</title>
+        <link>http://yogy.cc/2014/09/03/pat-1004.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/03/pat-1004.html</guid>
+        <pubDate>Wed, 03 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;图论&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;题意&lt;/h3&gt;
+
+&lt;p&gt;输出各层叶子节点个数&lt;/p&gt;
+
+&lt;h3&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;父子关系的申明顺序不定&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;queue&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+using namespace std;
+
+queue&amp;lt;int&amp;gt; q;
+int l[100],p[100];
+int cnt[101];
+int e[101][101];
+int son[101];
+
+int main(){
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    memset(e,-1,sizeof(e));
+    int n,m,i,u,j,v;
+    scanf(&amp;quot;%d%d&amp;quot;,&amp;amp;n,&amp;amp;m);
+    l[1]=1;
+    for(i=0;i&amp;lt;m;++i){
+        scanf(&amp;quot;%d%d&amp;quot;,&amp;amp;u,&amp;amp;j);
+        if(j) p[u]=1;
+        son[u]=j;
+        while(j--){
+            scanf(&amp;quot;%d&amp;quot;,&amp;amp;v);
+            e[u][j]=v;
+        }
+    }
+    q.push(1);
+    while(!q.empty()){
+        u=q.front();
+        q.pop();
+        for(i=0;i&amp;lt;son[u];++i){
+            v=e[u][i];
+            l[v]=l[u]+1;
+            q.push(v);
+        }
+    }
+    int deep=0;
+    for(i=0;i&amp;lt;100;++i){
+        if(l[i]){
+            if(l[i]&amp;gt;deep) deep=l[i];
+            if(!p[i]) cnt[l[i]]++;
+        }
+    }
+    printf(&amp;quot;%d&amp;quot;,cnt[1]);
+    for(i=2;i&amp;lt;=deep;++i) printf(&amp;quot; %d&amp;quot;,cnt[i]);
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
+    
+      <item>
+        <title>PAT1003. Emergency (25)</title>
+        <link>http://yogy.cc/2014/09/03/pat-1003.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/03/pat-1003.html</guid>
+        <pubDate>Wed, 03 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;图论&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;题意&lt;/h3&gt;
+
+&lt;p&gt;求最短路条数、携带救援队数&lt;/p&gt;
+
+&lt;h3&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;将条数、队数与距离一起DP&lt;/li&gt;
+&lt;li&gt;距离增大刷新条数&lt;/li&gt;
+&lt;li&gt;距离相同增大条数，进而队数增大更新队数&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+#include&amp;lt;algorithm&amp;gt;
+#include&amp;lt;queue&amp;gt;
+using namespace std;
+
+typedef pair&amp;lt;int,int&amp;gt; pii;
+priority_queue&amp;lt;pii,vector&amp;lt;pii&amp;gt;,greater&amp;lt;pii&amp;gt; &amp;gt; pq;
+const int inf=0x7fffffff;
+int vis[510];
+int d[510];
+int p[510];
+struct E{
+    int v,w;
+    int next;
+}e[1000000];
+int h[510];
+int cnt;
+int a[510],r[510];
+void add(int u,int v,int w){
+    e[cnt].next=h[u];
+    e[cnt].v=v;
+    e[cnt].w=w;
+    h[u]=cnt++;
+}
+
+int main(){
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    int n,m,s,t,u,v,w,i;
+    scanf(&amp;quot;%d%d%d%d&amp;quot;,&amp;amp;n,&amp;amp;m,&amp;amp;s,&amp;amp;t);
+    for(i=0;i&amp;lt;n;++i){
+        scanf(&amp;quot;%d&amp;quot;,&amp;amp;a[i]);
+        r[i]=a[i];
+    }
+    memset(h,-1,sizeof(h));
+    for(i=0;i&amp;lt;m;++i){
+        scanf(&amp;quot;%d%d%d&amp;quot;,&amp;amp;u,&amp;amp;v,&amp;amp;w);
+        add(u,v,w);
+        add(v,u,w);
+    }
+    for(i=0;i&amp;lt;n;++i) d[i]=inf;
+    d[s]=0;
+    pq.push(make_pair(0,s));
+    pii temp;
+    p[s]=1;
+    while(!pq.empty()){
+        u=pq.top().second;
+        pq.pop();
+        if(u==t) break;
+        if(vis[u]) continue;
+        vis[u]=1;
+        int ed;
+        for(ed=h[u];ed!=-1;ed=e[ed].next){
+            v=e[ed].v;
+            if(vis[v]) continue;
+            w=e[ed].w;
+            if(d[u]+w&amp;lt;d[v]){
+                p[v]=p[u];
+                d[v]=d[u]+w;
+                r[v]=r[u]+a[v];
+                pq.push(make_pair(d[v],v));
+            }else if(d[u]+w==d[v]){
+                p[v]+=p[u];
+                if(r[u]+w&amp;gt;r[v]){
+                    d[v]=d[u]+w;
+                    r[v]=r[u]+a[v];
+                    pq.push(make_pair(d[v],v));
+                }
+            }
+        }
+    }
+    printf(&amp;quot;%d %d\n&amp;quot;,p[t],r[t]);
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
+    
+      <item>
+        <title>PAT1002. A+B for Polynomials (25)</title>
+        <link>http://yogy.cc/2014/09/03/pat-1002.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/03/pat-1002.html</guid>
+        <pubDate>Wed, 03 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;模拟&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;题意&lt;/h3&gt;
+
+&lt;p&gt;多项式求和&lt;/p&gt;
+
+&lt;h3&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;系数“0.0”或“-0.0”不输出&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;代码&lt;/h3&gt;
+
+&lt;h1&gt;include&lt;cstdio&gt;&lt;/h1&gt;
+
+&lt;h1&gt;include&lt;cstring&gt;&lt;/h1&gt;
+
+&lt;h1&gt;include&lt;iostream&gt;&lt;/h1&gt;
+
+&lt;h1&gt;include&lt;algorithm&gt;&lt;/h1&gt;
+
+&lt;p&gt;using namespace std;
+double a[1010];
+int main(){
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    int n,i;
+    for(i=0;i&amp;lt;=1000;++i) a[i]=0;
+    double j;
+    int m=0;
+    scanf(&amp;quot;%d&amp;quot;,&amp;amp;n);
+    while(n--){
+        scanf(&amp;quot;%d%lf&amp;quot;,&amp;amp;i,&amp;amp;j);
+        a[i]+=j;
+    }
+    scanf(&amp;quot;%d&amp;quot;,&amp;amp;n);
+    while(n--){
+        scanf(&amp;quot;%d%lf&amp;quot;,&amp;amp;i,&amp;amp;j);
+        a[i]+=j;
+    }
+    char s[10];
+    for(i=0;i&amp;lt;=1000;++i){
+        sprintf(s,&amp;quot;%.1f&amp;quot;,a[i]);
+        if(strcmp(s,&amp;quot;0.0&amp;quot;) &amp;amp;&amp;amp; strcmp(s,&amp;quot;-0.0&amp;quot;)) ++m;
+    }
+    printf(&amp;quot;%d&amp;quot;,m);
+    for(i=1000;i&amp;gt;=0;--i){
+        sprintf(s,&amp;quot;%.1f&amp;quot;,a[i]);
+        if(strcmp(s,&amp;quot;0.0&amp;quot;) &amp;amp;&amp;amp; strcmp(s,&amp;quot;-0.0&amp;quot;)){
+            printf(&amp;quot; %d %.1f&amp;quot;,i,a[i]);
+        }
+    }
+    return 0;
+}&lt;/p&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
+    
+      <item>
+        <title>PAT1001. A+B Format (20)</title>
+        <link>http://yogy.cc/2014/09/03/pat-1001.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/03/pat-1001.html</guid>
+        <pubDate>Wed, 03 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;模拟&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;题意&lt;/h3&gt;
+
+&lt;p&gt;两数相加，带分隔符输出&lt;/p&gt;
+
+&lt;h3&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;(-1000,1000) 内无分隔符&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+#include&amp;lt;algorithm&amp;gt;
+using namespace std;
+int s[20];
+int main(){
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    int a,b,c,i=0,d;
+    scanf(&amp;quot;%d%d&amp;quot;,&amp;amp;a,&amp;amp;b);
+    c=a+b;
+    if(c&amp;lt;1000 &amp;amp;&amp;amp; c&amp;gt;-1000){
+        printf(&amp;quot;%d\n&amp;quot;,c);
+    }else{
+        if(c&amp;lt;0){
+            printf(&amp;quot;-&amp;quot;);
+            c=-c;
+        }
+        while(c){
+            s[i++]=c%10;
+            c/=10;
+        }
+
+        d=i%3;
+        if(!d) d=3;
+        while(d--){
+            printf(&amp;quot;%d&amp;quot;,s[--i]);
+        }
+        while(i){
+            d=3;
+            printf(&amp;quot;,&amp;quot;);
+            while(d--){
+                printf(&amp;quot;%d&amp;quot;,s[--i]);
+            }
+        }
+    }
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
       </item>
     
   </channel>

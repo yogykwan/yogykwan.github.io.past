@@ -213,6 +213,8 @@
 
   /edb/5.watermark.html
 
+  /pages/about.html
+
   /pages/archive.html
 
   /pages/atom.xml
@@ -231,7 +233,51 @@
 
   /page5/index.html
 
+  /page6/index.html
 
+  /page7/index.html
+
+
+
+  /2014/09/04/pat-1020.html
+
+  /2014/09/04/pat-1019.html
+
+  /2014/09/04/pat-1018.html
+
+  /2014/09/04/pat-1017.html
+
+  /2014/09/04/pat-1016.html
+
+  /2014/09/03/pat-1015.html
+
+  /2014/09/03/pat-1014.html
+
+  /2014/09/03/pat-1013.html
+
+  /2014/09/03/pat-1012.html
+
+  /2014/09/03/pat-1011.html
+
+  /2014/09/03/pat-1010.html
+
+  /2014/09/03/pat-1009.html
+
+  /2014/09/03/pat-1008.html
+
+  /2014/09/03/pat-1007.html
+
+  /2014/09/03/pat-1006.html
+
+  /2014/09/03/pat-1005.html
+
+  /2014/09/03/pat-1004.html
+
+  /2014/09/03/pat-1003.html
+
+  /2014/09/03/pat-1002.html
+
+  /2014/09/03/pat-1001.html
 
   /2014/08/03/tecbook-list-of-2014-second.html
 
