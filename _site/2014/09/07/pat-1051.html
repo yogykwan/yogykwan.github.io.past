@@ -1,0 +1,2167 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+<title>PAT1051. Pop Sequence (25) | NULL</title>
+<meta name="author" content="Yogy">
+
+
+<link rel="shortcut icon" href="/public/upload/gavatar/favicon.ico" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/public/css/bootstrap.css">
+<link rel="stylesheet" href="/public/css/font-awesome.css">
+<link rel="stylesheet" href="/public/js/prettify/prettify.css">
+<link rel="stylesheet" href="/public/css/base.css">
+<link href="/pages/atom.xml" rel="alternate" title="NULL" type="application/atom+xml">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      ﻿<div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 aside visible-md visible-lg">
+  <div class="row">
+    <div class="col-md-3 col-xs-3 aside1">
+      <br>
+      <a class="pjaxlink" href="/"><img src="/public/upload/gavatar/gavatar.png" class="img-circle avatar"></a>
+      <br><br>
+      <ul class="nav nav-pills nav-stacked">
+        <li><a href="#算法" data-toggle="tab">算法</a></li>
+        <li><a href="#技术" data-toggle="tab">技术</a></li>
+        <li><a href="#工具" data-toggle="tab">工具</a></li>
+        <li><a href="#资源" data-toggle="tab">资源</a></li>
+        <li><a href="#生活" data-toggle="tab">生活</a></li>
+        <li><a href="#tags" data-toggle="tab">标签</a></li>
+        <li><a class="pjaxlink" href="/pages/archive.html">归档</a></li>
+        <li><a class="pjaxlink" href="/pages/about.html">关于</a></li>
+        <li><a class="pjaxlink" href="/pages/edb.html">闯关</a></li>
+      </ul>
+      <div class="aside1_bottom">
+        <table class="table table-condensed">
+          <tr>
+            <td><a href="http://github.com/yogykwan" target="_blank"><i class="fa fa-github fa-2x"></i></a></td>
+            <td><a href="mailto:jingg.cxy@foxmail.com"><i class="fa fa-envelope-o fa-2x"></i></a></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="col-md-9 col-xs-9 aside2">
+      <div class="row">
+        <div class="tab-content">
+           
+            <div class="tab-pane" id="technology">
+              <div class="list-group">
+                <h2 class="center">technology</h2>
+                
+                  <a href="/2014/05/04/set-environment-variables-of-server-for-php.html" class="list-group-item pjaxlink">为PHP设置服务器(Apache/Nginx)环境变量</a>
+                
+                  <a href="/2014/04/27/magic-methods-and-magic-constants-in-php.html" class="list-group-item pjaxlink">PHP中的魔术方法和魔术常量简介和使用</a>
+                
+                  <a href="/2014/01/30/understanding-the-github-workflow.html" class="list-group-item pjaxlink">GitHub工作流</a>
+                
+                  <a href="/2014/01/25/how-to-use-php-socket.html" class="list-group-item pjaxlink">PHP Socket的使用</a>
+                
+                  <a href="/2014/01/17/python-script-of-sae-log-download.html" class="list-group-item pjaxlink">Python脚本--下载合并SAE日志</a>
+                
+                  <a href="/2014/01/16/php-namespace-and-autoload.html" class="list-group-item pjaxlink">PHP命名空间及自动加载</a>
+                
+                  <a href="/2013/12/08/implemention-of-breadcrumbs-by-css3.html" class="list-group-item pjaxlink">基于CSS3实现尖角面包屑</a>
+                
+                  <a href="/2013/06/09/learn-python-stevedore-module-in-detail.html" class="list-group-item pjaxlink">学习Python动态扩展包stevedore</a>
+                
+                  <a href="/2013/06/09/learn-python-abc-module.html" class="list-group-item pjaxlink">学习Python的ABC模块</a>
+                
+                  <a href="/2013/06/07/learn-python-setuptools-in-detail.html" class="list-group-item pjaxlink">Python包管理工具setuptools详解</a>
+                
+                  <a href="/2013/05/19/what-is-wsgi.html" class="list-group-item pjaxlink">WSGI学习</a>
+                
+                  <a href="/2013/05/15/learn-how-to-use-distutils.html" class="list-group-item pjaxlink">学习使用python打包工具distutils</a>
+                
+                  <a href="/2013/05/15/different-between-python-package-tools.html" class="list-group-item pjaxlink">python包工具之间的关系</a>
+                
+                  <a href="/2013/05/06/why-use-pip-over-easy-install.html" class="list-group-item pjaxlink">为什么使用pip而不是easy_install</a>
+                
+                  <a href="/2013/05/06/the-viewpoint-metatag.html" class="list-group-item pjaxlink">HTML中meta标签viewpoint的作用</a>
+                
+                  <a href="/2013/05/06/interactive-coding-ipython.html" class="list-group-item pjaxlink">交互式编程-IPython</a>
+                
+                  <a href="/2013/05/03/php-cache-of-a-page.html" class="list-group-item pjaxlink">页面提速之——数据缓存</a>
+                
+                  <a href="/2013/02/24/javascript-variable-domain.html" class="list-group-item pjaxlink">JavaScript变量作用域</a>
+                
+                  <a href="/2012/12/31/python-development-of-sae.html" class="list-group-item pjaxlink">sae下的python开发部署和一个简单例子</a>
+                
+                  <a href="/2012/09/27/php-variable-variables.html" class="list-group-item pjaxlink">PHP可变变量</a>
+                
+                  <a href="/2012/09/27/open-widown-in-javascript.html" class="list-group-item pjaxlink">JS中防止浏览器屏蔽window.open</a>
+                
+                  <a href="/2012/09/19/php-session-security.html" class="list-group-item pjaxlink">PHP操作Session的原理及提升安全性时的一个问题</a>
+                
+              </div>
+            </div>
+           
+            <div class="tab-pane" id="php">
+              <div class="list-group">
+                <h2 class="center">php</h2>
+                
+                  <a href="/2014/05/04/set-environment-variables-of-server-for-php.html" class="list-group-item pjaxlink">为PHP设置服务器(Apache/Nginx)环境变量</a>
+                
+                  <a href="/2014/04/27/magic-methods-and-magic-constants-in-php.html" class="list-group-item pjaxlink">PHP中的魔术方法和魔术常量简介和使用</a>
+                
+                  <a href="/2014/01/25/how-to-use-php-socket.html" class="list-group-item pjaxlink">PHP Socket的使用</a>
+                
+                  <a href="/2014/01/16/php-namespace-and-autoload.html" class="list-group-item pjaxlink">PHP命名空间及自动加载</a>
+                
+                  <a href="/2013/05/03/php-cache-of-a-page.html" class="list-group-item pjaxlink">页面提速之——数据缓存</a>
+                
+                  <a href="/2012/09/27/php-variable-variables.html" class="list-group-item pjaxlink">PHP可变变量</a>
+                
+                  <a href="/2012/09/19/php-session-security.html" class="list-group-item pjaxlink">PHP操作Session的原理及提升安全性时的一个问题</a>
+                
+              </div>
+            </div>
+           
+            <div class="tab-pane" id="技术">
+              <div class="list-group">
+                <h2 class="center">技术</h2>
+                
+                  <a href="/2014/05/04/set-environment-variables-of-server-for-php.html" class="list-group-item pjaxlink">为PHP设置服务器(Apache/Nginx)环境变量</a>
+                
+                  <a href="/2014/04/27/magic-methods-and-magic-constants-in-php.html" class="list-group-item pjaxlink">PHP中的魔术方法和魔术常量简介和使用</a>
+                
+                  <a href="/2014/01/30/understanding-the-github-workflow.html" class="list-group-item pjaxlink">GitHub工作流</a>
+                
+                  <a href="/2014/01/25/how-to-use-php-socket.html" class="list-group-item pjaxlink">PHP Socket的使用</a>
+                
+                  <a href="/2014/01/17/python-script-of-sae-log-download.html" class="list-group-item pjaxlink">Python脚本--下载合并SAE日志</a>
+                
+                  <a href="/2014/01/16/php-namespace-and-autoload.html" class="list-group-item pjaxlink">PHP命名空间及自动加载</a>
+                
+                  <a href="/2013/12/08/implemention-of-breadcrumbs-by-css3.html" class="list-group-item pjaxlink">基于CSS3实现尖角面包屑</a>
+                
+                  <a href="/2013/06/09/learn-python-stevedore-module-in-detail.html" class="list-group-item pjaxlink">学习Python动态扩展包stevedore</a>
+                
+                  <a href="/2013/06/09/learn-python-abc-module.html" class="list-group-item pjaxlink">学习Python的ABC模块</a>
+                
+                  <a href="/2013/06/07/learn-python-setuptools-in-detail.html" class="list-group-item pjaxlink">Python包管理工具setuptools详解</a>
+                
+                  <a href="/2013/05/19/what-is-wsgi.html" class="list-group-item pjaxlink">WSGI学习</a>
+                
+                  <a href="/2013/05/15/learn-how-to-use-distutils.html" class="list-group-item pjaxlink">学习使用python打包工具distutils</a>
+                
+                  <a href="/2013/05/15/different-between-python-package-tools.html" class="list-group-item pjaxlink">python包工具之间的关系</a>
+                
+                  <a href="/2013/05/06/why-use-pip-over-easy-install.html" class="list-group-item pjaxlink">为什么使用pip而不是easy_install</a>
+                
+                  <a href="/2013/05/06/the-viewpoint-metatag.html" class="list-group-item pjaxlink">HTML中meta标签viewpoint的作用</a>
+                
+                  <a href="/2013/05/06/interactive-coding-ipython.html" class="list-group-item pjaxlink">交互式编程-IPython</a>
+                
+                  <a href="/2013/05/03/php-cache-of-a-page.html" class="list-group-item pjaxlink">页面提速之——数据缓存</a>
+                
+                  <a href="/2013/02/24/javascript-variable-domain.html" class="list-group-item pjaxlink">JavaScript变量作用域</a>
+                
+                  <a href="/2012/12/31/python-development-of-sae.html" class="list-group-item pjaxlink">sae下的python开发部署和一个简单例子</a>
+                
+                  <a href="/2012/09/27/php-variable-variables.html" class="list-group-item pjaxlink">PHP可变变量</a>
+                
+                  <a href="/2012/09/27/open-widown-in-javascript.html" class="list-group-item pjaxlink">JS中防止浏览器屏蔽window.open</a>
+                
+                  <a href="/2012/09/19/php-session-security.html" class="list-group-item pjaxlink">PHP操作Session的原理及提升安全性时的一个问题</a>
+                
+              </div>
+            </div>
+           
+            <div class="tab-pane" id="javascript">
+              <div class="list-group">
+                <h2 class="center">javascript</h2>
+                
+                  <a href="/2013/02/24/javascript-variable-domain.html" class="list-group-item pjaxlink">JavaScript变量作用域</a>
+                
+                  <a href="/2012/09/27/open-widown-in-javascript.html" class="list-group-item pjaxlink">JS中防止浏览器屏蔽window.open</a>
+                
+              </div>
+            </div>
+           
+            <div class="tab-pane" id="python">
+              <div class="list-group">
+                <h2 class="center">python</h2>
+                
+                  <a href="/2014/01/17/python-script-of-sae-log-download.html" class="list-group-item pjaxlink">Python脚本--下载合并SAE日志</a>
+                
+                  <a href="/2013/06/09/learn-python-stevedore-module-in-detail.html" class="list-group-item pjaxlink">学习Python动态扩展包stevedore</a>
+                
+                  <a href="/2013/06/09/learn-python-abc-module.html" class="list-group-item pjaxlink">学习Python的ABC模块</a>
+                
+                  <a href="/2013/06/07/learn-python-setuptools-in-detail.html" class="list-group-item pjaxlink">Python包管理工具setuptools详解</a>
+                
+                  <a href="/2013/05/19/what-is-wsgi.html" class="list-group-item pjaxlink">WSGI学习</a>
+                
+                  <a href="/2013/05/15/learn-how-to-use-distutils.html" class="list-group-item pjaxlink">学习使用python打包工具distutils</a>
+                
+                  <a href="/2013/05/15/different-between-python-package-tools.html" class="list-group-item pjaxlink">python包工具之间的关系</a>
+                
+                  <a href="/2013/05/06/why-use-pip-over-easy-install.html" class="list-group-item pjaxlink">为什么使用pip而不是easy_install</a>
+                
+                  <a href="/2013/05/06/interactive-coding-ipython.html" class="list-group-item pjaxlink">交互式编程-IPython</a>
+                
+                  <a href="/2012/12/31/python-development-of-sae.html" class="list-group-item pjaxlink">sae下的python开发部署和一个简单例子</a>
+                
+              </div>
+            </div>
+           
+            <div class="tab-pane" id="tool">
+              <div class="list-group">
+                <h2 class="center">tool</h2>
+                
+                  <a href="/2014/02/12/how-to-deploy-a-blog-on-github-by-jekyll.html" class="list-group-item pjaxlink">在GitHub上搭建Jekyll博客和创建主题</a>
+                
+                  <a href="/2013/12/08/linux-command-continue.html" class="list-group-item pjaxlink">Linux下多个命令连续执行方法</a>
+                
+                  <a href="/2013/11/11/share-windows-and-linux.html" class="list-group-item pjaxlink">配置Windows和Linux双系统</a>
+                
+                  <a href="/2013/05/20/set-proxy-for-git-or-apt.html" class="list-group-item pjaxlink">给Git或者APT设置goagent代理</a>
+                
+                  <a href="/2013/04/22/ignore-password-in-git-push.html" class="list-group-item pjaxlink">让git push命令不再需要密码</a>
+                
+                  <a href="/2013/04/22/highlight-of-jekyll.html" class="list-group-item pjaxlink">Jekyll的中的代码高亮</a>
+                
+                  <a href="/2013/02/25/quick-open-in-windows.html" class="list-group-item pjaxlink">Windows快速打开应用程序或文件</a>
+                
+                  <a href="/2013/01/16/create-remote-resp.html" class="list-group-item pjaxlink">Git创建远程库</a>
+                
+              </div>
+            </div>
+           
+            <div class="tab-pane" id="git">
+              <div class="list-group">
+                <h2 class="center">git</h2>
+                
+                  <a href="/2014/01/30/understanding-the-github-workflow.html" class="list-group-item pjaxlink">GitHub工作流</a>
+                
+                  <a href="/2013/05/20/set-proxy-for-git-or-apt.html" class="list-group-item pjaxlink">给Git或者APT设置goagent代理</a>
+                
+                  <a href="/2013/04/22/ignore-password-in-git-push.html" class="list-group-item pjaxlink">让git push命令不再需要密码</a>
+                
+                  <a href="/2013/01/16/create-remote-resp.html" class="list-group-item pjaxlink">Git创建远程库</a>
+                
+              </div>
+            </div>
+           
+            <div class="tab-pane" id="工具">
+              <div class="list-group">
+                <h2 class="center">工具</h2>
+                
+                  <a href="/2014/02/12/how-to-deploy-a-blog-on-github-by-jekyll.html" class="list-group-item pjaxlink">在GitHub上搭建Jekyll博客和创建主题</a>
+                
+                  <a href="/2013/12/08/linux-command-continue.html" class="list-group-item pjaxlink">Linux下多个命令连续执行方法</a>
+                
+                  <a href="/2013/11/11/share-windows-and-linux.html" class="list-group-item pjaxlink">配置Windows和Linux双系统</a>
+                
+                  <a href="/2013/05/20/set-proxy-for-git-or-apt.html" class="list-group-item pjaxlink">给Git或者APT设置goagent代理</a>
+                
+                  <a href="/2013/04/22/ignore-password-in-git-push.html" class="list-group-item pjaxlink">让git push命令不再需要密码</a>
+                
+                  <a href="/2013/04/22/highlight-of-jekyll.html" class="list-group-item pjaxlink">Jekyll的中的代码高亮</a>
+                
+                  <a href="/2013/02/25/quick-open-in-windows.html" class="list-group-item pjaxlink">Windows快速打开应用程序或文件</a>
+                
+                  <a href="/2013/01/16/create-remote-resp.html" class="list-group-item pjaxlink">Git创建远程库</a>
+                
+              </div>
+            </div>
+           
+            <div class="tab-pane" id="windows">
+              <div class="list-group">
+                <h2 class="center">windows</h2>
+                
+                  <a href="/2013/02/25/quick-open-in-windows.html" class="list-group-item pjaxlink">Windows快速打开应用程序或文件</a>
+                
+              </div>
+            </div>
+           
+            <div class="tab-pane" id="jekyll">
+              <div class="list-group">
+                <h2 class="center">jekyll</h2>
+                
+                  <a href="/2014/02/12/how-to-deploy-a-blog-on-github-by-jekyll.html" class="list-group-item pjaxlink">在GitHub上搭建Jekyll博客和创建主题</a>
+                
+                  <a href="/2013/04/22/highlight-of-jekyll.html" class="list-group-item pjaxlink">Jekyll的中的代码高亮</a>
+                
+              </div>
+            </div>
+           
+            <div class="tab-pane" id="resource">
+              <div class="list-group">
+                <h2 class="center">resource</h2>
+                
+                  <a href="/2014/05/11/general-mysql-resources.html" class="list-group-item pjaxlink">MySQL常用资源</a>
+                
+                  <a href="/2014/01/15/general-svn-resources.html" class="list-group-item pjaxlink">SVN 常用资源</a>
+                
+                  <a href="/2014/01/15/general-shell-resources.html" class="list-group-item pjaxlink">Shell 常用资源</a>
+                
+                  <a href="/2014/01/15/general-python-resources.html" class="list-group-item pjaxlink">Python 常用资源</a>
+                
+                  <a href="/2014/01/15/general-php-resources.html" class="list-group-item pjaxlink">PHP 常用资源</a>
+                
+                  <a href="/2014/01/15/general-jquery-resources.html" class="list-group-item pjaxlink">jQuery 常用资源</a>
+                
+                  <a href="/2014/01/15/general-javascript-resources.html" class="list-group-item pjaxlink">JavaScript 常用资源</a>
+                
+                  <a href="/2014/01/15/general-html-resources.html" class="list-group-item pjaxlink">HTML 常用资源</a>
+                
+                  <a href="/2014/01/15/general-git-resources.html" class="list-group-item pjaxlink">Git 常用资源</a>
+                
+                  <a href="/2013/04/23/general-bootstrap-resources.html" class="list-group-item pjaxlink">Bootstrap常用资源</a>
+                
+              </div>
+            </div>
+           
+            <div class="tab-pane" id="资源">
+              <div class="list-group">
+                <h2 class="center">资源</h2>
+                
+                  <a href="/2014/05/11/general-mysql-resources.html" class="list-group-item pjaxlink">MySQL常用资源</a>
+                
+                  <a href="/2014/01/15/general-svn-resources.html" class="list-group-item pjaxlink">SVN 常用资源</a>
+                
+                  <a href="/2014/01/15/general-shell-resources.html" class="list-group-item pjaxlink">Shell 常用资源</a>
+                
+                  <a href="/2014/01/15/general-python-resources.html" class="list-group-item pjaxlink">Python 常用资源</a>
+                
+                  <a href="/2014/01/15/general-php-resources.html" class="list-group-item pjaxlink">PHP 常用资源</a>
+                
+                  <a href="/2014/01/15/general-jquery-resources.html" class="list-group-item pjaxlink">jQuery 常用资源</a>
+                
+                  <a href="/2014/01/15/general-javascript-resources.html" class="list-group-item pjaxlink">JavaScript 常用资源</a>
+                
+                  <a href="/2014/01/15/general-html-resources.html" class="list-group-item pjaxlink">HTML 常用资源</a>
+                
+                  <a href="/2014/01/15/general-git-resources.html" class="list-group-item pjaxlink">Git 常用资源</a>
+                
+                  <a href="/2013/04/23/general-bootstrap-resources.html" class="list-group-item pjaxlink">Bootstrap常用资源</a>
+                
+              </div>
+            </div>
+           
+            <div class="tab-pane" id="html">
+              <div class="list-group">
+                <h2 class="center">html</h2>
+                
+                  <a href="/2013/05/06/the-viewpoint-metatag.html" class="list-group-item pjaxlink">HTML中meta标签viewpoint的作用</a>
+                
+              </div>
+            </div>
+           
+            <div class="tab-pane" id="linux">
+              <div class="list-group">
+                <h2 class="center">linux</h2>
+                
+                  <a href="/2013/12/08/linux-command-continue.html" class="list-group-item pjaxlink">Linux下多个命令连续执行方法</a>
+                
+                  <a href="/2013/11/11/share-windows-and-linux.html" class="list-group-item pjaxlink">配置Windows和Linux双系统</a>
+                
+              </div>
+            </div>
+           
+            <div class="tab-pane" id="css">
+              <div class="list-group">
+                <h2 class="center">css</h2>
+                
+                  <a href="/2013/12/08/implemention-of-breadcrumbs-by-css3.html" class="list-group-item pjaxlink">基于CSS3实现尖角面包屑</a>
+                
+              </div>
+            </div>
+           
+            <div class="tab-pane" id="life">
+              <div class="list-group">
+                <h2 class="center">life</h2>
+                
+                  <a href="/2014/08/03/tecbook-list-of-2014-second.html" class="list-group-item pjaxlink">2014下半年技术书单</a>
+                
+                  <a href="/2014/08/03/my-2014-first.html" class="list-group-item pjaxlink">2014上半年个人总结</a>
+                
+                  <a href="/2014/08/03/litbook-list-of-2014-second.html" class="list-group-item pjaxlink">2014下半年文学书单</a>
+                
+                  <a href="/2014/03/31/tecbook-list-of-2014-first.html" class="list-group-item pjaxlink">2014上半年技术书单</a>
+                
+                  <a href="/2014/03/31/litbook-list-of-2014-first.html" class="list-group-item pjaxlink">2014上半年文学书单</a>
+                
+              </div>
+            </div>
+           
+            <div class="tab-pane" id="book">
+              <div class="list-group">
+                <h2 class="center">book</h2>
+                
+                  <a href="/2014/08/03/tecbook-list-of-2014-second.html" class="list-group-item pjaxlink">2014下半年技术书单</a>
+                
+                  <a href="/2014/08/03/litbook-list-of-2014-second.html" class="list-group-item pjaxlink">2014下半年文学书单</a>
+                
+                  <a href="/2014/03/31/tecbook-list-of-2014-first.html" class="list-group-item pjaxlink">2014上半年技术书单</a>
+                
+                  <a href="/2014/03/31/litbook-list-of-2014-first.html" class="list-group-item pjaxlink">2014上半年文学书单</a>
+                
+              </div>
+            </div>
+           
+            <div class="tab-pane" id="生活">
+              <div class="list-group">
+                <h2 class="center">生活</h2>
+                
+                  <a href="/2014/08/03/tecbook-list-of-2014-second.html" class="list-group-item pjaxlink">2014下半年技术书单</a>
+                
+                  <a href="/2014/08/03/my-2014-first.html" class="list-group-item pjaxlink">2014上半年个人总结</a>
+                
+                  <a href="/2014/08/03/litbook-list-of-2014-second.html" class="list-group-item pjaxlink">2014下半年文学书单</a>
+                
+                  <a href="/2014/03/31/tecbook-list-of-2014-first.html" class="list-group-item pjaxlink">2014上半年技术书单</a>
+                
+                  <a href="/2014/03/31/litbook-list-of-2014-first.html" class="list-group-item pjaxlink">2014上半年文学书单</a>
+                
+              </div>
+            </div>
+           
+            <div class="tab-pane" id="essay">
+              <div class="list-group">
+                <h2 class="center">essay</h2>
+                
+                  <a href="/2014/08/03/my-2014-first.html" class="list-group-item pjaxlink">2014上半年个人总结</a>
+                
+              </div>
+            </div>
+           
+            <div class="tab-pane" id="algorithm">
+              <div class="list-group">
+                <h2 class="center">algorithm</h2>
+                
+                  <a href="/2014/09/12/pat-1079.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1078.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1077.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1076.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1075.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1074.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1073.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1072.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1071.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1070.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1069.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1068.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1067.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1066.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1065.html" class="list-group-item pjaxlink">PAT1065. A+B and C (64bit) (20)</a>
+                
+                  <a href="/2014/09/08/pat-1064.html" class="list-group-item pjaxlink">PAT1064. Complete Binary Search Tree (30)</a>
+                
+                  <a href="/2014/09/08/pat-1063.html" class="list-group-item pjaxlink">PAT1063. Set Similarity (25)</a>
+                
+                  <a href="/2014/09/08/pat-1062.html" class="list-group-item pjaxlink">PAT1062. Talent and Virtue (25)</a>
+                
+                  <a href="/2014/09/08/pat-1061.html" class="list-group-item pjaxlink">PAT1061. Dating (20)</a>
+                
+                  <a href="/2014/09/08/pat-1060.html" class="list-group-item pjaxlink">PAT1060. Are They Equal (25)</a>
+                
+                  <a href="/2014/09/08/pat-1059.html" class="list-group-item pjaxlink">PAT1059. Prime Factors (25)</a>
+                
+                  <a href="/2014/09/08/pat-1058.html" class="list-group-item pjaxlink">PAT1058. A+B in Hogwarts (20)</a>
+                
+                  <a href="/2014/09/08/pat-1057.html" class="list-group-item pjaxlink">PAT1057. Stack (30)</a>
+                
+                  <a href="/2014/09/08/pat-1056.html" class="list-group-item pjaxlink">PAT1056. Mice and Rice (25)</a>
+                
+                  <a href="/2014/09/08/pat-1055.html" class="list-group-item pjaxlink">PAT1055. The World's Richest (25)</a>
+                
+                  <a href="/2014/09/08/pat-1054.html" class="list-group-item pjaxlink">PAT1054. The Dominant Color (20)</a>
+                
+                  <a href="/2014/09/08/pat-1053.html" class="list-group-item pjaxlink">PAT1053. Path of Equal Weight (30)</a>
+                
+                  <a href="/2014/09/08/pat-1052.html" class="list-group-item pjaxlink">PAT1052. Linked List Sorting (25)</a>
+                
+                  <a href="/2014/09/07/pat-1051.html" class="list-group-item pjaxlink">PAT1051. Pop Sequence (25)</a>
+                
+                  <a href="/2014/09/07/pat-1050.html" class="list-group-item pjaxlink">PAT1050. String Subtraction (20)</a>
+                
+                  <a href="/2014/09/07/pat-1049.html" class="list-group-item pjaxlink">PAT1049. Counting Ones (30)</a>
+                
+                  <a href="/2014/09/07/pat-1048.html" class="list-group-item pjaxlink">PAT1048. Find Coins (25)</a>
+                
+                  <a href="/2014/09/07/pat-1047.html" class="list-group-item pjaxlink">PAT1047. Student List for Course (25)</a>
+                
+                  <a href="/2014/09/07/pat-1046.html" class="list-group-item pjaxlink">PAT1046. Shortest Distance (20)</a>
+                
+                  <a href="/2014/09/07/pat-1045.html" class="list-group-item pjaxlink">PAT1045. Favorite Color Stripe (30)</a>
+                
+                  <a href="/2014/09/07/pat-1044.html" class="list-group-item pjaxlink">PAT1044. Shopping in Mars (25)</a>
+                
+                  <a href="/2014/09/07/pat-1043.html" class="list-group-item pjaxlink">PAT1043. Is It a Binary Search Tree (25)</a>
+                
+                  <a href="/2014/09/07/pat-1042.html" class="list-group-item pjaxlink">PAT1042. Shuffling Machine (20)</a>
+                
+                  <a href="/2014/09/07/pat-1041.html" class="list-group-item pjaxlink">PAT1041. Be Unique (20)</a>
+                
+                  <a href="/2014/09/07/pat-1040.html" class="list-group-item pjaxlink">PAT1040. Longest Symmetric String (25)</a>
+                
+                  <a href="/2014/09/07/pat-1039.html" class="list-group-item pjaxlink">PAT1039. Course List for Student (25)</a>
+                
+                  <a href="/2014/09/06/pat-1038.html" class="list-group-item pjaxlink">PAT1038. Recover the Smallest Number (30)</a>
+                
+                  <a href="/2014/09/06/pat-1037.html" class="list-group-item pjaxlink">PAT1037. Magic Coupon (25)</a>
+                
+                  <a href="/2014/09/06/pat-1036.html" class="list-group-item pjaxlink">PAT1036. Boys vs Girls (25)</a>
+                
+                  <a href="/2014/09/06/pat-1035.html" class="list-group-item pjaxlink">PAT1035. Password (20)</a>
+                
+                  <a href="/2014/09/06/pat-1034.html" class="list-group-item pjaxlink">PAT1034. Head of a Gang (30)</a>
+                
+                  <a href="/2014/09/05/pat-1033.html" class="list-group-item pjaxlink">PAT1033. To Fill or Not to Fill (25)</a>
+                
+                  <a href="/2014/09/05/pat-1032.html" class="list-group-item pjaxlink">PAT1032. Sharing (25)</a>
+                
+                  <a href="/2014/09/05/pat-1031.html" class="list-group-item pjaxlink">PAT1031. Hello World for U (20)</a>
+                
+                  <a href="/2014/09/05/pat-1030.html" class="list-group-item pjaxlink">PAT1030. Travel Plan (30)</a>
+                
+                  <a href="/2014/09/05/pat-1029.html" class="list-group-item pjaxlink">PAT1029. Median (25)</a>
+                
+                  <a href="/2014/09/05/pat-1028.html" class="list-group-item pjaxlink">PAT1028. List Sorting (25)</a>
+                
+                  <a href="/2014/09/04/pat-1027.html" class="list-group-item pjaxlink">PAT1027. Colors in Mars (20)</a>
+                
+                  <a href="/2014/09/04/pat-1026.html" class="list-group-item pjaxlink">PAT1026. Table Tennis (30)</a>
+                
+                  <a href="/2014/09/04/pat-1025.html" class="list-group-item pjaxlink">PAT1025. PAT Ranking (25)</a>
+                
+                  <a href="/2014/09/04/pat-1024.html" class="list-group-item pjaxlink">PAT1024. Palindromic Number (25)</a>
+                
+                  <a href="/2014/09/04/pat-1023.html" class="list-group-item pjaxlink">PAT1023. Have Fun with Numbers (20)</a>
+                
+                  <a href="/2014/09/04/pat-1022.html" class="list-group-item pjaxlink">PAT1022. Digital Library (30)</a>
+                
+                  <a href="/2014/09/04/pat-1021.html" class="list-group-item pjaxlink">PAT1021. Deepest Root (25)</a>
+                
+                  <a href="/2014/09/04/pat-1020.html" class="list-group-item pjaxlink">PAT1020. Tree Traversals (25)</a>
+                
+                  <a href="/2014/09/04/pat-1019.html" class="list-group-item pjaxlink">PAT1019. General Palindromic Number (20)</a>
+                
+                  <a href="/2014/09/04/pat-1018.html" class="list-group-item pjaxlink">PAT1018. Public Bike Management (30)</a>
+                
+                  <a href="/2014/09/04/pat-1017.html" class="list-group-item pjaxlink">PAT1017. Queueing at Bank (25)</a>
+                
+                  <a href="/2014/09/04/pat-1016.html" class="list-group-item pjaxlink">PAT1016. Phone Bills (25)</a>
+                
+                  <a href="/2014/09/03/pat-1015.html" class="list-group-item pjaxlink">PAT1015. Reversible Primes (20)</a>
+                
+                  <a href="/2014/09/03/pat-1014.html" class="list-group-item pjaxlink">PAT1014. Waiting in Line (30)</a>
+                
+                  <a href="/2014/09/03/pat-1013.html" class="list-group-item pjaxlink">PAT1013. Battle Over Cities (25)</a>
+                
+                  <a href="/2014/09/03/pat-1012.html" class="list-group-item pjaxlink">PAT1012. The Best Rank (25)</a>
+                
+                  <a href="/2014/09/03/pat-1011.html" class="list-group-item pjaxlink">PAT1011. World Cup Betting (20)</a>
+                
+                  <a href="/2014/09/03/pat-1010.html" class="list-group-item pjaxlink">PAT1010. Radix (25)</a>
+                
+                  <a href="/2014/09/03/pat-1009.html" class="list-group-item pjaxlink">PAT1009. Product of Polynomials (25)</a>
+                
+                  <a href="/2014/09/03/pat-1008.html" class="list-group-item pjaxlink">PAT1008. Elevator (20)</a>
+                
+                  <a href="/2014/09/03/pat-1007.html" class="list-group-item pjaxlink">PAT1007. Maximum Subsequence Sum (25)</a>
+                
+                  <a href="/2014/09/03/pat-1006.html" class="list-group-item pjaxlink">PAT1006. Sign In and Sign Out (25)</a>
+                
+                  <a href="/2014/09/03/pat-1005.html" class="list-group-item pjaxlink">PAT1005. Spell It Right (20)</a>
+                
+                  <a href="/2014/09/03/pat-1004.html" class="list-group-item pjaxlink">PAT1004. Counting Leaves (30)</a>
+                
+                  <a href="/2014/09/03/pat-1003.html" class="list-group-item pjaxlink">PAT1003. Emergency (25)</a>
+                
+                  <a href="/2014/09/03/pat-1002.html" class="list-group-item pjaxlink">PAT1002. A+B for Polynomials (25)</a>
+                
+                  <a href="/2014/09/03/pat-1001.html" class="list-group-item pjaxlink">PAT1001. A+B Format (20)</a>
+                
+              </div>
+            </div>
+           
+            <div class="tab-pane" id="pat">
+              <div class="list-group">
+                <h2 class="center">pat</h2>
+                
+                  <a href="/2014/09/12/pat-1079.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1078.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1077.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1076.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1075.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1074.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1073.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1072.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1071.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1070.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1069.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1068.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1067.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1066.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1065.html" class="list-group-item pjaxlink">PAT1065. A+B and C (64bit) (20)</a>
+                
+                  <a href="/2014/09/08/pat-1064.html" class="list-group-item pjaxlink">PAT1064. Complete Binary Search Tree (30)</a>
+                
+                  <a href="/2014/09/08/pat-1063.html" class="list-group-item pjaxlink">PAT1063. Set Similarity (25)</a>
+                
+                  <a href="/2014/09/08/pat-1062.html" class="list-group-item pjaxlink">PAT1062. Talent and Virtue (25)</a>
+                
+                  <a href="/2014/09/08/pat-1061.html" class="list-group-item pjaxlink">PAT1061. Dating (20)</a>
+                
+                  <a href="/2014/09/08/pat-1060.html" class="list-group-item pjaxlink">PAT1060. Are They Equal (25)</a>
+                
+                  <a href="/2014/09/08/pat-1059.html" class="list-group-item pjaxlink">PAT1059. Prime Factors (25)</a>
+                
+                  <a href="/2014/09/08/pat-1058.html" class="list-group-item pjaxlink">PAT1058. A+B in Hogwarts (20)</a>
+                
+                  <a href="/2014/09/08/pat-1057.html" class="list-group-item pjaxlink">PAT1057. Stack (30)</a>
+                
+                  <a href="/2014/09/08/pat-1056.html" class="list-group-item pjaxlink">PAT1056. Mice and Rice (25)</a>
+                
+                  <a href="/2014/09/08/pat-1055.html" class="list-group-item pjaxlink">PAT1055. The World's Richest (25)</a>
+                
+                  <a href="/2014/09/08/pat-1054.html" class="list-group-item pjaxlink">PAT1054. The Dominant Color (20)</a>
+                
+                  <a href="/2014/09/08/pat-1053.html" class="list-group-item pjaxlink">PAT1053. Path of Equal Weight (30)</a>
+                
+                  <a href="/2014/09/08/pat-1052.html" class="list-group-item pjaxlink">PAT1052. Linked List Sorting (25)</a>
+                
+                  <a href="/2014/09/07/pat-1051.html" class="list-group-item pjaxlink">PAT1051. Pop Sequence (25)</a>
+                
+                  <a href="/2014/09/07/pat-1050.html" class="list-group-item pjaxlink">PAT1050. String Subtraction (20)</a>
+                
+                  <a href="/2014/09/07/pat-1049.html" class="list-group-item pjaxlink">PAT1049. Counting Ones (30)</a>
+                
+                  <a href="/2014/09/07/pat-1048.html" class="list-group-item pjaxlink">PAT1048. Find Coins (25)</a>
+                
+                  <a href="/2014/09/07/pat-1047.html" class="list-group-item pjaxlink">PAT1047. Student List for Course (25)</a>
+                
+                  <a href="/2014/09/07/pat-1046.html" class="list-group-item pjaxlink">PAT1046. Shortest Distance (20)</a>
+                
+                  <a href="/2014/09/07/pat-1045.html" class="list-group-item pjaxlink">PAT1045. Favorite Color Stripe (30)</a>
+                
+                  <a href="/2014/09/07/pat-1044.html" class="list-group-item pjaxlink">PAT1044. Shopping in Mars (25)</a>
+                
+                  <a href="/2014/09/07/pat-1043.html" class="list-group-item pjaxlink">PAT1043. Is It a Binary Search Tree (25)</a>
+                
+                  <a href="/2014/09/07/pat-1042.html" class="list-group-item pjaxlink">PAT1042. Shuffling Machine (20)</a>
+                
+                  <a href="/2014/09/07/pat-1041.html" class="list-group-item pjaxlink">PAT1041. Be Unique (20)</a>
+                
+                  <a href="/2014/09/07/pat-1040.html" class="list-group-item pjaxlink">PAT1040. Longest Symmetric String (25)</a>
+                
+                  <a href="/2014/09/07/pat-1039.html" class="list-group-item pjaxlink">PAT1039. Course List for Student (25)</a>
+                
+                  <a href="/2014/09/06/pat-1038.html" class="list-group-item pjaxlink">PAT1038. Recover the Smallest Number (30)</a>
+                
+                  <a href="/2014/09/06/pat-1037.html" class="list-group-item pjaxlink">PAT1037. Magic Coupon (25)</a>
+                
+                  <a href="/2014/09/06/pat-1036.html" class="list-group-item pjaxlink">PAT1036. Boys vs Girls (25)</a>
+                
+                  <a href="/2014/09/06/pat-1035.html" class="list-group-item pjaxlink">PAT1035. Password (20)</a>
+                
+                  <a href="/2014/09/06/pat-1034.html" class="list-group-item pjaxlink">PAT1034. Head of a Gang (30)</a>
+                
+                  <a href="/2014/09/05/pat-1033.html" class="list-group-item pjaxlink">PAT1033. To Fill or Not to Fill (25)</a>
+                
+                  <a href="/2014/09/05/pat-1032.html" class="list-group-item pjaxlink">PAT1032. Sharing (25)</a>
+                
+                  <a href="/2014/09/05/pat-1031.html" class="list-group-item pjaxlink">PAT1031. Hello World for U (20)</a>
+                
+                  <a href="/2014/09/05/pat-1030.html" class="list-group-item pjaxlink">PAT1030. Travel Plan (30)</a>
+                
+                  <a href="/2014/09/05/pat-1029.html" class="list-group-item pjaxlink">PAT1029. Median (25)</a>
+                
+                  <a href="/2014/09/05/pat-1028.html" class="list-group-item pjaxlink">PAT1028. List Sorting (25)</a>
+                
+                  <a href="/2014/09/04/pat-1027.html" class="list-group-item pjaxlink">PAT1027. Colors in Mars (20)</a>
+                
+                  <a href="/2014/09/04/pat-1026.html" class="list-group-item pjaxlink">PAT1026. Table Tennis (30)</a>
+                
+                  <a href="/2014/09/04/pat-1025.html" class="list-group-item pjaxlink">PAT1025. PAT Ranking (25)</a>
+                
+                  <a href="/2014/09/04/pat-1024.html" class="list-group-item pjaxlink">PAT1024. Palindromic Number (25)</a>
+                
+                  <a href="/2014/09/04/pat-1023.html" class="list-group-item pjaxlink">PAT1023. Have Fun with Numbers (20)</a>
+                
+                  <a href="/2014/09/04/pat-1022.html" class="list-group-item pjaxlink">PAT1022. Digital Library (30)</a>
+                
+                  <a href="/2014/09/04/pat-1021.html" class="list-group-item pjaxlink">PAT1021. Deepest Root (25)</a>
+                
+                  <a href="/2014/09/04/pat-1020.html" class="list-group-item pjaxlink">PAT1020. Tree Traversals (25)</a>
+                
+                  <a href="/2014/09/04/pat-1019.html" class="list-group-item pjaxlink">PAT1019. General Palindromic Number (20)</a>
+                
+                  <a href="/2014/09/04/pat-1018.html" class="list-group-item pjaxlink">PAT1018. Public Bike Management (30)</a>
+                
+                  <a href="/2014/09/04/pat-1017.html" class="list-group-item pjaxlink">PAT1017. Queueing at Bank (25)</a>
+                
+                  <a href="/2014/09/04/pat-1016.html" class="list-group-item pjaxlink">PAT1016. Phone Bills (25)</a>
+                
+                  <a href="/2014/09/03/pat-1015.html" class="list-group-item pjaxlink">PAT1015. Reversible Primes (20)</a>
+                
+                  <a href="/2014/09/03/pat-1014.html" class="list-group-item pjaxlink">PAT1014. Waiting in Line (30)</a>
+                
+                  <a href="/2014/09/03/pat-1013.html" class="list-group-item pjaxlink">PAT1013. Battle Over Cities (25)</a>
+                
+                  <a href="/2014/09/03/pat-1012.html" class="list-group-item pjaxlink">PAT1012. The Best Rank (25)</a>
+                
+                  <a href="/2014/09/03/pat-1011.html" class="list-group-item pjaxlink">PAT1011. World Cup Betting (20)</a>
+                
+                  <a href="/2014/09/03/pat-1010.html" class="list-group-item pjaxlink">PAT1010. Radix (25)</a>
+                
+                  <a href="/2014/09/03/pat-1009.html" class="list-group-item pjaxlink">PAT1009. Product of Polynomials (25)</a>
+                
+                  <a href="/2014/09/03/pat-1008.html" class="list-group-item pjaxlink">PAT1008. Elevator (20)</a>
+                
+                  <a href="/2014/09/03/pat-1007.html" class="list-group-item pjaxlink">PAT1007. Maximum Subsequence Sum (25)</a>
+                
+                  <a href="/2014/09/03/pat-1006.html" class="list-group-item pjaxlink">PAT1006. Sign In and Sign Out (25)</a>
+                
+                  <a href="/2014/09/03/pat-1005.html" class="list-group-item pjaxlink">PAT1005. Spell It Right (20)</a>
+                
+                  <a href="/2014/09/03/pat-1004.html" class="list-group-item pjaxlink">PAT1004. Counting Leaves (30)</a>
+                
+                  <a href="/2014/09/03/pat-1003.html" class="list-group-item pjaxlink">PAT1003. Emergency (25)</a>
+                
+                  <a href="/2014/09/03/pat-1002.html" class="list-group-item pjaxlink">PAT1002. A+B for Polynomials (25)</a>
+                
+                  <a href="/2014/09/03/pat-1001.html" class="list-group-item pjaxlink">PAT1001. A+B Format (20)</a>
+                
+              </div>
+            </div>
+           
+            <div class="tab-pane" id="算法">
+              <div class="list-group">
+                <h2 class="center">算法</h2>
+                
+                  <a href="/2014/09/12/pat-1079.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1078.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1077.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1076.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1075.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1074.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1073.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1072.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1071.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1070.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1069.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1068.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1067.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1066.html" class="list-group-item pjaxlink">PAT</a>
+                
+                  <a href="/2014/09/12/pat-1065.html" class="list-group-item pjaxlink">PAT1065. A+B and C (64bit) (20)</a>
+                
+                  <a href="/2014/09/08/pat-1064.html" class="list-group-item pjaxlink">PAT1064. Complete Binary Search Tree (30)</a>
+                
+                  <a href="/2014/09/08/pat-1063.html" class="list-group-item pjaxlink">PAT1063. Set Similarity (25)</a>
+                
+                  <a href="/2014/09/08/pat-1062.html" class="list-group-item pjaxlink">PAT1062. Talent and Virtue (25)</a>
+                
+                  <a href="/2014/09/08/pat-1061.html" class="list-group-item pjaxlink">PAT1061. Dating (20)</a>
+                
+                  <a href="/2014/09/08/pat-1060.html" class="list-group-item pjaxlink">PAT1060. Are They Equal (25)</a>
+                
+                  <a href="/2014/09/08/pat-1059.html" class="list-group-item pjaxlink">PAT1059. Prime Factors (25)</a>
+                
+                  <a href="/2014/09/08/pat-1058.html" class="list-group-item pjaxlink">PAT1058. A+B in Hogwarts (20)</a>
+                
+                  <a href="/2014/09/08/pat-1057.html" class="list-group-item pjaxlink">PAT1057. Stack (30)</a>
+                
+                  <a href="/2014/09/08/pat-1056.html" class="list-group-item pjaxlink">PAT1056. Mice and Rice (25)</a>
+                
+                  <a href="/2014/09/08/pat-1055.html" class="list-group-item pjaxlink">PAT1055. The World's Richest (25)</a>
+                
+                  <a href="/2014/09/08/pat-1053.html" class="list-group-item pjaxlink">PAT1053. Path of Equal Weight (30)</a>
+                
+                  <a href="/2014/09/08/pat-1052.html" class="list-group-item pjaxlink">PAT1052. Linked List Sorting (25)</a>
+                
+                  <a href="/2014/09/07/pat-1051.html" class="list-group-item pjaxlink">PAT1051. Pop Sequence (25)</a>
+                
+                  <a href="/2014/09/07/pat-1050.html" class="list-group-item pjaxlink">PAT1050. String Subtraction (20)</a>
+                
+                  <a href="/2014/09/07/pat-1049.html" class="list-group-item pjaxlink">PAT1049. Counting Ones (30)</a>
+                
+                  <a href="/2014/09/07/pat-1048.html" class="list-group-item pjaxlink">PAT1048. Find Coins (25)</a>
+                
+                  <a href="/2014/09/07/pat-1047.html" class="list-group-item pjaxlink">PAT1047. Student List for Course (25)</a>
+                
+                  <a href="/2014/09/07/pat-1046.html" class="list-group-item pjaxlink">PAT1046. Shortest Distance (20)</a>
+                
+                  <a href="/2014/09/07/pat-1045.html" class="list-group-item pjaxlink">PAT1045. Favorite Color Stripe (30)</a>
+                
+                  <a href="/2014/09/07/pat-1044.html" class="list-group-item pjaxlink">PAT1044. Shopping in Mars (25)</a>
+                
+                  <a href="/2014/09/07/pat-1043.html" class="list-group-item pjaxlink">PAT1043. Is It a Binary Search Tree (25)</a>
+                
+                  <a href="/2014/09/07/pat-1042.html" class="list-group-item pjaxlink">PAT1042. Shuffling Machine (20)</a>
+                
+                  <a href="/2014/09/07/pat-1041.html" class="list-group-item pjaxlink">PAT1041. Be Unique (20)</a>
+                
+                  <a href="/2014/09/07/pat-1040.html" class="list-group-item pjaxlink">PAT1040. Longest Symmetric String (25)</a>
+                
+                  <a href="/2014/09/07/pat-1039.html" class="list-group-item pjaxlink">PAT1039. Course List for Student (25)</a>
+                
+                  <a href="/2014/09/06/pat-1038.html" class="list-group-item pjaxlink">PAT1038. Recover the Smallest Number (30)</a>
+                
+                  <a href="/2014/09/06/pat-1037.html" class="list-group-item pjaxlink">PAT1037. Magic Coupon (25)</a>
+                
+                  <a href="/2014/09/06/pat-1036.html" class="list-group-item pjaxlink">PAT1036. Boys vs Girls (25)</a>
+                
+                  <a href="/2014/09/06/pat-1035.html" class="list-group-item pjaxlink">PAT1035. Password (20)</a>
+                
+                  <a href="/2014/09/06/pat-1034.html" class="list-group-item pjaxlink">PAT1034. Head of a Gang (30)</a>
+                
+                  <a href="/2014/09/05/pat-1033.html" class="list-group-item pjaxlink">PAT1033. To Fill or Not to Fill (25)</a>
+                
+                  <a href="/2014/09/05/pat-1032.html" class="list-group-item pjaxlink">PAT1032. Sharing (25)</a>
+                
+                  <a href="/2014/09/05/pat-1031.html" class="list-group-item pjaxlink">PAT1031. Hello World for U (20)</a>
+                
+                  <a href="/2014/09/05/pat-1030.html" class="list-group-item pjaxlink">PAT1030. Travel Plan (30)</a>
+                
+                  <a href="/2014/09/05/pat-1029.html" class="list-group-item pjaxlink">PAT1029. Median (25)</a>
+                
+                  <a href="/2014/09/05/pat-1028.html" class="list-group-item pjaxlink">PAT1028. List Sorting (25)</a>
+                
+                  <a href="/2014/09/04/pat-1027.html" class="list-group-item pjaxlink">PAT1027. Colors in Mars (20)</a>
+                
+                  <a href="/2014/09/04/pat-1026.html" class="list-group-item pjaxlink">PAT1026. Table Tennis (30)</a>
+                
+                  <a href="/2014/09/04/pat-1025.html" class="list-group-item pjaxlink">PAT1025. PAT Ranking (25)</a>
+                
+                  <a href="/2014/09/04/pat-1024.html" class="list-group-item pjaxlink">PAT1024. Palindromic Number (25)</a>
+                
+                  <a href="/2014/09/04/pat-1023.html" class="list-group-item pjaxlink">PAT1023. Have Fun with Numbers (20)</a>
+                
+                  <a href="/2014/09/04/pat-1022.html" class="list-group-item pjaxlink">PAT1022. Digital Library (30)</a>
+                
+                  <a href="/2014/09/04/pat-1021.html" class="list-group-item pjaxlink">PAT1021. Deepest Root (25)</a>
+                
+                  <a href="/2014/09/04/pat-1020.html" class="list-group-item pjaxlink">PAT1020. Tree Traversals (25)</a>
+                
+                  <a href="/2014/09/04/pat-1019.html" class="list-group-item pjaxlink">PAT1019. General Palindromic Number (20)</a>
+                
+                  <a href="/2014/09/04/pat-1018.html" class="list-group-item pjaxlink">PAT1018. Public Bike Management (30)</a>
+                
+                  <a href="/2014/09/04/pat-1017.html" class="list-group-item pjaxlink">PAT1017. Queueing at Bank (25)</a>
+                
+                  <a href="/2014/09/04/pat-1016.html" class="list-group-item pjaxlink">PAT1016. Phone Bills (25)</a>
+                
+                  <a href="/2014/09/03/pat-1015.html" class="list-group-item pjaxlink">PAT1015. Reversible Primes (20)</a>
+                
+                  <a href="/2014/09/03/pat-1014.html" class="list-group-item pjaxlink">PAT1014. Waiting in Line (30)</a>
+                
+                  <a href="/2014/09/03/pat-1013.html" class="list-group-item pjaxlink">PAT1013. Battle Over Cities (25)</a>
+                
+                  <a href="/2014/09/03/pat-1012.html" class="list-group-item pjaxlink">PAT1012. The Best Rank (25)</a>
+                
+                  <a href="/2014/09/03/pat-1011.html" class="list-group-item pjaxlink">PAT1011. World Cup Betting (20)</a>
+                
+                  <a href="/2014/09/03/pat-1010.html" class="list-group-item pjaxlink">PAT1010. Radix (25)</a>
+                
+                  <a href="/2014/09/03/pat-1009.html" class="list-group-item pjaxlink">PAT1009. Product of Polynomials (25)</a>
+                
+                  <a href="/2014/09/03/pat-1008.html" class="list-group-item pjaxlink">PAT1008. Elevator (20)</a>
+                
+                  <a href="/2014/09/03/pat-1007.html" class="list-group-item pjaxlink">PAT1007. Maximum Subsequence Sum (25)</a>
+                
+                  <a href="/2014/09/03/pat-1006.html" class="list-group-item pjaxlink">PAT1006. Sign In and Sign Out (25)</a>
+                
+                  <a href="/2014/09/03/pat-1005.html" class="list-group-item pjaxlink">PAT1005. Spell It Right (20)</a>
+                
+                  <a href="/2014/09/03/pat-1004.html" class="list-group-item pjaxlink">PAT1004. Counting Leaves (30)</a>
+                
+                  <a href="/2014/09/03/pat-1003.html" class="list-group-item pjaxlink">PAT1003. Emergency (25)</a>
+                
+                  <a href="/2014/09/03/pat-1002.html" class="list-group-item pjaxlink">PAT1002. A+B for Polynomials (25)</a>
+                
+                  <a href="/2014/09/03/pat-1001.html" class="list-group-item pjaxlink">PAT1001. A+B Format (20)</a>
+                
+              </div>
+            </div>
+           
+            <div class="tab-pane" id="模拟">
+              <div class="list-group">
+                <h2 class="center">模拟</h2>
+                
+                  <a href="/2014/09/08/pat-1054.html" class="list-group-item pjaxlink">PAT1054. The Dominant Color (20)</a>
+                
+              </div>
+            </div>
+          
+          <div class="tab-pane" id="tags">
+            <div class="panel-group" id="accordion">
+              <h2 class="center">标签</h2>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#PHP">PHP</a>
+                      <span class="badge pull-right">8</span>
+                    </h4>
+                  </div>
+                  <div id="PHP" class="panel-collapse collapse">
+                    
+                      <a  href='/2014/05/04/set-environment-variables-of-server-for-php.html' class="list-group-item pjaxlink">
+                        为PHP设置服务器(Apache/Nginx)环境变量
+                      </a>
+                    
+                      <a  href='/2014/04/27/magic-methods-and-magic-constants-in-php.html' class="list-group-item pjaxlink">
+                        PHP中的魔术方法和魔术常量简介和使用
+                      </a>
+                    
+                      <a  href='/2014/01/25/how-to-use-php-socket.html' class="list-group-item pjaxlink">
+                        PHP Socket的使用
+                      </a>
+                    
+                      <a  href='/2014/01/16/php-namespace-and-autoload.html' class="list-group-item pjaxlink">
+                        PHP命名空间及自动加载
+                      </a>
+                    
+                      <a  href='/2014/01/15/general-php-resources.html' class="list-group-item pjaxlink">
+                        PHP 常用资源
+                      </a>
+                    
+                      <a  href='/2013/05/03/php-cache-of-a-page.html' class="list-group-item pjaxlink">
+                        页面提速之——数据缓存
+                      </a>
+                    
+                      <a  href='/2012/09/27/php-variable-variables.html' class="list-group-item pjaxlink">
+                        PHP可变变量
+                      </a>
+                    
+                      <a  href='/2012/09/19/php-session-security.html' class="list-group-item pjaxlink">
+                        PHP操作Session的原理及提升安全性时的一个问题
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#JavaScript">JavaScript</a>
+                      <span class="badge pull-right">3</span>
+                    </h4>
+                  </div>
+                  <div id="JavaScript" class="panel-collapse collapse">
+                    
+                      <a  href='/2014/01/15/general-javascript-resources.html' class="list-group-item pjaxlink">
+                        JavaScript 常用资源
+                      </a>
+                    
+                      <a  href='/2013/02/24/javascript-variable-domain.html' class="list-group-item pjaxlink">
+                        JavaScript变量作用域
+                      </a>
+                    
+                      <a  href='/2012/09/27/open-widown-in-javascript.html' class="list-group-item pjaxlink">
+                        JS中防止浏览器屏蔽window.open
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Python">Python</a>
+                      <span class="badge pull-right">11</span>
+                    </h4>
+                  </div>
+                  <div id="Python" class="panel-collapse collapse">
+                    
+                      <a  href='/2014/01/17/python-script-of-sae-log-download.html' class="list-group-item pjaxlink">
+                        Python脚本--下载合并SAE日志
+                      </a>
+                    
+                      <a  href='/2014/01/15/general-python-resources.html' class="list-group-item pjaxlink">
+                        Python 常用资源
+                      </a>
+                    
+                      <a  href='/2013/06/09/learn-python-stevedore-module-in-detail.html' class="list-group-item pjaxlink">
+                        学习Python动态扩展包stevedore
+                      </a>
+                    
+                      <a  href='/2013/06/09/learn-python-abc-module.html' class="list-group-item pjaxlink">
+                        学习Python的ABC模块
+                      </a>
+                    
+                      <a  href='/2013/06/07/learn-python-setuptools-in-detail.html' class="list-group-item pjaxlink">
+                        Python包管理工具setuptools详解
+                      </a>
+                    
+                      <a  href='/2013/05/19/what-is-wsgi.html' class="list-group-item pjaxlink">
+                        WSGI学习
+                      </a>
+                    
+                      <a  href='/2013/05/15/learn-how-to-use-distutils.html' class="list-group-item pjaxlink">
+                        学习使用python打包工具distutils
+                      </a>
+                    
+                      <a  href='/2013/05/15/different-between-python-package-tools.html' class="list-group-item pjaxlink">
+                        python包工具之间的关系
+                      </a>
+                    
+                      <a  href='/2013/05/06/why-use-pip-over-easy-install.html' class="list-group-item pjaxlink">
+                        为什么使用pip而不是easy_install
+                      </a>
+                    
+                      <a  href='/2013/05/06/interactive-coding-ipython.html' class="list-group-item pjaxlink">
+                        交互式编程-IPython
+                      </a>
+                    
+                      <a  href='/2012/12/31/python-development-of-sae.html' class="list-group-item pjaxlink">
+                        sae下的python开发部署和一个简单例子
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Git">Git</a>
+                      <span class="badge pull-right">6</span>
+                    </h4>
+                  </div>
+                  <div id="Git" class="panel-collapse collapse">
+                    
+                      <a  href='/2014/02/12/how-to-deploy-a-blog-on-github-by-jekyll.html' class="list-group-item pjaxlink">
+                        在GitHub上搭建Jekyll博客和创建主题
+                      </a>
+                    
+                      <a  href='/2014/01/30/understanding-the-github-workflow.html' class="list-group-item pjaxlink">
+                        GitHub工作流
+                      </a>
+                    
+                      <a  href='/2014/01/15/general-git-resources.html' class="list-group-item pjaxlink">
+                        Git 常用资源
+                      </a>
+                    
+                      <a  href='/2013/05/20/set-proxy-for-git-or-apt.html' class="list-group-item pjaxlink">
+                        给Git或者APT设置goagent代理
+                      </a>
+                    
+                      <a  href='/2013/04/22/ignore-password-in-git-push.html' class="list-group-item pjaxlink">
+                        让git push命令不再需要密码
+                      </a>
+                    
+                      <a  href='/2013/01/16/create-remote-resp.html' class="list-group-item pjaxlink">
+                        Git创建远程库
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Windows">Windows</a>
+                      <span class="badge pull-right">2</span>
+                    </h4>
+                  </div>
+                  <div id="Windows" class="panel-collapse collapse">
+                    
+                      <a  href='/2013/11/11/share-windows-and-linux.html' class="list-group-item pjaxlink">
+                        配置Windows和Linux双系统
+                      </a>
+                    
+                      <a  href='/2013/02/25/quick-open-in-windows.html' class="list-group-item pjaxlink">
+                        Windows快速打开应用程序或文件
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Jekyll">Jekyll</a>
+                      <span class="badge pull-right">2</span>
+                    </h4>
+                  </div>
+                  <div id="Jekyll" class="panel-collapse collapse">
+                    
+                      <a  href='/2014/02/12/how-to-deploy-a-blog-on-github-by-jekyll.html' class="list-group-item pjaxlink">
+                        在GitHub上搭建Jekyll博客和创建主题
+                      </a>
+                    
+                      <a  href='/2013/04/22/highlight-of-jekyll.html' class="list-group-item pjaxlink">
+                        Jekyll的中的代码高亮
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Bootstrap">Bootstrap</a>
+                      <span class="badge pull-right">1</span>
+                    </h4>
+                  </div>
+                  <div id="Bootstrap" class="panel-collapse collapse">
+                    
+                      <a  href='/2013/04/23/general-bootstrap-resources.html' class="list-group-item pjaxlink">
+                        Bootstrap常用资源
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#HTML">HTML</a>
+                      <span class="badge pull-right">2</span>
+                    </h4>
+                  </div>
+                  <div id="HTML" class="panel-collapse collapse">
+                    
+                      <a  href='/2014/01/15/general-html-resources.html' class="list-group-item pjaxlink">
+                        HTML 常用资源
+                      </a>
+                    
+                      <a  href='/2013/05/06/the-viewpoint-metatag.html' class="list-group-item pjaxlink">
+                        HTML中meta标签viewpoint的作用
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Linux">Linux</a>
+                      <span class="badge pull-right">2</span>
+                    </h4>
+                  </div>
+                  <div id="Linux" class="panel-collapse collapse">
+                    
+                      <a  href='/2013/12/08/linux-command-continue.html' class="list-group-item pjaxlink">
+                        Linux下多个命令连续执行方法
+                      </a>
+                    
+                      <a  href='/2013/11/11/share-windows-and-linux.html' class="list-group-item pjaxlink">
+                        配置Windows和Linux双系统
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#CSS">CSS</a>
+                      <span class="badge pull-right">1</span>
+                    </h4>
+                  </div>
+                  <div id="CSS" class="panel-collapse collapse">
+                    
+                      <a  href='/2013/12/08/implemention-of-breadcrumbs-by-css3.html' class="list-group-item pjaxlink">
+                        基于CSS3实现尖角面包屑
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#jQuery">jQuery</a>
+                      <span class="badge pull-right">1</span>
+                    </h4>
+                  </div>
+                  <div id="jQuery" class="panel-collapse collapse">
+                    
+                      <a  href='/2014/01/15/general-jquery-resources.html' class="list-group-item pjaxlink">
+                        jQuery 常用资源
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Shell">Shell</a>
+                      <span class="badge pull-right">1</span>
+                    </h4>
+                  </div>
+                  <div id="Shell" class="panel-collapse collapse">
+                    
+                      <a  href='/2014/01/15/general-shell-resources.html' class="list-group-item pjaxlink">
+                        Shell 常用资源
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#SVN">SVN</a>
+                      <span class="badge pull-right">1</span>
+                    </h4>
+                  </div>
+                  <div id="SVN" class="panel-collapse collapse">
+                    
+                      <a  href='/2014/01/15/general-svn-resources.html' class="list-group-item pjaxlink">
+                        SVN 常用资源
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Nginx">Nginx</a>
+                      <span class="badge pull-right">1</span>
+                    </h4>
+                  </div>
+                  <div id="Nginx" class="panel-collapse collapse">
+                    
+                      <a  href='/2014/05/04/set-environment-variables-of-server-for-php.html' class="list-group-item pjaxlink">
+                        为PHP设置服务器(Apache/Nginx)环境变量
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Apache">Apache</a>
+                      <span class="badge pull-right">1</span>
+                    </h4>
+                  </div>
+                  <div id="Apache" class="panel-collapse collapse">
+                    
+                      <a  href='/2014/05/04/set-environment-variables-of-server-for-php.html' class="list-group-item pjaxlink">
+                        为PHP设置服务器(Apache/Nginx)环境变量
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#MySQL">MySQL</a>
+                      <span class="badge pull-right">1</span>
+                    </h4>
+                  </div>
+                  <div id="MySQL" class="panel-collapse collapse">
+                    
+                      <a  href='/2014/05/11/general-mysql-resources.html' class="list-group-item pjaxlink">
+                        MySQL常用资源
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Essay">Essay</a>
+                      <span class="badge pull-right">1</span>
+                    </h4>
+                  </div>
+                  <div id="Essay" class="panel-collapse collapse">
+                    
+                      <a  href='/2014/08/03/my-2014-first.html' class="list-group-item pjaxlink">
+                        2014上半年个人总结
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#PAT">PAT</a>
+                      <span class="badge pull-right">79</span>
+                    </h4>
+                  </div>
+                  <div id="PAT" class="panel-collapse collapse">
+                    
+                      <a  href='/2014/09/12/pat-1079.html' class="list-group-item pjaxlink">
+                        PAT
+                      </a>
+                    
+                      <a  href='/2014/09/12/pat-1078.html' class="list-group-item pjaxlink">
+                        PAT
+                      </a>
+                    
+                      <a  href='/2014/09/12/pat-1077.html' class="list-group-item pjaxlink">
+                        PAT
+                      </a>
+                    
+                      <a  href='/2014/09/12/pat-1076.html' class="list-group-item pjaxlink">
+                        PAT
+                      </a>
+                    
+                      <a  href='/2014/09/12/pat-1075.html' class="list-group-item pjaxlink">
+                        PAT
+                      </a>
+                    
+                      <a  href='/2014/09/12/pat-1074.html' class="list-group-item pjaxlink">
+                        PAT
+                      </a>
+                    
+                      <a  href='/2014/09/12/pat-1073.html' class="list-group-item pjaxlink">
+                        PAT
+                      </a>
+                    
+                      <a  href='/2014/09/12/pat-1072.html' class="list-group-item pjaxlink">
+                        PAT
+                      </a>
+                    
+                      <a  href='/2014/09/12/pat-1071.html' class="list-group-item pjaxlink">
+                        PAT
+                      </a>
+                    
+                      <a  href='/2014/09/12/pat-1070.html' class="list-group-item pjaxlink">
+                        PAT
+                      </a>
+                    
+                      <a  href='/2014/09/12/pat-1069.html' class="list-group-item pjaxlink">
+                        PAT
+                      </a>
+                    
+                      <a  href='/2014/09/12/pat-1068.html' class="list-group-item pjaxlink">
+                        PAT
+                      </a>
+                    
+                      <a  href='/2014/09/12/pat-1067.html' class="list-group-item pjaxlink">
+                        PAT
+                      </a>
+                    
+                      <a  href='/2014/09/12/pat-1066.html' class="list-group-item pjaxlink">
+                        PAT
+                      </a>
+                    
+                      <a  href='/2014/09/12/pat-1065.html' class="list-group-item pjaxlink">
+                        PAT1065. A+B and C (64bit) (20)
+                      </a>
+                    
+                      <a  href='/2014/09/08/pat-1064.html' class="list-group-item pjaxlink">
+                        PAT1064. Complete Binary Search Tree (30)
+                      </a>
+                    
+                      <a  href='/2014/09/08/pat-1063.html' class="list-group-item pjaxlink">
+                        PAT1063. Set Similarity (25)
+                      </a>
+                    
+                      <a  href='/2014/09/08/pat-1062.html' class="list-group-item pjaxlink">
+                        PAT1062. Talent and Virtue (25)
+                      </a>
+                    
+                      <a  href='/2014/09/08/pat-1061.html' class="list-group-item pjaxlink">
+                        PAT1061. Dating (20)
+                      </a>
+                    
+                      <a  href='/2014/09/08/pat-1060.html' class="list-group-item pjaxlink">
+                        PAT1060. Are They Equal (25)
+                      </a>
+                    
+                      <a  href='/2014/09/08/pat-1059.html' class="list-group-item pjaxlink">
+                        PAT1059. Prime Factors (25)
+                      </a>
+                    
+                      <a  href='/2014/09/08/pat-1058.html' class="list-group-item pjaxlink">
+                        PAT1058. A+B in Hogwarts (20)
+                      </a>
+                    
+                      <a  href='/2014/09/08/pat-1057.html' class="list-group-item pjaxlink">
+                        PAT1057. Stack (30)
+                      </a>
+                    
+                      <a  href='/2014/09/08/pat-1056.html' class="list-group-item pjaxlink">
+                        PAT1056. Mice and Rice (25)
+                      </a>
+                    
+                      <a  href='/2014/09/08/pat-1055.html' class="list-group-item pjaxlink">
+                        PAT1055. The World's Richest (25)
+                      </a>
+                    
+                      <a  href='/2014/09/08/pat-1054.html' class="list-group-item pjaxlink">
+                        PAT1054. The Dominant Color (20)
+                      </a>
+                    
+                      <a  href='/2014/09/08/pat-1053.html' class="list-group-item pjaxlink">
+                        PAT1053. Path of Equal Weight (30)
+                      </a>
+                    
+                      <a  href='/2014/09/08/pat-1052.html' class="list-group-item pjaxlink">
+                        PAT1052. Linked List Sorting (25)
+                      </a>
+                    
+                      <a  href='/2014/09/07/pat-1051.html' class="list-group-item pjaxlink">
+                        PAT1051. Pop Sequence (25)
+                      </a>
+                    
+                      <a  href='/2014/09/07/pat-1050.html' class="list-group-item pjaxlink">
+                        PAT1050. String Subtraction (20)
+                      </a>
+                    
+                      <a  href='/2014/09/07/pat-1049.html' class="list-group-item pjaxlink">
+                        PAT1049. Counting Ones (30)
+                      </a>
+                    
+                      <a  href='/2014/09/07/pat-1048.html' class="list-group-item pjaxlink">
+                        PAT1048. Find Coins (25)
+                      </a>
+                    
+                      <a  href='/2014/09/07/pat-1047.html' class="list-group-item pjaxlink">
+                        PAT1047. Student List for Course (25)
+                      </a>
+                    
+                      <a  href='/2014/09/07/pat-1046.html' class="list-group-item pjaxlink">
+                        PAT1046. Shortest Distance (20)
+                      </a>
+                    
+                      <a  href='/2014/09/07/pat-1045.html' class="list-group-item pjaxlink">
+                        PAT1045. Favorite Color Stripe (30)
+                      </a>
+                    
+                      <a  href='/2014/09/07/pat-1044.html' class="list-group-item pjaxlink">
+                        PAT1044. Shopping in Mars (25)
+                      </a>
+                    
+                      <a  href='/2014/09/07/pat-1043.html' class="list-group-item pjaxlink">
+                        PAT1043. Is It a Binary Search Tree (25)
+                      </a>
+                    
+                      <a  href='/2014/09/07/pat-1042.html' class="list-group-item pjaxlink">
+                        PAT1042. Shuffling Machine (20)
+                      </a>
+                    
+                      <a  href='/2014/09/07/pat-1041.html' class="list-group-item pjaxlink">
+                        PAT1041. Be Unique (20)
+                      </a>
+                    
+                      <a  href='/2014/09/07/pat-1040.html' class="list-group-item pjaxlink">
+                        PAT1040. Longest Symmetric String (25)
+                      </a>
+                    
+                      <a  href='/2014/09/07/pat-1039.html' class="list-group-item pjaxlink">
+                        PAT1039. Course List for Student (25)
+                      </a>
+                    
+                      <a  href='/2014/09/06/pat-1038.html' class="list-group-item pjaxlink">
+                        PAT1038. Recover the Smallest Number (30)
+                      </a>
+                    
+                      <a  href='/2014/09/06/pat-1037.html' class="list-group-item pjaxlink">
+                        PAT1037. Magic Coupon (25)
+                      </a>
+                    
+                      <a  href='/2014/09/06/pat-1036.html' class="list-group-item pjaxlink">
+                        PAT1036. Boys vs Girls (25)
+                      </a>
+                    
+                      <a  href='/2014/09/06/pat-1035.html' class="list-group-item pjaxlink">
+                        PAT1035. Password (20)
+                      </a>
+                    
+                      <a  href='/2014/09/06/pat-1034.html' class="list-group-item pjaxlink">
+                        PAT1034. Head of a Gang (30)
+                      </a>
+                    
+                      <a  href='/2014/09/05/pat-1033.html' class="list-group-item pjaxlink">
+                        PAT1033. To Fill or Not to Fill (25)
+                      </a>
+                    
+                      <a  href='/2014/09/05/pat-1032.html' class="list-group-item pjaxlink">
+                        PAT1032. Sharing (25)
+                      </a>
+                    
+                      <a  href='/2014/09/05/pat-1031.html' class="list-group-item pjaxlink">
+                        PAT1031. Hello World for U (20)
+                      </a>
+                    
+                      <a  href='/2014/09/05/pat-1030.html' class="list-group-item pjaxlink">
+                        PAT1030. Travel Plan (30)
+                      </a>
+                    
+                      <a  href='/2014/09/05/pat-1029.html' class="list-group-item pjaxlink">
+                        PAT1029. Median (25)
+                      </a>
+                    
+                      <a  href='/2014/09/05/pat-1028.html' class="list-group-item pjaxlink">
+                        PAT1028. List Sorting (25)
+                      </a>
+                    
+                      <a  href='/2014/09/04/pat-1027.html' class="list-group-item pjaxlink">
+                        PAT1027. Colors in Mars (20)
+                      </a>
+                    
+                      <a  href='/2014/09/04/pat-1026.html' class="list-group-item pjaxlink">
+                        PAT1026. Table Tennis (30)
+                      </a>
+                    
+                      <a  href='/2014/09/04/pat-1025.html' class="list-group-item pjaxlink">
+                        PAT1025. PAT Ranking (25)
+                      </a>
+                    
+                      <a  href='/2014/09/04/pat-1024.html' class="list-group-item pjaxlink">
+                        PAT1024. Palindromic Number (25)
+                      </a>
+                    
+                      <a  href='/2014/09/04/pat-1023.html' class="list-group-item pjaxlink">
+                        PAT1023. Have Fun with Numbers (20)
+                      </a>
+                    
+                      <a  href='/2014/09/04/pat-1022.html' class="list-group-item pjaxlink">
+                        PAT1022. Digital Library (30)
+                      </a>
+                    
+                      <a  href='/2014/09/04/pat-1021.html' class="list-group-item pjaxlink">
+                        PAT1021. Deepest Root (25)
+                      </a>
+                    
+                      <a  href='/2014/09/04/pat-1020.html' class="list-group-item pjaxlink">
+                        PAT1020. Tree Traversals (25)
+                      </a>
+                    
+                      <a  href='/2014/09/04/pat-1019.html' class="list-group-item pjaxlink">
+                        PAT1019. General Palindromic Number (20)
+                      </a>
+                    
+                      <a  href='/2014/09/04/pat-1018.html' class="list-group-item pjaxlink">
+                        PAT1018. Public Bike Management (30)
+                      </a>
+                    
+                      <a  href='/2014/09/04/pat-1017.html' class="list-group-item pjaxlink">
+                        PAT1017. Queueing at Bank (25)
+                      </a>
+                    
+                      <a  href='/2014/09/04/pat-1016.html' class="list-group-item pjaxlink">
+                        PAT1016. Phone Bills (25)
+                      </a>
+                    
+                      <a  href='/2014/09/03/pat-1015.html' class="list-group-item pjaxlink">
+                        PAT1015. Reversible Primes (20)
+                      </a>
+                    
+                      <a  href='/2014/09/03/pat-1014.html' class="list-group-item pjaxlink">
+                        PAT1014. Waiting in Line (30)
+                      </a>
+                    
+                      <a  href='/2014/09/03/pat-1013.html' class="list-group-item pjaxlink">
+                        PAT1013. Battle Over Cities (25)
+                      </a>
+                    
+                      <a  href='/2014/09/03/pat-1012.html' class="list-group-item pjaxlink">
+                        PAT1012. The Best Rank (25)
+                      </a>
+                    
+                      <a  href='/2014/09/03/pat-1011.html' class="list-group-item pjaxlink">
+                        PAT1011. World Cup Betting (20)
+                      </a>
+                    
+                      <a  href='/2014/09/03/pat-1010.html' class="list-group-item pjaxlink">
+                        PAT1010. Radix (25)
+                      </a>
+                    
+                      <a  href='/2014/09/03/pat-1009.html' class="list-group-item pjaxlink">
+                        PAT1009. Product of Polynomials (25)
+                      </a>
+                    
+                      <a  href='/2014/09/03/pat-1008.html' class="list-group-item pjaxlink">
+                        PAT1008. Elevator (20)
+                      </a>
+                    
+                      <a  href='/2014/09/03/pat-1007.html' class="list-group-item pjaxlink">
+                        PAT1007. Maximum Subsequence Sum (25)
+                      </a>
+                    
+                      <a  href='/2014/09/03/pat-1006.html' class="list-group-item pjaxlink">
+                        PAT1006. Sign In and Sign Out (25)
+                      </a>
+                    
+                      <a  href='/2014/09/03/pat-1005.html' class="list-group-item pjaxlink">
+                        PAT1005. Spell It Right (20)
+                      </a>
+                    
+                      <a  href='/2014/09/03/pat-1004.html' class="list-group-item pjaxlink">
+                        PAT1004. Counting Leaves (30)
+                      </a>
+                    
+                      <a  href='/2014/09/03/pat-1003.html' class="list-group-item pjaxlink">
+                        PAT1003. Emergency (25)
+                      </a>
+                    
+                      <a  href='/2014/09/03/pat-1002.html' class="list-group-item pjaxlink">
+                        PAT1002. A+B for Polynomials (25)
+                      </a>
+                    
+                      <a  href='/2014/09/03/pat-1001.html' class="list-group-item pjaxlink">
+                        PAT1001. A+B Format (20)
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Simulation">Simulation</a>
+                      <span class="badge pull-right">30</span>
+                    </h4>
+                  </div>
+                  <div id="Simulation" class="panel-collapse collapse">
+                    
+                      <a  href='/2014/09/12/pat-1065.html' class="list-group-item pjaxlink">
+                        PAT1065. A+B and C (64bit) (20)
+                      </a>
+                    
+                      <a  href='/2014/09/08/pat-1061.html' class="list-group-item pjaxlink">
+                        PAT1061. Dating (20)
+                      </a>
+                    
+                      <a  href='/2014/09/08/pat-1060.html' class="list-group-item pjaxlink">
+                        PAT1060. Are They Equal (25)
+                      </a>
+                    
+                      <a  href='/2014/09/08/pat-1056.html' class="list-group-item pjaxlink">
+                        PAT1056. Mice and Rice (25)
+                      </a>
+                    
+                      <a  href='/2014/09/08/pat-1054.html' class="list-group-item pjaxlink">
+                        PAT1054. The Dominant Color (20)
+                      </a>
+                    
+                      <a  href='/2014/09/08/pat-1052.html' class="list-group-item pjaxlink">
+                        PAT1052. Linked List Sorting (25)
+                      </a>
+                    
+                      <a  href='/2014/09/07/pat-1050.html' class="list-group-item pjaxlink">
+                        PAT1050. String Subtraction (20)
+                      </a>
+                    
+                      <a  href='/2014/09/07/pat-1048.html' class="list-group-item pjaxlink">
+                        PAT1048. Find Coins (25)
+                      </a>
+                    
+                      <a  href='/2014/09/07/pat-1047.html' class="list-group-item pjaxlink">
+                        PAT1047. Student List for Course (25)
+                      </a>
+                    
+                      <a  href='/2014/09/07/pat-1046.html' class="list-group-item pjaxlink">
+                        PAT1046. Shortest Distance (20)
+                      </a>
+                    
+                      <a  href='/2014/09/07/pat-1042.html' class="list-group-item pjaxlink">
+                        PAT1042. Shuffling Machine (20)
+                      </a>
+                    
+                      <a  href='/2014/09/07/pat-1041.html' class="list-group-item pjaxlink">
+                        PAT1041. Be Unique (20)
+                      </a>
+                    
+                      <a  href='/2014/09/07/pat-1040.html' class="list-group-item pjaxlink">
+                        PAT1040. Longest Symmetric String (25)
+                      </a>
+                    
+                      <a  href='/2014/09/07/pat-1039.html' class="list-group-item pjaxlink">
+                        PAT1039. Course List for Student (25)
+                      </a>
+                    
+                      <a  href='/2014/09/06/pat-1036.html' class="list-group-item pjaxlink">
+                        PAT1036. Boys vs Girls (25)
+                      </a>
+                    
+                      <a  href='/2014/09/06/pat-1035.html' class="list-group-item pjaxlink">
+                        PAT1035. Password (20)
+                      </a>
+                    
+                      <a  href='/2014/09/05/pat-1031.html' class="list-group-item pjaxlink">
+                        PAT1031. Hello World for U (20)
+                      </a>
+                    
+                      <a  href='/2014/09/04/pat-1027.html' class="list-group-item pjaxlink">
+                        PAT1027. Colors in Mars (20)
+                      </a>
+                    
+                      <a  href='/2014/09/04/pat-1024.html' class="list-group-item pjaxlink">
+                        PAT1024. Palindromic Number (25)
+                      </a>
+                    
+                      <a  href='/2014/09/04/pat-1023.html' class="list-group-item pjaxlink">
+                        PAT1023. Have Fun with Numbers (20)
+                      </a>
+                    
+                      <a  href='/2014/09/04/pat-1022.html' class="list-group-item pjaxlink">
+                        PAT1022. Digital Library (30)
+                      </a>
+                    
+                      <a  href='/2014/09/04/pat-1019.html' class="list-group-item pjaxlink">
+                        PAT1019. General Palindromic Number (20)
+                      </a>
+                    
+                      <a  href='/2014/09/04/pat-1016.html' class="list-group-item pjaxlink">
+                        PAT1016. Phone Bills (25)
+                      </a>
+                    
+                      <a  href='/2014/09/03/pat-1015.html' class="list-group-item pjaxlink">
+                        PAT1015. Reversible Primes (20)
+                      </a>
+                    
+                      <a  href='/2014/09/03/pat-1011.html' class="list-group-item pjaxlink">
+                        PAT1011. World Cup Betting (20)
+                      </a>
+                    
+                      <a  href='/2014/09/03/pat-1009.html' class="list-group-item pjaxlink">
+                        PAT1009. Product of Polynomials (25)
+                      </a>
+                    
+                      <a  href='/2014/09/03/pat-1008.html' class="list-group-item pjaxlink">
+                        PAT1008. Elevator (20)
+                      </a>
+                    
+                      <a  href='/2014/09/03/pat-1005.html' class="list-group-item pjaxlink">
+                        PAT1005. Spell It Right (20)
+                      </a>
+                    
+                      <a  href='/2014/09/03/pat-1002.html' class="list-group-item pjaxlink">
+                        PAT1002. A+B for Polynomials (25)
+                      </a>
+                    
+                      <a  href='/2014/09/03/pat-1001.html' class="list-group-item pjaxlink">
+                        PAT1001. A+B Format (20)
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Graph">Graph</a>
+                      <span class="badge pull-right">6</span>
+                    </h4>
+                  </div>
+                  <div id="Graph" class="panel-collapse collapse">
+                    
+                      <a  href='/2014/09/06/pat-1034.html' class="list-group-item pjaxlink">
+                        PAT1034. Head of a Gang (30)
+                      </a>
+                    
+                      <a  href='/2014/09/05/pat-1030.html' class="list-group-item pjaxlink">
+                        PAT1030. Travel Plan (30)
+                      </a>
+                    
+                      <a  href='/2014/09/04/pat-1018.html' class="list-group-item pjaxlink">
+                        PAT1018. Public Bike Management (30)
+                      </a>
+                    
+                      <a  href='/2014/09/03/pat-1013.html' class="list-group-item pjaxlink">
+                        PAT1013. Battle Over Cities (25)
+                      </a>
+                    
+                      <a  href='/2014/09/03/pat-1004.html' class="list-group-item pjaxlink">
+                        PAT1004. Counting Leaves (30)
+                      </a>
+                    
+                      <a  href='/2014/09/03/pat-1003.html' class="list-group-item pjaxlink">
+                        PAT1003. Emergency (25)
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Sort">Sort</a>
+                      <span class="badge pull-right">6</span>
+                    </h4>
+                  </div>
+                  <div id="Sort" class="panel-collapse collapse">
+                    
+                      <a  href='/2014/09/08/pat-1062.html' class="list-group-item pjaxlink">
+                        PAT1062. Talent and Virtue (25)
+                      </a>
+                    
+                      <a  href='/2014/09/06/pat-1038.html' class="list-group-item pjaxlink">
+                        PAT1038. Recover the Smallest Number (30)
+                      </a>
+                    
+                      <a  href='/2014/09/05/pat-1028.html' class="list-group-item pjaxlink">
+                        PAT1028. List Sorting (25)
+                      </a>
+                    
+                      <a  href='/2014/09/04/pat-1025.html' class="list-group-item pjaxlink">
+                        PAT1025. PAT Ranking (25)
+                      </a>
+                    
+                      <a  href='/2014/09/03/pat-1012.html' class="list-group-item pjaxlink">
+                        PAT1012. The Best Rank (25)
+                      </a>
+                    
+                      <a  href='/2014/09/03/pat-1006.html' class="list-group-item pjaxlink">
+                        PAT1006. Sign In and Sign Out (25)
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#DP">DP</a>
+                      <span class="badge pull-right">3</span>
+                    </h4>
+                  </div>
+                  <div id="DP" class="panel-collapse collapse">
+                    
+                      <a  href='/2014/09/07/pat-1045.html' class="list-group-item pjaxlink">
+                        PAT1045. Favorite Color Stripe (30)
+                      </a>
+                    
+                      <a  href='/2014/09/04/pat-1021.html' class="list-group-item pjaxlink">
+                        PAT1021. Deepest Root (25)
+                      </a>
+                    
+                      <a  href='/2014/09/03/pat-1007.html' class="list-group-item pjaxlink">
+                        PAT1007. Maximum Subsequence Sum (25)
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Binary">Binary</a>
+                      <span class="badge pull-right">2</span>
+                    </h4>
+                  </div>
+                  <div id="Binary" class="panel-collapse collapse">
+                    
+                      <a  href='/2014/09/07/pat-1044.html' class="list-group-item pjaxlink">
+                        PAT1044. Shopping in Mars (25)
+                      </a>
+                    
+                      <a  href='/2014/09/03/pat-1010.html' class="list-group-item pjaxlink">
+                        PAT1010. Radix (25)
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#DS">DS</a>
+                      <span class="badge pull-right">9</span>
+                    </h4>
+                  </div>
+                  <div id="DS" class="panel-collapse collapse">
+                    
+                      <a  href='/2014/09/08/pat-1064.html' class="list-group-item pjaxlink">
+                        PAT1064. Complete Binary Search Tree (30)
+                      </a>
+                    
+                      <a  href='/2014/09/08/pat-1063.html' class="list-group-item pjaxlink">
+                        PAT1063. Set Similarity (25)
+                      </a>
+                    
+                      <a  href='/2014/09/08/pat-1057.html' class="list-group-item pjaxlink">
+                        PAT1057. Stack (30)
+                      </a>
+                    
+                      <a  href='/2014/09/07/pat-1051.html' class="list-group-item pjaxlink">
+                        PAT1051. Pop Sequence (25)
+                      </a>
+                    
+                      <a  href='/2014/09/07/pat-1043.html' class="list-group-item pjaxlink">
+                        PAT1043. Is It a Binary Search Tree (25)
+                      </a>
+                    
+                      <a  href='/2014/09/05/pat-1032.html' class="list-group-item pjaxlink">
+                        PAT1032. Sharing (25)
+                      </a>
+                    
+                      <a  href='/2014/09/04/pat-1026.html' class="list-group-item pjaxlink">
+                        PAT1026. Table Tennis (30)
+                      </a>
+                    
+                      <a  href='/2014/09/04/pat-1017.html' class="list-group-item pjaxlink">
+                        PAT1017. Queueing at Bank (25)
+                      </a>
+                    
+                      <a  href='/2014/09/03/pat-1014.html' class="list-group-item pjaxlink">
+                        PAT1014. Waiting in Line (30)
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Search">Search</a>
+                      <span class="badge pull-right">1</span>
+                    </h4>
+                  </div>
+                  <div id="Search" class="panel-collapse collapse">
+                    
+                      <a  href='/2014/09/04/pat-1020.html' class="list-group-item pjaxlink">
+                        PAT1020. Tree Traversals (25)
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Greedy">Greedy</a>
+                      <span class="badge pull-right">4</span>
+                    </h4>
+                  </div>
+                  <div id="Greedy" class="panel-collapse collapse">
+                    
+                      <a  href='/2014/09/08/pat-1055.html' class="list-group-item pjaxlink">
+                        PAT1055. The World's Richest (25)
+                      </a>
+                    
+                      <a  href='/2014/09/06/pat-1037.html' class="list-group-item pjaxlink">
+                        PAT1037. Magic Coupon (25)
+                      </a>
+                    
+                      <a  href='/2014/09/05/pat-1033.html' class="list-group-item pjaxlink">
+                        PAT1033. To Fill or Not to Fill (25)
+                      </a>
+                    
+                      <a  href='/2014/09/05/pat-1029.html' class="list-group-item pjaxlink">
+                        PAT1029. Median (25)
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Math">Math</a>
+                      <span class="badge pull-right">2</span>
+                    </h4>
+                  </div>
+                  <div id="Math" class="panel-collapse collapse">
+                    
+                      <a  href='/2014/09/08/pat-1059.html' class="list-group-item pjaxlink">
+                        PAT1059. Prime Factors (25)
+                      </a>
+                    
+                      <a  href='/2014/09/07/pat-1049.html' class="list-group-item pjaxlink">
+                        PAT1049. Counting Ones (30)
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#Grapy">Grapy</a>
+                      <span class="badge pull-right">1</span>
+                    </h4>
+                  </div>
+                  <div id="Grapy" class="panel-collapse collapse">
+                    
+                      <a  href='/2014/09/08/pat-1053.html' class="list-group-item pjaxlink">
+                        PAT1053. Path of Equal Weight (30)
+                      </a>
+                    
+                  </div>
+                </div>
+               
+                <div class="panel panel-info">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#模拟">模拟</a>
+                      <span class="badge pull-right">1</span>
+                    </h4>
+                  </div>
+                  <div id="模拟" class="panel-collapse collapse">
+                    
+                      <a  href='/2014/09/08/pat-1058.html' class="list-group-item pjaxlink">
+                        PAT1058. A+B in Hogwarts (20)
+                      </a>
+                    
+                  </div>
+                </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 aside3">
+        <div id="container">
+          <div id="pjax">
+            <div class="row">
+  <div class="col-md-12 aside3-title">
+    <br>
+    <h2 id="#identifier">PAT1051. Pop Sequence (25)</h2>
+    2014年09月07日
+  </div>
+  <div class="col-md-12 aside3-content">
+    <hr>
+    <div id="content">
+      <blockquote>
+<p>数据结构，栈</p>
+</blockquote>
+
+<h3>题意</h3>
+
+<p>容量有限的栈，数列升序进栈，问所给出栈序列是否合理</p>
+
+<h3>细节</h3>
+
+<ul>
+<li>比某数小且在其后的数必须逆序，且不超过栈容量</li>
+</ul>
+
+<h3>代码</h3>
+<div class="highlight"><pre><code class="language-text" data-lang="text">#include&lt;cstdio&gt;
+int a[1010],pos[1010],b[1010];
+int main(){
+    freopen(&quot;d.in&quot;,&quot;r&quot;,stdin);
+    int n,m,k,i,j,cnt,ok;
+    scanf(&quot;%d%d%d&quot;,&amp;m,&amp;n,&amp;k);
+    while(k--){
+        ok=1;
+        for(i=1;i&lt;=n;++i){
+            scanf(&quot;%d&quot;,&amp;a[i]);
+            pos[a[i]]=i;
+        }
+        for(i=1;i&lt;=n;++i){
+            cnt=0;
+            for(j=1;j&lt;a[i];++j){
+                if(pos[j]&gt;i){
+                    b[++cnt]=pos[j];
+                }
+            }
+            if(cnt&gt;=m){
+                ok=0;break;
+            }
+            for(j=1;j&lt;cnt;++j){
+                if(b[j]&lt;b[j+1]){
+                    ok=0;
+                    break;
+                }
+            }
+            if(!ok) break;
+        }
+        printf(&quot;%s\n&quot;,ok?&quot;YES&quot;:&quot;NO&quot;);
+    }
+    return 0;
+}
+</code></pre></div>
+    </div>
+    <hr>
+    <div class="ds-thread" data-thread-key="PAT1051. Pop Sequence (25)" data-title="PAT1051. Pop Sequence (25)" data-url="http://yogy.cc/2014/09/07/pat-1051.html"></div>
+  </div>
+  <!-- 目录 -->
+  <div id="content_table" style="position:fixed;right:20px;top:120px;display:none;">
+    <div class="panel panel-success">
+      <div class="panel-body" id="nav"></div>
+    </div>
+  </div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div style="position:fixed;right:20px;top:10px;">
+  <button id="nav_btn" class="btn btn-lg" style="height:45px;width:45px;"><i class="fa fa-angle-left"></i></button>
+</div>
+<div style="position:fixed;right:20px;top:60px;">
+  <button id="content_btn" class="btn btn-lg" style="height:45px;width:45px;"><i class="fa fa-angle-down"></i></button>
+</div>
+<script type="text/javascript" src="/public/js/jquery.js"></script>
+<script type="text/javascript" src="/public/js/bootstrap.js"></script>
+<script src="/public/js/jquery.pjax.js"></script>
+<script src="/public/js/prettify/prettify.js"></script>
+<script>
+    $('a[href="#tags"]').tab('show');
+</script>
+<script src="/public/js/base.js"></script>
+  <script type="text/javascript">
+var duoshuoQuery = {short_name:"yogy"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+
+  <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253069120'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s95.cnzz.com/z_stat.php%3Fid%3D1253069120%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-43667383-1', 'yogy.cc');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>
