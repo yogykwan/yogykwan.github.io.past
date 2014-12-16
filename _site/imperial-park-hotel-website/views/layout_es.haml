@@ -1,0 +1,53 @@
+-# coding: utf-8
+!!!
+%html(lang="es-AR")
+  %head
+    %title Imperial Park Hotel 
+    %meta(charset="utf-8")
+    %meta{:property => "fb:page_id", :content => "104210016364842"}
+    = partial :head_links, :skip_translation => true
+
+  %body{:id => "homepage"}
+    %noscript
+      %p{:class => "message-bar"}
+        Please activate Flash and Javascript in order to see this site full functional.
+      %p{:class => "message-bar browser-support"}
+        Using a modern browser that supports web standards ensures that the site's full visual experience is available. Consider to 
+        %a{ :src =>"http://www.browserchoice.eu" } 
+          upgrade your browser
+        if you are using an older technology.
+
+    #wrapper.container_16
+      #header.grid_16
+        = partial :topbar
+        %div{:class  => "section clearfix"}
+          = partial :logo
+        = partial :main_menu
+        = yield
+        = partial :footer
+
+:javascript
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28336678-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+:javascript
+  var _gaq = _gaq || [];
+  _gaq.push(
+    ['_setAccount', 'UA-2141835-47'],
+    ['_trackPageview'],
+    ['b._setAccount', 'UA-28336678-1'],
+    ['b._trackPageview']
+  );
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+

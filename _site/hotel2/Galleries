@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>
+Clarion Hotel
+</title>
+
+
+
+
+</head>
+
+
+
+<body>
+<div id="wrapper">
+<div id="header"><h1>Welcome to the Clarion Hotel!</h1></div>
+
+
+
+
+
+
+
+
+<div id="innercontainer">
+<div id="left">
+<img src="ClarionLogo.jpg" alt="Welcome to the Clarion!!!" height="300" width="300">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="Rooms.html">Rooms</a></li>
+<li><a href="Facilities.html">Facilities</a></li>
+<li><a href="Galleries.html">Galleries</a></li>
+<li><a href="Contact.html">Contact Us</a></li>
+</ul>
+<img src="ClarionLogo2.jpg" alt="Welcome to the Clarion!!!" height="300" width="300">
+
+</div>
+<div id="right">
+<center><img src="Bedroom5.jpg" alt="Welcome to the Clarion!!!" height="200" width="250">
+<img src="Swimmingpool.jpg" alt="Welcome to the Clarion!!!" height="200" width="250">
+<img src="Reception.jpg" alt="Welcome to the Clarion!!!" height="200" width="250">
+<img src="ClarionHotel2.jpg" alt="Welcome to the Clarion!!!" height="200" width="250">
+<img src="Gym.jpg" alt="Welcome to the Clarion!!!" height="200" width="250">
+<img src="Restaurant.jpg" alt="Welcome to the Clarion!!!" height="200" width="250">
+<img src="Spa3.jpg" alt="Welcome to the Clarion!!!" height="200" width="250">
+<img src="Lobby.jpg" alt="Welcome to the Clarion!!!" height="200" width="250"></center>
+</div>
+<div id="footer">© The Starters 2012</div>
+</div>
+
+</div>
+
+</body>
+</html>

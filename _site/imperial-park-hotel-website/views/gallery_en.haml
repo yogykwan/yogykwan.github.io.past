@@ -1,0 +1,6 @@
+%div{:id  => "hero",:class  => "grid_16"}
+  %div{:id  => "gallery"}
+    %ul{:class  => "media-grid"}
+      - @files.each do |f|
+        %li
+          %img{:src  => "/" + f.split('/').reject{|e| e=='public' || e=="."}.join('/') }

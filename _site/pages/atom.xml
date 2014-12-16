@@ -6,699 +6,1401 @@
     <description>Yogy's Blog</description>
     
       <item>
-        <title>PAT</title>
-        <link>http://yogy.cc/2014/09/12/pat-1079.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/09/12/pat-1079.html</guid>
-        <pubDate>Fri, 12 Sep 2014 00:00:00 +0800</pubDate>
+        <title>PAT1087. All Roads Lead to Rome (30)</title>
+        <link>http://yogy.cc/2014/09/13/pat-1087.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/13/pat-1087.html</guid>
+        <pubDate>Sat, 13 Sep 2014 00:00:00 +0800</pubDate>
         <description>&lt;blockquote&gt;
+&lt;p&gt;图论，最短路&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h3&gt;题意&lt;/h3&gt;
 
-&lt;h3&gt;细节&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;代码&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-      </item>
-    
-      <item>
-        <title>PAT</title>
-        <link>http://yogy.cc/2014/09/12/pat-1078.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/09/12/pat-1078.html</guid>
-        <pubDate>Fri, 12 Sep 2014 00:00:00 +0800</pubDate>
-        <description>&lt;blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;h3&gt;题意&lt;/h3&gt;
+&lt;p&gt;按最短路程、最大欢乐值、最大平均欢乐值的优先级求最优路径&lt;/p&gt;
 
 &lt;h3&gt;细节&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;代码&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-      </item>
-    
-      <item>
-        <title>PAT</title>
-        <link>http://yogy.cc/2014/09/12/pat-1077.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/09/12/pat-1077.html</guid>
-        <pubDate>Fri, 12 Sep 2014 00:00:00 +0800</pubDate>
-        <description>&lt;blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;h3&gt;题意&lt;/h3&gt;
-
-&lt;h3&gt;细节&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;代码&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-      </item>
-    
-      <item>
-        <title>PAT</title>
-        <link>http://yogy.cc/2014/09/12/pat-1076.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/09/12/pat-1076.html</guid>
-        <pubDate>Fri, 12 Sep 2014 00:00:00 +0800</pubDate>
-        <description>&lt;blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;h3&gt;题意&lt;/h3&gt;
-
-&lt;h3&gt;细节&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;代码&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-      </item>
-    
-      <item>
-        <title>PAT</title>
-        <link>http://yogy.cc/2014/09/12/pat-1075.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/09/12/pat-1075.html</guid>
-        <pubDate>Fri, 12 Sep 2014 00:00:00 +0800</pubDate>
-        <description>&lt;blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;h3&gt;题意&lt;/h3&gt;
-
-&lt;h3&gt;细节&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;代码&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-      </item>
-    
-      <item>
-        <title>PAT</title>
-        <link>http://yogy.cc/2014/09/12/pat-1074.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/09/12/pat-1074.html</guid>
-        <pubDate>Fri, 12 Sep 2014 00:00:00 +0800</pubDate>
-        <description>&lt;blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;h3&gt;题意&lt;/h3&gt;
-
-&lt;h3&gt;细节&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;代码&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-      </item>
-    
-      <item>
-        <title>PAT</title>
-        <link>http://yogy.cc/2014/09/12/pat-1073.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/09/12/pat-1073.html</guid>
-        <pubDate>Fri, 12 Sep 2014 00:00:00 +0800</pubDate>
-        <description>&lt;blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;h3&gt;题意&lt;/h3&gt;
-
-&lt;h3&gt;细节&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;代码&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-      </item>
-    
-      <item>
-        <title>PAT</title>
-        <link>http://yogy.cc/2014/09/12/pat-1072.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/09/12/pat-1072.html</guid>
-        <pubDate>Fri, 12 Sep 2014 00:00:00 +0800</pubDate>
-        <description>&lt;blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;h3&gt;题意&lt;/h3&gt;
-
-&lt;h3&gt;细节&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;代码&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-      </item>
-    
-      <item>
-        <title>PAT</title>
-        <link>http://yogy.cc/2014/09/12/pat-1071.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/09/12/pat-1071.html</guid>
-        <pubDate>Fri, 12 Sep 2014 00:00:00 +0800</pubDate>
-        <description>&lt;blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;h3&gt;题意&lt;/h3&gt;
-
-&lt;h3&gt;细节&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;代码&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-      </item>
-    
-      <item>
-        <title>PAT</title>
-        <link>http://yogy.cc/2014/09/12/pat-1070.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/09/12/pat-1070.html</guid>
-        <pubDate>Fri, 12 Sep 2014 00:00:00 +0800</pubDate>
-        <description>&lt;blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;h3&gt;题意&lt;/h3&gt;
-
-&lt;h3&gt;细节&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;代码&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-      </item>
-    
-      <item>
-        <title>PAT</title>
-        <link>http://yogy.cc/2014/09/12/pat-1069.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/09/12/pat-1069.html</guid>
-        <pubDate>Fri, 12 Sep 2014 00:00:00 +0800</pubDate>
-        <description>&lt;blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;h3&gt;题意&lt;/h3&gt;
-
-&lt;h3&gt;细节&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;代码&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-      </item>
-    
-      <item>
-        <title>PAT</title>
-        <link>http://yogy.cc/2014/09/12/pat-1068.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/09/12/pat-1068.html</guid>
-        <pubDate>Fri, 12 Sep 2014 00:00:00 +0800</pubDate>
-        <description>&lt;blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;h3&gt;题意&lt;/h3&gt;
-
-&lt;h3&gt;细节&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;代码&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-      </item>
-    
-      <item>
-        <title>PAT</title>
-        <link>http://yogy.cc/2014/09/12/pat-1067.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/09/12/pat-1067.html</guid>
-        <pubDate>Fri, 12 Sep 2014 00:00:00 +0800</pubDate>
-        <description>&lt;blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;h3&gt;题意&lt;/h3&gt;
-
-&lt;h3&gt;细节&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;代码&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-      </item>
-    
-      <item>
-        <title>PAT</title>
-        <link>http://yogy.cc/2014/09/12/pat-1066.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/09/12/pat-1066.html</guid>
-        <pubDate>Fri, 12 Sep 2014 00:00:00 +0800</pubDate>
-        <description>&lt;blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;h3&gt;题意&lt;/h3&gt;
-
-&lt;h3&gt;细节&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;代码&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-      </item>
-    
-      <item>
-        <title>PAT1065. A+B and C (64bit) (20)</title>
-        <link>http://yogy.cc/2014/09/12/pat-1065.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/09/12/pat-1065.html</guid>
-        <pubDate>Fri, 12 Sep 2014 00:00:00 +0800</pubDate>
-        <description>&lt;blockquote&gt;
-&lt;p&gt;模拟，大数&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3&gt;题意&lt;/h3&gt;
-
-&lt;p&gt;判断两数和是否大于另一数&lt;/p&gt;
-
-&lt;h3&gt;细节&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;输入包含＼(2^63＼)&lt;/li&gt;
+&lt;li&gt;更新最短路条数时累加所有最短前趋的路径数&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3&gt;代码&lt;/h3&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
 #include&amp;lt;iostream&amp;gt;
+#include&amp;lt;algorithm&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;queue&amp;gt;
+#include&amp;lt;map&amp;gt;
 using namespace std;
-
-typedef unsigned long long ull;
-ull a,b,c;
-int fa,fb,fc;
-
-void gaoin(ull &amp;amp;a,int &amp;amp;f){
-    char ch;
-    cin&amp;gt;&amp;gt;ch;
-    if(ch==&amp;#39;-&amp;#39;) f=1;
-    else cin.putback(ch);
-    cin&amp;gt;&amp;gt;a;
+int s[210],a[210],d[210],tot[210],len[210];
+const int inf=0x7fffffff;
+typedef pair&amp;lt;int,int&amp;gt; pii;
+priority_queue&amp;lt;pii,vector&amp;lt;pii&amp;gt;,greater&amp;lt;pii&amp;gt; &amp;gt; pq;
+string name[210];
+int ans[210];
+map&amp;lt;string,int&amp;gt; mymap;
+struct E{
+    int v,w,nxt;
+}e[40010];
+int head[210],vis[210],pre[210];
+string aa,bb;
+int cnt;
+void add(int u,int v,int w){
+    e[cnt].v=v;
+    e[cnt].w=w;
+    e[cnt].nxt=head[u];
+    head[u]=cnt++;
 }
-bool gao(){
-    if(!fa &amp;amp;&amp;amp; fc) return 1;
-    if(fa &amp;amp;&amp;amp; !fc) return 0;
-    if(!fa &amp;amp;&amp;amp; !fc) return a&amp;gt;c;
-    return a&amp;lt;c;
-}
-int main(void) {
+int main(){
     freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
-    int n,i;
-    ull m=1;
-    m=m&amp;lt;&amp;lt;63;
-    cin&amp;gt;&amp;gt;n;
-    getchar();
-    for(i=1;i&amp;lt;=n;++i){
-        fa=fb=fc=0;
-        gaoin(a,fa);
-        gaoin(b,fb);
-        gaoin(c,fc);
-        printf(&amp;quot;Case #%d: &amp;quot;,i);
-        if(!fa &amp;amp;&amp;amp; !fb){
-            if(fc || a==m &amp;amp;&amp;amp; b==m) printf(&amp;quot;true\n&amp;quot;);
-            else{
-                if(a+b&amp;gt;c) printf(&amp;quot;true\n&amp;quot;);
-                else printf(&amp;quot;false\n&amp;quot;);
+    int n,i,u,v,w,t=1,j,m;
+    cin&amp;gt;&amp;gt;n&amp;gt;&amp;gt;m&amp;gt;&amp;gt;name[1];
+    mymap[name[1]]=1;
+    for(i=2;i&amp;lt;=n;++i){
+        cin&amp;gt;&amp;gt;name[i]&amp;gt;&amp;gt;a[i];
+        if(name[i]==&amp;quot;ROM&amp;quot;) t=i;
+        mymap[name[i]]=i;
+    }
+    memset(head,-1,sizeof(head));
+    memset(pre,-1,sizeof(pre));
+    for(i=1;i&amp;lt;=n;++i) d[i]=inf;
+    while(m--){
+        cin&amp;gt;&amp;gt;aa&amp;gt;&amp;gt;bb&amp;gt;&amp;gt;w;
+        u=mymap[aa];
+        v=mymap[bb];
+        add(u,v,w);
+        add(v,u,w);
+    }
+    d[1]=0;
+    tot[1]=1;
+    pq.push(make_pair(0,1));
+    while(!pq.empty()){
+        u=pq.top().second;
+        pq.pop();
+        if(u==t) break;
+        if(vis[u]) continue;
+        vis[u]=1;
+        for(i=head[u];i!=-1;i=e[i].nxt){
+            v=e[i].v;
+            w=e[i].w;
+            if(vis[v]) continue;
+            if(d[u]+w&amp;lt;d[v]){
+                d[v]=d[u]+w;
+                s[v]=s[u]+a[v];
+                tot[v]=tot[u];
+                len[v]=len[u]+1;
+                pq.push(make_pair(d[v],v));
+                pre[v]=u;
             }
-        }else if(fa &amp;amp;&amp;amp; fb){
-            if(!fc || a==m &amp;amp;&amp;amp; b==m) printf(&amp;quot;false\n&amp;quot;);
-            else{
-                if(a+b&amp;lt;c) printf(&amp;quot;true\n&amp;quot;);
-                else printf(&amp;quot;false\n&amp;quot;);
+            else if(d[u]+w==d[v]){
+                tot[v]+=tot[u];
+                if(s[u]+a[v]&amp;gt;s[v] || s[u]+a[v]==s[v] &amp;amp;&amp;amp; len[u]+1&amp;lt;len[v]){
+                    s[v]=s[u]+a[v];
+                    len[v]=len[u]+1;
+                    pq.push(make_pair(d[v],v));
+                    pre[v]=u;
+                }
             }
-        }else if(!fa &amp;amp;&amp;amp; fb){
-            if(a&amp;gt;=b){
-                fa=0;
-                a-=b;
-            }else{
-                fa=1;
-                a=b-a;
-            }
-            printf(&amp;quot;%s\n&amp;quot;,gao()?&amp;quot;true&amp;quot;:&amp;quot;false&amp;quot;);
-        }else{
-            if(a&amp;gt;b){
-                fa=1;
-                a-=b;
-            }else{
-                fa=0;
-                a=b-a;
-            }
-            printf(&amp;quot;%s\n&amp;quot;,gao()?&amp;quot;true&amp;quot;:&amp;quot;false&amp;quot;);
         }
     }
+    printf(&amp;quot;%d %d %d %d\n&amp;quot;,tot[t],d[t],s[t],s[t]/len[t]);
+    j=0;
+    i=pre[t];
+    while(i!=-1){
+        ans[j++]=i;
+        i=pre[i];
+    }
+    for(i=j-1;i&amp;gt;=0;--i){
+        cout&amp;lt;&amp;lt;name[ans[i]]&amp;lt;&amp;lt;&amp;quot;-&amp;gt;&amp;quot;;
+    }
+    cout&amp;lt;&amp;lt;&amp;quot;ROM&amp;quot;;
     return 0;
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
       </item>
     
       <item>
-        <title>PAT1064. Complete Binary Search Tree (30)</title>
-        <link>http://yogy.cc/2014/09/08/pat-1064.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/09/08/pat-1064.html</guid>
-        <pubDate>Mon, 08 Sep 2014 00:00:00 +0800</pubDate>
+        <title>PAT1086. Tree Traversals Again (25)</title>
+        <link>http://yogy.cc/2014/09/13/pat-1086.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/13/pat-1086.html</guid>
+        <pubDate>Sat, 13 Sep 2014 00:00:00 +0800</pubDate>
         <description>&lt;blockquote&gt;
 &lt;p&gt;数据结构，二叉树&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h3&gt;题意&lt;/h3&gt;
 
-&lt;p&gt;求给出序列组成的唯一的二叉搜索树&lt;/p&gt;
+&lt;p&gt;给出生成中序遍历的栈操作序列，求后续遍历序列&lt;/p&gt;
 
 &lt;h3&gt;细节&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;按层构造树，结点数控制大小&lt;/li&gt;
-&lt;li&gt;中序遍历将排序后的键值加入树&lt;/li&gt;
+&lt;li&gt;某数入栈则进其左子树，出栈则进其右子树&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3&gt;代码&lt;/h3&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
-#include&amp;lt;cstring&amp;gt;
 #include&amp;lt;iostream&amp;gt;
 #include&amp;lt;algorithm&amp;gt;
-using namespace std;
-int two[16],l[1010],r[1010],a[1010],p[1010],cnt;
-void gao(int u){
-    if(l[u]!=-1) gao(l[u]);
-    p[u]=a[cnt++];
-    if(r[u]!=-1) gao(r[u]);
-}
-int main(){
-    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
-    int n,i,m,j,d;
-    two[0]=1;
-    for(i=1;i&amp;lt;=15;++i) two[i]=two[i-1]&amp;lt;&amp;lt;1;
-    memset(l,-1,sizeof(l));
-    memset(r,-1,sizeof(r));
-    scanf(&amp;quot;%d&amp;quot;,&amp;amp;n);
-    for(i=0;i&amp;lt;n;++i) scanf(&amp;quot;%d&amp;quot;,a+i);
-    sort(a,a+n);
-    i=1;
-    d=0;
-    while(i&amp;lt;n){
-        for(j=two[d]-1;j&amp;lt;=two[d+1]-2 &amp;amp;&amp;amp; i&amp;lt;n;++j){
-            l[j]=i++;
-            if(i&amp;lt;n) r[j]=i++;
-        }
-        ++d;
-    }
-    gao(0);
-    printf(&amp;quot;%d&amp;quot;,p[0]);
-    for(i=1;i&amp;lt;n;++i) printf(&amp;quot; %d&amp;quot;,p[i]);
-    return 0;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-      </item>
-    
-      <item>
-        <title>PAT1063. Set Similarity (25)</title>
-        <link>http://yogy.cc/2014/09/08/pat-1063.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/09/08/pat-1063.html</guid>
-        <pubDate>Mon, 08 Sep 2014 00:00:00 +0800</pubDate>
-        <description>&lt;blockquote&gt;
-&lt;p&gt;数据结构，集合&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3&gt;题意&lt;/h3&gt;
-
-&lt;p&gt;求某两个集合的交集、并集大小&lt;/p&gt;
-
-&lt;h3&gt;细节&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;使用set_intersection()函数求交集&lt;/li&gt;
-&lt;li&gt;并集大小由交集直接s计算&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;代码&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
 #include&amp;lt;cstring&amp;gt;
-#include&amp;lt;iostream&amp;gt;
-#include&amp;lt;algorithm&amp;gt;
-#include&amp;lt;set&amp;gt;
-using namespace std;
-set&amp;lt;int&amp;gt; s[51],now;
-int main(){
-    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
-    int n,m,i,j,a,b;
-    scanf(&amp;quot;%d&amp;quot;,&amp;amp;n);
-    for(i=1;i&amp;lt;=n;++i){
-        scanf(&amp;quot;%d&amp;quot;,&amp;amp;m);
-        while(m--){
-            scanf(&amp;quot;%d&amp;quot;,&amp;amp;j);
-            s[i].insert(j);
-        }
-    }
-    scanf(&amp;quot;%d&amp;quot;,&amp;amp;m);
-    while(m--){
-        scanf(&amp;quot;%d%d&amp;quot;,&amp;amp;i,&amp;amp;j);
-        now.clear();
-        set_intersection(s[i].begin(),s[i].end(),s[j].begin(),s[j].end(),inserter(now,now.end()));
-        a=now.size();
-        b=s[i].size()+s[j].size()-a;
-        printf(&amp;quot;%.1f%%\n&amp;quot;,100.0*a/b);
-    }
-    return 0;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
-      </item>
-    
-      <item>
-        <title>PAT1062. Talent and Virtue (25)</title>
-        <link>http://yogy.cc/2014/09/08/pat-1062.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/09/08/pat-1062.html</guid>
-        <pubDate>Mon, 08 Sep 2014 00:00:00 +0800</pubDate>
-        <description>&lt;blockquote&gt;
-&lt;p&gt;快排&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3&gt;题意&lt;/h3&gt;
-
-&lt;p&gt;给出每人的道德值和智慧值，将合格的人按要求排列&lt;/p&gt;
-
-&lt;h3&gt;细节&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;按规则入选人可分4类&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3&gt;代码&lt;/h3&gt;
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
-#include&amp;lt;cstring&amp;gt;
-#include&amp;lt;iostream&amp;gt;
-#include&amp;lt;algorithm&amp;gt;
-#include&amp;lt;queue&amp;gt;
 #include&amp;lt;stack&amp;gt;
+#include&amp;lt;cmath&amp;gt;
 using namespace std;
-struct S{
-    int id,t,v;
-    bool operator&amp;lt;(const S&amp;amp; T)const{
-        if(t+v!=T.t+T.v) return t+v&amp;gt;T.t+T.v;
-        if(v!=T.v) return v&amp;gt;T.v;
-        return id&amp;lt;T.id;
-    }
-}p[4][100010];
-int cnt[4];
-int H,L,t,v,id;
-int gett(){
-    if(v&amp;gt;=H &amp;amp;&amp;amp; t&amp;gt;=H) return 0;
-    if(v&amp;gt;=H) return 1;
-    if(v&amp;gt;=t) return 2;
-    return 3;
+int son[40][2],f[40];
+char op[10];
+int flag;
+stack&amp;lt;int&amp;gt; s;
+void out(int a){
+    if(!flag) flag=1;
+    else printf(&amp;quot; &amp;quot;);
+    printf(&amp;quot;%d&amp;quot;,a);
+}
+void gao(int a){
+    if(a==-1) return;
+    gao(son[a][0]);
+    gao(son[a][1]);
+    out(a);
 }
 int main(){
     freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
-    int n,i,j;
-    scanf(&amp;quot;%d%d%d&amp;quot;,&amp;amp;n,&amp;amp;L,&amp;amp;H);
-    while(n--){
-        scanf(&amp;quot;%d%d%d&amp;quot;,&amp;amp;id,&amp;amp;v,&amp;amp;t);
-        if(v&amp;lt;L || t&amp;lt;L) continue;
-        i=gett();
-        p[i][cnt[i]].id=id;
-        p[i][cnt[i]].v=v;
-        p[i][cnt[i]++].t=t;
-    }
-    n=0;
-    for(i=0;i&amp;lt;4;++i){
-        n+=cnt[i];
-        sort(p[i],p[i]+cnt[i]);
-    }
-    printf(&amp;quot;%d\n&amp;quot;,n);
-    for(i=0;i&amp;lt;4;++i){
-        for(j=0;j&amp;lt;cnt[i];++j){
-            printf(&amp;quot;%08d %d %d\n&amp;quot;,p[i][j].id,p[i][j].v,p[i][j].t);
+    int i,u,v,n,r;
+    scanf(&amp;quot;%d&amp;quot;,&amp;amp;n);
+    scanf(&amp;quot;%s%d&amp;quot;,op,&amp;amp;u);
+    s.push(u);
+    r=u;
+    memset(son,-1,sizeof(son));
+    while(scanf(&amp;quot;%s&amp;quot;,op)!=EOF){
+        if(op[1]==&amp;#39;u&amp;#39;){
+            scanf(&amp;quot;%d&amp;quot;,&amp;amp;v);
+            son[u][f[u]]=v;
+            s.push(v);
+            u=v;
+        }else{
+            u=s.top();
+            f[u]=1;
+            s.pop();
         }
     }
+    gao(r);
     return 0;
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
       </item>
     
       <item>
-        <title>PAT1061. Dating (20)</title>
-        <link>http://yogy.cc/2014/09/08/pat-1061.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/09/08/pat-1061.html</guid>
-        <pubDate>Mon, 08 Sep 2014 00:00:00 +0800</pubDate>
+        <title>PAT1085. Perfect Sequence (25)</title>
+        <link>http://yogy.cc/2014/09/13/pat-1085.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/13/pat-1085.html</guid>
+        <pubDate>Sat, 13 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;二分&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;题意&lt;/h3&gt;
+
+&lt;p&gt;最大数不超过最小数若干倍的序列为完美序列，给出一个普通序列，从中选出若干数组成的完美序列，求其可能的最大长度&lt;/p&gt;
+
+&lt;h3&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;快排序列后，对每个数二分出其最大值的位置&lt;/li&gt;
+&lt;li&gt;注意二分上届&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+#include&amp;lt;algorithm&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;vector&amp;gt;
+#include&amp;lt;cmath&amp;gt;
+using namespace std;
+typedef long long ll;
+ll a[100010];
+int main(){
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    int n,l,r,m,i,ans=0;
+    ll p,x;
+    scanf(&amp;quot;%d%lld&amp;quot;,&amp;amp;n,&amp;amp;p);
+    for(i=0;i&amp;lt;n;++i) scanf(&amp;quot;%lld&amp;quot;,a+i);
+    sort(a,a+n);
+    for(i=0;i&amp;lt;n;++i){
+        x=a[i]*p;
+        if(a[n-1]&amp;lt;=x){
+            ans=max(ans,n-i);
+            continue;
+        }
+        l=i,r=n-1;
+        while(l+1&amp;lt;r){
+            m=(l+r)&amp;gt;&amp;gt;1;
+            if(a[m]&amp;gt;x) r=m;
+            else l=m;
+        }
+        ans=max(ans,r-i);
+    }
+    printf(&amp;quot;%d&amp;quot;,ans);
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
+    
+      <item>
+        <title>PAT1084. Broken Keyboard (20)</title>
+        <link>http://yogy.cc/2014/09/13/pat-1084.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/13/pat-1084.html</guid>
+        <pubDate>Sat, 13 Sep 2014 00:00:00 +0800</pubDate>
         <description>&lt;blockquote&gt;
 &lt;p&gt;模拟，字符串&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h3&gt;题意&lt;/h3&gt;
 
-&lt;p&gt;找到对应位置相同的字符，按要求输出&lt;/p&gt;
+&lt;p&gt;给出两串，输出第一串中包含、第二串没有的字符&lt;/p&gt;
 
 &lt;h3&gt;细节&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;第1个字符为星期，范围A～G&lt;/li&gt;
+&lt;li&gt;字母转为大写&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3&gt;代码&lt;/h3&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
-#include&amp;lt;cstring&amp;gt;
 #include&amp;lt;iostream&amp;gt;
 #include&amp;lt;algorithm&amp;gt;
-#include&amp;lt;queue&amp;gt;
-#include&amp;lt;stack&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;vector&amp;gt;
+#include&amp;lt;cmath&amp;gt;
 using namespace std;
-char a[65],b[65],c[65],d[65];
-char day[7][4]={&amp;quot;MON&amp;quot;,&amp;quot;TUE&amp;quot;,&amp;quot;WED&amp;quot;,&amp;quot;THU&amp;quot;,&amp;quot;FRI&amp;quot;,&amp;quot;SAT&amp;quot;,&amp;quot;SUN&amp;quot;};
+int vis[100];
+char s[100],b[100];
 int main(){
     freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
-    scanf(&amp;quot;%s%s%s%s&amp;quot;,a,b,c,d);
-    int i,week,h,m;
-    for(i=0;a[i] &amp;amp;&amp;amp; b[i];++i){
-        if(a[i]&amp;gt;=&amp;#39;A&amp;#39; &amp;amp;&amp;amp; a[i]&amp;lt;=&amp;#39;G&amp;#39; &amp;amp;&amp;amp; a[i]==b[i]){
-            week=a[i]-&amp;#39;A&amp;#39;;
-            break;
-        }
+    scanf(&amp;quot;%s%s&amp;quot;,s,b);
+    int i,j;
+    for(i=0;s[i];++i) s[i]=toupper(s[i]);
+    for(i=0;b[i];++i) b[i]=toupper(b[i]);
+    for(i=j=0;s[i];++i){
+        if(b[j]!=s[i]){
+            if(!vis[s[i]]){
+                vis[s[i]]=1;
+                printf(&amp;quot;%c&amp;quot;,s[i]);
+            }
+        }else ++j;
     }
-    for(++i;a[i] &amp;amp;&amp;amp; b[i];++i){
-        if((a[i]&amp;gt;=&amp;#39;A&amp;#39; &amp;amp;&amp;amp; a[i]&amp;lt;=&amp;#39;N&amp;#39; || a[i]&amp;gt;=&amp;#39;0&amp;#39; &amp;amp;&amp;amp; a[i]&amp;lt;=&amp;#39;9&amp;#39;) &amp;amp;&amp;amp; a[i]==b[i]){
-            if(a[i]&amp;gt;=&amp;#39;A&amp;#39;) h=a[i]-55;
-            else h=a[i]-48;
-            break;
-        }
-    }
-    for(i=0;c[i] &amp;amp;&amp;amp; d[i];++i){
-        if((c[i]&amp;gt;=&amp;#39;A&amp;#39; &amp;amp;&amp;amp; c[i]&amp;lt;=&amp;#39;Z&amp;#39; || c[i]&amp;gt;=&amp;#39;a&amp;#39; &amp;amp;&amp;amp; c[i]&amp;lt;=&amp;#39;z&amp;#39;) &amp;amp;&amp;amp; c[i]==d[i]){
-            m=i;
-            break;
-        }
-    }
-    printf(&amp;quot;%s %02d:%02d&amp;quot;,day[week],h,m);
     return 0;
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
       </item>
     
       <item>
-        <title>PAT1060. Are They Equal (25)</title>
-        <link>http://yogy.cc/2014/09/08/pat-1060.html</link>
-        <guid isPermaLink="true">http://yogy.cc/2014/09/08/pat-1060.html</guid>
-        <pubDate>Mon, 08 Sep 2014 00:00:00 +0800</pubDate>
+        <title>PAT1083. List Grades (25)</title>
+        <link>http://yogy.cc/2014/09/13/pat-1083.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/13/pat-1083.html</guid>
+        <pubDate>Sat, 13 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;快排&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;题意&lt;/h3&gt;
+
+&lt;p&gt;输出给定分数区间的学生排行榜&lt;/p&gt;
+
+&lt;h3&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;区间内无人输出NONE&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+#include&amp;lt;algorithm&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;vector&amp;gt;
+#include&amp;lt;cmath&amp;gt;
+using namespace std;
+const int maxn=10010;
+char name[maxn][11],id[maxn][11];
+int grade[maxn];
+struct P{
+    int id,grade;
+    bool operator &amp;lt; (const P&amp;amp;t)const{
+        return grade&amp;gt;t.grade;
+    }
+}p[maxn];
+int main(){
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    int n,i,m=0,a,b,t;
+    scanf(&amp;quot;%d&amp;quot;,&amp;amp;n);
+    for(i=0;i&amp;lt;n;++i) scanf(&amp;quot;%s%s%d&amp;quot;,name[i],id[i],grade+i);
+    scanf(&amp;quot;%d%d&amp;quot;,&amp;amp;a,&amp;amp;b);
+    for(i=0;i&amp;lt;n;++i){
+        if(grade[i]&amp;gt;=a &amp;amp;&amp;amp; grade[i]&amp;lt;=b){
+            p[m].grade=grade[i];
+            p[m++].id=i;
+        }
+    }
+    sort(p,p+m);
+    if(!m) printf(&amp;quot;NONE&amp;quot;);
+    for(i=0;i&amp;lt;m;++i){
+        printf(&amp;quot;%s %s\n&amp;quot;,name[p[i].id],id[p[i].id]);
+    }
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
+    
+      <item>
+        <title>PAT1082. Read Number in Chinese (25)</title>
+        <link>http://yogy.cc/2014/09/13/pat-1082.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/13/pat-1082.html</guid>
+        <pubDate>Sat, 13 Sep 2014 00:00:00 +0800</pubDate>
         <description>&lt;blockquote&gt;
 &lt;p&gt;模拟，大数&lt;/p&gt;
 &lt;/blockquote&gt;
 
 &lt;h3&gt;题意&lt;/h3&gt;
 
-&lt;p&gt;给出两个浮点数和有效位，判断是否相等&lt;/p&gt;
+&lt;p&gt;给出最多9位的整数，输出中文读法&lt;/p&gt;
 
 &lt;h3&gt;细节&lt;/h3&gt;
 
 &lt;ul&gt;
-&lt;li&gt;0的指数为0&lt;/li&gt;
+&lt;li&gt;连续的0只读一次，且其后必须包含非零元素&lt;/li&gt;
+&lt;li&gt;后八位分成两部分操作&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h3&gt;代码&lt;/h3&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
-#include&amp;lt;cstring&amp;gt;
 #include&amp;lt;iostream&amp;gt;
 #include&amp;lt;algorithm&amp;gt;
-#include&amp;lt;queue&amp;gt;
-#include&amp;lt;stack&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;vector&amp;gt;
+#include&amp;lt;cmath&amp;gt;
 using namespace std;
-char a[110],b[110];
-char x[110],y[110];
-int n,na,nb;
-void gao(char *a,char *x,int &amp;amp;na){
-    int i,p=strlen(a),j=0,f;
-    for(i=0;i&amp;lt;n;++i) x[i]=&amp;#39;0&amp;#39;;
-    for(i=0;a[i];++i){
-        if(a[i]==&amp;#39;.&amp;#39;) p=i;
-        else if(a[i]!=&amp;#39;0&amp;#39;) break;
-    }
-    if(!a[i]){
-        na=0;
-        return;
-    }
-    f=i;
-    for(;a[i];++i){
-        if(a[i]==&amp;#39;.&amp;#39;) p=i;
-        else x[j++]=a[i];
-    }
-    if(f&amp;gt;p) na=p-f+1;
-    else na=p-f;
-    x[n]=0;
+char s[15],n[15];
+char word[10][10]={&amp;quot;ling&amp;quot;,&amp;quot;yi&amp;quot;,&amp;quot;er&amp;quot;,&amp;quot;san&amp;quot;,&amp;quot;si&amp;quot;,&amp;quot;wu&amp;quot;,&amp;quot;liu&amp;quot;,&amp;quot;qi&amp;quot;,&amp;quot;ba&amp;quot;,&amp;quot;jiu&amp;quot;};
+char danwei[10][10]={&amp;quot;Qian&amp;quot;,&amp;quot;Bai&amp;quot;,&amp;quot;Shi&amp;quot;};
+int k,j;
+char now[5];
+void out(char *s){
+    if(!k) k=1;
+    else printf(&amp;quot; &amp;quot;);
+    printf(&amp;quot;%s&amp;quot;,s);
 }
-void out(char *x,int &amp;amp;na){
-    printf(&amp;quot; 0.&amp;quot;);
-    printf(&amp;quot;%s&amp;quot;,x);
-    printf(&amp;quot;*10^%d&amp;quot;,na);
+void gao(char *a,int b){
+    int i,flag=0,ten=1000;
+    for(i=0;i&amp;lt;4;++i){
+        if(a[i]&amp;gt;&amp;#39;0&amp;#39;) break;
+        ten/=10;
+    }
+    if(i==4) return;
+    for(;i&amp;lt;4;++i){
+        if(a[i]==&amp;#39;0&amp;#39;){
+            if(!flag){
+                flag=1;
+                out(&amp;quot;ling&amp;quot;);
+            }
+        }else{
+            out(word[a[i]-48]);
+            if(i&amp;lt;3) out(danwei[i]);
+        }
+        if(b%ten==0) return;
+        ten/=10;
+    }
 }
 int main(){
     freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
-    scanf(&amp;quot;%d%s%s&amp;quot;,&amp;amp;n,a,b);
-    gao(a,x,na);
-    gao(b,y,nb);
-    if(na==nb &amp;amp;&amp;amp; strcmp(x,y)==0){
-        printf(&amp;quot;YES&amp;quot;);
-        out(x,na);
-    }else{
-        printf(&amp;quot;NO&amp;quot;);
-        out(x,na);
-        out(y,nb);
+    int i,b=0,a;
+    scanf(&amp;quot;%s&amp;quot;,s);
+    sscanf(s,&amp;quot;%d&amp;quot;,&amp;amp;a);
+    if(s[0]==&amp;#39;-&amp;#39;){
+        out(&amp;quot;Fu&amp;quot;);
+        b=1;
+        a=-a;
     }
+    if(a==0){
+        out(&amp;quot;ling&amp;quot;);
+        return 0;
+    }
+    a%=100000000;
+    for(i=strlen(s)-1;i&amp;gt;=b;--i) n[j++]=s[i];
+    for(i=8;;--i){
+        if(n[i]!=&amp;#39;0&amp;#39;) break;
+        else n[i]=0;
+    }
+    if(n[8]&amp;gt;&amp;#39;0&amp;#39;){
+        out(word[n[8]-48]);
+        out(&amp;quot;Yi&amp;quot;);
+        if(n[7]==&amp;#39;0&amp;#39; &amp;amp;&amp;amp; a) out(&amp;quot;ling&amp;quot;);
+    }
+    now[0]=n[7],now[1]=n[6],now[2]=n[5],now[3]=n[4];
+    gao(now,a/10000);
+    if(a/10000){
+        out(&amp;quot;Wan&amp;quot;);
+        if(n[3]==&amp;#39;0&amp;#39; &amp;amp;&amp;amp; a%10000) out(&amp;quot;ling&amp;quot;);
+    }
+    now[0]=n[3],now[1]=n[2],now[2]=n[1],now[3]=n[0];
+    gao(now,a%10000);
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
+    
+      <item>
+        <title>PAT1081. Rational Sum (20)</title>
+        <link>http://yogy.cc/2014/09/13/pat-1081.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/13/pat-1081.html</guid>
+        <pubDate>Sat, 13 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;数学，GCD&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;题意&lt;/h3&gt;
+
+&lt;p&gt;求若干分数的和&lt;/p&gt;
+
+&lt;h3&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;注意0&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+#include&amp;lt;algorithm&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;vector&amp;gt;
+#include&amp;lt;cmath&amp;gt;
+using namespace std;
+typedef long long ll;
+ll gcd(ll a,ll b){
+    for(int t;t=b;b=a%b,a=t);
+    return a;
+}
+ll aa,bb;
+int main(){
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    int n;
+    ll a,b,g;
+    aa=0,bb=1;
+    scanf(&amp;quot;%d&amp;quot;,&amp;amp;n);
+    while(n--){
+        scanf(&amp;quot;%lld/%lld&amp;quot;,&amp;amp;a,&amp;amp;b);
+        aa=aa*b+bb*a;
+        bb=bb*b;
+        g=gcd(labs(aa),labs(bb));
+        aa/=g,bb/=g;
+    }
+    if(aa==0) printf(&amp;quot;0&amp;quot;);
+    else{
+        if(aa/bb &amp;amp;&amp;amp; aa%bb) printf(&amp;quot;%lld %lld/%lld&amp;quot;,aa/bb,aa%bb,bb);
+        else if(aa/bb) printf(&amp;quot;%lld&amp;quot;,aa/bb);
+        else if(aa%bb) printf(&amp;quot;%lld/%lld&amp;quot;,aa,bb);
+    }
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
+    
+      <item>
+        <title>PAT1080. Graduate Admission (30)</title>
+        <link>http://yogy.cc/2014/09/13/pat-1080.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/13/pat-1080.html</guid>
+        <pubDate>Sat, 13 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;快排，模拟&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;题意&lt;/h3&gt;
+
+&lt;p&gt;按照学校指标和学生的排名及申请录取，输出各校录取结果&lt;/p&gt;
+
+&lt;h3&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;记录满（超）额学校最后一名的信息，与之排名相同的也可录取&lt;/li&gt;
+&lt;li&gt;输出结果按学号升序&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+#include&amp;lt;algorithm&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;vector&amp;gt;
+using namespace std;
+
+struct P{
+    int w[5];
+    int ge,gi,sum,id;
+    bool operator &amp;lt; (const P&amp;amp; t)const{
+        if(sum!=t.sum) return sum&amp;gt;t.sum;
+        if(ge!=t.ge) return ge&amp;gt;t.ge;
+        return id&amp;lt;t.id;
+    }
+}p[40010];
+int cnt[110],tot[110];
+int n,m,k;
+vector&amp;lt;int&amp;gt; ans[110];
+int main(){
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    int i,j,w,lst;
+    scanf(&amp;quot;%d%d%d&amp;quot;,&amp;amp;n,&amp;amp;m,&amp;amp;k);
+    for(i=0;i&amp;lt;m;++i) scanf(&amp;quot;%d&amp;quot;,&amp;amp;tot[i]);
+    for(i=0;i&amp;lt;n;++i){
+        scanf(&amp;quot;%d%d&amp;quot;,&amp;amp;p[i].ge,&amp;amp;p[i].gi);
+        p[i].id=i;
+        for(j=0;j&amp;lt;k;++j) scanf(&amp;quot;%d&amp;quot;,&amp;amp;p[i].w[j]);
+        p[i].sum=p[i].ge+p[i].gi;
+    }
+    sort(p,p+n);
+    for(i=0;i&amp;lt;n;++i){
+        //printf(&amp;quot;%d: %d %d %d,%d %d %d\n&amp;quot;,p[i].id,p[i].ge,p[i].gi,p[i].sum,p[i].w[0],p[i].w[1],p[i].w[2]);
+        for(j=0;j&amp;lt;k;++j){
+            w=p[i].w[j];
+            if(cnt[w]&amp;lt;tot[w]){
+                ans[w].push_back(i);
+                cnt[w]++;
+                break;
+            }
+            lst=ans[w][cnt[w]-1];
+            if(p[i].sum==p[lst].sum &amp;amp;&amp;amp; p[i].ge==p[lst].ge){
+                ans[w].push_back(i);
+                cnt[w]++;
+                break;
+            }
+        }
+    }
+    for(i=0;i&amp;lt;m;++i){
+        for(j=0;j&amp;lt;cnt[i];++j) ans[i][j]=p[ans[i][j]].id;
+        sort(ans[i].begin(),ans[i].end());
+        int f=1;
+        for(j=0;j&amp;lt;cnt[i];++j){
+            if(f) f=0;
+            else printf(&amp;quot; &amp;quot;);
+            printf(&amp;quot;%d&amp;quot;,ans[i][j]);
+        }
+        printf(&amp;quot;\n&amp;quot;);
+    }
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
+    
+      <item>
+        <title>PAT1079. Total Sales of Supply Chain (25)</title>
+        <link>http://yogy.cc/2014/09/12/pat-1079.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/12/pat-1079.html</guid>
+        <pubDate>Fri, 12 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;树形DP&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;题意&lt;/h3&gt;
+
+&lt;p&gt;给出供求关系，求所有零售商销售总额&lt;/p&gt;
+
+&lt;h3&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;递归至叶子结点直接结算&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+#include&amp;lt;algorithm&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;queue&amp;gt;
+using namespace std;
+
+struct E{
+    int v,nxt;
+}e[100010];
+int head[100010],cnt;
+double sale[100010],d[100010],r,price,ans;
+void add(int u,int v){
+    e[cnt].v=v;
+    e[cnt].nxt=head[u];
+    head[u]=cnt++;
+}
+void gao(int u){
+    if(head[u]==-1){
+        ans+=d[u]*sale[u];
+        return;
+    }
+    int i,v;
+    for(i=head[u];i!=-1;i=e[i].nxt){
+        v=e[i].v;
+        d[v]=d[u]*r;
+        gao(v);
+    }
+}
+int main(){
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    int n,m,i,j;
+    scanf(&amp;quot;%d%lf%lf&amp;quot;,&amp;amp;n,&amp;amp;price,&amp;amp;r);
+    r=1+r/100;
+    memset(head,-1,sizeof(head));
+    for(i=0;i&amp;lt;n;++i){
+        scanf(&amp;quot;%d&amp;quot;,&amp;amp;m);
+        if(m==0){
+            scanf(&amp;quot;%lf&amp;quot;,&amp;amp;sale[i]);
+        }else{
+            while(m--){
+                scanf(&amp;quot;%d&amp;quot;,&amp;amp;j);
+                add(i,j);
+            }
+        }
+    }
+    d[0]=1;
+    gao(0);
+    printf(&amp;quot;%.1f\n&amp;quot;,ans*price);
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
+    
+      <item>
+        <title>PAT1078. Hashing (25)</title>
+        <link>http://yogy.cc/2014/09/12/pat-1078.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/12/pat-1078.html</guid>
+        <pubDate>Fri, 12 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;数学，哈希&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;题意&lt;/h3&gt;
+
+&lt;p&gt;对应给出哈希值，使用正向的二次探测解决碰撞&lt;/p&gt;
+
+&lt;h3&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;正向二次探测即将[0,mod)的平方依次加入尝试&lt;/li&gt;
+&lt;li&gt;双向二次探测，先加后减&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+#include&amp;lt;algorithm&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;queue&amp;gt;
+using namespace std;
+
+int vis[10020];
+
+bool ip(int a){
+    if(a&amp;lt;2) return 0;
+    for(int i=2;i*i&amp;lt;=a;++i)
+        if(a%i==0) return 0;
+    return 1;
+}
+int main(){
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    int n,m,i,j,ans;
+    scanf(&amp;quot;%d%d&amp;quot;,&amp;amp;m,&amp;amp;n);
+    while(!ip(m)) ++m;
+    scanf(&amp;quot;%d&amp;quot;,&amp;amp;i);
+    i%=m;
+    for(j=0;j&amp;lt;m;++j){
+        ans=(i+j*j)%m;
+        if(!vis[ans]){
+            vis[ans]=1;
+            printf(&amp;quot;%d&amp;quot;,ans);
+            break;
+        }
+    }
+    while(--n){
+        scanf(&amp;quot;%d&amp;quot;,&amp;amp;i);
+        i%=m;
+        for(j=0;j&amp;lt;m;++j){
+            ans=(i+j*j)%m;
+            if(!vis[ans]){
+                vis[ans]=1;
+                printf(&amp;quot; %d&amp;quot;,ans);
+                break;
+            }
+        }
+        if(j==m) printf(&amp;quot; -&amp;quot;);
+    }
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
+    
+      <item>
+        <title>PAT1077. Kuchiguse (20)</title>
+        <link>http://yogy.cc/2014/09/12/pat-1077.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/12/pat-1077.html</guid>
+        <pubDate>Fri, 12 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;模拟，字符串&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;题意&lt;/h3&gt;
+
+&lt;p&gt;求所有串的公共后缀&lt;/p&gt;
+
+&lt;h3&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;输入使用gets()&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+#include&amp;lt;algorithm&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;queue&amp;gt;
+using namespace std;
+char a[260],b[260],c[260];
+void get(char *s){
+    gets(c);
+    int len=strlen(c),i;
+    for(i=0;i&amp;lt;len;++i){
+        s[i]=c[len-1-i];
+    }
+}
+int main(){
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    int n,i,j;
+    scanf(&amp;quot;%d&amp;quot;,&amp;amp;n);
+    getchar();
+    get(a);
+    while(--n){
+        get(b);
+        for(i=j=0;a[i] &amp;amp;&amp;amp; b[j];++i,++j){
+            if(a[i]!=b[j]) break;
+        }
+        a[i]=0;
+    }
+    if(!a[0]) printf(&amp;quot;nai&amp;quot;);
+    else{
+        int len=strlen(a);
+        for(i=len-1;i&amp;gt;=0;--i) printf(&amp;quot;%c&amp;quot;,a[i]);
+    }
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
+    
+      <item>
+        <title>PAT1076. Forwards on Weibo (30)</title>
+        <link>http://yogy.cc/2014/09/12/pat-1076.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/12/pat-1076.html</guid>
+        <pubDate>Fri, 12 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;搜索，BFS&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;题意&lt;/h3&gt;
+
+&lt;p&gt;给出微博关注列表，求一定距离目标一定距离内最多可能存在多少人来推送&lt;/p&gt;
+
+&lt;h3&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;每人只能推送一次，自己不能推送&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+#include&amp;lt;algorithm&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;queue&amp;gt;
+using namespace std;
+int vis[1010],fan[1010][1010],cnt[1010];
+int ans;
+queue&amp;lt;int&amp;gt; q;
+int main(){
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    int n,i,m,k,j,u,d;
+    scanf(&amp;quot;%d%d&amp;quot;,&amp;amp;n,&amp;amp;k);
+    for(i=1;i&amp;lt;=n;++i){
+        scanf(&amp;quot;%d&amp;quot;,&amp;amp;m);
+        while(m--){
+            scanf(&amp;quot;%d&amp;quot;,&amp;amp;u);
+            fan[u][cnt[u]++]=i;
+        }
+    }
+    scanf(&amp;quot;%d&amp;quot;,&amp;amp;m);
+    while(m--){
+        scanf(&amp;quot;%d&amp;quot;,&amp;amp;u);
+        memset(vis,0,sizeof(vis));
+        vis[u]=1;
+        ans=0;
+        q.push(u);
+        while(!q.empty()){
+            u=q.front();
+            q.pop();
+            d=vis[u]+1;
+            for(i=0;i&amp;lt;cnt[u];++i){
+                j=fan[u][i];
+                if(vis[j]) continue;
+                ++ans;
+                vis[j]=d;
+                if(d&amp;lt;=k) q.push(j);
+            }
+        }
+        printf(&amp;quot;%d\n&amp;quot;,ans);
+    }
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
+    
+      <item>
+        <title>PAT1075. PAT Judge (25)</title>
+        <link>http://yogy.cc/2014/09/12/pat-1075.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/12/pat-1075.html</guid>
+        <pubDate>Fri, 12 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;快排&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;题意&lt;/h3&gt;
+
+&lt;p&gt;给出提交列表，求最终排名详细列表&lt;/p&gt;
+
+&lt;h3&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;未编译通过或未提交任何题目不参与排名&lt;/li&gt;
+&lt;li&gt;提交但编译未通过输出0分&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+#include&amp;lt;algorithm&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;queue&amp;gt;
+using namespace std;
+struct P{
+    int s[6];
+    int sum,man,id;
+    bool operator &amp;lt; (const P&amp;amp;t)const{
+        if(sum!=t.sum) return sum&amp;gt;t.sum;
+        if(man!=t.man) return man&amp;gt;t.man;
+        return id&amp;lt;t.id;
+    }
+}p[10010],np[10010];
+int s[6],cnt,ok[10010];
+int main(){
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    int n,m,k,i,j,a,b,c,sum,r;
+    scanf(&amp;quot;%d%d%d&amp;quot;,&amp;amp;n,&amp;amp;m,&amp;amp;k);
+    for(i=1;i&amp;lt;=m;++i) scanf(&amp;quot;%d&amp;quot;,&amp;amp;s[i]);
+    for(i=1;i&amp;lt;=n;++i) memset(p[i].s,-1,sizeof(p[0].s));
+    while(k--){
+        scanf(&amp;quot;%d%d%d&amp;quot;,&amp;amp;a,&amp;amp;b,&amp;amp;c);
+        if(c!=-1) ok[a]=1;
+        else c=0;
+        p[a].s[b]=max(p[a].s[b],c);
+    }
+    for(i=1;i&amp;lt;=n;++i){
+        if(!ok[i]) continue;
+        sum=0;
+        np[cnt].man=0;
+        for(j=1;j&amp;lt;=m;++j){
+            np[cnt].s[j]=p[i].s[j];
+            if(p[i].s[j]==-1) continue;
+            if(s[j]==p[i].s[j]) np[cnt].man++;
+            sum+=p[i].s[j];
+        }
+        np[cnt].sum=sum;
+        np[cnt++].id=i;
+    }
+    if(cnt==0) return 0;
+    sort(np,np+cnt);
+    r=1;
+    printf(&amp;quot;%d %05d %d&amp;quot;,r,np[0].id,np[0].sum);
+    for(j=1;j&amp;lt;=m;++j){
+        if(np[0].s[j]==-1) printf(&amp;quot; -&amp;quot;);
+        else printf(&amp;quot; %d&amp;quot;,np[0].s[j]);
+    }
+    printf(&amp;quot;\n&amp;quot;);
+    for(i=1;i&amp;lt;cnt;++i){
+        if(np[i].sum!=np[i-1].sum) r=i+1;
+        printf(&amp;quot;%d %05d %d&amp;quot;,r,np[i].id,np[i].sum);
+        for(j=1;j&amp;lt;=m;++j){
+            if(np[i].s[j]==-1) printf(&amp;quot; -&amp;quot;);
+            else printf(&amp;quot; %d&amp;quot;,np[i].s[j]);
+        }
+        printf(&amp;quot;\n&amp;quot;);
+    }
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
+    
+      <item>
+        <title>PAT1074. Reversing Linked List (25)</title>
+        <link>http://yogy.cc/2014/09/12/pat-1074.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/12/pat-1074.html</guid>
+        <pubDate>Fri, 12 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;数据结构，链表&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;题意&lt;/h3&gt;
+
+&lt;p&gt;将链表分段逆序&lt;/p&gt;
+
+&lt;h3&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;注意各段首位地址的连接&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+#include&amp;lt;algorithm&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;queue&amp;gt;
+using namespace std;
+int k[100010],nxt[100010],p[100010];
+int main(){
+    int n=1,m,i,j,cnt;
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    scanf(&amp;quot;%d%d%d&amp;quot;,&amp;amp;p[0],&amp;amp;cnt,&amp;amp;m);
+    while(cnt--){
+        scanf(&amp;quot;%d&amp;quot;,&amp;amp;i);
+        scanf(&amp;quot;%d%d&amp;quot;,&amp;amp;k[i],&amp;amp;nxt[i]);
+    }
+    i=nxt[p[0]];
+    while(i!=-1){
+        p[n++]=i;
+        i=nxt[i];
+    }
+    for(i=0;i&amp;lt;n;i+=m){
+        if(n-i==m){
+            for(j=n-1;j&amp;gt;i;--j) printf(&amp;quot;%05d %d %05d\n&amp;quot;,p[j],k[p[j]],p[j-1]);
+            printf(&amp;quot;%05d %d -1\n&amp;quot;,p[j],k[p[j]]);
+        }else if(n-i&amp;lt;m){
+            for(j=i;j&amp;lt;n-1;++j) printf(&amp;quot;%05d %d %05d\n&amp;quot;,p[j],k[p[j]],p[j+1]);
+            printf(&amp;quot;%05d %d -1\n&amp;quot;,p[j],k[p[j]]);
+        }else{
+            for(j=i+m-1;j&amp;gt;i;--j) printf(&amp;quot;%05d %d %05d\n&amp;quot;,p[j],k[p[j]],p[j-1]);
+            if(n-i&amp;gt;=2*m) printf(&amp;quot;%05d %d %05d\n&amp;quot;,p[j],k[p[j]],p[i+2*m-1]);
+            else printf(&amp;quot;%05d %d %05d\n&amp;quot;,p[j],k[p[j]],p[i+m]);
+        }
+    }
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
+    
+      <item>
+        <title>PAT1073. Scientific Notation (20)</title>
+        <link>http://yogy.cc/2014/09/12/pat-1073.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/12/pat-1073.html</guid>
+        <pubDate>Fri, 12 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;模拟，大数&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;题意&lt;/h3&gt;
+
+&lt;p&gt;将科学计数法以普通形式表示&lt;/p&gt;
+
+&lt;h3&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;注意前导零的处理&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+#include&amp;lt;algorithm&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;queue&amp;gt;
+using namespace std;
+char s[50000];
+char t[50000];
+char op;
+int main(){
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    int i,e,z=1,j;
+    scanf(&amp;quot;%s&amp;quot;,s);
+    op=s[0];
+    t[0]=s[1];
+    if(s[1]!=&amp;#39;0&amp;#39;) z=0;
+    for(i=3;s[i]!=&amp;#39;E&amp;#39;;++i){
+        t[i-2]=s[i];
+        if(s[i]!=&amp;#39;0&amp;#39;) z=0;
+    }
+    if(z) op=&amp;#39;+&amp;#39;;
+    sscanf(s+i+1,&amp;quot;%d&amp;quot;,&amp;amp;e);
+    if(op==&amp;#39;-&amp;#39;) printf(&amp;quot;-&amp;quot;);
+    if(e&amp;lt;0){
+        e=-e-1;
+        printf(&amp;quot;0.&amp;quot;);
+        while(e--) printf(&amp;quot;0&amp;quot;);
+        printf(&amp;quot;%s&amp;quot;,t);
+    }else{
+        if(z){
+            printf(&amp;quot;0&amp;quot;);
+            return 0;
+        }
+        i-=3;
+        if(e&amp;gt;=i){
+            e-=i;
+            for(j=0;t[j];++j) if(t[j]!=&amp;#39;0&amp;#39;) break;
+            if(!t[j]) printf(&amp;quot;0&amp;quot;);
+            else for(;t[j];++j) printf(&amp;quot;%c&amp;quot;,t[j]);
+            while(e--) printf(&amp;quot;0&amp;quot;);
+        }else{
+
+            for(j=0;j&amp;lt;=e;++j) if(t[j]!=&amp;#39;0&amp;#39;) break;
+            if(j&amp;gt;e) printf(&amp;quot;0&amp;quot;);
+            else for(;j&amp;lt;=e;++j) printf(&amp;quot;%c&amp;quot;,t[j]);
+            printf(&amp;quot;.&amp;quot;);
+            for(;t[j];++j) printf(&amp;quot;%c&amp;quot;,t[j]);
+        }
+    }
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
+    
+      <item>
+        <title>PAT1072. Gas Station (30)</title>
+        <link>http://yogy.cc/2014/09/12/pat-1072.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/12/pat-1072.html</guid>
+        <pubDate>Fri, 12 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;图，最短路&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;题意&lt;/h3&gt;
+
+&lt;p&gt;在候选地址中选出距离房屋最短距离最大的地点&lt;/p&gt;
+
+&lt;h3&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;所有路都可用来算最短路，包括油站到油站间的路&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+#include&amp;lt;algorithm&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;queue&amp;gt;
+using namespace std;
+const int inf=0x7fffffff;
+struct E{
+    int v,w,next;
+}e[20020];
+int head[1020],vis[1020],cnt,d[1020];
+int n,m,D,M;
+void add(int u,int v,int w){
+    e[cnt].next=head[u];
+    e[cnt].v=v;
+    e[cnt].w=w;
+    head[u]=cnt++;
+}
+int get(){
+    char s[10];
+    int ans=0,i=0,temp=0;
+    scanf(&amp;quot;%s&amp;quot;,s);
+    if(s[0]==&amp;#39;G&amp;#39;) i=1,temp=n;
+    for(;s[i];++i){
+        ans=ans*10+s[i]-&amp;#39;0&amp;#39;;
+    }
+    return ans+temp;
+}
+typedef pair&amp;lt;int,int&amp;gt; pii;
+priority_queue&amp;lt;pii,vector&amp;lt;pii&amp;gt;,greater&amp;lt;pii&amp;gt; &amp;gt; pq;
+int main(){
+    int u,v,w,i,j,s,ans,id,ok,mm,sum,temp;
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    scanf(&amp;quot;%d%d%d%d&amp;quot;,&amp;amp;n,&amp;amp;m,&amp;amp;M,&amp;amp;D);
+    memset(head,-1,sizeof(head));
+    while(M--){
+        u=get();v=get();
+        scanf(&amp;quot;%d&amp;quot;,&amp;amp;w);
+        add(u,v,w);
+        add(v,u,w);
+    }
+    ans=0;
+    for(i=n+1;i&amp;lt;=n+m;++i){
+        memset(vis,0,sizeof(vis));
+        for(j=1;j&amp;lt;=m+n;++j) d[j]=inf;
+        d[i]=0;
+        pq.push(make_pair(0,i));
+        while(!pq.empty()){
+            u=pq.top().second;
+            pq.pop();
+            if(vis[u]) continue;
+            vis[u]=1;
+            for(j=head[u];j!=-1;j=e[j].next){
+                v=e[j].v;
+                if(vis[v]) continue;
+                w=e[j].w;
+                if(d[u]+w&amp;lt;d[v]){
+                    d[v]=d[u]+w;
+                    pq.push(make_pair(d[v],v));
+                }
+            }
+        }
+        ok=1;
+        mm=inf;
+        temp=0;
+        for(j=1;j&amp;lt;=n;++j){
+            temp+=d[j];
+            if(d[j]&amp;gt;D){
+                ok=0;break;
+            }
+            if(d[j]&amp;lt;mm) mm=d[j];
+        }
+        if(ok &amp;amp;&amp;amp; (mm&amp;gt;ans || mm==ans &amp;amp;&amp;amp; temp&amp;lt;sum)){
+            ans=mm;
+            id=i;
+            sum=temp;
+        }
+    }
+    if(ans){
+        printf(&amp;quot;G%d\n&amp;quot;,id-n);
+        printf(&amp;quot;%.1f %.1f\n&amp;quot;,1.0*ans,1.0*sum/n);
+    }else printf(&amp;quot;No Solution\n&amp;quot;);
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
+    
+      <item>
+        <title>PAT1071. Speech Patterns (25)</title>
+        <link>http://yogy.cc/2014/09/12/pat-1071.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/12/pat-1071.html</guid>
+        <pubDate>Fri, 12 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;模拟，字符串&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;题意&lt;/h3&gt;
+
+&lt;p&gt;统计出现频率最高的单词&lt;/p&gt;
+
+&lt;h3&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;字母大写转小写，非字母为分隔符&lt;/li&gt;
+&lt;li&gt;用map映射string到int&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+#include&amp;lt;algorithm&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+#include&amp;lt;map&amp;gt;
+using namespace std;
+char s[1048600];
+map&amp;lt;string,int&amp;gt; mymap;
+string name;
+int main(){
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    gets(s);
+    int b=0,i,t,ans=0,temp;
+    for(i=0;s[i];++i){
+        b=0;
+        while(s[i]){
+            if(isalpha(s[i]) || isdigit(s[i])) break;
+            ++i;
+        }
+        b=i;
+        while(s[i]){
+            if(isalpha(s[i])) s[i]=tolower(s[i]);
+            else if(!isdigit(s[i])) break;
+            ++i;
+        }
+        string word(s+b,s+i);
+        temp=++mymap[word];
+        if(temp&amp;gt;ans || temp==ans &amp;amp;&amp;amp; word&amp;lt;name){
+            name=word;
+            ans=temp;
+        }
+    }
+    cout&amp;lt;&amp;lt;name&amp;lt;&amp;lt;&amp;quot; &amp;quot;&amp;lt;&amp;lt;ans;
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
+    
+      <item>
+        <title>PAT1070. Mooncake (25)</title>
+        <link>http://yogy.cc/2014/09/12/pat-1070.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/12/pat-1070.html</guid>
+        <pubDate>Fri, 12 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;快排，贪心&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;题意&lt;/h3&gt;
+
+&lt;p&gt;给出各种月饼的库存和总价，求最大销售额&lt;/p&gt;
+
+&lt;h3&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;市场需求量与库存总量的关系任意&lt;/li&gt;
+&lt;li&gt;按单价快排&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+#include&amp;lt;algorithm&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+using namespace std;
+struct P{
+    double store,price;
+    bool operator &amp;lt;(const P&amp;amp;t)const{
+        return price*t.store&amp;gt;t.price*store;
+    }
+}p[1010];
+int main(){
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    int n,i;
+    double m,ans=0;
+    scanf(&amp;quot;%d%lf&amp;quot;,&amp;amp;n,&amp;amp;m);
+    for(i=0;i&amp;lt;n;++i) scanf(&amp;quot;%lf&amp;quot;,&amp;amp;p[i].store);
+    for(i=0;i&amp;lt;n;++i) scanf(&amp;quot;%lf&amp;quot;,&amp;amp;p[i].price);
+    sort(p,p+n);
+    i=-1;
+    while(m&amp;gt;0 &amp;amp;&amp;amp; ++i&amp;lt;n){
+        if(p[i].store&amp;gt;=m){
+            ans+=p[i].price*m/p[i].store;
+            break;
+        }
+        ans+=p[i].price;
+        m-=p[i].store;
+    }
+    printf(&amp;quot;%.2f&amp;quot;,ans);
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
+    
+      <item>
+        <title>PAT1069. The Black Hole of Numbers (20)</title>
+        <link>http://yogy.cc/2014/09/12/pat-1069.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/12/pat-1069.html</guid>
+        <pubDate>Fri, 12 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;模拟，字符串&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;题意&lt;/h3&gt;
+
+&lt;p&gt;将4个字符组成的最大数与最小数做差，直到出现6174&lt;/p&gt;
+
+&lt;h3&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;统计字符都相同则特判&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+#include&amp;lt;algorithm&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+using namespace std;
+char ch[10];
+int main(){
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    int a,b,i,t;
+    scanf(&amp;quot;%d&amp;quot;,&amp;amp;a);
+    while(1){
+        t=a;
+        for(i=0;i&amp;lt;4;++i){
+            ch[i]=t%10;
+            t/=10;
+        }
+        sort(ch,ch+4);
+        a=ch[0]+ch[1]*10+ch[2]*100+ch[3]*1000;
+        b=ch[3]+ch[2]*10+ch[1]*100+ch[0]*1000;
+        printf(&amp;quot;%04d - %04d = %04d\n&amp;quot;,a,b,a-b);
+        a=a-b;
+        if(a==0 || a==6174) break;
+    }
+    return 0;
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+      </item>
+    
+      <item>
+        <title>PAT1068. Find More Coins (30)</title>
+        <link>http://yogy.cc/2014/09/12/pat-1068.html</link>
+        <guid isPermaLink="true">http://yogy.cc/2014/09/12/pat-1068.html</guid>
+        <pubDate>Fri, 12 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+&lt;p&gt;动态规划，0/1背包&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3&gt;题意&lt;/h3&gt;
+
+&lt;p&gt;求和为特定值且字典序最小的背包方案&lt;/p&gt;
+
+&lt;h3&gt;细节&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;每个面值排序后用字符表示，方便选取字典序最小的方案&lt;/li&gt;
+&lt;li&gt;背包时从累加和大的向小的更新&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;代码&lt;/h3&gt;
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-text&quot; data-lang=&quot;text&quot;&gt;#include&amp;lt;cstdio&amp;gt;
+#include&amp;lt;iostream&amp;gt;
+#include&amp;lt;algorithm&amp;gt;
+#include&amp;lt;cstring&amp;gt;
+using namespace std;
+
+char s[105][105];
+char temp[105];
+int a[10010];
+void update(int u,char *t,char c){
+    int l=strlen(t);
+    t[l]=c;
+    if(!s[u][0] || strcmp(s[u],t)&amp;gt;0) strcpy(s[u],t);
+    t[l]=0;
+}
+int main(){
+    freopen(&amp;quot;d.in&amp;quot;,&amp;quot;r&amp;quot;,stdin);
+    int n,m,i,j;
+    scanf(&amp;quot;%d%d&amp;quot;,&amp;amp;n,&amp;amp;m);
+    for(i=0;i&amp;lt;n;++i){
+        scanf(&amp;quot;%d&amp;quot;,&amp;amp;a[i]);
+        if(a[i]&amp;gt;m){
+            --i;--n;
+        }
+    }
+    sort(a,a+n);
+    for(i=0;i&amp;lt;n;++i){
+        for(j=m-a[i];j&amp;gt;=0;--j){
+            if(!j|| s[j][0]){
+                update(j+a[i],s[j],a[i]);
+            }
+        }
+    }
+    if(s[m][0]){
+        printf(&amp;quot;%d&amp;quot;,s[m][0]);
+        for(i=1;s[m][i];++i){
+            printf(&amp;quot; %d&amp;quot;,s[m][i]);
+        }
+    }else printf(&amp;quot;No Solution\n&amp;quot;);
     return 0;
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>

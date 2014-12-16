@@ -1,0 +1,14 @@
+#top-bar
+  %ul{:class => "social-nav nav"}
+    %li
+      = link_to("English", current_path(:lang  => "en"))
+      &nbsp;· &nbsp;
+      = link_to("Español", current_path(:lang => "es"))
+      &nbsp;· &nbsp;
+    %li
+      Seguinos &nbsp;
+      %span{:class  => "hidden"},
+      %a{ :href  => "http://www.facebook.com/pages/Imperial-Park-Hotel/104210016364842", :target  => "_blank", :class  => "facebook-icon"}
+        %img{ :src  => "/img/content/facebook-icon.png", :alt  => "facebook" }
+  %p{:class  => "tel to-right"} Tel.(5411) 4383-0555
+

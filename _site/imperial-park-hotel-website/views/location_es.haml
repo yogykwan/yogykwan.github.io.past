@@ -1,0 +1,7 @@
+%div{:id  => "hero",:class  => "grid_16"}
+  %div{:class  => "info"}
+    %div{:class  => "section grid_6"}
+  %div{:id  => "slider"}
+    %img{:src  => "http://maps.googleapis.com/maps/api/staticmap?center=Lima+101,Ciudad+Autónoma+de+Buenos+Aires,:Argentina&zoom=15&size=940x336&markers=color:red%7Clabel:I%7C-34.60969,-58.38194&sensor=false", :width  => "940", :height  => "336"}
+= partial :location_gallery, :skip_translation => true
+= partial :bottom_content

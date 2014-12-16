@@ -1,0 +1,124 @@
+﻿body {
+    background-image: url('../img/58original.gif');
+    font-family: 'Lucida Console';
+}
+
+.MainWrapper {
+    width: 994px;
+    margin: -10px auto;
+    border: 2px solid #C9CACA;
+}
+
+.header {
+    height: 130px;
+    background-image: url('../img/40original.gif');
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.tblHeader {
+    width: 100%;
+}
+
+.menu {
+    width: 100%;
+    background-color: #646464;
+    height: 30px;
+}
+
+.slideshow {
+    height: 302px;
+}
+
+.main_middle {
+    min-height: 400px;
+    background-image: url('../img/40original.gif');
+    padding: 20px;
+}
+
+
+    .main_middle h1 {
+        color: chocolate;
+        font-size: 60px;
+        font-family: 'Monotype Corsiva';
+        font-weight: 600;
+        width: 799px;
+    }
+
+    .main_middle h4 {
+        color: chocolate;
+        font-size: 26px;
+        font-family: 'Monotype Corsiva';
+        font-weight: 600;
+    }
+
+    .main_middle p {
+        font-size: 20px;
+        color: darkgreen;
+        font-family:'Comic Sans MS';
+        text-align: justify;
+    }
+
+    .main_middle ul {
+        font-size: 17px;
+        color: red;
+        text-align: justify;
+        width: 298px;
+        margin-left: 1px;
+    }
+
+        .main_middle ul li {
+            font-size: 14px;
+            color: blue;
+            text-align: justify;
+            margin-right: 3px;
+            margin-top: 3px;
+            margin-bottom: 3px;
+        }
+
+.dinner {
+    min-height: 600px;
+    background-image: url('../img/81790bb36df040f39c1e923c12b54f4a_Restaurant.jpg');
+    padding: 20px;
+}
+
+    .dinner h4 {
+        color: #330000;
+        font-size: 50px;
+        font-family: 'Monotype Corsiva';
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .dinner ul li {
+        font-size: 25px;
+        color: red;
+        text-align: center;
+        margin-right: 3px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        list-style:none;
+    }
+
+.txt {
+    width: 200px;
+    height: 25px;
+    font-size: 13px;
+}
+
+.ddl {
+    width: 204px;
+    height: 30px;
+    font-size: 13px;
+}
+
+.button {
+    width: 100px;
+    height: 30px;
+    color: white;
+    background-color: #646464;
+}
+
+    .button:hover {
+        background-color: red;
+    }

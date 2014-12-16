@@ -1,0 +1,31 @@
+%div{:id  => "hero", :class  => "grid_16"}
+  %div{:class  => "info"}
+    %h2
+      Um hotel de estilo Europeu
+      %span
+        %em
+          no coração da cidade de Buenos Aires
+    %div{:class  => "section grid_6"}
+      %p
+        Uma visão panorâmica da Avenida 9 de Julio, a proximidade da área empresarial e das principais atracções, serviço personalizado eo calor da nossa equipa convida viajantes de negócios e de lazer para desfrutar de uma estadia inesquecível.
+      %p
+        %a{:class  => "reservation-button", :href  => "http://reservations.directwithhotels.com/reservation/selectDates/12871", :target  => "_blank"}
+          RESERVE AGORA
+  %div{:id  => "slider"}
+    %img{:src  => "/img/content/imperial-park-hotel-lounge.jpg",:alt => "Imperial Park Hotel lounge",:width => "940",:height => "371"}
+    %img{:src  => "/img/content/imperial-park-hotel-building.jpg", :alt => "Imperial Park Hotel building", :width => "940",:height => "371"}
+    %img{:src  => "/img/content/imperial-park-hotel-entrance.jpg", :alt => "Imperial Park Hotel entrance",:width => "940", :height => "371"}
+    %img{:src  => "/img/content/imperial-park-hotel-buenos-aires.jpg",:alt => "Imperial Park Hotel Buenos Aires",:width => "940", :height => "371"}
+
+= partial :bottom_content
+
+:javascript
+  $(document).ready(function(){
+    $('#hero #slider').cycle({ 
+      fx:     'fade', 
+      speed:  '950', 
+      timeout: 6000 
+    });  
+  });
+
+

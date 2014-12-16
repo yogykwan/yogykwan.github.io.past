@@ -1,0 +1,111 @@
+/* ·······································································································································
+   Predefined HTML styles and useful classes
+······································································································································· */
+		 
+      /* Layout classes */
+         div#wrapper, div#header, div#content, div#footer {overflow:hidden; clear:both;}
+         div.content-area, div.content-section {overflow:hidden;}
+
+      /* Menu bars */
+         ul.nav, ul.menu {overflow:hidden;}
+         ul.nav li, ul.menu li {float:left; margin-bottom:0!important; }
+         ul.nav li.last, ul.menu li.last {margin-right:0; padding-right:0; border-right:0;}
+         ul.nav li img, ul.menu li img {margin-bottom:0; }
+	    
+      /* Buttons */
+         .button:hover {cursor:pointer; text-decoration:none;}
+         input[type="button"]:hover {cursor:pointer; text-decoration:none;}
+         
+	  /* Margins */
+		.tm {margin-top:10px!important; }
+		.rm {margin-right:10px!important; }
+		.bm {margin-bottom:10px!important; }
+		.lm {margin-left:10px!important; }  
+		.no-tm {margin-top:0!important; }
+		.no-rm {margin-right:0!important; }
+		.no-bm {margin-bottom:0!important; }
+		.no-lm {margin-left:0!important; }         
+		
+	  /* Paddings */
+		.tp {padding-top:10px!important; }
+		.rp {padding-right:10px!important; }
+		.bp {padding-bottom:10px!important; }
+		.lp {padding-left:10px!important; }  
+		.no-tp {padding-top:0!important; }
+		.no-rp {padding-right:0!important; }
+		.no-bp {padding-bottom:0!important; }
+		.no-lp {padding-left:0!important; }
+		
+      /* Floats */
+         .to-left {float:left!important;}
+         .to-right {float:right!important;}
+
+	 /* Text Alignment */
+         .tar {text-align:right!important;}
+         .tal {text-align:left!important;}
+         .tac {text-align:center!important;}
+         .taj {text-align:justify!important;}
+         
+      /* Display */
+         .hidden {display:none!important;}
+         .invisible {visibility:hidden!important;}
+      
+      /* Separators */
+         hr {background:#ddd; color:#ddd; width:100%; height:1px; border:none; clear:both; float:none;}
+         hr.space {background:#fff; color:#fff;}
+         
+      /* Font styles */  
+         small {font-size:60%; } 
+         big {font-size:160%; }
+         sup {font-size:60%; vertical-align:super;} 
+         sub {font-size:60%; vertical-align:sub;}
+            
+      /* Images */      
+         img, a img {font-size:10px; font-family:Verdana, Geneva, Arial, Helvetica, sans-serif; text-decoration:none;}
+            
+      /* Clearfix */
+         .clearfix:after {content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+         .clearfix {display: inline-block;}
+         * html .clearfix {height:1%}
+         .clearfix {display:block}
+         .clear {clear:both;}
+
+      /* Message bar */                 
+         body .message-bar {padding:10px 0 10px 0; background:#FFFFC1 url(../img/style/icon-alert.gif) no-repeat 10px; color:#000; 
+         font-size:12px; font-family:Arial, Helvetica, Tahoma, Verdana, sans-serif; border-bottom:1px solid #DED181;  text-align:left;  
+         text-indent:30px; margin-bottom:1px} 
+         html > body p.browser-support {display:none;}
+
+      /* Top layer (popups and modal windows container) */
+		 #cover {
+		 position:fixed; top:0; right:0; bottom:0; left:0; z-index:1000;
+		 background:url("../img/style/cover.png") repeat; 
+		 }
+		 /* Modal windows */
+		 #top-layer {position:absolute; top:0; right:0; bottom:0; left:0; z-index:9999;}
+		 .modal-window, .modal-box, .popup {
+		 margin:30px auto 0 auto;}
+	  
+	  
+/* ·······································································································································
+  ERROR CHECKING (http://accessites.org/site/2006/07/big-red-angry-text/)
+······································································································································· */
+
+/* 
+  This is to determine if deprecated elements are used. If so, they should be replaced:
+      1a. <font> and
+      1b. <font color="xxx">…</font>: Shouldn’t be used.
+      CSS should dictate font attributes.
+      2. <center>: Shouldn’t be used. CSS should dictate horizontal alignment.
+      3a. <div align="xxx">…</div>
+      3b. <p align="xxx">…</p>
+      3c. <table align="xxx">…</table>: Shouldn’t be used. CSS should dictate horizontal alignment.
+ */
+
+     /* CSS Begin */
+     font, center, div[align], p[align], table[align], font[color] {
+     margin : 10px; padding : 10px;
+     color : #cd0000; font-weight : bold; font-size : 2em; border : 2px dashed #cd0000;
+     background : #eecc11 url(images/warning.gif) repeat 0 0;
+      }      
+	 

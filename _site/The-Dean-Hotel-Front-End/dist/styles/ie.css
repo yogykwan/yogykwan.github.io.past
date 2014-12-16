@@ -1,0 +1,83 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+
+/* line 7, ../../app/styles/ie.scss */
+
+header.sidebar {
+  display: block;
+}
+
+/* line 10, ../../app/styles/ie.scss */
+
+header.sidebar .brand {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  float: left;
+  width: 320px;
+}
+
+/* line 18, ../../app/styles/ie.scss */
+
+header.sidebar .menu {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: 80px;
+  float: left;
+  width: 320px;
+}
+
+/* line 26, ../../app/styles/ie.scss */
+
+header.sidebar .contact {
+  margin-top: 40px;
+  position: fixed;
+  width: 320px;
+  bottom: 0px;
+}
+
+/* line 35, ../../app/styles/ie.scss */
+
+header.sidebar .newsletter a {
+  margin-top: 2px;
+  margin-bottom: 5px;
+  float: left;
+  display: block;
+}
+
+/* line 41, ../../app/styles/ie.scss */
+
+header.sidebar .newsletter input {
+  margin-top: 2px;
+  float: left;
+  display: block;
+}
+
+/* line 56, ../../app/styles/ie.scss */
+
+.panel .half .room .content {
+  display: block;
+}
+
+/* line 61, ../../app/styles/ie.scss */
+
+.panel .half .room header {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* line 64, ../../app/styles/ie.scss */
+
+.panel .half .room header h3 {
+  color: black !important;
+}
+
+/* line 70, ../../app/styles/ie.scss */
+
+.panel .half .room div {
+  display: block;
+  opacity: 1;
+  color: black;
+}

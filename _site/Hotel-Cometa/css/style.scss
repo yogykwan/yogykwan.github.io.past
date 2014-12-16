@@ -1,0 +1,813 @@
+$blue:#3e87cc;
+@each $font-face in "BebasNeue", "Socialico"{/*iteramos una misma propiedad CSS*/
+    @font-face
+    {
+	    font-family: "#{$font-face}";
+	    src:    url("../font/#{$font-face}.eot");
+	    src:    url("../font/#{$font-face}.eot") format("embedded-opentype"),
+	            url("../font/#{$font-face}.ttf") format("truetype"),
+	            url("../font/#{$font-face}.otf");
+    }
+}
+@mixin imgMovil($url)
+{
+	background-image: url(unquote($url));
+	background-size: auto 100%;/*las imagenes en los moviles tienden a fijarse a lo alto y auto a lo anxho*/
+}
+/*mixin añadido a los <section del #contenedor-ppal>*/
+@mixin fullScreen($color : "aqua")
+{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: unquote($color);
+	background-attachment: fixed;
+}
+@mixin efectoEncabezado($grados, $color : "transparent")
+{
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	width: 50%;
+	height: 100%;
+	background-color: unquote($color);
+	-webkit-transform: skew(0deg, unquote($grados+"deg"));
+	-moz-transform: skew(0deg, unquote($grados+"deg"));
+	-ms-transform: skew(0deg, unquote($grados+"deg"));
+	transform: skew(0deg, unquote($grados+"deg"));
+}
+#buffet
+{
+	@include fullScreen("transparent");
+	top: 300%;/*justamente por debajo de la 3ª seccion de viewport*/
+	position: relative;
+	.image-food
+	{
+		position: absolute;
+		z-index: 1;
+		right: 0;
+		width: 80px;
+		height: 80px;
+		-webkit-border-radius: 50%;
+		border-radius: 50%;
+		transition: all 0.1s ease-out;
+		background-size: 100%;
+		background-position: 50%;
+		cursor: pointer;
+	}
+	.viewport/*la primera imagen que aparece al prinncipio, expandida en el #contenedor-ppal*/
+	{
+		@include fullScreen("transparent");
+		z-index: -1;/*por debajo de .image-food*/
+		left: 0;
+		top: 0;
+		background-size: 100% 100%;
+		background-size: cover;
+		background-attachment: scroll;
+		-webkit-border-radius: 0;
+		border-radius: 0;
+		transition: all 1s ease-in;
+		cursor: auto;
+	}
+}
+#contacto
+{
+	@include fullScreen("transparent");
+	top: 400%;/*justamente por debajo de la 4ª seccion de viewport*/
+	background-image: url(../img/DSCN1218.jpg);
+	background-size: 100%;
+	background-size: cover;
+	background-position: bottom;
+	z-index: -5;
+	#social-media, #google-map
+	{
+		position: relative;
+		width: 50%;
+		margin: 0 auto;
+		top: 30%;
+	}
+	#social-media
+	{
+		height: 55%;
+		text-align: center;
+		word-spacing: 3px;
+		font-size: 1.5em;
+		text-shadow: 0px 0px 5px #000;
+		h2, h3, p, ul>li
+		{
+			background-color: rgba(250, 250, 250, 0.7);
+			line-height: 1.5em;
+			margin: 5% 0;
+		}
+		h2, h3
+		{
+			padding-top: 10px;
+			margin: 0;
+			background-color: rgba(247, 247, 247, 0.5);
+			color: $blue;
+		}
+		p{
+			width: 95%;
+			margin: 0 auto;
+			margin-top: 5%;
+			border-radius: 5%/10%;
+		}
+		ul>li
+		{
+			font-family: "Socialico";/*ICON-FONTS*/
+			font-size: 3em;
+			margin: 0;
+			height: 110px;
+			transition: all 0.1s ease-out;
+			cursor: pointer;
+			background-color: transparent;
+			color: rgba(250, 250, 250, 1);
+			&:nth-child(2)
+			{
+				margin: 0 6px 0 20px;
+			}
+			&:hover
+			{
+				color: $blue;
+			}
+			a
+			{
+				color: inherit;/*hereda el color del texto de su contenedor*/
+			}
+		}
+		address
+		{
+			font-size: 0.75em;
+			p
+			{
+				line-height: 2em;
+			}
+		}
+	}
+	#google-map
+	{
+		top: 25%;
+		height: 60%;
+		width: 45%;
+		text-align: center;
+		#map-canvas
+		{
+			width: 100%;
+			height: 100%;
+			margin-left: 2%;
+			overflow: hidden;
+			border: 0.5em solid #eee;
+			box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+		}
+		#mostrarRuta
+		{
+			display: none;
+		}
+		input
+		{
+			display: block;
+			width: 103%;
+			width: calc(100% + 0.75em);
+			height: 11%;
+			margin: 0 0 0 2%;
+			padding: 0em 1em;
+			font-size: 1.3em;
+			border: none;
+			background-color: rgba(247, 247, 247, 0.5);
+			color: #3E87CC;
+			text-align: center;
+			transition: background-color 0.3s linear 0s,
+							color 0.3s linear 0s;
+			font-weight: bold;
+			&:hover
+			{
+				background-color: rgba(255, 255, 255, 0.9);
+				color: #36383A;
+			}
+			&:active
+			{
+				border: 0.2em solid #F76D6D;
+				border-radius: 0.5em/0.7em;
+			}
+		}
+	}
+}
+#contenedor-sliders
+{
+	@include fullScreen("transparent");
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	z-index: -5;/*por detras del encabezado*/
+	#img-sliders
+	{
+		/*posicionar todos los elementos hermanos (descendientes directos), uno detras de otro*/
+		white-space: nowrap;
+		height: 100%;/*porque este no tenia fullscreen*/
+		.slider
+		{
+			display: inline-block;
+			/*siempre se deja un espacio entre los elemnetos que se ponen en inline-block*/
+			@include fullScreen("transparent");
+			position: relative;/*cambiamos el posicionamiento de absolute*/
+			margin-right: -6px;
+			vertical-align: top;
+			background-size: 100%;
+			background-size: cover;
+			background-position: bottom;
+			/*problema todos los sliders ocuparan el ancho y alto del contenedor padre,
+			si a estos los vamos moviendo el htal,
+			AUN ESTARAN OCUPANDO EL total del contenedor padre, y este se encuentra en el medio*/
+		}
+	}
+}
+#control-sliders
+{
+	position: absolute;
+	bottom: 15%;
+	left: 90%;
+	z-index: 0;
+}
+#cuartos{
+	position: absolute;
+	top: 100%;/*justamente por debajo de la 1ª seccion de viewport*/
+	left: 0;
+	z-index: -5;/*por detras del encabezado*/
+}
+#paquetes
+{
+	@include fullScreen("transparent");
+	top: 200%;/*justamente por debajo de la 2ª seccion de viewport*/
+	left: 0;
+	z-index: -5;/*por detras del encabezado*/
+	background: transparent url("../img/DSCN1332.jpg") repeat 100%;
+	background-size: cover;
+	.oferta/*<article>*/
+	{
+		display: inline-block;
+		position: relative;
+		width: 25%;
+		margin: 15% 0 0 3%;
+		background-color: #F7F7F7;
+		vertical-align: top;
+		padding: 2%;
+		padding-top: 0;
+		text-align: center;
+		border: solid 1px #ccc;
+		&:nth-child(even)
+		{
+			top: -20px;
+		}
+		&:nth-child(odd)
+		{
+			top: 20px;
+		}
+		.ribbon
+		{
+			position: relative;
+			z-index: 0;
+			width: 130%;
+			left: -43px;
+			top: 30px;
+			height: 50px;
+			background-image: url(../img/ribbon.png);
+			background-size: 100% 100%;
+		}
+		.oferta-titulo
+		{
+			position: relative;
+			z-index: 1;
+			top: -18px;
+			font-family: "BebasNeue";
+			font-style: oblique;
+			color: #2B3238;
+			font-size: 1.85rem;
+		}
+		.oferta-desc
+		{
+			text-align: justify;
+			letter-spacing: 1px;
+			word-spacing: 1px;
+			margin: 5% 0;
+		}
+		.oferta-ext
+		{
+			font-weight: bold;
+		}
+		.oferta-precio
+		{
+			background-color: $blue;
+			color: #fff;
+			font-size: 1.25rem;
+			width: 70%;
+			margin: 5% auto;
+			padding: 0.5rem;
+		}
+		.oferta-mas
+		{
+			font-weight: bold;
+			a
+			{
+				color: #F76161;
+				font-size: 2rem;
+				&:hover
+				{
+					text-shadow: 0px 0px 5px #DBAF51, 0px 0px 10px #DBAF51;
+				}
+			}
+		}
+	}
+}
+#encabezado
+{
+	position: fixed;
+	width: 100%;/*sera el 90% del view-port*/
+	height: 200px;/*los pseudoelementos adoptaran esta altura*/
+	top: 0;
+	left: 0;
+	margin-top: -160px;
+	margin-top: -10rem;/*event hover: -1rem*/
+	transition: all 0.5s ease-in-out 0s;
+	&:before
+	{
+		left: 0;
+		@include efectoEncabezado(5, "#000");
+	}
+	&:after
+	{
+		right: 0;
+		@include efectoEncabezado(-5, "#000");
+	}
+	#logo
+	{
+		position: relative;
+		display: block;
+		background: #000 url(../img/logo_cometa.png) no-repeat 40% center;
+		background-size: 51%;
+		width: 200px;
+		height: 150px;
+		top: 150px;
+		left: 50%;
+		margin-left: -100px;
+		z-index: 15;
+		text-indent: -9999px;
+		border-radius: 7em 0;
+	}
+	#eslogan
+	{
+		position: absolute;
+		top: 175px;
+		left: 0;
+		margin-top: 50px;
+		width: 100%;
+		height: 80px;
+		color: #6C91C7;
+		text-shadow:
+			1px -1px 0 rgba(220,220,220,1),
+			2px -2px 0 rgba(210,210,210,1),
+			3px -3px 0 rgba(200,200,200,1),
+			4px -4px 0 rgba(190,190,190,1),
+			5px -5px 0 rgba(180,180,180,1),
+			6px -6px 0 rgba(170,170,170,1),
+			7px -7px 15px rgba(0,0,0,0.5);
+		h1
+		{
+			margin: 25px 0 0 -50%;
+		}
+		h2
+		{
+			font-weight: bold;
+			font-size: 1.5rem;
+			line-height: 1.5rem;
+			margin: -39px 0 0 55%;
+		}
+	}
+}
+#logo
+{
+	display: block;
+	position: fixed;
+	bottom: 0px;
+	background: rgb(0, 0, 0) url(../img/logo_cometa.png) no-repeat center center;
+	background-position-y: 40%;
+	text-indent: -99999px;
+	background-size: 70%;
+	width: 160px;
+	height: 160px;
+	border-radius: 0 7em;
+}
+#msg-ppal
+{
+	@include fullScreen("transparent");
+	width: 500px;
+	height: 15%;
+	top: 42%;
+	top: calc(50% - 75px);
+	left: 0;
+	margin-left: -5%;
+	color: #f7f7f7;
+	h1
+	{
+		position: relative;
+		z-index: -5;
+		color: #DFEAF3;
+		font-size: 1.5rem;
+		top: -25px;
+		right: 100px;
+		text-shadow: 0px 0px 20px #2C2C2C, 0px 0px 20px #E2E23F;
+		-webkit-transform: rotate(27deg);
+		-moz-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+	}
+	#relAuthor
+	{
+		position: relative;
+		z-index: 0;
+		font-size: 1rem;
+		font-weight: bolder;
+		opacity: 0.7;
+		&:after
+		{
+			content: "";
+			position: absolute;
+			width: 0;
+			height: 0;
+			left: 0;
+			top: 0;
+			z-index: -10;/*para que se ponga por detras del elemento padre*/
+			margin-top: -21%;
+			border-top: 150px solid transparent;
+			border-left: 300px solid #000;
+			border-bottom: 150px solid transparent;
+		}
+		a
+		{
+			color: rgba(255, 255, 255, 0.75);
+			font-style: italic;
+			font-weight: normal;
+			&:hover
+			{
+				color: rgba(62, 135, 204, 0.75);
+			}
+		}
+	}
+}
+#navHotel
+{
+	position: absolute;
+	width: 100%;/*sera el 90% del view-port*/
+	height: 50px;/*los pseudoelementos adoptaran esta altura*/
+	top: 0;
+	left: 0;
+	margin-top: 8rem;
+	z-index: 2000;
+	ul
+	{
+		width: 550px;/*RESPONSIVE*/
+		height: 100%;
+		margin: 0 auto;
+		margin-left: 30%;
+		margin-left: calc(50% - 250px);
+		li a
+		{
+			color: #f7f7f7;
+		}
+	}
+}
+#regresar-ventana
+{
+	color: #F76161;
+	font-size: 2rem;
+	&:hover
+	{
+		text-shadow: 0px 0px 5px #DBAF51, 0px 0px 10px #DBAF51;
+	}
+}
+.callig{
+	font-family: 'Calligraffitti', cursive !important;
+}
+.centerCircle
+{
+	position: absolute;
+	top: 35%;
+	z-index: 5;
+	height: 90px;
+	width: 90px;
+	margin-left: 12px;
+	padding: 50px 50px 60px 31px;
+	font-size: 1.5em;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #F7F7F7;
+	text-align: center;
+	border-radius: 100px;
+	left: 40%;
+	left: -webkit-calc(50% - 100px);
+	border: solid 2px #d8d68c;
+}
+.half{
+	display: inline-block;
+	margin-right: -6px;
+	width: 50%;
+	height: 100%;
+	vertical-align: top;
+}
+.halfRooms{
+	overflow: hidden;
+	position: relative;
+	z-index: 0;
+	img{
+		@include fullScreen("transparent");
+		position: relative;/*cambiamos el posicionamiento de absolute*/
+		z-index: -15;
+		transition:all 0.4s ease-in-out;
+		&:hover
+		{
+			-webkit-filter: grayscale(1) blur(2px);
+		}
+	}
+}
+@media screen and (max-width: 1024px){
+	#contenedor-ppal
+	{
+
+	}
+	#encabezado
+	{
+		&:before
+		{
+			left: 0;
+			@include efectoEncabezado(5, "#000");
+			width: 40%;
+		}
+		&:after
+		{
+			right: 0;
+			@include efectoEncabezado(-2, "#000");
+			width: 60%;
+		}
+		#logo
+		{
+			left: 40%;
+			border-radius: 0 7em;
+		}
+		#logo
+		{
+			background-position: 60% center;
+		}
+		#eslogan
+		{
+			h1
+			{
+				margin: 0px 0 0 30%;
+				text-shadow:
+					1px -1px 0 rgba(220,220,220,1),
+					2px -2px 0 rgba(210,210,210,1),
+					3px -3px 0 rgba(200,200,200,1),
+					4px -4px 10px rgba(0,0,0,0.5);
+			}
+			h2
+			{
+				margin: 0px 0 0 55%;
+			}
+		}
+	}
+}
+@media screen and (max-width: 768px){
+	#contacto
+	{
+		@include imgMovil("../img/DSCN1218-movil.jpg");
+		#social-media, #google-map
+		{
+			position: relative;
+			margin: 0 auto;
+			height: 50%;
+			width: 100%;
+		}
+		#google-map
+		{
+			top: 10%;
+			#map-canvas
+			{
+				width: 98%;
+				width: calc(100% - 1em);
+				margin-left: 0;
+			}
+			input
+			{
+				width: 100%;
+				margin: 0;
+				padding: 0;
+			}
+		}
+		#social-media
+		{
+			top: 20%;
+			height: 40%;
+			width: 75%;
+			&>*:not(address), address>*:not(p)
+			{
+				display: none;
+			}
+			address
+			{
+				p
+				{
+					width: 100%;
+				}
+			}
+		}
+	}
+	#contenedor-ppal
+	{
+		width: 100%;
+	}
+	#control-sliders
+	{
+		margin-bottom: 100px;
+	}
+	#encabezado
+	{
+		margin-top: -7rem;
+		&:before
+		{
+			height: 85%;
+			width: 30%;
+		}
+		&:after
+		{
+			width: 70%;
+			top: 10%;
+			-webkit-transform: skew(0deg, 2deg);
+		}
+		#logo
+		{
+			width: 175px;
+			height: 125px;
+			top: 125px;
+			left: 25%;
+			border-radius: 0 6em;
+		}
+		#eslogan
+		{
+			visibility: hidden;
+		}
+	}
+	#navHotel
+	{
+		ul
+		{
+			width: 350px;
+			margin-left: 35%;
+			li
+			{
+				margin: -5px 0 0 7%;
+			}
+			li:nth-child(2)
+			{
+				margin-left:  50px;
+			}
+		}
+	}
+	#msg-ppal
+	{
+		position: absolute;
+		width: 100%;
+		height: 110px;
+		top: 80%;
+		top: calc(100% - 140px);
+		margin: 0;
+		padding: 1em 0;
+		background-color: rgb(67, 67, 67);
+		color: rgb(167, 167, 167);
+		text-align: center;
+		#relAuthor
+		{
+			&:after
+			{
+				display: none;
+			}
+		}
+		h1
+		{
+			position: relative;
+			-webkit-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			transform: rotate(0deg);
+			z-index: 10;
+			top: 0;
+			left: 0;
+			width: 100%;
+			margin-bottom: 0.5em;
+		}
+	}
+	#paquetes
+	{
+		@include imgMovil("../img/DSCN1332-movil.jpg");
+		article
+		{
+			&.oferta
+			{
+				width: 40%;
+				margin: 35% 0 0 3%;
+				padding: 3% 2% 2% 2%;
+				.oferta-titulo
+				{
+					top: 0;
+				}
+			}
+			&:last-child
+			{
+				display: none;
+			}
+		}
+	}
+	.centerCircle
+	{
+		position: absolute;
+		border-radius: 0px;
+		bottom: 0;
+		left: 0;
+		margin-left: 0;
+		width: 100%;
+		height: 110px;
+		padding: 1em 0;
+		letter-spacing: 4px;
+		word-spacing: 10px;
+		top: 78%;
+		top: calc(100% - 165px);
+	}
+	.half
+	{
+		display: block;
+		width: 100%;
+		top: 0px;
+	}
+	.halfRooms:nth-child(2)
+	{
+		display: none;
+	}
+	.ribbon
+	{
+		display: none;
+	}
+}
+@media screen and (max-width: 480px){
+	#contenedor-ppal
+	{
+		#control-sliders
+		{
+			left: 80%;
+		}
+		#encabezado
+		{
+			z-index: 50000;
+			&:before
+			{
+				display: none;
+			}
+			&:after
+			{
+				width: 85%;
+				top: 0%;
+				-webkit-transform: skew(0deg, 0deg);
+			}
+			#logo
+			{
+				width: 150px;
+				height: 110px;
+				top: 110px;
+				left: 22%;
+			}
+		}
+		#navHotel
+		{
+			ul
+			{
+				margin-left: 30%;
+				li
+				{
+					a
+					{
+						color: white;
+						font-size: 1rem;
+					}
+				}
+			}
+		}
+		#paquetes .oferta
+		{
+			top: 20px;
+			& .oferta-desc
+			{
+				text-align: center;
+			}
+			& .oferta-ext
+			{
+				display: none;
+			}
+		}
+	}
+}

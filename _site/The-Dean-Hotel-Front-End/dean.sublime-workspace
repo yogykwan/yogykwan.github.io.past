@@ -1,0 +1,607 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"menu-it",
+				"menu-item__price"
+			],
+			[
+				"menu",
+				"menu-item__price"
+			],
+			[
+				"mart",
+				"margin-top"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"ri",
+				"right"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"c",
+				"class	Attr"
+			],
+			[
+				"backg",
+				"background-size"
+			],
+			[
+				"scro",
+				"scrollTop"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"background-",
+				"background-size"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"light",
+				"light-gray"
+			],
+			[
+				"padd-",
+				"padding-bottom"
+			],
+			[
+				"gr",
+				"gray"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"padding-",
+				"padding-top"
+			],
+			[
+				"inline",
+				"inline-block"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "/Users/whoisbenjamin/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 324,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"selected_items":
+		[
+			[
+				"idne",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"inden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"trailing",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"toggle space",
+				"Trailing Spaces: Toggle Trailing Spaces Highlighting"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"rein",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"space",
+				"Trailing Spaces: Delete Trailing Spaces"
+			],
+			[
+				"reinden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"jshin",
+				"JSHint"
+			],
+			[
+				"js h",
+				"JSHint"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"js ",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"autopre",
+				"Autoprefix CSS"
+			],
+			[
+				"",
+				"Autoprefix CSS"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"package inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"zf",
+				"Snippet: ZURB Foundation 5 Accordion"
+			],
+			[
+				"prefix",
+				"Autoprefix CSS"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Enable Package"
+			]
+		],
+		"width": 601.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/whoisbenjamin/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/Users/whoisbenjamin/Desktop/Voyat 2.0/index.html",
+		"/Users/whoisbenjamin/Dropbox/Work/Freelance/Watson/The Dean/Full Site/Dev/app/culture.html",
+		"/Users/whoisbenjamin/Dropbox/Work/Freelance/Watson/The Dean/Full Site/Dev/app/roomtemplate.html",
+		"/Users/whoisbenjamin/Dropbox/Work/Freelance/Watson/The Dean/Full Site/Dev/app/rooms.html",
+		"/Users/whoisbenjamin/Dropbox/Work/Freelance/Watson/The Dean/Full Site/Dev/app/providence.html",
+		"/Users/whoisbenjamin/Dropbox/Work/Freelance/Watson/The Dean/Full Site/Dev/app/booking.html",
+		"/Users/whoisbenjamin/Dropbox/Work/Freelance/Watson/The Dean/Full Site/Dev/app/about.html",
+		"/Users/whoisbenjamin/Dropbox/Work/Freelance/Watson/The Dean/Full Site/Dev/app/index.html",
+		"/Users/whoisbenjamin/Dropbox/Work/Freelance/Watson/The Dean/Full Site/Dev/app/eat-and-drink.html",
+		"/Users/whoisbenjamin/Dropbox/Work/Freelance/Watson/The Dean/Full Site/Dev/app/styles/main.scss",
+		"/Users/whoisbenjamin/Dropbox/Work/Freelance/Watson/The Dean/Full Site/Dev/app/shop.html",
+		"/Users/whoisbenjamin/Dropbox/Work/Freelance/Watson/The Dean/Full Site/Dev/app/scripts/vendor/jquery.fancybox.pack.js",
+		"/Users/whoisbenjamin/Dropbox/Work/Freelance/Watson/The Dean/Full Site/Dev/app/fooddrinktemplate.html",
+		"/Users/whoisbenjamin/Dropbox/Work/Freelance/Watson/The Dean/Full Site/Dev/app/scripts/main.js",
+		"/Users/whoisbenjamin/Dropbox/Work/Freelance/Watson/The Dean/Full Site/Dev/app/images/global/fullscreen.svg",
+		"/Users/whoisbenjamin/Dropbox/Work/Freelance/Watson/The Dean/Full Site/Dev/app/bower_components/doc-ready/index.html",
+		"/Users/whoisbenjamin/Dropbox/Work/Freelance/Watson/The Dean/Full Site/Dev/app/bower_components/doc-ready/README.md",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Yo/app/bower_components/sass-bootstrap/lib/_forms.scss",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Yo/app/scripts/main.js",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Yo/app/index.html",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Yo/app/styles/main.scss",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Yo/app/images/icon--scrolldown@2x.png",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Yo/app/images/voyat-logo@2x.png",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Yo/app/bower_components/sass-bootstrap/lib/_variables.scss",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/app/index.html",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/app/styles/style.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/app/styles/library/mixins.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/app/styles/library/common.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/app/styles/library/header.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-header/less/header-1.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/index.html",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/app/styles/less/header.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/app/css/style.css",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/common-files/less/startup-kit_header.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/manual/read/css/style.css",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-01/css/style.css",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-01/less/style.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-02/css/style.css",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-02/less/style.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-03/less/style.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-04/css/style.css",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-04/less/style.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-05/css/style.css",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-05/less/style.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-06/css/style.css",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-06/less/style.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-07/less/style.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-08/css/style.css",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-08/less/style.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-09/less/style.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-10/css/style.css",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-10/less/style.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-11/css/style.css",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-11/less/style.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-12/less/style.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-13/less/style.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-14/css/style.css",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-14/less/style.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-15/css/style.css",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-15/less/style.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-16/css/style.css",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-16/less/style.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-17/css/style.css",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-17/less/style.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-18/css/style.css",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-18/less/style.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-19/css/style.css",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-19/less/style.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-20/css/style.css",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-20/less/style.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-21/css/style.css",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-21/less/navbar.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-21/less/style.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-22/css/style.css",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-22/less/style.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-23/less/style.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-24/less/style.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-25/css/style.css",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/sample-25/less/style.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/samples/template/less/style.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-blog/css/style.css",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-blog/css/ui-kit-styles.css",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-blog/less/blog-3.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-blog/less/blog-4.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-blog/less/blog-5.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-blog/less/style.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-blog/less/ui-kit-styles.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-contacts/css/style.css",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-contacts/css/ui-kit-styles.css",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-contacts/less/contact-4.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-contacts/less/style.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-contacts/less/ui-kit-styles.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-content/css/style.css",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-content/css/ui-kit-styles.css",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-content/less/content-18.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-content/less/content-19.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-content/less/content-21.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-content/less/content-22.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-content/less/content-34.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-content/less/style.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-content/less/ui-kit-styles.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-crew/css/ui-kit-styles.css",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-crew/less/style.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-crew/less/ui-kit-styles.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-footer/css/ui-kit-styles.css",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-footer/less/style.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-footer/less/ui-kit-styles.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-header/css/style.css",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-header/css/ui-kit-styles.css",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-header/less/header-10.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-header/less/header-15.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-header/less/header-17.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-header/less/header-19.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-header/less/header-2.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-header/less/header-21.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-header/less/header-22.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-header/less/header-23.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-header/less/header-3.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-header/less/header-16.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-header/less/header-5.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-header/less/header-6.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-header/less/header-8.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-header/less/header-9.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-header/less/style.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-header/less/ui-kit-styles.less",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-price/css/ui-kit-styles.css",
+		"/Users/whoisbenjamin/Dropbox/Work/Voyat/Website/ui-kit/ui-kit-price/less/style.less"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 115.0,
+		"where_history":
+		[
+			"",
+			"<open files>",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"fullscreen",
+			"fancybox-thumb",
+			"icon-fullscree",
+			"icon-fullscreen",
+			"fullscreen",
+			"fancybox",
+			"rarr",
+			"fancybox-close",
+			"fancybox_sprite",
+			"fancybox-close",
+			"fancybox-loading",
+			"fancybox_loading",
+			"fancybox_sprite",
+			"fancybox-close",
+			"facebook",
+			"rarr",
+			"facebook",
+			".social",
+			"fancybox-title-over-wrap",
+			"fancybox-skin",
+			"z-index: 9999;",
+			"z-index",
+			".sidebar",
+			"font-famil",
+			"col-sm-6",
+			"sm",
+			"col-sm-10",
+			".menu",
+			"fade",
+			"slide",
+			"cycle-slide",
+			"cycle",
+			"sign up for",
+			"datepicker",
+			"#datepicker",
+			"datepicker",
+			"id=\"",
+			"signup-",
+			"booking",
+			"&",
+			".png",
+			".lead",
+			"nav--top",
+			"scroll",
+			">Strict",
+			"voyat",
+			"263545",
+			"button",
+			"footer",
+			"7f8c8d",
+			"+1(",
+			"f1f2f3",
+			"h2",
+			"form",
+			"max-width",
+			"col-md",
+			"container\"",
+			"form",
+			"button",
+			"input",
+			"../../",
+			"header 1",
+			"../../../",
+			"sds"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"../",
+			"../../../",
+			"../../"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": false,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/Users/whoisbenjamin/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 324,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								324
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close"
+							],
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 41.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 134.0
+	},
+	"output.find_results":
+	{
+		"height": 122.0
+	},
+	"project": "dean.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 268.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

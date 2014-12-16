@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <!-- fuerza IE a utilizar el motor de renderizado más actual que esté disponible (incluso en intranets) & Chrome Frame (plugin para IE 6, 7 y 8)-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="pagina web del hotel cometa">
+    <meta name="author" content="Fernando Palacios Landi" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+    <title>Hotel Cometa</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Calligraffitti' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/font-style.css">
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">
+            You are using an <strong>outdated</strong> browser.<br/>
+            Please <a href="http://browsehappy.com/">upgrade your browser</a><br/>
+            or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.
+        </p>
+    <![endif]-->
+    <!--[if lt IE 9]>
+       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+       <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+    <![endif]-->
+</head>
+<body ontouchstart=""><!-- anulamos el comportamiento por defecto de loos dispositivos cuandxo se preiona sobre el viewport -->
+    <section id="contenedor-ppal">
+        <!-- HEADER
+        -------------------------------->
+        <header id="encabezado" style="z-index: 5000">
+            <a id="logo" href="#">pagina principal del hotel cometa</a>
+            <hgroup id="eslogan">
+                <h1 class="callig">roc hotels</h1>
+                <h2 class="callig">un paraiso en Mallorca</h2>
+            </hgroup>
+            <nav id="navHotel" class="callig">
+                <ul>
+                    <!-- los enlaces se controlan con localScroll a traves de #id-->
+                    <li><a href="#paquetes">Precios</a></li>
+                    <li><a href="#cuartos">Habitaciones</a></li>
+                    <li><a href="#contacto">Contacto y reservas</a></li>
+                    <li><a href="#buffet">Buffet</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- SLIDER
+        -------------------------------->
+        <section id="contenedor-sliders">
+            <figure id="img-sliders">
+                <div src="" data-background="" rel="amacas, zona de relax" class="slider"></div>
+                <div src="" data-background="img/DSCN1592.jpg" rel="puerto maritimo, playa huacu-huacu" class="slider"></div>
+                <div src="" data-background="img/DSCF0303.jpg" rel="chiringuito, vistas al lago" class="slider"></div>
+                <div src="" data-background="img/DSCF0308.jpg" rel="piscina, vistas al lago" class="slider"></div>
+            </figure>
+        </section>
+
+        <nav id="control-sliders" class="pasar-slide">
+            <ul>
+                <li class="icon-spades"></li>
+                <li class="icon-clubs"></li>
+                <li class="icon-diamonds"></li>
+                <li class="icon-heart"></li>
+            </ul>
+        </nav>
+
+        <!-- FOOTER - AUTOR
+        -------------------------------->
+        <footer id="msg-ppal">
+            <header>
+                <h1>Template hotelera</h1>
+            </header>
+            <address id="relAuthor" class="triangulo">
+                Escrita por: <a rel="author" href="mailto:fernandopalacioslandi@gmail.com">Mail Nando</a><br/>
+                Pagina Web: <a rel="author" href="http://www.cruzalosdedos.es/">Web Nando</a><br/>
+                Repositorio Web: <a rel="author" href="https://github.com/fernandoPalaciosGit/">Github Nando</a>
+            </address>
+        </footer>
+
+        <!-- TEMPLATE PRESENTACION
+        -------------------------------->
+        <section id='cuartos' class='fullScreen' data-stellar-background-ratio="0.5">
+            <h1 class='centerCircle callig'>El<br/>mejor<br/>servicio</h1>
+            <div class="half halfRooms">
+                <img src="img/DSCF0037.jpg">
+            </div>
+            <div class="half halfRooms">
+                <img src="img/DSCN1127.jpg">
+            </div>
+        </section>
+
+        <!-- TEMPLATE COSTES
+        -------------------------------->
+        <script type="text/x-jquery-tmpl" id="precioTemplate">
+            <article class="oferta">
+                <div class="ribbon"></div>
+                <header>
+                    <h3 class="oferta-titulo">${paquete}</h3>
+                </header>
+                <p class="oferta-desc">${descripcion}</p>
+                <ol>
+                    {{each opciones}}
+                        <li>${opcion}</li>
+                    {{/each}}
+                </ol>
+                <a href="#" id="regresar-ventana">Regresar</a>
+            </article>
+        </script>
+        <section id="paquetes" class="callig" data-stellar-background-ratio="0.5">
+            <article class="oferta" data-stellar-ratio="1.3">
+                <div class="ribbon"></div>
+                <header>
+                    <h2 class="oferta-titulo">Doble vistas al mar</h2>
+                </header>
+                <p class="oferta-desc">Nuestras habitaciones dobles están equipadas con 2 camas de 1x2m o 1 cama de 1,8x2m y están diseñadas para proporcionar el máximo confort. Ofrecen vistas espectaculares a la Bahía de Palma.</p>
+                <aside class="oferta-ext">Anulación gratis hasta las 12:00</aside>
+                <footer class="oferta-precio">175,00€ por habitacion</footer>
+                <p class="oferta-mas">Tarifa estándar <br/><a href="#" data-number="0">Leer más</a></p>
+            </article>
+            <article class="oferta" data-stellar-ratio="1.5">
+                <div class="ribbon"></div>
+                <header>
+                    <h2 class="oferta-titulo">Junior Suite</h2>
+                </header>
+                <p class="oferta-desc">Las Suites Junior disponen de un dormitorio con cama de 2x2m y zona de estar incorporada con 1 sofá-cama. Ofrecen espectaculares vistas al mar.</p>
+                <aside class="oferta-ext">No reembolsable, Media Pensión</aside>
+                <footer class="oferta-precio">300,00€ por habitacion</footer>
+                <p class="oferta-mas">Media pensión Gratis! <br/><a href="#" data-number="1">Leer más</a></p>
+            </article>
+            <article class="oferta" data-stellar-ratio="1.3">
+                <div class="ribbon"></div>
+                <header>
+                    <h2 class="oferta-titulo">Suite presidencial</h2>
+                </header>
+                <p class="oferta-desc">Las Suites Presidenciales disponen de un salón independiente con sofá-cama y de una espectacular terraza de 15m2 con magníficas vistas panorámicas al mar. El dormitorio cuenta con 1 cama de 2x2m y baño completo.</p>
+                <aside class="oferta-ext">No reembolsable   Media Pensión</aside>
+                <footer class="oferta-precio">350,00€ por habitacion</footer>
+                <p class="oferta-mas">Media pensión Gratis! <br/><a href="#" data-number="2">Leer más</a></p>
+            </article>
+        </section>
+
+        <!-- TEMPLATE BUFFET
+        -------------------------------->
+        <section id="buffet" data-stellar-background-ratio="0.5">
+            <article class="image-food viewport" data-background=""></article>
+            <article class="image-food" data-background=""></article>
+            <article class="image-food" data-background=""></article>
+            <article class="image-food" data-background=""></article>
+        </section>
+
+        <!-- TEMPLATE CONTACTO
+        -------------------------------->
+        <section id="contacto" data-stellar-background-ratio="0.3">
+            <article id="social-media" class="half callig" itemscope itemtype="http://data-vocabulary.org/Person">
+                <header>
+                    <h2 class="callig">redes sociales</h2>
+                </header>
+                <ul>
+                    <li><a href="http://www.facebook.com/Riupalacebonanzaplaya" title="Hoteles Bonanza - Facebook" target="_blank" rel="url" itemprop="url">F</a></li>
+                    <li><a rel="external" href="http://ws.hotelsearch.com/offers_mashup.atom?hotelid=&amp;language=es" title="Hoteles Bonanza - RSS" itemprop="url">R</a></li>
+                    <li><a href="http://www.youtube.com/user/HotelesBonanza" title="Hoteles Bonanza - Youtube" target="_blank" rel="url" itemprop="url">X</a></li>
+                </ul>
+                <address>
+                    <h3 class="callig">direccion y telefono</h3>
+                    <p>
+                        <span itemprop="location" itemscope
+                            itemtype="http://schema.org/GeoCoordinates">
+                            <meta itemprop="latitude" content="37.4149" />
+                            <meta itemprop="longitude" content="-122.078" />
+                        </span>
+                    </p>
+                    <p>
+                        <span itemprop="name">hotel riu bonanza playa</span><br/>
+                        <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                            <span itemprop="street-address">Paseo de Illetas s/n</span><br/>
+                            <span itemprop="locality">Calvià</span>
+                            , <span itemprop="region">palma de mallorca</span>, CP:
+                            <span itemprop="postal-code">94043</span>-
+                            <span itemprop="country-name">ES</span>
+                        </span><br/>
+                        <span itemprop="tel">34 971401112 </span>
+                        <a rel="url" itemprop="url" href="mailto:http://www.reservas@hotelesbonanza.com" target="_blank">reservas@hotelesbonanza</a>
+                    </p>
+                </address>
+            </article>
+
+            <article id="google-map" class="half callig">
+                <input type="button" id="miDireccion" value="Localizame !!" />
+                <input type="button" id="mostrarRuta" value="mostrar ruta" />
+                <div id="map-canvas" data-stellar-ratio="0.7"></div>
+            </article>
+        </section>
+
+    </section>
+    <!-- carga jQuery desde el CDN de google o desde localhost -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+    <!-- libreria de templates -->
+    <script src='http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js'></script>
+    <!-- PLUGINS JQUERY -->
+    <script src="js/plugins.js"></script>
+    <script src="js/vendor/jquery.ui.core.min.js"></script> <!-- trabajar con interfaces moviles -->
+    <script src="js/vendor/jquery.ui.effect.min.js"></script> <!-- cambio de color cuando se le da flip a la targeta -->
+    <script src="js/vendor/jquery.flip.min.js"></script><!-- efecto de rotacion de targetas -->
+    <script src="js/vendor/scrollto.min.js"></script>
+    <script src="js/vendor/localscroll.min.js"></script><!-- extension de scrollto -->
+    <script src="js/vendor/stellar.min.js"></script><!-- efecto parallax -->
+    <script src="js/main.js"></script>
+    <!-- api de google maps: el initMap() se ejecuta dede aqui-->
+    <script type="text/javascript"
+      src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDyZdH1B33aDCFhEdpwzSwhh7pKu11qMKo&amp;sensor=false&callback=initMap">
+    </script>
+    <script src="js/mainMaps.js"></script>
+</body>
+</html>

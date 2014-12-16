@@ -1,0 +1,21 @@
+%div{:id  => "footer", :class  => "grid_16"}
+  %p{:class  => "grid_8 alpha"}
+    © 2012 Imperial Park Hotel - Lima 101 (C1073AAC). Tel.(5411) 4383-0555
+    %br
+    Ciudad Autónoma deBuenos Aires - 
+    %a{:src  => "mailto:info@imperialparkhotel.com"}
+      info@imperialparkhotel.com
+  %ul{:class  => "social-nav nav to-right"}
+    %li
+      = link_to("Español", current_path(:lang => "es"))
+      &nbsp; &nbsp;
+    %li
+      = link_to("Portugues", current_path(:lang => "pt"))
+      &nbsp; &nbsp;
+    %li
+      Follow us &nbsp;
+      %span{:class  => "hidden"},
+      %a{:href  => "http://www.facebook.com/pages/Imperial-Park-Hotel/104210016364842", :target  => "_blank", :class  => "facebook-icon"}
+        %img{:src  => "/img/content/facebook-icon.png", :alt  => "facebook"}
+
+

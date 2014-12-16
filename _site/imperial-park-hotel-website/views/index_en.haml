@@ -1,0 +1,32 @@
+%div{:id  => "hero", :class  => "grid_16"}
+  %div{:class  => "info"}
+    %h2
+      A European hotel 
+      %span
+        %em
+          in the urban heart of Buenos Aires 
+    %div{:class  => "section grid_6"}
+      %p
+        Overlooking the city's main artery/avenue of 9 de Julio, our hotel is situated near the financial district -- within easy walking distance of the main attractions that make Buenos Aires the "Paris of South America".  In town for business or pleasure? Our highly personalized service staff will make your stay pleasant and enjoyable.
+      %p
+        %a{:class  => "reservation-button", :href  => "http://reservations.directwithhotels.com/reservation/selectDates/12871", :target  => "_blank"}
+          BOOK NOW
+  %div{:id  => "slider"}
+    %img{:src  => "/img/content/imperial-park-hotel-lounge.jpg",:alt => "Imperial Park Hotel lounge",:width => "940",:height => "371"}
+    %img{:src  => "/img/content/imperial-park-hotel-building.jpg", :alt => "Imperial Park Hotel building", :width => "940",:height => "371"}
+    %img{:src  => "/img/content/imperial-park-hotel-entrance.jpg", :alt => "Imperial Park Hotel entrance",:width => "940", :height => "371"}
+    %img{:src  => "/img/content/imperial-park-hotel-buenos-aires.jpg",:alt => "Imperial Park Hotel Buenos Aires",:width => "940", :height => "371"}
+
+
+= partial :bottom_content
+
+:javascript
+  $(document).ready(function(){
+    $('#hero #slider').cycle({ 
+      fx:     'fade', 
+      speed:  '950', 
+      timeout: 6000 
+    });  
+  });
+
+

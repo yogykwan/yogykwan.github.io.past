@@ -1,0 +1,334 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>The Dean Hotel</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+  <!-- build:css(.tmp) styles/main.css -->
+  <link rel="stylesheet" href="styles/main.css">
+  <!-- endbuild -->
+
+  <script type="text/javascript" src="//use.typekit.net/yys4gda.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  <!-- build:js scripts/vendor/modernizr.js -->
+  <script src="bower_components/modernizr/modernizr.js"></script>
+  <!-- endbuild -->
+
+        <!--[if lt IE 9]>
+	        <script src="scripts/vendor/html5shiv.js"></script>
+          <![endif]-->
+		<!--[if IE]>
+			<link href="styles/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+      <![endif]-->
+    </head>
+    <body>
+
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a style="text-decoration: underline" href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
+
+
+
+            <header class="sidebar">
+
+             <div class="brand">
+              <h1><a href="index.html"><img src="images/global/brand.png" alt="The Dean" width="180" height="auto"></a></h1>
+              <a class="visible-xs" id="mobilemenu">MENU</a>
+            </div>
+
+            <div class="menu">
+              <div class="booking">
+               <a href="#" class="cta book-now">BOOK NOW</a>
+             </div>
+
+             <nav>
+               <form id="bookingform">
+                <div>
+                 <label>
+                  Adults
+                  <select>
+                   <option>0</option>
+                   <option>1</option>
+                   <option>2</option>
+                   <option>3</option>
+                   <option>4</option>
+                 </select>
+               </label>
+             </div>
+             <div>
+               <label>
+                Rooms
+                <select>
+                 <option>0</option>
+                 <option>1</option>
+                 <option>2</option>
+                 <option>3</option>
+                 <option>4</option>
+               </select>
+             </label>
+           </div>
+           <div class="input-daterange" id="datepicker">
+            <label for="start">Arrival:<input placeholder="dd/mm/yyyy" type="text" class="input-small" name="start" /></label>
+            <label for="end">Departure:<input placeholder="dd/mm/yyyy" type="text" class="input-small" name="end" /></label>
+          </div>
+          <div>
+           <button class="btn btn-dean">
+            Check Availability
+          </button>
+        </div>
+      </form>
+      <ul id="navigation">
+        <li><a class="active" href="rooms.html">ROOMS</a></li>
+        <li><a href="eat-and-drink.html">EAT &amp; DRINK</a></li>
+        <li><a href="culture.html">CULTURE</a></li>
+        <li><a href="about.html">ABOUT &amp; PRESS</a></li>
+        <li><a href="providence.html">PROVIDENCE</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+      </ul>
+    </nav>
+    <div class="contact">
+     <div>
+      <a href="tel:+14014553326">+1 401 455 DEAN</a><br>
+      <a href="mailto:info@thedeanhotel.com">info@thedeanhotel.com</a>
+    </div>
+    <address><a target="_blank" href="//maps.google.com/?q=122 Fountain Street, Providence, Rhode Island 02903">122 Fountain Street,<br>Providence, Rhode Island 02903</a></address>
+
+    <div class="newsletter">
+      <form class="newsletter">
+       <input type="email" name="signup-email" id="signup-email" placeholder="Sign up for our newsletter"><a href="#" type="submit">| OK</a>
+     </form>
+   </div>
+
+   <ul class="social row">
+    <li><a target="_blank" class="facebook" href="//www.facebook.com/TheDeanHotel">Facebook</a></li>
+    <li><a target="_blank" class="twitter" href="//twitter.com/thedeanhotel">Twitter</a></li>
+    <li><a target="_blank" class="instagram" href="//instagram.com/thedeanhotel">Instagram</a></li>
+  </ul>
+
+  <div class="legal">
+    <p>&copy;2013 THE DEAN HOTEL. ALL RIGHTS RESERVED.<br><a href="#">TERMS &amp; CONDITIONS</a></p>
+
+  </div>
+</div>			</div>
+
+</header>
+
+<div class="container">
+
+ <article class="panel half row hero" style="background-image: url('images/rooms/panel1bg.jpg');">
+
+  <header class="text-center">
+   <img src="images/rooms/panel1-sleepwiththedean.png" alt="Sleep with The Dean" width="800" height="auto">
+ </header>
+
+ <div class="scroll-down text-center">
+  <p>Scroll down to see room types</p>
+</div>
+<div class="text-center arrow">
+  <a id="pushmedown">
+   <img src="images/global/arrow-down.png" alt="arrow-down" width="26" height="36">
+ </a>
+</div>
+
+</article>
+
+<article class="panel half row room" style="background-image: url('images/rooms/panel2bg.jpg');">
+  <header class="text-center">
+   <h3>01. THE KIN</h3>
+   <div class="content">
+     <p>Sleeps two in a single bunk<br>Starting at $79</p>
+     <p><a href="roomtemplate.html">View Details &rarr;</a></p>
+     <button class="btn btn-dean" data-toggle="modal" data-target="#bookNowModal">
+       Check Availability
+     </button>
+   </div>
+ </header>
+
+</article>
+
+<article class="panel half row room" style="background-image: url('images/rooms/panel3bg.jpg');">
+
+  <header class="text-center">
+    <h3 style="color: white;">02. THE CLASSMATES</h3>
+    <div class="content">
+     <p>Sleeps four in two cozy bed bunks<br>
+       Starting at $89</p>
+       <p><a href="roomtemplate.html">View Details &rarr;</a></p>
+       <button class="btn btn-dean" data-toggle="modal" data-target="#bookNowModal">
+         Check Availability
+       </button>
+     </div>
+   </header>
+
+ </article>
+
+ <article class="panel half row room" style="background-image: url('images/rooms/panel4bg.jpg');">
+
+   <header class="text-center">
+     <h3>03. THE PATRON</h3>
+     <div class="content">
+      <p>Features one Full sized bed<br>
+        Starting at $99</p>
+        <p><a href="roomtemplate.html">View Details &rarr;</a></p>
+        <button class="btn btn-dean" data-toggle="modal" data-target="#bookNowModal">
+         Check Availability
+       </button>
+     </div>
+   </header>
+
+ </article>
+
+ <article class="panel half row room" style="background-image: url('images/rooms/panel5bg.jpg');">
+
+   <header class="text-center">
+    <h3><a href="roomtemplate.html">04. THE MATES</a></h3>
+    <div class="content">
+     <p>Features one Queen sized bed<br>
+       Starting at $109</p>
+       <p><a href="roomtemplate.html">View Details &rarr;</a></p>
+       <button class="btn btn-dean" data-toggle="modal" data-target="#bookNowModal">
+         Check Availability
+       </button>
+     </div>
+   </header>
+
+ </article>
+
+ <article class="panel half row room" style="background-image: url('images/rooms/panel6bg.jpg');">
+
+   <header class="text-center">
+     <h3><a href="roomtemplate.html">05. THE GANG</a></h3>
+     <div class="content">
+       <p>Features two Queen sized beds<br>
+         Starting at $119</p>
+         <p><a href="roomtemplate.html">View Details &rarr;</a></p>
+         <button class="btn btn-dean" data-toggle="modal" data-target="#bookNowModal">
+           Check Availability
+         </button>
+       </div>
+     </header>
+
+   </article>
+
+   <article class="panel half row room" style="background-image: url('images/rooms/panel7bg.jpg');">
+
+     <header class="text-center">
+      <h3 style="color: white;"><a href="roomtemplate.html">06. THE KING</a></h3>
+      <div class="content">
+        <p>Features one King sized bed<br>
+          Starting at $129</p>
+          <p><a href="roomtemplate.html">View Details &rarr;</a></p>
+          <button class="btn btn-dean" data-toggle="modal" data-target="#bookNowModal">
+           Check Availability
+         </button>
+       </div>
+     </header>
+
+
+
+   </article>
+
+   <article class="panel half row room" style="background-image: url('images/rooms/panel8bg.jpg');">
+
+     <header class="text-center">
+       <h3><a href="roomtemplate.html">07. THE GUARDIAN SUITE</a></h3>
+       <div class="content">
+        <p>Features one King sized bed<br>
+          &amp; additional sleeping for one<br>
+          Starting at $139</p>
+          <p><a href="roomtemplate.html">View Details &rarr;</a></p>
+          <button class="btn btn-dean" data-toggle="modal" data-target="#bookNowModal">
+           Check Availability
+         </button>
+       </div>
+     </header>
+
+
+
+   </article>
+
+   <article class="panel half row room" style="background-image: url('images/rooms/panel9bg.jpg');">
+
+     <header class="text-center">
+       <h3><a href="roomtemplate.html">08. THE HEIGHTS</a></h3>
+       <div class="content">
+        <p>Features four connected guest rooms,<br>
+          2 King suites and 2 King Rooms<br>
+          Starting at $149 / Room</p>
+          <p><a href="roomtemplate.html">View Details &rarr;</a></p>
+          <button class="btn btn-dean" data-toggle="modal" data-target="#bookNowModal">
+           Check Availability
+         </button>
+       </div>
+     </header>
+
+
+
+   </article>
+
+
+ </div>
+
+
+ <!-- Book Now Modal -->
+ <div class="modal fade" id="bookNowModal" tabindex="-1" role="dialog" aria-labelledby="bookNowModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h4 class="modal-title" id="bookNowModalLabel">BOOK NOW</h4>
+       </div>
+       <div class="modal-body text-center">
+         <p>We are now taking reservations by telephone. Rooms available from January&nbsp;12th,&nbsp;2014. To make a reservation at The Dean please call us directly at <a href="tel:+14014553326">+1&nbsp;401&nbsp;455&nbsp;3326</a>. Online booking for The Dean coming soon!<p>
+         </div>
+         <div class="modal-footer">
+          <button type="button" data-dismiss="modal" class="btn btn-dean">Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+
+  <!-- build:js scripts/vendor.js -->
+  <!-- bower:js -->
+  <script src="bower_components/jquery/jquery.js"></script>
+  <!-- endbower -->
+  <!-- endbuild -->
+
+  <script>
+    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+    e.src='//www.google-analytics.com/analytics.js';
+    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+    ga('create','UA-25090310-7');ga('send','pageview');
+  </script>
+
+
+  <!-- build:js scripts/plugins.js -->
+  <script src="bower_components/sass-bootstrap/js/transition.js"></script>
+  <script src="bower_components/sass-bootstrap/js/carousel.js"></script>
+  <script src="bower_components/sass-bootstrap/js/button.js"></script>
+  <script src="scripts/vendor/modal.js"></script>
+  <!-- endbuild -->
+
+	<!--[if IE 8]>
+  <script src="scripts/vendor/flexie.min.js"></script>
+  <![endif]-->
+
+  <script src="scripts/vendor/jquery.selectBox.min.js"></script>
+  <script src="scripts/vendor/bootstrap-datepicker.js"></script>
+  <script src="scripts/vendor/jquery.fancybox.pack.js"></script>
+  <script src="scripts/vendor/jquery.fancybox-thumbs.js"></script>
+
+
+  <script src="scripts/main.js"></script>
+
+</body>
+</html>

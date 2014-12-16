@@ -1,0 +1,21 @@
+#contact_title {
+	position: ;
+	z-index: 12;
+	height: ;
+	font-family: 'Sacramento', serif;
+  font-size: 58px;
+}
+
+#contact_body {
+  padding: 20px;
+  width: 980px;
+  height: 550px;
+  margin-top: 1px;
+  position: relative;
+  z-index: 1;
+  border-color: gray;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: ;
+  background-color: white ;
+}

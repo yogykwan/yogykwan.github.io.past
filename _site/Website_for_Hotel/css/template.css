@@ -1,0 +1,102 @@
+#wrapper { 
+  position:  ;
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  display: ;
+  z-index: 2;
+
+}
+
+header {
+  margin-bottom: 40px;
+}
+
+#logo {
+  height: 30px;
+  width: 600px;
+  margin-left: ;
+  margin-top: 30px;
+  margin-bottom: 120px;
+  z-index: 11;
+}
+
+#logo_title {
+   font-family: ''; 
+   font-size: 48px;
+}
+
+#logo_subtitle {
+  font-family: 'Petit Formal Script'; 
+  font-size: 18px;
+}
+
+nav {
+  position: absolute;
+  text-align: right;
+  width: 980px;
+  margin-right: ;
+  margin-left: 20px;
+  margin-top: -55px;
+  z-index: 10;
+  padding-bottom: 80px;
+}
+
+nav li {
+  text-decoration: none;
+  list-style: none;
+  display: inline;
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Sacramento', cursive;
+  font-size: 26px;
+  font-weight: ;
+  letter-spacing: 2px;
+}
+
+#home_body {
+  padding: 20px;
+  width: 100%;
+  height: 550px;
+  margin-top: 1px;
+  position: relative;
+  z-index: 1;
+  border-color: gray;
+  border-style: solid;
+  border-width: 1px;
+  box-shadow: ;
+  background-color: white ;
+}
+
+#img_wrapper {
+  margin-top: 150px;
+  position: relative;
+  width: ;
+  margin-left: 200px;
+}
+
+#title_img {
+  width: ;
+  opacity: 1;
+  padding-left: 40px;
+  padding-top: 0px;
+  margin-left: -100px;
+  margin-top: -120px;
+}
+
+footer {
+  position: absolute;
+  margin-left: 40px;
+  width: 980px;
+  padding-top: 20px;
+  color: #A0522D;
+  margin-top: 200px;
+  z-index: 3;
+  text-align: center;
+}
+
+h1 {
+}

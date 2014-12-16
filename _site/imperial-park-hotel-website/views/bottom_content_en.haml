@@ -1,0 +1,34 @@
+%div{:id  => "content", :class  => "grid_16"}
+  %div{:class  => "grid_5 alpha"}
+    %h2{:class  => "underline"}
+      Coffee and Cocktails
+    %a{:href => "/img/content/cocktails/cocktail.jpg", :rel => "lightbox-cocktails", :title => "<h2>Cocktails</h2>"}
+      %img{:src => "/img/content/cocktail-front.jpg", :alt  => "Imperial Park Hotel cocktails", :class => "no-bm"}
+    %div{:class => "detail"}
+      %p
+        %a{:href => "/img/content/cocktails/cocktail.jpg", :rel => "lightbox-cocktails"}
+          See more alternatives
+  %div{:class  => "grid_5 center-box featured-box"}
+    %h2{:class  => "underline"}
+      Rate and Availability 
+    %a{:href  => "/img/content/imperial-park-rooms/IMG_8626-2.jpg", :rel  => "lightbox-rooms", :title  => "<h2>Deluxe</h2>"}
+      %img{:src  => "/img/content/imperial-park-hotel-rooms.jpg", :alt  => "Imperial Park Hotel rooms", :class  => "no-bm"}
+    %div{:class => "detail"}
+      %img{:src  => "/img/content/bell.png"}
+        %p
+          50 Standard Rooms and 20 Suites
+  %div{:class  => "grid_5 omega featured-box"}
+    %h2{:class  => "underline"}
+      360&deg; View from the Hotel
+    %a{:href  => "#"}
+      %img{:src  => "/img/content/imperial-park-hotel-views.jpg",:class  => "no-bm"}
+    %div{:class  => "detail"}
+      %img{:src  => "/img/content/view.png"}
+      %p
+        See what we see: a 360-degree view of 9 de Julio Avenue
+        %a{:href  => "http://360.imperialparkhotel.com",:target  => "_blank", :class  => "button"}
+          360 View
+
+= partial :rooms_images, :skip_translation  => true 
+= partial :cocktail_images, :skip_translation => true
+

@@ -1,0 +1,82 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+
+header.sidebar {
+	display: block;
+	
+	.brand {
+		display: block;
+		margin-top: 40px;
+		margin-bottom: 40px;
+		float: left;
+		width: 320px;
+	}
+	
+	.menu {
+		display: block;
+		margin-top: 40px;
+		margin-bottom: 80px;
+		float: left;
+		width: 320px;
+	}
+	
+	.contact {
+		margin-top: 40px;
+		position: fixed; 
+		width: 320px; 
+		bottom: 0px;
+	}
+	
+	.newsletter {
+	
+		a {	
+			margin-top: 2px; 
+			margin-bottom: 5px; 
+			float: left; 
+			display: block;
+		}
+		input {
+			margin-top: 2px; 
+			float: left; 
+			display: block;
+		}
+	}
+	
+}
+
+.panel {
+	.half {
+		
+		.room {
+			
+			
+			.content {
+				display: block;
+			}
+			
+
+			header {
+				background: rgba(255,255,255,0.8);
+				
+				h3 {
+					color: black !important;
+				}
+
+			}
+			
+			div {
+				display: block;
+
+				opacity: 1;
+				color: black;
+				
+			}
+				
+			
+		}
+		
+	}
+}
