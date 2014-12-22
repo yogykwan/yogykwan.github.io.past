@@ -215,41 +215,13 @@
 
   /pages/about.html
 
-  /The-Dean-Hotel-Front-End/dist/bower_components/sass-bootstrap/about.html
-
-  /The-Dean-Hotel-Front-End/app/bower_components/sass-bootstrap/about.html
-
   /pages/archive.html
 
   /pages/atom.xml
 
-  /The-Dean-Hotel-Front-End/app/bower_components/sass-bootstrap/components.html
-
-  /The-Dean-Hotel-Front-End/dist/bower_components/sass-bootstrap/components.html
-
-  /The-Dean-Hotel-Front-End/app/bower_components/sass-bootstrap/css.html
-
-  /The-Dean-Hotel-Front-End/dist/bower_components/sass-bootstrap/css.html
-
-  /The-Dean-Hotel-Front-End/app/bower_components/sass-bootstrap/customize.html
-
-  /The-Dean-Hotel-Front-End/dist/bower_components/sass-bootstrap/customize.html
-
   /pages/edb.html
 
-  /The-Dean-Hotel-Front-End/dist/bower_components/sass-bootstrap/getting-started.html
-
-  /The-Dean-Hotel-Front-End/app/bower_components/sass-bootstrap/getting-started.html
-
   /index.html
-
-  /The-Dean-Hotel-Front-End/dist/bower_components/sass-bootstrap/index.html
-
-  /The-Dean-Hotel-Front-End/app/bower_components/sass-bootstrap/index.html
-
-  /The-Dean-Hotel-Front-End/app/bower_components/sass-bootstrap/javascript.html
-
-  /The-Dean-Hotel-Front-End/dist/bower_components/sass-bootstrap/javascript.html
 
   /hotel1/node_modules/grunt/node_modules/js-yaml/examples/sample_document.yaml
 

@@ -9,6 +9,71 @@
 	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="responsive.css">
+<style type="text/css">
+.code
+{
+background-image:url(code.jpg);
+font-family:Arial;
+font-style:italic;
+color:Red;
+border:0;
+ padding:2px 3px;
+letter-spacing:3px;
+font-weight:bolder;
+}
+.unchanged
+{
+border:0;
+}
+
+</style>
+ <script language="javascript"type="text/javascript">
+
+ var code ; 
+ function createCode()
+{
+ code ="";
+ var codeLength = 6;
+ var checkCode = document.getElementById("checkCode");
+ var selectChar = new Array(0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z');//所有候选组成验证码的字符，当然也可以用中文的
+
+ for(var i=0;i<codeLength;i++)
+{
+ var charIndex = Math.floor(Math.random()*36);
+ code +=selectChar[charIndex];
+}
+
+if(checkCode)
+{
+checkCode.className="code";
+ checkCode.value = code;
+}
+}
+ function validate ()
+{
+ var inputCode = document.getElementById("input1").value;
+ if(inputCode.length <=0)
+{
+alert("Enter captcha!");
+}
+ //else if(inputCode != code )
+
+ else if(inputCode.toLowerCase() != code.toLowerCase() )
+{
+alert("Incorrect, do again please!");
+createCode();
+}
+else
+{
+ var str = document.getElementById("common").value;
+ var vkey=/^(\w*)/
+ //var vkey=/[`~!@#$^&*()+=|＼＼＼[＼]＼{＼}:;'＼,.<>/?]/;
+ if(vkey.test(str)) alert("Original: "+str+'\n'+"Filtered: "+str.replace(/^(\w*)/,""));
+ alert("Got it, thank you!");
+}
+}
+</script>
+
 </head>
 <body>
 	<!-- Navigation -->
@@ -61,26 +126,26 @@
 				<div class="contactForm grid__item one-whole">
 					<div class="direction">
 						<h4>Contact</h4>
-						<p>123 Cypress Way</p>
+						<p>SWJTU 2011</p>
 						<p>p: 123.456.7891</p>
-						<p>e: info@escapist.com</p>
+						<p>e: yogy@swjtu.cn</p>
 					</div>
 					<form class="grid one-whole">
 						<div class="contactLeft grid__item two-thirds mid--one-whole palm--one-whole">
-							<textarea name="comment" id="common" cols="30" rows="15" placeholder="Send us your questions and comments!"></textarea>
+							<textarea name="comment" id="common" cols="30" rows="11" placeholder="Send us your questions and comments!"></textarea>
 						</div>
 						<div class="contactRight grid__item one-third mid--one-whole palm--one-whole">	
 							<input type="text" name="name" required="true" class="name" placeholder="Name" novalidate
 	      action="https://lindsayhartfiel.wufoo.com/forms/z1n5pg8j1dzxxns/#public">
+
 							<input type="email class="labelEmail"" name="email" required="true" class="email" placeholder="Email Address">
 
-							<div class="fromDate">
-								<label for="month">Date From</label> <select name="month" id="month" onchange="" size="1"> <option value="01">January</option> <option value="02">February</option> <option value="03">March</option> <option value="04">April</option> <option value="05">May</option> <option value="06">June</option> <option value="07">July</option> <option value="08">August</option> <option value="09">September</option> <option value="10">October</option> <option value="11">November</option> <option value="12">December</option> </select> <select name="day" id="day" onchange="" size="1"> <option value="01">01</option> <option value="02">02</option> <option value="03">03</option> <option value="04">04</option> <option value="05">05</option> <option value="06">06</option> <option value="07">07</option> <option value="08">08</option> <option value="09">09</option> <option value="10">10</option> <option value="11">11</option> <option value="12">12</option> <option value="13">13</option> <option value="14">14</option> <option value="15">15</option> <option value="16">16</option> <option value="17">17</option> <option value="18">18</option> <option value="19">19</option> <option value="20">20</option> <option value="21">21</option> <option value="22">22</option> <option value="23">23</option> <option value="24">24</option> <option value="25">25</option> <option value="26">26</option> <option value="27">27</option> <option value="28">28</option> <option value="29">29</option> <option value="30">30</option> <option value="31">31</option> </select> <select name="year" id="year" onchange="" size="1"> <option value="2014">2014</option> <option value="2015">2015</option> </select> 
-							</div> <!-- .fromDate -->
-							<div class="toDate">
-								<label for="month2">Date To</label> <select name="month2" id="month2" onchange="" size="1"> <option value="01">January</option> <option value="02">February</option> <option value="03">March</option> <option value="04">April</option> <option value="05">May</option> <option value="06">June</option> <option value="07">July</option> <option value="08">August</option> <option value="09">September</option> <option value="10">October</option> <option value="11">November</option> <option value="12">December</option> </select> <select name="day2" id="day2" onchange="" size="1"> <option value="01">01</option> <option value="02">02</option> <option value="03">03</option> <option value="04">04</option> <option value="05">05</option> <option value="06">06</option> <option value="07">07</option> <option value="08">08</option> <option value="09">09</option> <option value="10">10</option> <option value="11">11</option> <option value="12">12</option> <option value="13">13</option> <option value="14">14</option> <option value="15">15</option> <option value="16">16</option> <option value="17">17</option> <option value="18">18</option> <option value="19">19</option> <option value="20">20</option> <option value="21">21</option> <option value="22">22</option> <option value="23">23</option> <option value="24">24</option> <option value="25">25</option> <option value="26">26</option> <option value="27">27</option> <option value="28">28</option> <option value="29">29</option> <option value="30">30</option> <option value="31">31</option> </select> <select name="year2" id="year2" onchange="" size="1"> <option value="2014">2014</option> <option value="2015">2015</option> </select> 
-							</div> <!-- .toDate -->
-							<input type="submit" value="Send it!" class="submitButton">
+							 <input type="text"onclick="createCode()"id="input1" style="width: 100px"/>
+
+ <input type="text"id="checkCode"class="unchanged"style="width: 100px"/>
+
+
+					<input type="submit" value="submit" class="submitButton" onclick="validate();">
 						</div>	
 					</form>
 				</div> <!-- .contactForm -->
