@@ -66,9 +66,11 @@ createCode();
 else
 {
  var str = document.getElementById("common").value;
- var vkey=/^(\w*)/
+ var vkey=/(\!+)|(\<+)|(\>+)|(\'+)/g;
+ //var vkeys=/<script(.|\n)*\/script>\s*/ig;
+ //var vkey=/^(\w* )/
  //var vkey=/[`~!@#$^&*()+=|＼＼＼[＼]＼{＼}:;'＼,.<>/?]/;
- if(vkey.test(str)) alert("Original: "+str+'\n'+"Filtered: "+str.replace(/^(\w*)/,""));
+ if(vkey.test(str)) alert("Original: "+str+'\n'+"Filtered: "+str.replace(vkey,""));
  alert("Got it, thank you!");
 }
 }
