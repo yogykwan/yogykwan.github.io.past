@@ -5,6 +5,7 @@ category: 工具
 tags: [Kali , Linux]
 description: Kali Linux安装及基础配置
 ---
+
 > 人生苦短，我用Kali！——俺
 
 # 0x00 安装Kali
