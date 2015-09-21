@@ -6,14 +6,14 @@ markdown: redcarpet
 author: 
   name: Yogy
   email: jingg.cxy@foxmail.com
-  link: http://yogy.cc
+  link: http://yogy.me
   weibo: http://weibo.com/u/1795905757
   github: http://github.com/yogykwan
 
 # 站点信息
 title: "NULL"
 description: Yogy's Blog
-url: http://yogy.cc
+url: http://yogy.me
 rss_url: /pages/atom.xml
 
 # gavatar头像及Favicon
